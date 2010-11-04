@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'CheckDeck' target in the 'CheckDeck' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import <Three20/Three20.h>
+#import "CDConstants.h"
+#import "CDCoreDataManager.h"
+#import "SimpleModel.h"
+#endif

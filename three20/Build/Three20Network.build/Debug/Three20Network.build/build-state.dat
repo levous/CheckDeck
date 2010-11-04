@@ -1,0 +1,875 @@
+TThree20Network
+v7
+r0
+t306208085.588264
+cCheck dependencies
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/Three20Network.h Headers/Three20Network.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTGlobalNetwork.h Headers/TTGlobalNetwork.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTUserInfo.h Headers/TTUserInfo.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTModel.h Headers/TTModel.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTModelDelegate.h Headers/TTModelDelegate.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/private/TTRequestLoader.h Headers/TTRequestLoader.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLCache.h Headers/TTURLCache.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLDataResponse.h Headers/TTURLDataResponse.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLImageResponse.h Headers/TTURLImageResponse.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequest.h Headers/TTURLRequest.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequestCachePolicy.h Headers/TTURLRequestCachePolicy.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequestDelegate.h Headers/TTURLRequestDelegate.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequestModel.h Headers/TTURLRequestModel.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequestQueue.h Headers/TTURLRequestQueue.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLResponse.h Headers/TTURLResponse.h
+cCpHeader ../../Build/Products/Debug/../three20/Three20Network/private/TTURLRequestQueueInternal.h Headers/TTURLRequestQueueInternal.h
+cPhaseScriptExecution "Protect Copied Headers" /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Script-6E645F091187AD0E00F08CB1.sh
+cProcessPCH /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch.gch Headers/Three20Network_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTGlobalNetwork.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTUserInfo.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTUserInfo.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTModel.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTRequestLoader.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLCache.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLDataResponse.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLImageResponse.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequest.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestModel.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestQueue.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004B7E366000000000000000EE
+t1266562656
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004864A1C900000000000012EE
+t1214554569
+s4846
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/TargetConditionals.h
+c000000004817F9680000000000002778
+t1209530728
+s10104
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h
+c0000000047BA9932000000000000380F
+t1203411250
+s14351
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Core/NSArrayAdditions.h
+c000000004C9025CB0000000000000788
+t1284515275
+s1928
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Core/NSObjectAdditions.h
+c000000004C9025CB0000000000000574
+t1284515275
+s1396
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Core/NSStringAdditions.h
+c000000004C9025CB0000000000000BE7
+t1284515275
+s3047
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Core/TTCorePreprocessorMacros.h
+c000000004C9025CB0000000000000876
+t1284515275
+s2166
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Core/TTDebug.h
+c000000004C9025CB0000000000000EBD
+t1284515275
+s3773
+i<TargetConditionals.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Core/TTDebugFlags.h
+c000000004C9025CB00000000000004D6
+t1284515275
+s1238
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Core/TTGlobalCore.h
+c000000004C9025CB00000000000005E6
+t1284515275
+s1510
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Core/TTGlobalCorePaths.h
+c000000004C9025CB0000000000000457
+t1284515275
+s1111
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Network/private/TTRequestLoader.h
+c000000004C8269370000000000000F9A
+t1283615031
+s3994
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/Build/Products/three20/Three20Network/private/TTURLRequestQueueInternal.h
+c000000004C8269370000000000000556
+t1283615031
+s1366
+i"Three20Network/TTURLRequestQueue.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTGlobalNetwork.h
+t1286378393
+s1405
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTModel.h
+t1286378393
+s3307
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTModelDelegate.h
+t1286378393
+s2216
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLCache.h
+t1286378393
+s6378
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLDataResponse.h
+t1286378393
+s867
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLImageResponse.h
+t1286378393
+s1076
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLRequest.h
+t1286378393
+s6768
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLRequestCachePolicy.h
+t1286378393
+s1231
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLRequestDelegate.h
+t1286378393
+s1731
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLRequestModel.h
+t1286378393
+s1697
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLRequestQueue.h
+t1286378393
+s3500
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTURLResponse.h
+t1286378393
+s1615
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/TTUserInfo.h
+t1286378393
+s1651
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/Three20Network.h
+t1286378393
+s1342
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/private/TTRequestLoader.h
+t1286378393
+s3994
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20/Three20Network/private/TTURLRequestQueueInternal.h
+t1286378393
+s1366
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/libThree20Network.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTGlobalNetwork.o
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTModel.o
+t1284515285
+s16440
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTRequestLoader.o
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLCache.o
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLDataResponse.o
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLImageResponse.o
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequest.o
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestModel.o
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestQueue.o
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTUserInfo.o
+t1284515284
+s11844
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/Three20Network.LinkFileList
+c000000004C9025D20000000000000634
+t1284515282
+s1588
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Script-6E645F091187AD0E00F08CB1.sh
+c000000004C9025D20000000000000026
+t1284515282
+s38
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTGlobalNetwork.h
+c000000004CAC91E2000000000000057D
+t1286377954
+s1405
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTModel.h
+c000000004CAC91E20000000000000CEB
+t1286377954
+s3307
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTModelDelegate.h
+c000000004CAC91E200000000000008A8
+t1286377954
+s2216
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTRequestLoader.h
+c000000004CAC91E20000000000000F9A
+t1286377954
+s3994
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h
+c000000004CAC91E200000000000018EA
+t1286377954
+s6378
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLDataResponse.h
+c000000004CAC91E20000000000000363
+t1286377954
+s867
+i"Three20Network/TTURLResponse.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h
+c000000004CAC91E20000000000000434
+t1286377954
+s1076
+i"Three20Network/TTURLResponse.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequest.h
+c000000004CAC91E20000000000001A70
+t1286377954
+s6768
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestCachePolicy.h
+c000000004CAC91E200000000000004CF
+t1286377954
+s1231
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestDelegate.h
+c000000004CAC91E200000000000006C3
+t1286377954
+s1731
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestModel.h
+c000000004CAC91E200000000000006A1
+t1286377954
+s1697
+i"Three20Network/TTModel.h"
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h
+c000000004CAC91E20000000000000DAC
+t1286377954
+s3500
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueueInternal.h
+c000000004CAC91E20000000000000556
+t1286377954
+s1366
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h
+c000000004CAC91E2000000000000064F
+t1286377954
+s1615
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTUserInfo.h
+c000000004CAC91E20000000000000673
+t1286377954
+s1651
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/Three20Network.h
+c000000004CAC91E2000000000000053E
+t1286377954
+s1342
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/Three20Network_Prefix.pch
+c000000004C6FE59000000000000000A1
+t1282401680
+s161
+i<Foundation/Foundation.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m
+c000000004C6FE5900000000000000695
+t1282401680
+s1685
+i"Three20Network/TTGlobalNetwork.h"
+i"Three20Core/TTDebug.h"
+i<UIKit/UIKit.h>
+i<pthread.h>
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTModel.m
+c000000004C6FE5900000000000001522
+t1282401680
+s5410
+i"Three20Network/TTModel.h"
+i"Three20Core/TTGlobalCore.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+i"Three20Core/NSArrayAdditions.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m
+c000000004C6FE5900000000000003719
+t1282401680
+s14105
+i"Three20Network/TTRequestLoader.h"
+i"Three20Network/TTGlobalNetwork.h"
+i"Three20Network/TTURLRequest.h"
+i"Three20Network/TTURLRequestDelegate.h"
+i"Three20Network/TTURLRequestQueue.h"
+i"Three20Network/TTURLResponse.h"
+i"Three20Network/private/TTURLRequestQueueInternal.h"
+i"Three20Core/NSObjectAdditions.h"
+i"Three20Core/TTDebug.h"
+i"Three20Core/TTDebugFlags.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m
+c000000004C6FE59000000000000057D0
+t1282401680
+s22480
+i"Three20Network/TTURLCache.h"
+i"Three20Network/TTGlobalNetwork.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+i"Three20Core/TTGlobalCorePaths.h"
+i"Three20Core/TTDebug.h"
+i"Three20Core/TTDebugFlags.h"
+i"Three20Core/NSStringAdditions.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m
+c000000004C6FE5900000000000000768
+t1282401680
+s1896
+i"Three20Network/TTURLDataResponse.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+i"Three20Core/TTDebug.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m
+c000000004C6FE5900000000000000CA8
+t1282401680
+s3240
+i"Three20Network/TTURLImageResponse.h"
+i"Three20Network/TTURLRequest.h"
+i"Three20Network/TTURLCache.h"
+i"Three20Core/TTDebug.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m
+c000000004C6FE5900000000000002DFA
+t1282401680
+s11770
+i"Three20Network/TTURLRequest.h"
+i"Three20Network/TTGlobalNetwork.h"
+i"Three20Network/TTURLResponse.h"
+i"Three20Network/TTURLRequestQueue.h"
+i"Three20Core/TTGlobalCore.h"
+i"Three20Core/TTDebug.h"
+i"Three20Core/TTDebugFlags.h"
+i"Three20Core/NSStringAdditions.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m
+c000000004C6FE590000000000000128D
+t1282401680
+s4749
+i"Three20Network/TTURLRequestModel.h"
+i"Three20Network/TTURLRequest.h"
+i"Three20Network/TTURLRequestQueue.h"
+i"Three20Network/TTURLCache.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m
+c000000004C6FE5900000000000005999
+t1282401680
+s22937
+i"Three20Network/TTURLRequestQueue.h"
+i"Three20Network/TTGlobalNetwork.h"
+i"Three20Network/TTURLRequest.h"
+i"Three20Network/TTURLRequestDelegate.h"
+i"Three20Network/TTUserInfo.h"
+i"Three20Network/TTURLResponse.h"
+i"Three20Network/TTURLCache.h"
+i"Three20Network/private/TTRequestLoader.h"
+i"Three20Core/TTGlobalCore.h"
+i"Three20Core/TTGlobalCorePaths.h"
+i"Three20Core/TTDebugFlags.h"
+i"Three20Core/TTDebug.h"
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTUserInfo.m
+c000000004C6FE5900000000000000951
+t1282401680
+s2385
+i"Three20Network/TTUserInfo.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+
+N/var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch.gch
+t1284515284
+s41740272
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies306208082#306208082#0(0"0(0#1#0"4659999488#0"0#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTGlobalNetwork.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208084.736639
+e306208084.900553
+r0
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTGlobalNetwork.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:22:24: error: UIKit/UIKit.h: No such file or directory
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m: In function 'TTNetworkRequestStarted':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:34: error: 'UIApplication' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:34: error: (Each undeclared identifier is reported only once
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:34: error: for each function it appears in.)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m: In function 'TTNetworkRequestStopped':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:52: error: 'UIApplication' undeclared (first use in this function)
+lSLF07#2@95"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m306208084#306208084#0(991"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:22:24: error: UIKit/UIKit.h: No such file or directory/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m: In function 'TTNetworkRequestStarted':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:34: error: 'UIApplication' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:34: error: (Each undeclared identifier is reported only once/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:34: error: for each function it appears in.)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m: In function 'TTNetworkRequestStopped':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m:52: error: 'UIApplication' undeclared (first use in this function)3(4@40"UIKit/UIKit.h: No such file or directory306208084#0#143#0(6@87"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m304094480#22#0#22#0#28"*: No such file or directory0(4@55"'UIApplication' undeclared (first use in this function)306208084#271#155#0(6@87"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m304094480#34#0#34#0#43"'*' undeclared (first use in this function)0(4@55"'UIApplication' undeclared (first use in this function)306208084#836#155#0(6@87"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m304094480#52#0#52#0#43"'*' undeclared (first use in this function)0(0#0#87"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m4661386880#2129"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTGlobalNetwork.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTGlobalNetwork.o1#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTModel.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208084.900865
+e306208085.068840
+r1
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTModel.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTModel.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTModel.m306208084#306208085#0(0"0(0#0#79"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTModel.m4646581008#2113"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTModel.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTModel.o0#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTRequestLoader.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208084.922806
+e306208085.142676
+r0
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTRequestLoader.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m:23:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h:18:24: error: UIKit/UIKit.h: No such file or directory
+lSLF07#2@95"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m306208084#306208085#0(259"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m:23:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h:18:24: error: UIKit/UIKit.h: No such file or directory1(4@40"UIKit/UIKit.h: No such file or directory306208084#114#145#2(7@109"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m306208084#18446744073709551615#0#0(6@87"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m304094480#23#0#23#0#0"0(13@133"UIKit/UIKit.h: No such file or directory in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h306208084#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h304094480#18#0#18#0#0"0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h304094480#18#0#18#0#28"*: No such file or directory0(0#0#87"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m4660006592#2129"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTRequestLoader.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTRequestLoader.o1#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLCache.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208085.069388
+e306208085.224271
+r0
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLCache.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:17:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:18:24: error: UIKit/UIKit.h: No such file or directory
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:17:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:169: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:181: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache initWithName:]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:76: error: 'UIApplicationDidReceiveMemoryWarningNotification' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:76: error: (Each undeclared identifier is reported only once
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:76: error: for each function it appears in.)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache dealloc]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:96: error: 'UIApplicationDidReceiveMemoryWarningNotification' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache expireImagesFromMemory]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:187: error: 'UIImage' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:187: error: 'image' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: At top level:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:202: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache storeImage:forURL:force:]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:204: error: request for member 'size' in something not a structure or union
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:204: error: request for member 'size' in something not a structure or union
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: At top level:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:246: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache loadImageFromBundle:]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:248: error: 'UIImage' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:249: warning: control reaches end of non-void function
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: At top level:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:253: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache loadImageFromDocuments:]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:256: error: 'UIImage' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:257: warning: control reaches end of non-void function
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache imageForURL:fromDisk:]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:425: error: 'UIImage' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:425: error: 'image' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:439: warning: control reaches end of non-void function
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: At top level:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:466: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:512: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache storeTemporaryImage:toDisk:]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:516: warning: implicit declaration of function 'UIImagePNGRepresentation'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:516: warning: initialization makes pointer from integer without a cast
+lSLF07#2@90"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m306208085#306208085#0(5243"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:17:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:18:24: error: UIKit/UIKit.h: No such file or directoryIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:17:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:169: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:181: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache initWithName:]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:76: error: 'UIApplicationDidReceiveMemoryWarningNotification' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:76: error: (Each undeclared identifier is reported only once/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:76: error: for each function it appears in.)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache dealloc]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:96: error: 'UIApplicationDidReceiveMemoryWarningNotification' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache expireImagesFromMemory]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:187: error: 'UIImage' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:187: error: 'image' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: At top level:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:202: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache storeImage:forURL:force:]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:204: error: request for member 'size' in something not a structure or union/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:204: error: request for member 'size' in something not a structure or union/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: At top level:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:246: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache loadImageFromBundle:]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:248: error: 'UIImage' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:249: warning: control reaches end of non-void function/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: At top level:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:253: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache loadImageFromDocuments:]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:256: error: 'UIImage' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:257: warning: control reaches end of non-void function/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache imageForURL:fromDisk:]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:425: error: 'UIImage' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:425: error: 'image' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:439: warning: control reaches end of non-void function/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: At top level:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:466: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:512: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m: In function '-[TTURLCache storeTemporaryImage:toDisk:]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:516: warning: implicit declaration of function 'UIImagePNGRepresentation'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m:516: warning: initialization makes pointer from integer without a cast27(4@40"UIKit/UIKit.h: No such file or directory306208085#109#138#2(7@104"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#17#0#17#0#0"0(13@126"UIKit/UIKit.h: No such file or directory in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#18#0#18#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#18#0#18#0#28"*: No such file or directory0(4@29"Expected ')' before 'UIImage'306208085#356#125#2(7@104"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#17#0#17#0#0"0(13@115"Expected ')' before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#169#0#169#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#169#0#169#0#19"expected * before *0(4@29"Expected ')' before 'UIImage'306208085#481#125#2(7@104"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#17#0#17#0#0"0(13@115"Expected ')' before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#181#0#181#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#181#0#181#0#19"expected * before *0(4@90"'UIApplicationDidReceiveMemoryWarningNotification' undeclared (first use in this function)306208085#733#185#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#76#0#76#0#43"'*' undeclared (first use in this function)0(4@90"'UIApplicationDidReceiveMemoryWarningNotification' undeclared (first use in this function)306208085#1311#185#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#96#0#96#0#43"'*' undeclared (first use in this function)0(4@49"'UIImage' undeclared (first use in this function)306208085#1632#145#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#187#0#187#0#43"'*' undeclared (first use in this function)0(4@47"'image' undeclared (first use in this function)306208085#1777#143#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#187#0#187#0#43"'*' undeclared (first use in this function)0(23@13"At top level:306208085#1920#98#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#0#0#0#0#0"0(4@29"Expected ')' before 'UIImage'306208085#2018#125#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#202#0#202#0#19"expected * before *0(4@63"Request for member 'size' in something not a structure or union306208085#2281#159#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#204#0#204#0#0"0(4@63"Request for member 'size' in something not a structure or union306208085#2440#159#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#204#0#204#0#0"0(23@13"At top level:306208085#2599#98#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#0#0#0#0#0"0(4@29"Expected ')' before 'UIImage'306208085#2697#125#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#246#0#246#0#19"expected * before *0(4@49"'UIImage' undeclared (first use in this function)306208085#2956#145#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#248#0#248#0#43"'*' undeclared (first use in this function)0(22@40"Control reaches end of non-void function306208085#3101#138#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#249#0#249#0#40"control reaches end of non-void function0(23@13"At top level:306208085#3239#98#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#0#0#0#0#0"0(4@29"Expected ')' before 'UIImage'306208085#3337#125#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#253#0#253#0#19"expected * before *0(4@49"'UIImage' undeclared (first use in this function)306208085#3599#145#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#256#0#256#0#43"'*' undeclared (first use in this function)0(22@40"Control reaches end of non-void function306208085#3744#138#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#257#0#257#0#40"control reaches end of non-void function0(4@49"'UIImage' undeclared (first use in this function)306208085#4017#145#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#425#0#425#0#43"'*' undeclared (first use in this function)0(4@47"'image' undeclared (first use in this function)306208085#4162#143#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#425#0#425#0#43"'*' undeclared (first use in this function)0(22@40"Control reaches end of non-void function306208085#4305#138#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#439#0#439#0#40"control reaches end of non-void function0(23@13"At top level:306208085#4443#98#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#0#0#0#0#0"0(4@29"Expected ')' before 'UIImage'306208085#4541#125#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#466#0#466#0#19"expected * before *0(4@29"Expected ')' before 'UIImage'306208085#4666#125#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#512#0#512#0#19"expected * before *0(22@59"Implicit declaration of function 'UIImagePNGRepresentation'306208085#4932#157#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#516#0#516#0#36"implicit declaration of function '*'0(22@56"Initialization makes pointer from integer without a cast306208085#5089#154#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m304094480#516#0#516#0#0"0(0#0#82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m4659300960#2119"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLCache.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLCache.o1#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLDataResponse.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208085.143282
+e306208085.273460
+r0
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLDataResponse.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLDataResponse.h:18,
+o                 from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m:17:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h:18:24: error: UIKit/UIKit.h: No such file or directory
+lSLF07#2@97"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m306208085#306208085#0(373"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLDataResponse.h:18,                 from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m:17:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h:18:24: error: UIKit/UIKit.h: No such file or directory1(4@40"UIKit/UIKit.h: No such file or directory306208085#232#141#3(7@111"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m304094480#17#0#17#0#0"0(7@111"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLDataResponse.h306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLDataResponse.h304094480#18#0#18#0#0"0(13@129"UIKit/UIKit.h: No such file or directory in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h306208085#18446744073709551615#0#0(6@85"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h304094480#18#0#18#0#0"0(6@85"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h304094480#18#0#18#0#28"*: No such file or directory0(0#0#89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m4661439040#2133"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLDataResponse.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLDataResponse.o1#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLImageResponse.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208085.224505
+e306208085.355056
+r0
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLImageResponse.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h:18,
+o                 from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:17:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h:18:24: error: UIKit/UIKit.h: No such file or directory
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:17:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h:28: error: expected specifier-qualifier-list before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h:31: error: expected specifier-qualifier-list before 'UIImage'
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:21:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:169: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:181: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:32: error: no declaration of property 'image' found in the interface
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m: In function '-[TTURLImageResponse dealloc]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:37: error: '_image' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:37: error: (Each undeclared identifier is reported only once
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:37: error: for each function it appears in.)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m: In function '-[TTURLImageResponse request:processResponse:data:]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:52: error: 'UIImage' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:54: error: '_image' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:63: error: 'image' undeclared (first use in this function)
+lSLF07#2@98"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m306208085#306208085#0(2513"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h:18,                 from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:17:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h:18:24: error: UIKit/UIKit.h: No such file or directoryIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:17:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h:28: error: expected specifier-qualifier-list before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h:31: error: expected specifier-qualifier-list before 'UIImage'In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:21:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:169: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:181: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:32: error: no declaration of property 'image' found in the interface/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m: In function '-[TTURLImageResponse dealloc]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:37: error: '_image' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:37: error: (Each undeclared identifier is reported only once/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:37: error: for each function it appears in.)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m: In function '-[TTURLImageResponse request:processResponse:data:]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:52: error: 'UIImage' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:54: error: '_image' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m:63: error: 'image' undeclared (first use in this function)10(4@40"UIKit/UIKit.h: No such file or directory306208085#234#141#3(7@112"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m306208085#18446744073709551615#0#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#17#0#17#0#0"0(7@112"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h306208085#18446744073709551615#0#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h304094480#18#0#18#0#0"0(13@129"UIKit/UIKit.h: No such file or directory in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h306208085#18446744073709551615#0#0(6@85"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h304094480#18#0#18#0#0"0(6@85"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h304094480#18#0#18#0#28"*: No such file or directory0(4@50"Expected specifier-qualifier-list before 'UIImage'306208085#492#153#2(7@112"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m306208085#18446744073709551615#0#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#17#0#17#0#0"0(13@144"Expected specifier-qualifier-list before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h306208085#18446744073709551615#0#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h304094480#28#0#28#0#0"0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h304094480#28#0#28#0#19"expected * before *0(4@50"Expected specifier-qualifier-list before 'UIImage'306208085#645#153#2(7@112"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m306208085#18446744073709551615#0#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#17#0#17#0#0"0(13@144"Expected specifier-qualifier-list before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h306208085#18446744073709551615#0#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h304094480#31#0#31#0#0"0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLImageResponse.h304094480#31#0#31#0#19"expected * before *0(4@29"Expected ')' before 'UIImage'306208085#915#125#2(7@112"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m306208085#18446744073709551615#0#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#21#0#21#0#0"0(13@115"Expected ')' before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#169#0#169#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#169#0#169#0#19"expected * before *0(4@29"Expected ')' before 'UIImage'306208085#1040#125#2(7@112"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m306208085#18446744073709551615#0#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#21#0#21#0#0"0(13@115"Expected ')' before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#181#0#181#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#181#0#181#0#19"expected * before *0(4@57"No declaration of property 'image' found in the interface306208085#1165#160#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#32#0#32#0#0"0(4@48"'_image' undeclared (first use in this function)306208085#1462#151#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#37#0#37#0#43"'*' undeclared (first use in this function)0(4@49"'UIImage' undeclared (first use in this function)306208085#2060#152#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#52#0#52#0#43"'*' undeclared (first use in this function)0(4@48"'_image' undeclared (first use in this function)306208085#2212#151#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#54#0#54#0#43"'*' undeclared (first use in this function)0(4@47"'image' undeclared (first use in this function)306208085#2363#150#0(6@90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m304094480#63#0#63#0#43"'*' undeclared (first use in this function)0(0#0#90"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m4670317328#2135"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLImageResponse.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLImageResponse.o1#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequest.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208085.273870
+e306208085.455258
+r0
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequest.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:21:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h:18:24: error: UIKit/UIKit.h: No such file or directory
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m: In function '-[TTURLRequest generatePostBody]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:162: error: 'UIImage' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:162: error: (Each undeclared identifier is reported only once
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:162: error: for each function it appears in.)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:174: error: 'image' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:176: warning: implicit declaration of function 'UIImageJPEGRepresentation'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:176: warning: initialization makes pointer from integer without a cast
+o{standard input}:678:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000007$pb"
+o{standard input}:678:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
+o{standard input}:672:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000007$pb"
+o{standard input}:672:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression
+o{standard input}:661:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000007$pb"
+o{standard input}:661:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
+o{standard input}:650:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000007$pb"
+o{standard input}:650:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression
+o{standard input}:640:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000007$pb"
+o{standard input}:640:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression
+o{standard input}:629:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000007$pb"
+o{standard input}:629:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
+o{standard input}:623:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000007$pb"
+o{standard input}:623:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression
+o{standard input}:620:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_1" minus "L00000000007$pb"
+o{standard input}:620:symbol: "L_OBJC_CLASS_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:611:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_14" minus "L00000000007$pb"
+o{standard input}:611:symbol: "L_OBJC_SELECTOR_REFERENCES_14" can't be undefined in a subtraction expression
+o{standard input}:600:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000007$pb"
+o{standard input}:600:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression
+o{standard input}:591:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000007$pb"
+o{standard input}:591:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression
+o{standard input}:577:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000007$pb"
+o{standard input}:577:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression
+o{standard input}:567:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000007$pb"
+o{standard input}:567:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:560:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000007$pb"
+o{standard input}:560:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression
+o{standard input}:554:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000007$pb"
+o{standard input}:554:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression
+o{standard input}:547:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000007$pb"
+o{standard input}:547:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+o{standard input}:544:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000007$pb"
+o{standard input}:544:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:533:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000007$pb"
+o{standard input}:533:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
+o{standard input}:521:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000007$pb"
+o{standard input}:521:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
+o{standard input}:454:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000006$pb"
+o{standard input}:454:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
+o{standard input}:448:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_1" minus "L00000000006$pb"
+o{standard input}:448:symbol: "L_OBJC_CLASS_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:408:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000005$pb"
+o{standard input}:408:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:404:non-relocatable subtraction expression, "L_OBJC_CLASS_TTURLRequest" minus "L00000000005$pb"
+o{standard input}:404:symbol: "L_OBJC_CLASS_TTURLRequest" can't be undefined in a subtraction expression
+o{standard input}:394:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:394:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:383:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:383:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:372:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:372:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:361:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:361:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:351:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:351:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:340:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:340:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:329:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:329:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:318:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:318:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:307:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:307:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:296:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:296:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:286:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:286:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:275:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"
+o{standard input}:275:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:237:non-relocatable subtraction expression, "LC2" minus "L00000000004$pb"
+o{standard input}:237:symbol: "LC2" can't be undefined in a subtraction expression
+o{standard input}:219:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000004$pb"
+o{standard input}:219:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:215:non-relocatable subtraction expression, "L_OBJC_CLASS_TTURLRequest" minus "L00000000004$pb"
+o{standard input}:215:symbol: "L_OBJC_CLASS_TTURLRequest" can't be undefined in a subtraction expression
+o{standard input}:180:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000003$pb"
+o{standard input}:180:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
+o{standard input}:165:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000003$pb"
+o{standard input}:165:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
+o{standard input}:155:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000003$pb"
+o{standard input}:155:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:127:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"
+o{standard input}:127:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:117:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
+o{standard input}:117:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+o{standard input}:111:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000002$pb"
+o{standard input}:111:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+o{standard input}:108:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000002$pb"
+o{standard input}:108:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression
+o{standard input}:81:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
+o{standard input}:81:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:75:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
+o{standard input}:75:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:69:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+o{standard input}:69:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+o{standard input}:66:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000001$pb"
+o{standard input}:66:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_0
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_TTURLRequest
+o{standard input}:unknown:Undefined local symbol LC2
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_1
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_2
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_18
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_11
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_13
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_14
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_15
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_16
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_12
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_17
+lSLF07#2@92"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m306208085#306208085#0(13945"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:21:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h:18:24: error: UIKit/UIKit.h: No such file or directory/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m: In function '-[TTURLRequest generatePostBody]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:162: error: 'UIImage' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:162: error: (Each undeclared identifier is reported only once/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:162: error: for each function it appears in.)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:174: error: 'image' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:176: warning: implicit declaration of function 'UIImageJPEGRepresentation'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m:176: warning: initialization makes pointer from integer without a cast{standard input}:678:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000007$pb"{standard input}:678:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:672:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000007$pb"{standard input}:672:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression{standard input}:661:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000007$pb"{standard input}:661:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:650:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000007$pb"{standard input}:650:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression{standard input}:640:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000007$pb"{standard input}:640:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression{standard input}:629:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000007$pb"{standard input}:629:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:623:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000007$pb"{standard input}:623:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression{standard input}:620:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_1" minus "L00000000007$pb"{standard input}:620:symbol: "L_OBJC_CLASS_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:611:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_14" minus "L00000000007$pb"{standard input}:611:symbol: "L_OBJC_SELECTOR_REFERENCES_14" can't be undefined in a subtraction expression{standard input}:600:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000007$pb"{standard input}:600:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression{standard input}:591:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000007$pb"{standard input}:591:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression{standard input}:577:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000007$pb"{standard input}:577:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression{standard input}:567:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000007$pb"{standard input}:567:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:560:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000007$pb"{standard input}:560:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression{standard input}:554:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000007$pb"{standard input}:554:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression{standard input}:547:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000007$pb"{standard input}:547:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:544:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000007$pb"{standard input}:544:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:533:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000007$pb"{standard input}:533:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:521:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000007$pb"{standard input}:521:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:454:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000006$pb"{standard input}:454:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:448:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_1" minus "L00000000006$pb"{standard input}:448:symbol: "L_OBJC_CLASS_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:408:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000005$pb"{standard input}:408:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:404:non-relocatable subtraction expression, "L_OBJC_CLASS_TTURLRequest" minus "L00000000005$pb"{standard input}:404:symbol: "L_OBJC_CLASS_TTURLRequest" can't be undefined in a subtraction expression{standard input}:394:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:394:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:383:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:383:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:372:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:372:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:361:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:361:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:351:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:351:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:340:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:340:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:329:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:329:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:318:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:318:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:307:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:307:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:296:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:296:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:286:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:286:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:275:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000005$pb"{standard input}:275:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:237:non-relocatable subtraction expression, "LC2" minus "L00000000004$pb"{standard input}:237:symbol: "LC2" can't be undefined in a subtraction expression{standard input}:219:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000004$pb"{standard input}:219:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:215:non-relocatable subtraction expression, "L_OBJC_CLASS_TTURLRequest" minus "L00000000004$pb"{standard input}:215:symbol: "L_OBJC_CLASS_TTURLRequest" can't be undefined in a subtraction expression{standard input}:180:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000003$pb"{standard input}:180:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:165:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000003$pb"{standard input}:165:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:155:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000003$pb"{standard input}:155:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:127:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"{standard input}:127:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:117:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"{standard input}:117:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:111:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000002$pb"{standard input}:111:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:108:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000002$pb"{standard input}:108:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:81:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"{standard input}:81:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:75:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:75:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:69:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"{standard input}:69:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:66:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000001$pb"{standard input}:66:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_TTURLRequest{standard input}:unknown:Undefined local symbol LC2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_18{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_11{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_13{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_14{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_15{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_16{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_12{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_175(4@40"UIKit/UIKit.h: No such file or directory306208085#111#141#2(7@106"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m306208085#18446744073709551615#0#0(6@84"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m304094480#21#0#21#0#0"0(13@129"UIKit/UIKit.h: No such file or directory in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h306208085#18446744073709551615#0#0(6@85"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h304094480#18#0#18#0#0"0(6@85"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLResponse.h304094480#18#0#18#0#28"*: No such file or directory0(4@49"'UIImage' undeclared (first use in this function)306208085#386#147#0(6@84"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m304094480#162#0#162#0#43"'*' undeclared (first use in this function)0(4@47"'image' undeclared (first use in this function)306208085#811#145#0(6@84"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m304094480#174#0#174#0#43"'*' undeclared (first use in this function)0(22@60"Implicit declaration of function 'UIImageJPEGRepresentation'306208085#956#160#0(6@84"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m304094480#176#0#176#0#36"implicit declaration of function '*'0(22@56"Initialization makes pointer from integer without a cast306208085#1116#156#0(6@84"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m304094480#176#0#176#0#0"0(0#0#84"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m4661936848#2123"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequest.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequest.o1#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestModel.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208085.355274
+e306208085.474249
+r0
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestModel.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m:21:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h:18:24: error: UIKit/UIKit.h: No such file or directory
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m:22:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:169: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:181: error: expected ')' before 'UIImage'
+lSLF07#2@97"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m306208085#306208085#0(627"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m:21:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h:18:24: error: UIKit/UIKit.h: No such file or directoryIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m:22:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:169: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:181: error: expected ')' before 'UIImage'3(4@40"UIKit/UIKit.h: No such file or directory306208085#116#145#2(7@111"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m304094480#21#0#21#0#0"0(13@133"UIKit/UIKit.h: No such file or directory in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h304094480#18#0#18#0#0"0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h304094480#18#0#18#0#28"*: No such file or directory0(4@29"Expected ')' before 'UIImage'306208085#377#125#2(7@111"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m304094480#22#0#22#0#0"0(13@115"Expected ')' before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#169#0#169#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#169#0#169#0#19"expected * before *0(4@29"Expected ')' before 'UIImage'306208085#502#125#2(7@111"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m304094480#22#0#22#0#0"0(13@115"Expected ')' before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#181#0#181#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#181#0#181#0#19"expected * before *0(0#0#89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m4661733456#2133"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestModel.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestModel.o1#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestQueue.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208085.455507
+e306208085.588110
+r0
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestQueue.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:17:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h:18:24: error: UIKit/UIKit.h: No such file or directory
+oIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:25:
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:169: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:181: error: expected ')' before 'UIImage'
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m: In function '-[TTURLRequestQueue loadFromCache:cacheKey:expires:fromDisk:data:error:timestamp:]':
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:154: error: 'UIImage' undeclared (first use in this function)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:154: error: (Each undeclared identifier is reported only once
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:154: error: for each function it appears in.)
+o/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:154: error: 'image' undeclared (first use in this function)
+lSLF07#2@97"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m306208085#306208085#0(1406"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:17:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h:18:24: error: UIKit/UIKit.h: No such file or directoryIn file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:25:/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:169: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h:181: error: expected ')' before 'UIImage'/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m: In function '-[TTURLRequestQueue loadFromCache:cacheKey:expires:fromDisk:data:error:timestamp:]':/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:154: error: 'UIImage' undeclared (first use in this function)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:154: error: (Each undeclared identifier is reported only once/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:154: error: for each function it appears in.)/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m:154: error: 'image' undeclared (first use in this function)5(4@40"UIKit/UIKit.h: No such file or directory306208085#116#145#2(7@111"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m304094480#17#0#17#0#0"0(13@133"UIKit/UIKit.h: No such file or directory in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h304094480#18#0#18#0#0"0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLRequestQueue.h304094480#18#0#18#0#28"*: No such file or directory0(4@29"Expected ')' before 'UIImage'306208085#377#125#2(7@111"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m304094480#25#0#25#0#0"0(13@115"Expected ')' before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#169#0#169#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#169#0#169#0#19"expected * before *0(4@29"Expected ')' before 'UIImage'306208085#502#125#2(7@111"In file included from /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m306208085#18446744073709551615#0#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m304094480#25#0#25#0#0"0(13@115"Expected ')' before 'UIImage' in /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h306208085#18446744073709551615#0#0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#181#0#181#0#0"0(6@82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/TTURLCache.h304094480#181#0#181#0#19"expected * before *0(4@49"'UIImage' undeclared (first use in this function)306208085#816#152#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m304094480#154#0#154#0#43"'*' undeclared (first use in this function)0(4@47"'image' undeclared (first use in this function)306208085#1256#150#0(6@89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m304094480#154#0#154#0#43"'*' undeclared (first use in this function)0(0#0#89"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m4666627888#2133"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTURLRequestQueue.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTURLRequestQueue.o1#
+
+CCompileC ../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTUserInfo.o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTUserInfo.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208084.737576
+e306208084.922602
+r1
+xCompileC
+x../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTUserInfo.o
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTUserInfo.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTUserInfo.m306208084#306208084#0(0"0(0#0#82"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTUserInfo.m4663748864#2119"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -include /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Sources/TTUserInfo.m -o /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/TTUserInfo.o0#
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTGlobalNetwork.h Headers/TTGlobalNetwork.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTModel.h Headers/TTModel.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTModelDelegate.h Headers/TTModelDelegate.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLCache.h Headers/TTURLCache.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLDataResponse.h Headers/TTURLDataResponse.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLImageResponse.h Headers/TTURLImageResponse.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequest.h Headers/TTURLRequest.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequestCachePolicy.h Headers/TTURLRequestCachePolicy.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequestDelegate.h Headers/TTURLRequestDelegate.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequestModel.h Headers/TTURLRequestModel.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLRequestQueue.h Headers/TTURLRequestQueue.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTURLResponse.h Headers/TTURLResponse.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/TTUserInfo.h Headers/TTUserInfo.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/Three20Network.h Headers/Three20Network.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/private/TTRequestLoader.h Headers/TTRequestLoader.h
+r0
+
+CCpHeader ../../Build/Products/Debug/../three20/Three20Network/private/TTURLRequestQueueInternal.h Headers/TTURLRequestQueueInternal.h
+r0
+
+CLibtool /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/libThree20Network.a normal i386
+r0
+
+CPhaseScriptExecution "Protect Copied Headers" /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Script-6E645F091187AD0E00F08CB1.sh
+s306208082.651942
+e306208082.672154
+r1
+xPhaseScriptExecution
+xProtect Copied Headers
+x/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Script-6E645F091187AD0E00F08CB1.sh
+lSLF07#2@48"Run custom shell script 'Protect Copied Headers'306208082#306208082#0(0"0(0#0#0"4665799824#18315"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv ACTION build    setenv ADDRESSBOOKUI_FX "-framework AddressBookUI"    setenv ADDRESSBOOK_FX "-framework AddressBook"    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER rustyzarse    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv AVFOUNDATION_FX "-framework AVFoundation"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products    setenv BUILD_LIBRARY_VERSION 1.0    setenv BUILD_ROOT /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug    setenv CACHE_ROOT /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502    setenv CFNETWORK_FX "-framework CFNetwork"    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/libThree20Network.a    setenv CODE_SIGNING_ALLOWED NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug    setenv CONFIGURATION_TEMP_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv COREDATA_FX "-framework CoreData"    setenv COREFOUNDATION_FX "-framework CoreFoundation"    setenv COREGRAPHICS_FX "-framework CoreGraphics"    setenv CORELOCATION_FX "-framework CoreLocation"    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/Three20Network.dst    setenv DWARF_DSYM_FILE_NAME libThree20Network.a.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLE_EXTENSION a    setenv EXECUTABLE_NAME libThree20Network.a    setenv EXECUTABLE_PATH libThree20Network.a    setenv EXECUTABLE_PREFIX lib    setenv EXECUTABLE_SUFFIX .a    setenv FILE_LIST /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/FixedFiles    setenv FOUNDATION_FX "-framework Foundation"    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME libThree20Network.a    setenv GAMEKIT_FX "-framework GameKit"    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_SYMBOL_SEPARATION NO    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/Three20Network_Prefix.pch    setenv GCC_PREPROCESSOR_DEFINITIONS DEBUG    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_MISSING_NEWLINE YES    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_CHECK_SWITCH_STATEMENTS NO    setenv GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS YES    setenv GCC_WARN_SHADOW YES    setenv GCC_WARN_UNUSED_FUNCTION YES    setenv GCC_WARN_UNUSED_LABEL YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADERS_FOLDER_PATH /../three20/    setenv HEADER_SEARCH_PATHS "/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include /Developer/SDKs/MacOSX10.5.sdk/usr/include /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PREPROCESS NO    setenv INSTALL_DIR /tmp/Three20Network.dst/usr/local/lib    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER rustyzarse    setenv INSTALL_PATH /usr/local/lib    setenv INSTALL_ROOT /tmp/Three20Network.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug /Developer/SDKs/MacOSX10.5.sdk/usr/lib"    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal/i386/Three20Network.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE staticlib    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv MAPKIT_FX "-framework MapKit"    setenv MEDIAPLAYER_FX "-framework MediaPlayer"    setenv MESSAGEUI_FX "-framework MessageUI"    setenv MOBILECORESERVICES_FX "-framework MobileCoreServices"    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ALLLOAD -all_load    setenv OBJC_LIB -lobjc    setenv OBJC_LIBRARY -ObjC    setenv OBJECT_FILE_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Objects-normal    setenv OBJROOT /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build    setenv ONLY_ACTIVE_ARCH YES    setenv OPENGLES_FX "-framework OpenGLES"    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS -ObjC    setenv PACKAGE_TYPE com.apple.package-type.static-library    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH /../three20/Three20Network/private    setenv PRODUCT_NAME Three20Network    setenv PRODUCT_SETTINGS_PATH     setenv PRODUCT_TYPE com.apple.product-type.library.static    setenv PROFILING_CODE NO    setenv PROJECT Three20Network    setenv PROJECT_DERIVED_FILE_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/DerivedSources    setenv PROJECT_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv PROJECT_FILE_PATH /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Three20Network.xcodeproj    setenv PROJECT_NAME Three20Network    setenv PROJECT_TEMP_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build    setenv PUBLIC_HEADERS_FOLDER_PATH /../three20/Three20Network    setenv QUARTZCORE_FX "-framework QuartzCore"    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REPO_ROOT_PATH /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../..    setenv REZ_COLLECTOR_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/ResourceManagerResources    setenv REZ_EXECUTABLE YES    setenv REZ_OBJECTS_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug\" "    setenv ROOT_SOURCE_PATH /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../src    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_NAME macosx10.5    setenv SECURITY_FX "-framework Security"    setenv SED /usr/bin/sed    setenv SENTESTINGKIT_FX "-framework SenTestingKit"    setenv SEPARATE_STRIP YES    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/DerivedSources    setenv SHARED_PRECOMPS_DIR /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv SRCROOT /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STDLIB_HEADERS /usr/include    setenv STDLIB_LIBRARY /usr/lib    setenv STOREKIT_FX "-framework StoreKit"    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE debugging    setenv SYMBOL_REPOSITORY_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/SymbolRepositories    setenv SYMROOT /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products    setenv SYSTEMCONFIGURATION_FX "-framework SystemConfiguration"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME Three20Network    setenv TARGET_BUILD_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug    setenv TARGET_NAME Three20Network    setenv TARGET_TEMP_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build    setenv TEMP_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build    setenv TEMP_FILES_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build    setenv TEMP_FILE_DIR /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build    setenv TEMP_ROOT /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build    setenv UID 502    setenv UIKIT_FX "-framework UIKit"    setenv UNSTRIPPED_PRODUCT NO    setenv USER rustyzarse    setenv USER_APPS_DIR /Users/rustyzarse/Applications    setenv USER_LIBRARY_DIR /Users/rustyzarse/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSION_INFO_BUILDER rustyzarse    setenv VERSION_INFO_FILE Three20Network_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Three20Network  PROJECT:Three20Network-\""    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Script-6E645F091187AD0E00F08CB1.sh0#
+
+CProcessPCH /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch.gch Headers/Three20Network_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s306208082.672825
+e306208084.736287
+r1
+xProcessPCH
+x/var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch.gch
+xHeaders/Three20Network_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@44"Precompile Headers/Three20Network_Prefix.pch306208082#306208084#0(0"0(0#0#95"/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/Three20Network_Prefix.pch4666641392#1979"    cd /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-function -Wunused-label -Wunused-variable -Wshadow -Wnewline-eof -DDEBUG -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-generated-files.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-own-target-headers.hmap -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-all-target-headers.hmap -iquote /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/Three20Network-project-headers.hmap -F/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Products/Debug/../three20 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources/i386 -I/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/../../Build/Three20Network.build/Debug/Three20Network.build/DerivedSources -c /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20Network/Headers/Three20Network_Prefix.pch -o /var/folders/Cb/Cbsr2xQgGaKChGzuOtJMnk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Three20Network_Prefix-cxisylstsmzofgenayxnwwitsusl/Three20Network_Prefix.pch.gch0#
+
