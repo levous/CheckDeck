@@ -1,0 +1,58 @@
+TUnitTests
+v7
+r1
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20/../../Build/Products/Debug-iphonesimulator/UnitTests.octest
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20/../../Build/Products/Debug-iphonesimulator/UnitTests.octest/Info.plist
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20/../../Build/Three20.build/Debug-iphonesimulator/UnitTests.build/Script-EB9E6C6010B6A8F800DE563C.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rustyzarse/dev/ingeniousmed/three20/src/Three20/UnitTests/Resources/PropertyLists/UnitTests-Info.plist
+c000000004CAC91E2000000000000026E
+t1286377954
+s622
+
+N/Users/rustyzarse/dev/xcode projects/CheckDeck/three20/src/Three20/../../Build/Products/Debug-iphonesimulator/UnitTests.octest
+t2
+s0
+
+N/Users/rustyzarse/dev/xcode projects/CheckDeck/three20/src/Three20/../../Build/Products/Debug-iphonesimulator/UnitTests.octest/Info.plist
+t2
+s0
+
+N/Users/rustyzarse/dev/xcode projects/CheckDeck/three20/src/Three20/../../Build/Three20.build/Debug-iphonesimulator/UnitTests.build/Script-EB9E6C6010B6A8F800DE563C.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rustyzarse/dev/xcode projects/CheckDeck/three20/src/Three20/UnitTests/Resources/PropertyLists/UnitTests-Info.plist
+c000000004CAC91E2000000000000026E
+t1286377954
+s622
+
+CPhaseScriptExecution "Run Script" "/Users/rustyzarse/dev/xcode projects/CheckDeck/three20/src/Three20/../../Build/Three20.build/Debug-iphonesimulator/UnitTests.build/Script-EB9E6C6010B6A8F800DE563C.sh"
+r0
+
+CPhaseScriptExecution "Run Script" /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20/../../Build/Three20.build/Debug-iphonesimulator/UnitTests.build/Script-EB9E6C6010B6A8F800DE563C.sh
+r0
+
+CProcessInfoPlistFile "/Users/rustyzarse/dev/xcode projects/CheckDeck/three20/src/Three20/../../Build/Products/Debug-iphonesimulator/UnitTests.octest/Info.plist" "/Users/rustyzarse/dev/xcode projects/CheckDeck/three20/src/Three20/UnitTests/Resources/PropertyLists/UnitTests-Info.plist"
+r0
+
+CProcessInfoPlistFile /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20/../../Build/Products/Debug-iphonesimulator/UnitTests.octest/Info.plist /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20/UnitTests/Resources/PropertyLists/UnitTests-Info.plist
+r0
+
+CTouch "/Users/rustyzarse/dev/xcode projects/CheckDeck/three20/src/Three20/../../Build/Products/Debug-iphonesimulator/UnitTests.octest"
+r0
+
+CTouch /Users/rustyzarse/dev/ingeniousmed/three20/src/Three20/../../Build/Products/Debug-iphonesimulator/UnitTests.octest
+r0
+

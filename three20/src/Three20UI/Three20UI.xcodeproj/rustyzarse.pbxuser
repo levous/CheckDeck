@@ -1,0 +1,95 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = BEF31F390F352DF5000DE5D2 /* Three20UI */;
+		codeSenseManager = FBE456D41225823400EC1B76 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 305266339;
+			PBXWorkspaceStateSaveDate = 305266339;
+		};
+		perUserProjectItems = {
+			FB20BF181231FF4900D6525F /* PBXTextBookmark */ = FB20BF181231FF4900D6525F /* PBXTextBookmark */;
+			FBE457B51225884300EC1B76 /* PBXTextBookmark */ = FBE457B51225884300EC1B76 /* PBXTextBookmark */;
+		};
+		sourceControlManager = FBE456D31225823400EC1B76 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	6E6455571184D4C500F08CB1 /* UITabBarControllerAdditions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1859, 824}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 740}";
+		};
+	};
+	6E6456801184D4DA00F08CB1 /* UITabBarControllerAdditions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822.132, 3125}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 342}";
+		};
+	};
+	BEF31F390F352DF5000DE5D2 /* Three20UI */ = {
+		activeExec = 0;
+	};
+	EB9E6C6110B6A8F800DE563C /* UnitTests */ = {
+		activeExec = 0;
+	};
+	FB20BF181231FF4900D6525F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6E6456801184D4DA00F08CB1 /* UITabBarControllerAdditions.m */;
+		name = "UITabBarControllerAdditions.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 342;
+		vrLoc = 0;
+	};
+	FBE456D31225823400EC1B76 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	FBE456D41225823400EC1B76 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	FBE457B51225884300EC1B76 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6E6456801184D4DA00F08CB1 /* UITabBarControllerAdditions.m */;
+		name = "UITabBarControllerAdditions.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 342;
+		vrLoc = 0;
+	};
+}
