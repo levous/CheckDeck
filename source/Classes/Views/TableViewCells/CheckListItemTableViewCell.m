@@ -11,6 +11,7 @@
 
 @implementation CheckListItemTableViewCell
 @synthesize titleLabel, checkButton;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if ((self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) {
         // Initialization code
@@ -18,6 +19,30 @@
     return self;
 }
 
+#pragma mark -
+#pragma mark UI reuseIdentifier
+
+static NSString *reuseIdentifier_ = @"CheckListItemTableViewCell";
+
++ (NSString *)reuseIdentifier{
+	return reuseIdentifier_;
+}
+
+
+- (NSString *)reuseIdentifier{
+	return [[self class] reuseIdentifier];
+}
+
+#pragma mark -
+#pragma mark Properties
+
+- (UILabel *)textLabel{
+  return [self titleLabel];
+}
+
+
+#pragma mark -
+#pragma mark UI handlers
 
 - (void)checkButtonPressed:(id)sender{
   
@@ -29,6 +54,10 @@
 
     // Configure the view for the selected state
 }
+
+
+#pragma mark -
+#pragma mark cleanup
 
 
 - (void)dealloc {

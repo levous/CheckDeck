@@ -7,7 +7,8 @@
 //
 
 #import "CheckListTableViewController.h"
-
+#import "UITableViewCell+CustomNib.h"
+#import "CheckListItemTableViewCell.h"
 
 @implementation CheckListTableViewController
 @synthesize managedObjectContext;
@@ -98,11 +99,15 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[CheckListItemTableViewCell reuseIdentifier]];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+      cell = [UITableViewCell loadInstanceOfClass:[CheckListItemTableViewCell class] 
+                                     fromNibNamed:@"CheckListItemTableViewCell" 
+                                        withStyle:UITableViewStylePlain 
+                               andReuseIdentifier:[CheckListItemTableViewCell reuseIdentifier]];
+              
     }
   [self configureCell:cell atIndexPath:indexPath];
     // Configure the cell...
