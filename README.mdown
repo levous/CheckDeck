@@ -1,0 +1,11 @@
+CheckDeck - the COOLEST checklist app, ever...
+==============================================
+
+Dependencies
+------------
+
+CheckDeck uses the library project [LevousCore][levouscore-giturl] found on github.
+
+Clone the [LevousCore][levouscore-giturl] git repos parallel to this one ../Levous-iOS-Core/ 
+
+  [levouscore-giturl]: https://github.com/levous/Levous-iOS-Core  "LevousCore" 
