@@ -50,6 +50,7 @@
 		FBEAA7D912C3B90600168BD2 /* Carbon-Fiber-Thick-25.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7D812C3B90600168BD2 /* Carbon-Fiber-Thick-25.png */; };
 		FBEAA7E112C3B93700168BD2 /* Carbon-Fiber-Thick-12.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7E012C3B93700168BD2 /* Carbon-Fiber-Thick-12.png */; };
 		FBEAA7E912C3B99600168BD2 /* 15px-shadow-tile.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7E812C3B99600168BD2 /* 15px-shadow-tile.png */; };
+		FBEE736212C9377600352968 /* libLevousCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEE72ED12C9344500352968 /* libLevousCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,7 +205,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = FBEAA52012C3963100168BD2 /* LevousCore.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libLevousCore.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = LevousCore;
+		};
+		FBEE736A12C937D900352968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBEAA52012C3963100168BD2 /* LevousCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D /* LevousCore */;
 			remoteInfo = LevousCore;
 		};
 /* End PBXContainerItemProxy section */
@@ -288,6 +296,7 @@
 				FBCCBD9512730A0300157BC4 /* libThree20UINavigator.a in Frameworks */,
 				FBCCBDA612730A5F00157BC4 /* QuartzCore.framework in Frameworks */,
 				FBCCBE841273520100157BC4 /* CoreData.framework in Frameworks */,
+				FBEE736212C9377600352968 /* libLevousCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +606,7 @@
 				FBCCBE0D12734B9A00157BC4 /* PBXTargetDependency */,
 				FBCCBE0F12734B9A00157BC4 /* PBXTargetDependency */,
 				FBCCBE1112734B9A00157BC4 /* PBXTargetDependency */,
+				FBEE736B12C937D900352968 /* PBXTargetDependency */,
 			);
 			name = CheckDeck;
 			productName = CheckDeck;
@@ -855,6 +865,11 @@
 			isa = PBXTargetDependency;
 			name = Three20;
 			targetProxy = FBCCBE1012734B9A00157BC4 /* PBXContainerItemProxy */;
+		};
+		FBEE736B12C937D900352968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LevousCore;
+			targetProxy = FBEE736A12C937D900352968 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

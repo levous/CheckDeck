@@ -11,14 +11,8 @@
 
 @implementation CheckListItemTableViewCell
 
-+ (NSString *)cellIdentifier{
-  return @"CheckListItemTableViewCell";
-}
-- (NSString *)cellIdentifier{
-  return [CheckListItemTableViewCell cellIdentifier];
-}
+@synthesize titleLabel, checkButton, checkListItem;
 
-@synthesize titleLabel, checkButton;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if ((self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) {
         // Initialization code
@@ -30,6 +24,31 @@
   [[self contentView]setBackgroundColor:[UIColor yellowColor]];
 }
 
+
+#pragma mark -
+#pragma mark UI reuseIdentifier
+
+static NSString *reuseIdentifier_ = @"CheckListItemTableViewCell";
+
++ (NSString *)reuseIdentifier{
+	return reuseIdentifier_;
+}
+
+
+- (NSString *)reuseIdentifier{
+	return [[[self class] reuseIdentifier] copy];
+}
+
+#pragma mark -
+#pragma mark Properties
+
+- (UILabel *)textLabel{
+  return [self titleLabel];
+}
+
+
+#pragma mark -
+#pragma mark UI handlers
 
 - (void)checkButtonPressed:(id)sender{
   [UIView beginAnimations:@"checkTouch" context:nil];
@@ -52,6 +71,10 @@
 
     // Configure the view for the selected state
 }
+
+
+#pragma mark -
+#pragma mark cleanup
 
 
 - (void)dealloc {

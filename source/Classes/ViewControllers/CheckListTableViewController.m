@@ -109,9 +109,16 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[CheckListItemTableViewCell cellIdentifier]];
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[CheckListItemTableViewCell reuseIdentifier]];
     if (cell == nil) {
-      cell = [UITableViewCell loadInstanceOfClass:[CheckListItemTableViewCell class] fromNibNamed:@"CheckListItemTableViewCell" withStyle:[tableView style] andReuseIdentifier:[CheckListItemTableViewCell cellIdentifier]];
+      cell = [UITableViewCell loadInstanceOfClass:[CheckListItemTableViewCell class] 
+                                     fromNibNamed:@"CheckListItemTableViewCell" 
+                                        withStyle:[tableView style] 
+                               andReuseIdentifier:[CheckListItemTableViewCell reuseIdentifier]];
+
+
+    
     }
     [self configureCell:cell atIndexPath:indexPath];
     // Configure the cell...
