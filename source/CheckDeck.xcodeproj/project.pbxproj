@@ -22,13 +22,6 @@
 		FB4805A312787EAD003ADC47 /* CheckListItemGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48059F12787EAD003ADC47 /* CheckListItemGroup.m */; };
 		FB4805C512788049003ADC47 /* CheckListItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4805C412788049003ADC47 /* CheckListItem+Additions.m */; };
 		FB6245E1127397BD00F90B52 /* CDCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6245E0127397BD00F90B52 /* CDCoreDataManager.m */; };
-		FB6246331273A8A500F90B52 /* NSMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6246261273A8A500F90B52 /* NSMutableArray.m */; };
-		FB6246341273A8A500F90B52 /* NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6246281273A8A500F90B52 /* NSObject.m */; };
-		FB6246351273A8A500F90B52 /* NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62462A1273A8A500F90B52 /* NSString.m */; };
-		FB6246361273A8A500F90B52 /* SDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62462C1273A8A500F90B52 /* SDTableViewController.m */; };
-		FB6246371273A8A500F90B52 /* SimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62462E1273A8A500F90B52 /* SimpleModel.m */; };
-		FB6246381273A8A500F90B52 /* SimpleStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6246301273A8A500F90B52 /* SimpleStore.m */; };
-		FB6246391273A8A500F90B52 /* UIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6246321273A8A500F90B52 /* UIApplication.m */; };
 		FBCCBD8F12730A0000157BC4 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD4B127309DE00157BC4 /* libThree20.a */; };
 		FBCCBD9012730A0000157BC4 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD6B127309F000157BC4 /* libThree20Core.a */; };
 		FBCCBD9112730A0000157BC4 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD71127309F000157BC4 /* libThree20Network.a */; };
@@ -47,10 +40,16 @@
 		FBCCBE81127351C700157BC4 /* CheckListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBE7F127351C700157BC4 /* CheckListTableViewController.m */; };
 		FBCCBE82127351C700157BC4 /* CheckListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBE80127351C700157BC4 /* CheckListTableViewController.xib */; };
 		FBCCBE841273520100157BC4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBE831273520100157BC4 /* CoreData.framework */; };
-		FBCCBEA6127354E900157BC4 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBEA5127354E900157BC4 /* CoreDataManager.m */; };
 		FBCCBEAD127355D000157BC4 /* CDConstants.h in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBEAC127355D000157BC4 /* CDConstants.h */; };
-		FBCCBEB11273560D00157BC4 /* InstrumentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBEB01273560D00157BC4 /* InstrumentationController.m */; };
 		FBDFD89F128244A100E7D34B /* CheckDeck.xcdatamodel in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBDD9127310FB00157BC4 /* CheckDeck.xcdatamodel */; };
+		FBEAA71E12C3AC7C00168BD2 /* Checked.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA71C12C3AC7C00168BD2 /* Checked.png */; };
+		FBEAA71F12C3AC7C00168BD2 /* Checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA71D12C3AC7C00168BD2 /* Checked@2x.png */; };
+		FBEAA75712C3B2C000168BD2 /* Camo.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA75612C3B2C000168BD2 /* Camo.png */; };
+		FBEAA7AA12C3B7D600168BD2 /* Carbon-Fiber-Thick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7A912C3B7D600168BD2 /* Carbon-Fiber-Thick.jpg */; };
+		FBEAA7CE12C3B8C800168BD2 /* Carbon-Fiber-Thick-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7CD12C3B8C800168BD2 /* Carbon-Fiber-Thick-50.png */; };
+		FBEAA7D912C3B90600168BD2 /* Carbon-Fiber-Thick-25.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7D812C3B90600168BD2 /* Carbon-Fiber-Thick-25.png */; };
+		FBEAA7E112C3B93700168BD2 /* Carbon-Fiber-Thick-12.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7E012C3B93700168BD2 /* Carbon-Fiber-Thick-12.png */; };
+		FBEAA7E912C3B99600168BD2 /* 15px-shadow-tile.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7E812C3B99600168BD2 /* 15px-shadow-tile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +200,13 @@
 			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
+		FBEE72EC12C9344500352968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBEAA52012C3963100168BD2 /* LevousCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libLevousCore.a */;
+			remoteInfo = LevousCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -231,20 +237,6 @@
 		FB5C2CF5127884AE00ED4E6C /* SimpleModelPrototypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModelPrototypes.h; sourceTree = "<group>"; };
 		FB6245DF127397BD00F90B52 /* CDCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCoreDataManager.h; sourceTree = "<group>"; };
 		FB6245E0127397BD00F90B52 /* CDCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCoreDataManager.m; sourceTree = "<group>"; };
-		FB6246251273A8A500F90B52 /* NSMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray.h; sourceTree = "<group>"; };
-		FB6246261273A8A500F90B52 /* NSMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray.m; sourceTree = "<group>"; };
-		FB6246271273A8A500F90B52 /* NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject.h; sourceTree = "<group>"; };
-		FB6246281273A8A500F90B52 /* NSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject.m; sourceTree = "<group>"; };
-		FB6246291273A8A500F90B52 /* NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString.h; sourceTree = "<group>"; };
-		FB62462A1273A8A500F90B52 /* NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString.m; sourceTree = "<group>"; };
-		FB62462B1273A8A500F90B52 /* SDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTableViewController.h; sourceTree = "<group>"; };
-		FB62462C1273A8A500F90B52 /* SDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTableViewController.m; sourceTree = "<group>"; };
-		FB62462D1273A8A500F90B52 /* SimpleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModel.h; sourceTree = "<group>"; };
-		FB62462E1273A8A500F90B52 /* SimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModel.m; sourceTree = "<group>"; };
-		FB62462F1273A8A500F90B52 /* SimpleStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleStore.h; sourceTree = "<group>"; };
-		FB6246301273A8A500F90B52 /* SimpleStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleStore.m; sourceTree = "<group>"; };
-		FB6246311273A8A500F90B52 /* UIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIApplication.h; sourceTree = "<group>"; };
-		FB6246321273A8A500F90B52 /* UIApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIApplication.m; sourceTree = "<group>"; };
 		FBCCBD1F127309DE00157BC4 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FBCCBD56127309F000157BC4 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = ../three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FBCCBD59127309F000157BC4 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = ../three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -267,11 +259,16 @@
 		FBCCBE7F127351C700157BC4 /* CheckListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListTableViewController.m; sourceTree = "<group>"; };
 		FBCCBE80127351C700157BC4 /* CheckListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTableViewController.xib; sourceTree = "<group>"; };
 		FBCCBE831273520100157BC4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FBCCBEA4127354E900157BC4 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
-		FBCCBEA5127354E900157BC4 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		FBCCBEAC127355D000157BC4 /* CDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConstants.h; sourceTree = "<group>"; };
-		FBCCBEAF1273560D00157BC4 /* InstrumentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentationController.h; sourceTree = "<group>"; };
-		FBCCBEB01273560D00157BC4 /* InstrumentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentationController.m; sourceTree = "<group>"; };
+		FBEAA52012C3963100168BD2 /* LevousCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LevousCore.xcodeproj; path = "../../Levous-iOS-Core/source/LevousCore.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		FBEAA71C12C3AC7C00168BD2 /* Checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Checked.png; path = Resources/images/Layout/Checked.png; sourceTree = SOURCE_ROOT; };
+		FBEAA71D12C3AC7C00168BD2 /* Checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Checked@2x.png"; path = "Resources/images/Layout/Checked@2x.png"; sourceTree = SOURCE_ROOT; };
+		FBEAA75612C3B2C000168BD2 /* Camo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camo.png; path = Resources/images/Background/Camo.png; sourceTree = SOURCE_ROOT; };
+		FBEAA7A912C3B7D600168BD2 /* Carbon-Fiber-Thick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Carbon-Fiber-Thick.jpg"; path = "Resources/images/Background/Carbon-Fiber-Thick.jpg"; sourceTree = SOURCE_ROOT; };
+		FBEAA7CD12C3B8C800168BD2 /* Carbon-Fiber-Thick-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Carbon-Fiber-Thick-50.png"; path = "Resources/images/Background/Carbon-Fiber-Thick-50.png"; sourceTree = SOURCE_ROOT; };
+		FBEAA7D812C3B90600168BD2 /* Carbon-Fiber-Thick-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Carbon-Fiber-Thick-25.png"; path = "Resources/images/Background/Carbon-Fiber-Thick-25.png"; sourceTree = SOURCE_ROOT; };
+		FBEAA7E012C3B93700168BD2 /* Carbon-Fiber-Thick-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Carbon-Fiber-Thick-12.png"; path = "Resources/images/Background/Carbon-Fiber-Thick-12.png"; sourceTree = SOURCE_ROOT; };
+		FBEAA7E812C3B99600168BD2 /* 15px-shadow-tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "15px-shadow-tile.png"; path = "Resources/images/Layout/15px-shadow-tile.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,7 +298,6 @@
 			isa = PBXGroup;
 			children = (
 				FBCCBEA3127354E900157BC4 /* CoreData */,
-				FBCCBEAE1273560D00157BC4 /* Instrumentation */,
 				FBCCBDD8127310C400157BC4 /* Models */,
 				FBCCBDBF12730AEF00157BC4 /* Navigation */,
 				FBCCBDD112730BA200157BC4 /* ViewControllers */,
@@ -380,34 +376,20 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		FB6246241273A8A500F90B52 /* SimpleData */ = {
+		FB85166912C38F9200DF47D7 /* Levous */ = {
 			isa = PBXGroup;
 			children = (
-				FB6246251273A8A500F90B52 /* NSMutableArray.h */,
-				FB6246261273A8A500F90B52 /* NSMutableArray.m */,
-				FB6246271273A8A500F90B52 /* NSObject.h */,
-				FB6246281273A8A500F90B52 /* NSObject.m */,
-				FB6246291273A8A500F90B52 /* NSString.h */,
-				FB62462A1273A8A500F90B52 /* NSString.m */,
-				FB62462B1273A8A500F90B52 /* SDTableViewController.h */,
-				FB62462C1273A8A500F90B52 /* SDTableViewController.m */,
-				FB62462D1273A8A500F90B52 /* SimpleModel.h */,
-				FB62462E1273A8A500F90B52 /* SimpleModel.m */,
-				FB62462F1273A8A500F90B52 /* SimpleStore.h */,
-				FB6246301273A8A500F90B52 /* SimpleStore.m */,
-				FB6246311273A8A500F90B52 /* UIApplication.h */,
-				FB6246321273A8A500F90B52 /* UIApplication.m */,
+				FBEAA52012C3963100168BD2 /* LevousCore.xcodeproj */,
 			);
-			name = SimpleData;
-			path = Libraries/SimpleData;
+			path = Levous;
 			sourceTree = "<group>";
 		};
 		FBCCBD19127308B400157BC4 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				FB6246241273A8A500F90B52 /* SimpleData */,
+				FB85166912C38F9200DF47D7 /* Levous */,
 			);
-			name = Libraries;
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 		FBCCBD1E1273099900157BC4 /* Dependencies */ = {
@@ -546,6 +528,7 @@
 		FBCCBDF312734B6500157BC4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FBEAA75412C3B20D00168BD2 /* Background */,
 				FBCCBDF412734B6500157BC4 /* Layout */,
 			);
 			name = images;
@@ -555,6 +538,9 @@
 		FBCCBDF412734B6500157BC4 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				FBEAA7E812C3B99600168BD2 /* 15px-shadow-tile.png */,
+				FBEAA71C12C3AC7C00168BD2 /* Checked.png */,
+				FBEAA71D12C3AC7C00168BD2 /* Checked@2x.png */,
 				FBCCBDF512734B6500157BC4 /* Unchecked.png */,
 				FBCCBDF612734B6500157BC4 /* Unchecked@2x.png */,
 			);
@@ -564,21 +550,30 @@
 		FBCCBEA3127354E900157BC4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				FBCCBEA4127354E900157BC4 /* CoreDataManager.h */,
-				FBCCBEA5127354E900157BC4 /* CoreDataManager.m */,
 				FB6245DF127397BD00F90B52 /* CDCoreDataManager.h */,
 				FB6245E0127397BD00F90B52 /* CDCoreDataManager.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		FBCCBEAE1273560D00157BC4 /* Instrumentation */ = {
+		FBEAA75412C3B20D00168BD2 /* Background */ = {
 			isa = PBXGroup;
 			children = (
-				FBCCBEAF1273560D00157BC4 /* InstrumentationController.h */,
-				FBCCBEB01273560D00157BC4 /* InstrumentationController.m */,
+				FBEAA7E012C3B93700168BD2 /* Carbon-Fiber-Thick-12.png */,
+				FBEAA7D812C3B90600168BD2 /* Carbon-Fiber-Thick-25.png */,
+				FBEAA7CD12C3B8C800168BD2 /* Carbon-Fiber-Thick-50.png */,
+				FBEAA7A912C3B7D600168BD2 /* Carbon-Fiber-Thick.jpg */,
+				FBEAA75612C3B2C000168BD2 /* Camo.png */,
 			);
-			path = Instrumentation;
+			path = Background;
+			sourceTree = "<group>";
+		};
+		FBEE72E912C9344500352968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE72ED12C9344500352968 /* libLevousCore.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,6 +621,10 @@
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CheckDeck */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = FBEE72E912C9344500352968 /* Products */;
+					ProjectRef = FBEAA52012C3963100168BD2 /* LevousCore.xcodeproj */;
+				},
 				{
 					ProductGroup = FBCCBD20127309DE00157BC4 /* Products */;
 					ProjectRef = FBCCBD1F127309DE00157BC4 /* Three20.xcodeproj */;
@@ -761,6 +760,13 @@
 			remoteRef = FBCCBD8A127309F000157BC4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		FBEE72ED12C9344500352968 /* libLevousCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLevousCore.a;
+			remoteRef = FBEE72EC12C9344500352968 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -777,6 +783,14 @@
 				FBCCBDF812734B6500157BC4 /* Unchecked@2x.png in Resources */,
 				FBCCBE82127351C700157BC4 /* CheckListTableViewController.xib in Resources */,
 				FBCCBEAD127355D000157BC4 /* CDConstants.h in Resources */,
+				FBEAA71E12C3AC7C00168BD2 /* Checked.png in Resources */,
+				FBEAA71F12C3AC7C00168BD2 /* Checked@2x.png in Resources */,
+				FBEAA75712C3B2C000168BD2 /* Camo.png in Resources */,
+				FBEAA7AA12C3B7D600168BD2 /* Carbon-Fiber-Thick.jpg in Resources */,
+				FBEAA7CE12C3B8C800168BD2 /* Carbon-Fiber-Thick-50.png in Resources */,
+				FBEAA7D912C3B90600168BD2 /* Carbon-Fiber-Thick-25.png in Resources */,
+				FBEAA7E112C3B93700168BD2 /* Carbon-Fiber-Thick-12.png in Resources */,
+				FBEAA7E912C3B99600168BD2 /* 15px-shadow-tile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,16 +809,7 @@
 				FBCCBDDA127310FB00157BC4 /* CheckDeck.xcdatamodel in Sources */,
 				FBCCBE7A127350BA00157BC4 /* CheckListItemTableViewCell.m in Sources */,
 				FBCCBE81127351C700157BC4 /* CheckListTableViewController.m in Sources */,
-				FBCCBEA6127354E900157BC4 /* CoreDataManager.m in Sources */,
-				FBCCBEB11273560D00157BC4 /* InstrumentationController.m in Sources */,
 				FB6245E1127397BD00F90B52 /* CDCoreDataManager.m in Sources */,
-				FB6246331273A8A500F90B52 /* NSMutableArray.m in Sources */,
-				FB6246341273A8A500F90B52 /* NSObject.m in Sources */,
-				FB6246351273A8A500F90B52 /* NSString.m in Sources */,
-				FB6246361273A8A500F90B52 /* SDTableViewController.m in Sources */,
-				FB6246371273A8A500F90B52 /* SimpleModel.m in Sources */,
-				FB6246381273A8A500F90B52 /* SimpleStore.m in Sources */,
-				FB6246391273A8A500F90B52 /* UIApplication.m in Sources */,
 				FB4805A012787EAD003ADC47 /* Schedule.m in Sources */,
 				FB4805A112787EAD003ADC47 /* CheckList.m in Sources */,
 				FB4805A212787EAD003ADC47 /* CheckListItem.m in Sources */,
@@ -863,6 +868,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CheckDeck_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					../three20/Build/Products/three20,
+					"../../Levous-iOS-Core/source/**",
+				);
 				INFOPLIST_FILE = "CheckDeck-Info.plist";
 				PRODUCT_NAME = CheckDeck;
 			};
@@ -875,6 +884,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CheckDeck_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					../three20/Build/Products/three20,
+					"../../Levous-iOS-Core/source/**",
+				);
 				INFOPLIST_FILE = "CheckDeck-Info.plist";
 				PRODUCT_NAME = CheckDeck;
 				VALIDATE_PRODUCT = YES;
@@ -889,13 +902,16 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
+				HEADER_SEARCH_PATHS = (
+					"../../Levous-iOS-Core/source",
+					../three20/Build/Products/three20,
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -907,14 +923,17 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
+				HEADER_SEARCH_PATHS = (
+					"../../Levous-iOS-Core/source",
+					../three20/Build/Products/three20,
+				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

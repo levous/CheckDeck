@@ -47,8 +47,9 @@ static CDCoreDataManager *_sharedInstance;
 
 - (void)intializeModelWithTestData{
   
-  [self insertCheckListItemWithTitle:@"Hello"];
-  [self insertCheckListItemWithTitle:@"World"];
+  [self insertCheckListItemWithTitle:@"5 Crickets"];
+  [self insertCheckListItemWithTitle:@"Greens"];
+  [self insertCheckListItemWithTitle:@"Water"];
 	// save
 	[self commitPendingChanges:nil];
 	

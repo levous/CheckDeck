@@ -7,18 +7,17 @@
 //
 
 #import "CheckListTableViewController.h"
-
-
+#import "UITableViewCell+CustomNib.h"
+#import "CheckListItemTableViewCell.h"
 @implementation CheckListTableViewController
 @synthesize managedObjectContext;
 
 
 #pragma mark -
 #pragma mark View Init
+
 - (id)initWithNibName { 
   if (self = [super initWithNibName:@"CheckListTableViewController" bundle:nil]){ 
-    coreDataManager = [CDCoreDataManager instance];
-    [self setManagedObjectContext:[coreDataManager managedObjectContext]];
   } 
   return self; 
 } 
@@ -33,12 +32,23 @@
   return self; 
 } 
 
+- (void)initializeSelf{
+  coreDataManager = [CDCoreDataManager instance];
+  [self setManagedObjectContext:[coreDataManager managedObjectContext]];
+}
+
 #pragma mark -
 #pragma mark View lifecycle
 
+- (void)awakeFromNib{
+  [self initializeSelf];
+}
 
 - (void)viewDidLoad {
   coreDataManager = [CDCoreDataManager instance];
+  // set backgrounds
+  [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Carbon-Fiber-Thick-12.png"]]];
+
   [super viewDidLoad];
   
 }
@@ -91,20 +101,19 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
   CheckListItem *item = (CheckListItem *)[self.fetchedResultsController objectAtIndexPath:indexPath];
-  [[cell textLabel] setText:[item title]];
+  CheckListItemTableViewCell *listItemCell = (CheckListItemTableViewCell *)cell;
+  [[listItemCell titleLabel] setText:[item title]];
  
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[CheckListItemTableViewCell cellIdentifier]];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+      cell = [UITableViewCell loadInstanceOfClass:[CheckListItemTableViewCell class] fromNibNamed:@"CheckListItemTableViewCell" withStyle:[tableView style] andReuseIdentifier:[CheckListItemTableViewCell cellIdentifier]];
     }
-  [self configureCell:cell atIndexPath:indexPath];
+    [self configureCell:cell atIndexPath:indexPath];
     // Configure the cell...
     
     return cell;

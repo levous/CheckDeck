@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface CheckListItemTableViewCell : UITableViewCell {
   
 }
+@property (retain, nonatomic) CheckListItem *checkListItem;
 @property (retain, nonatomic) IBOutlet UILabel *titleLabel;
 @property (retain, nonatomic) IBOutlet UIButton *checkButton;
 - (void)checkButtonPressed:(id)sender;
-
++ (NSString *)cellIdentifier;
 @end

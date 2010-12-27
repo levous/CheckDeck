@@ -6,11 +6,11 @@
 //  Copyright 2010 LeVous, LLC. All rights reserved.
 //
 
-#import "CoreDataManager.h"
+#import "LVCoreDataManager.h"
 #import "CheckListItem.h"
 #import "SimpleModelPrototypes.h"
 
-@interface CDCoreDataManager : CoreDataManager {
+@interface CDCoreDataManager : LVCoreDataManager {
 @private
   NSFetchedResultsController *fetchedResultsControllerForCheckListItems_;
 }
