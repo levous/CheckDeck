@@ -47,7 +47,7 @@
 - (void)viewDidLoad {
   coreDataManager = [CDCoreDataManager instance];
   // set backgrounds
-  [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Carbon-Fiber-Thick-12.png"]]];
+  [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Pearl-gray.jpg"]]];
 
   [super viewDidLoad];
   
@@ -103,6 +103,7 @@
   CheckListItem *item = (CheckListItem *)[self.fetchedResultsController objectAtIndexPath:indexPath];
   CheckListItemTableViewCell *listItemCell = (CheckListItemTableViewCell *)cell;
   [[listItemCell titleLabel] setText:[item title]];
+  [[listItemCell contentView] setBackgroundColor:[UIColor colorWithRed:0.6 green:0.2 blue:0.2 alpha:1.0]];
  
 }
 

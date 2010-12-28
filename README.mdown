@@ -8,4 +8,9 @@ CheckDeck uses the library project [LevousCore][levouscore-giturl] found on gith
 
 Clone the [LevousCore][levouscore-giturl] git repos parallel to this one ../Levous-iOS-Core/ 
 
+    cd ..
+    git clone git@github.com:levous/Levous-iOS-Core.git
+
+
+
   [levouscore-giturl]: https://github.com/levous/Levous-iOS-Core  "LevousCore" 

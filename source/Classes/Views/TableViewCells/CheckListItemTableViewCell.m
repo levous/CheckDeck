@@ -8,6 +8,13 @@
 
 #import "CheckListItemTableViewCell.h"
 
+// these should go elsewhere
+// This is defined in Math.h
+#define M_PI   3.14159265358979323846264338327950288   /* pi */
+
+// Our conversion definition
+#define DEGREES_TO_RADIANS(angle) ((angle / 180.0) * M_PI)
+// above should go elsewhere
 
 @implementation CheckListItemTableViewCell
 
@@ -59,9 +66,14 @@ static NSString *reuseIdentifier_ = @"CheckListItemTableViewCell";
 }
 
 - (void)checkTouchAnimationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context{
+  // The transform matrix
+  CGAffineTransform transform = CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(180));
+  checkButton.transform = transform;
   [UIView beginAnimations:@"checkTouch2" context:nil];
   [checkButton setAlpha:1.0];
   [checkButton setImage:[UIImage imageNamed:@"Checked.png"] forState:UIControlStateNormal];
+  transform = CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(0));
+  checkButton.transform = transform;
   [UIView commitAnimations];
 }
 
