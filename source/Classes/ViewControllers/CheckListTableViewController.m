@@ -9,8 +9,10 @@
 #import "CheckListTableViewController.h"
 #import "UITableViewCell+CustomNib.h"
 #import "CheckListItemTableViewCell.h"
+#import "GenericDetailTableViewController.h"
+
 @implementation CheckListTableViewController
-@synthesize managedObjectContext;
+@synthesize managedObjectContext, detailViewController, detailViewModel;
 
 
 #pragma mark -
@@ -48,10 +50,40 @@
   coreDataManager = [CDCoreDataManager instance];
   // set backgrounds
   [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Pearl-gray.jpg"]]];
-
   [super viewDidLoad];
   
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+  // Not sure of any consistent way to identify that a child navigation has completed.  This is intended to save the 
+  //  changes from a detail view
+  NSError *error = nil;
+  if ([self managedObjectContext] != nil) {
+    if ([[self managedObjectContext] hasChanges] && ![[self managedObjectContext] save:&error]) {
+      /*
+       Replace this implementation with code to handle the error appropriately.
+       
+       abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
+       */
+      NSMutableString *message = [[NSMutableString alloc] init];
+      [message appendFormat:@"Save Failed: %@", [error localizedDescription]];
+      NSArray* detailedErrors = [[error userInfo] objectForKey:NSDetailedErrorsKey];
+      if(detailedErrors != nil && [detailedErrors count] > 0) {
+        for(NSError* detailedError in detailedErrors) {
+          [message appendFormat:@"  DetailedError: %@", [detailedError userInfo]];
+        }
+      }
+      else {
+        [message appendFormat:@"  %@", [error userInfo]];
+      }
+      
+      NSLog(@"Unresolved error \n\n%@", message, nil);
+      
+      abort();
+    } 
+  }
+}
+
 
 
 /*
@@ -171,16 +203,48 @@
 #pragma mark -
 #pragma mark Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  // get the checklist item for index path
+  CheckListItem *item = (CheckListItem *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+  
+  // create a generic UITableViewController to use for detail view
+  //[self setDetailViewController:[[GenericDetailTableViewController alloc] initWithStyle:UITableViewStyleGrouped]];
+  //[(GenericDetailTableViewController *)[self detailViewController] setManagedObjectContext:[self managedObjectContext]];
+  [self setDetailViewController:[[SCTableViewController alloc] initWithStyle:UITableViewStyleGrouped ]];
+  
+  // create a table view model for sensible tableview
+  [self setDetailViewModel:[SCTableViewModel tableViewModelWithTableView:[self detailViewController].tableView
+                                                      withViewController:[self detailViewController]]];
+  
+  
+  // Create a class definition for CheckListItem
+	SCClassDefinition *scClassDef = [SCClassDefinition definitionWithEntityName:@"CheckListItem" 
+                                                                  withManagedObjectContext:[self managedObjectContext]
+                                                           autoGeneratePropertyDefinitions:YES];
+  
+  // Create an SCObjectSection for the detail model
+  SCObjectSection *objectSection = [SCObjectSection sectionWithHeaderTitle:nil
+                                                           withBoundObject:item withClassDefinition:scClassDef];
+  
+  // add the section to the tableview controller's table model
+  [[self detailViewModel] addSection:objectSection];
+  
+  // set right bar button item (not needed)
+  /*UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] 
+                                     initWithBarButtonSystemItem:UIBarButtonSystemItemDone 
+                                     target:self 
+                                     action:@selector(doneButtonAction)];
+  
+  [[[self detailViewController] navigationItem] setRightBarButtonItem:doneButton];
+  [doneButton release];*/
+  
+  // Push the detail view normally here (assuming self is within a UINavigationController)
+  [self.navigationController pushViewController:[self detailViewController] animated:TRUE];
 }
+
+
+
 
 #pragma mark -
 #pragma mark fetchedResultsController
@@ -188,9 +252,71 @@
 - (NSFetchedResultsController *)fetchedResultsController{
   if (fetchedResultsController_ == nil) {
     fetchedResultsController_ = [coreDataManager getFetchResultsControllerForCheckListItems];
+    [fetchedResultsController_ setDelegate:self];
   }
   return fetchedResultsController_;
 }
+
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+  [self.tableView beginUpdates];
+}
+
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
+           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+  
+  switch(type) {
+    case NSFetchedResultsChangeInsert:
+      [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex]
+                    withRowAnimation:UITableViewRowAnimationFade];
+      break;
+      
+    case NSFetchedResultsChangeDelete:
+      [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex]
+                    withRowAnimation:UITableViewRowAnimationFade];
+      break;
+  }
+}
+
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
+       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
+      newIndexPath:(NSIndexPath *)newIndexPath {
+  
+  UITableView *tableView = self.tableView;
+  
+  switch(type) {
+      
+    case NSFetchedResultsChangeInsert:
+      [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+                       withRowAnimation:UITableViewRowAnimationFade];
+      break;
+      
+    case NSFetchedResultsChangeDelete:
+      [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                       withRowAnimation:UITableViewRowAnimationFade];
+      break;
+      
+    case NSFetchedResultsChangeUpdate:
+      [self configureCell:[tableView cellForRowAtIndexPath:indexPath]
+              atIndexPath:indexPath];
+      break;
+      
+    case NSFetchedResultsChangeMove:
+      [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                       withRowAnimation:UITableViewRowAnimationFade];
+      [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+                       withRowAnimation:UITableViewRowAnimationFade];
+      break;
+  }
+}
+
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+  [self.tableView endUpdates];
+}
+
 
 
 #pragma mark -
@@ -210,6 +336,10 @@
 
 
 - (void)dealloc {
+  [self setDetailViewController:nil];
+  if (fetchedResultsController_ && [fetchedResultsController_ delegate] == self) {
+    [fetchedResultsController_ setDelegate:nil];
+  }
     [super dealloc];
 }
 

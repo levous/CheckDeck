@@ -7,8 +7,12 @@
 //
 
 #import "LVCoreDataManager.h"
-#import "CheckListItem.h"
+
 #import "SimpleModelPrototypes.h"
+
+#import "CheckListItem.h"
+#import "CheckListItemGroup.h"
+#import "CheckList.h"
 
 @interface CDCoreDataManager : LVCoreDataManager {
 @private

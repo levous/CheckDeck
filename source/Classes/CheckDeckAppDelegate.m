@@ -24,6 +24,7 @@
   
   // core data init
   [CDCoreDataManager instance];
+  
   // Add the tab bar controller's view to the window and display.
   [window addSubview:tabBarController.view];
   [window makeKeyAndVisible];

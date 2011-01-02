@@ -16,7 +16,7 @@
 
 @dynamic title;
 @dynamic items;
-@dynamic checklist;
+@dynamic checkList;
 @dynamic schedule;
 
 @end

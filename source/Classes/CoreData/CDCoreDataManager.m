@@ -38,18 +38,37 @@ static CDCoreDataManager *_sharedInstance;
 #pragma mark -
 #pragma mark CRUD
 
-- (id)insertCheckListItemWithTitle:(NSString *)title{
+- (id)insertCheckListItemForGroup:(CheckListItemGroup *)group withTitle:(NSString *)title{
   CheckListItem *newInstance = (CheckListItem *)[NSEntityDescription insertNewObjectForEntityForName:@"CheckListItem" inManagedObjectContext:[self managedObjectContext]];
   [newInstance setTitle:title];
+  [newInstance setCreatedAt:[NSDate date]];
+  [newInstance setCheckListGroup:group];
+  return newInstance;
+}
+
+- (id)insertCheckListWithTitle:(NSString *)title{
+  CheckList *newInstance = (CheckList *)[NSEntityDescription insertNewObjectForEntityForName:@"CheckList" inManagedObjectContext:[self managedObjectContext]];
+  [newInstance setTitle:title];
+  [newInstance setCreatedAt:[NSDate date]];
+  return newInstance;
+}
+
+- (id)insertGroupForCheckList:(CheckList *)checkList withTitle:(NSString *)title{
+  CheckListItemGroup *newInstance = (CheckListItemGroup *)[NSEntityDescription insertNewObjectForEntityForName:@"CheckListItemGroup" inManagedObjectContext:[self managedObjectContext]];
+  [newInstance setTitle:title];
+  [newInstance setCheckList:checkList];
   return newInstance;
 }
 
 
 - (void)intializeModelWithTestData{
   
-  [self insertCheckListItemWithTitle:@"5 Crickets"];
-  [self insertCheckListItemWithTitle:@"Greens"];
-  [self insertCheckListItemWithTitle:@"Water"];
+  CheckList *checkList = [self insertCheckListWithTitle:@"How to Raise a Dragon"];
+  CheckListItemGroup *group = [self insertGroupForCheckList:checkList withTitle:@"Nightly"];
+  
+  [self insertCheckListItemForGroup:group withTitle:@"5 Crickets"];
+  [self insertCheckListItemForGroup:group withTitle:@"Greens"];
+  [self insertCheckListItemForGroup:group withTitle:@"Water"];
 	// save
 	[self commitPendingChanges:nil];
 	

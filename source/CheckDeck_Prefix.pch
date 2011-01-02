@@ -10,4 +10,5 @@
 #import "CDConstants.h"
 #import "CDCoreDataManager.h"
 #import "SimpleModel.h"
+#import "SCTableViewModel.h"
 #endif

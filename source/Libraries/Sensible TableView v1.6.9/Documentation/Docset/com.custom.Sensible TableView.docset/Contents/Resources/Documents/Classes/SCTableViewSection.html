@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCTableViewSection class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCTableViewSection class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td>NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewSection.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a section for <a href="SCTableViewModel.html">SCTableViewModel</a>. Every SCTableViewSection can contain any number of SCTableViewCell(s). </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#ownerTableViewModel>ownerTableViewModel</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#headerTitle>headerTitle</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#headerHeight>headerHeight</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#headerView>headerView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#footerTitle>footerTitle</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#footerHeight>footerHeight</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#footerView>footerView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellsImageViews>cellsImageViews</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Cells</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellCount>cellCount</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#addCell:>- addCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#insertCell:atIndex:>- insertCell:atIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellAtIndex:>- cellAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#removeCellAtIndex:>- removeCellAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#indexForCell:>- indexForCell:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Cell Values</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#valuesAreValid>valuesAreValid</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#commitCellChangesLive>commitCellChangesLive</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#commitCellChanges>- commitCellChanges</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#reloadBoundValues>- reloadBoundValues</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Properties for Subclassing</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundObject>boundObject</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundPropertyName>boundPropertyName</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundKey>boundKey</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundValue>boundValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#section>+ section</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:>+ sectionWithHeaderTitle:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:withFooterTitle:>+ sectionWithHeaderTitle:withFooterTitle:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:>- initWithHeaderTitle:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:withFooterTitle:>- initWithHeaderTitle:withFooterTitle:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="section"></a>section</h3>
+      <code class="methodDeclaration">+ (id)section</code>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTableViewSection. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="sectionWithHeaderTitle:"></a>sectionWithHeaderTitle:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTableViewSection given a header title.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="sectionWithHeaderTitle:withFooterTitle:"></a>sectionWithHeaderTitle:withFooterTitle:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withFooterTitle:(NSString *)        <span class="parameter">sectionFooterTitle</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>sectionFooterTitle</dt>
+        <dd><p>A footer title for the section. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTableViewSection given a header and a footer title.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="addCell:"></a>addCell:</h3>
+      <code class="methodDeclaration">- (void)addCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cell</dt>
+        <dd><p>Must be a valid non nil <a href="SCTableViewCell.html">SCTableViewCell</a>. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Adds a new cell to the section. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="insertCell:atIndex:"></a>insertCell:atIndex:</h3>
+      <code class="methodDeclaration">- (void)insertCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+ atIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cell</dt>
+        <dd><p>Must be a valid non nil <a href="SCTableViewCell.html">SCTableViewCell</a>. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>Must be less than the total number of cells. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Inserts a new cell into the section at the specified index. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="cellAtIndex:"></a>cellAtIndex:</h3>
+      <code class="methodDeclaration">- (SCTableViewCell *)cellAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>index</dt>
+        <dd><p>Must be less than the total number of cells. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns the cell at the specified index. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="removeCellAtIndex:"></a>removeCellAtIndex:</h3>
+      <code class="methodDeclaration">- (void)removeCellAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>index</dt>
+        <dd><p>Must be less than the total number of cells. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Removes the cell at the specified index. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="indexForCell:"></a>indexForCell:</h3>
+      <code class="methodDeclaration">- (NSUInteger)indexForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cell</dt>
+        <dd><p>Must be a valid non nil <a href="SCTableViewCell.html">SCTableViewCell</a>. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>If cell is not found, method returns NSNotFound. </p>
+      <h5>Discussion</h5>
+<p>Returns the index of the specified cell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="commitCellChanges"></a>commitCellChanges</h3>
+      <code class="methodDeclaration">- (void)commitCellChanges</code>
+      <h5>Discussion</h5>
+<p>Commits value changes for all cells in section. This method needs to be called only if the commitCellChangesLive property is FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="reloadBoundValues"></a>reloadBoundValues</h3>
+      <code class="methodDeclaration">- (void)reloadBoundValues</code>
+      <h5>Discussion</h5>
+<p>Reload's the section's bound values in case the associated bound objects or keys valuea has changed by means other than the cells themselves (e.g. external custom code). </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="initWithHeaderTitle:"></a>initWithHeaderTitle:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCTableViewSection given a header title.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="initWithHeaderTitle:withFooterTitle:"></a>initWithHeaderTitle:withFooterTitle:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withFooterTitle:(NSString *)        <span class="parameter">sectionFooterTitle</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>sectionFooterTitle</dt>
+        <dd><p>A footer title for the section. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCTableViewSection given a header and a footer title.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h2>Properties</h2>
+      <h3><a name="ownerTableViewModel"></a>ownerTableViewModel</h3>
+      <code class="methodDeclaration">@property SCTableViewModel *ownerTableViewModel</code>
+      <h5>Discussion</h5>
+<p>The owner table view model of the section.</p>
+<p>Important: This property gets set automatically by the section's owner, you should never set this property manually </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="headerTitle"></a>headerTitle</h3>
+      <code class="methodDeclaration">@property NSString *headerTitle</code>
+      <h5>Discussion</h5>
+<p>The section header title. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="headerHeight"></a>headerHeight</h3>
+      <code class="methodDeclaration">@property CGFloat headerHeight</code>
+      <h5>Discussion</h5>
+<p>The section header height. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="headerView"></a>headerView</h3>
+      <code class="methodDeclaration">@property UIView *headerView</code>
+      <h5>Discussion</h5>
+<p>The section header view. This can be any subclass of UIView (e.g. UILabel or UIImageView). The section automatically adjusts the height of its header to accommodate this view. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="footerTitle"></a>footerTitle</h3>
+      <code class="methodDeclaration">@property NSString *footerTitle</code>
+      <h5>Discussion</h5>
+<p>The section footer title. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="footerHeight"></a>footerHeight</h3>
+      <code class="methodDeclaration">@property CGFloat footerHeight</code>
+      <h5>Discussion</h5>
+<p>The section footer height. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="footerView"></a>footerView</h3>
+      <code class="methodDeclaration">@property UIView *footerView</code>
+      <h5>Discussion</h5>
+<p>The section footer view. This can be any subclass of UIView (e.g. UILabel or UIImageView). The section automatically adjusts the height of its footer to accommodate this view. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="cellsImageViews"></a>cellsImageViews</h3>
+      <code class="methodDeclaration">@property NSArray *cellsImageViews</code>
+      <h5>Discussion</h5>
+<p>Set this property to an array of UIImageView objects to be set to each of the section's cells. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="cellCount"></a>cellCount</h3>
+      <code class="methodDeclaration">@property NSUInteger cellCount</code>
+      <h5>Discussion</h5>
+<p>The number of cells in the section. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="valuesAreValid"></a>valuesAreValid</h3>
+      <code class="methodDeclaration">@property BOOL valuesAreValid</code>
+      <h5>Discussion</h5>
+<p>This property is TRUE if all the section cells' values are valid, otherwise it's FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="commitCellChangesLive"></a>commitCellChangesLive</h3>
+      <code class="methodDeclaration">@property BOOL commitCellChangesLive</code>
+      <h5>Discussion</h5>
+<p>Set this property to TRUE for the section cells to commit their values as soon as they are changed. If this value is FALSE, the user must explicitly call commitCellChanges for the cells to commit their value changes. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="boundObject"></a>boundObject</h3>
+      <code class="methodDeclaration">@property NSObject *boundObject</code>
+      <h5>Discussion</h5>
+<p>Provides subclasses with the framework to bind an <a href="">SCTableViewSection</a> to an NSObject </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="boundPropertyName"></a>boundPropertyName</h3>
+      <code class="methodDeclaration">@property NSString *boundPropertyName</code>
+      <h5>Discussion</h5>
+<p>Provides subclasses with the framework to bind an <a href="">SCTableViewSection</a> to an NSObject </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="boundKey"></a>boundKey</h3>
+      <code class="methodDeclaration">@property NSString *boundKey</code>
+      <h5>Discussion</h5>
+<p>Provides subclasses with the framework to bind an <a href="">SCTableViewSection</a> to a key </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="boundValue"></a>boundValue</h3>
+      <code class="methodDeclaration">@property NSObject *boundValue</code>
+      <h5>Discussion</h5>
+<p>Provides subclasses with the framework to bind an <a href="">SCTableViewSection</a> to a value </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

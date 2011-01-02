@@ -18,7 +18,7 @@
 
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSSet* items;
-@property (nonatomic, retain) CheckList * checklist;
+@property (nonatomic, retain) CheckList * checkList;
 @property (nonatomic, retain) Schedule * schedule;
 
 @end

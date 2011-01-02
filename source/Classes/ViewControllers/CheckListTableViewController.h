@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CheckListTableViewController : UITableViewController {
+@interface CheckListTableViewController : UITableViewController<NSFetchedResultsControllerDelegate, SCTableViewModelDelegate> {
   CDCoreDataManager *coreDataManager;
   NSFetchedResultsController *fetchedResultsController_;
+  UITableViewController *detailViewController;
+  SCTableViewModel *detailViewModel;
 }
 
 @property (retain, nonatomic, readonly) NSFetchedResultsController *fetchedResultsController; 
 @property (retain, nonatomic) NSManagedObjectContext *managedObjectContext; 
+@property (retain, nonatomic) UITableViewController *detailViewController; 
+@property (retain, nonatomic) SCTableViewModel *detailViewModel; 
 @end

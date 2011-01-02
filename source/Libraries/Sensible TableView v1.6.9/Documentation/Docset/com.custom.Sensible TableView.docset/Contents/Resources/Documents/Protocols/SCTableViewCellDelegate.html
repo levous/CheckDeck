@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCTableViewCellDelegate protocol reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCTableViewCellDelegate protocol reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This protocol should be adopted by objects that want to mediate as a delegate for <a href="../Classes/SCTableViewCell.html">SCTableViewCell</a>. All methods for this protocol are optional. </p>
+      <h2>Tasks</h2>
+      <h3>Managing Cells</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#willConfigureCell:>- willConfigureCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#willDisplayCell:>- willDisplayCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#willSelectCell:>- willSelectCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#didSelectCell:>- didSelectCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#didDeselectCell:>- didDeselectCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#accessoryButtonTappedForCell:>- accessoryButtonTappedForCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#valueIsValidForCell:>- valueIsValidForCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#returnButtonTappedForCell:>- returnButtonTappedForCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#newImageNameForCell:>- newImageNameForCell:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Cell's detail view</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewWillAppearForCell:withDetailTableViewModel:>- detailViewWillAppearForCell:withDetailTableViewModel:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewWillDisappearForCell:>- detailViewWillDisappearForCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewDidDisappearForCell:>- detailViewDidDisappearForCell:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Instance methods</h2>
+      <h3><a name="willConfigureCell:"></a>willConfigureCell:</h3>
+      <code class="methodDeclaration">- (void)willConfigureCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the specified cell is about to be configured in its owner UITableView. This is the perfect time to do any customization to the cell's height, editable, and movable properties.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="willDisplayCell:"></a>willDisplayCell:</h3>
+      <code class="methodDeclaration">- (void)willDisplayCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the specified cell is about to be displayed. This is the perfect time to do any customization to the cell's appearance.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. Note: To change cell properties like the height, editable, or movable states, use the willConfigureCell delegate method instead. Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="willSelectCell:"></a>willSelectCell:</h3>
+      <code class="methodDeclaration">- (void)willSelectCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the specified cell will be selected.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="didSelectCell:"></a>didSelectCell:</h3>
+      <code class="methodDeclaration">- (void)didSelectCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the specified cell has been selected.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="didDeselectCell:"></a>didDeselectCell:</h3>
+      <code class="methodDeclaration">- (void)didDeselectCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the specified cell has been deselected.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="accessoryButtonTappedForCell:"></a>accessoryButtonTappedForCell:</h3>
+      <code class="methodDeclaration">- (void)accessoryButtonTappedForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the specified cell's accessory button have been tapped.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="valueIsValidForCell:"></a>valueIsValidForCell:</h3>
+      <code class="methodDeclaration">- (BOOL)valueIsValidForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Asks the delegate if the value is valid for the specified cell. Define this method if you want to override the cells' default value validation and provide your own custom validation.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="returnButtonTappedForCell:"></a>returnButtonTappedForCell:</h3>
+      <code class="methodDeclaration">- (void)returnButtonTappedForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the return keyboard button has been tapped for the specified cell Define this method if you want to override the cells' default behaviour for tapping the return button.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="newImageNameForCell:"></a>newImageNameForCell:</h3>
+      <code class="methodDeclaration">- (NSString *)newImageNameForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Asks the delegate for a new image name for the specified <a href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>. Define this method to provide a new name for the selected image, instead of using the auto generated one.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailViewWillAppearForCell:withDetailTableViewModel:"></a>detailViewWillAppearForCell:withDetailTableViewModel:</h3>
+      <code class="methodDeclaration">- (void)detailViewWillAppearForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+ withDetailTableViewModel:(SCTableViewModel *)        <span class="parameter">detailTableViewModel</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell's detail view will appear. This is the perfect time to do any customizations to the cell's detail view model.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailViewWillDisappearForCell:"></a>detailViewWillDisappearForCell:</h3>
+      <code class="methodDeclaration">- (void)detailViewWillDisappearForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell's detail view will disappear.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailViewDidDisappearForCell:"></a>detailViewDidDisappearForCell:</h3>
+      <code class="methodDeclaration">- (void)detailViewDidDisappearForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell's detail view has disappeared.</p>
+<p>Note: This method overrides its counterpart in <a href="SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCArrayOfObjectsCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCArrayOfObjectsCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCObjectCell.html">SCObjectCell</a> : 
+<a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell that, given an array of objects, will generate an <a href="SCArrayOfObjectsSection.html">SCArrayOfObjectsSection</a> detail view that's displayed when the cell is tapped. The cell can also be optionally bound to an object and generate an additional <a href="SCObjectSection.html">SCObjectSection</a> detail view when the cell is tapped while the table is in edit mode.</p>
+<p>See also: <a href="SCObjectCell.html">SCObjectCell</a>, <a href="SCObjectSection.html">SCObjectSection</a>, <a href="SCArrayOfObjectsSection.html">SCArrayOfObjectsSection</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#items>items</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#itemsSet>itemsSet</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sortItemsSetAscending>sortItemsSetAscending</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#itemsClassDefinitions>itemsClassDefinitions</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowAddingItems>allowAddingItems</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowDeletingItems>allowDeletingItems</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowMovingItems>allowMovingItems</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowEditDetailView>allowEditDetailView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowRowSelection>allowRowSelection</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#displayItemsCountInBadgeView>displayItemsCountInBadgeView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithItems:withClassDefinition:>+ cellWithItems:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithItemsSet:withClassDefinition:>+ cellWithItemsSet:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithEntityClassDefinition:>+ cellWithEntityClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithItems:withClassDefinition:>- initWithItems:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithItemsSet:withClassDefinition:>- initWithItemsSet:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithEntityClassDefinition:>- initWithEntityClassDefinition:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cellWithItems:withClassDefinition:"></a>cellWithItems:withClassDefinition:</h3>
+      <code class="methodDeclaration">+ (id)cellWithItems:(NSMutableArray *)        <span class="parameter">cellItems</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellItems</dt>
+        <dd><p>An array of objects that the cell will use to generate its detail cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the class or entity of the objects in the objects array. If the array contains more than one type of object, then their respective class definitions must be added to the itemsClassDefinitions dictionary after initialization. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCArrayOfObjectsCell given an array of objects and their class definition.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithItemsSet:withClassDefinition:"></a>cellWithItemsSet:withClassDefinition:</h3>
+      <code class="methodDeclaration">+ (id)cellWithItemsSet:(NSMutableSet *)        <span class="parameter">cellItemsSet</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellItemsSet</dt>
+        <dd><p>A mutable set of objects that the cell will use to generate its cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCArrayOfObjectsCell given a mutable set of objects. This method should only be used to create a cell with the contents of a Core Data relationship.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithEntityClassDefinition:"></a>cellWithEntityClassDefinition:</h3>
+      <code class="methodDeclaration">+ (id)cellWithEntityClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCArrayOfObjectsCell given a header title and an entity class definition. Note: This method creates a cell with all the objects that exist in classDefinition's entity's managedObjectContext. To create a cell with only a subset of these objects, consider using the other section initializers.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithItems:withClassDefinition:"></a>initWithItems:withClassDefinition:</h3>
+      <code class="methodDeclaration">- (id)initWithItems:(NSMutableArray *)        <span class="parameter">cellItems</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellItems</dt>
+        <dd><p>An array of objects that the cell will use to generate its detail cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the class or entity of the objects in the objects array. If the array contains more than one type of object, then their respective class definitions must be added to the itemsClassDefinitions dictionary after initialization. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCArrayOfObjectsCell given an array of objects and their class definition.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithItemsSet:withClassDefinition:"></a>initWithItemsSet:withClassDefinition:</h3>
+      <code class="methodDeclaration">- (id)initWithItemsSet:(NSMutableSet *)        <span class="parameter">cellItemsSet</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellItemsSet</dt>
+        <dd><p>A mutable set of objects that the cell will use to generate its cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCArrayOfObjectsCell given a mutable set of objects. This method should only be used to create a cell with the contents of a Core Data relationship.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithEntityClassDefinition:"></a>initWithEntityClassDefinition:</h3>
+      <code class="methodDeclaration">- (id)initWithEntityClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCArrayOfObjectsCell given a header title and an entity class definition. Note: This method creates a cell with all the objects that exist in classDefinition's entity's managedObjectContext. To create a cell with only a subset of these objects, consider using the other section initializers.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="items"></a>items</h3>
+      <code class="methodDeclaration">@property NSMutableArray *items</code>
+      <h5>Discussion</h5>
+<p>The array of objects that the cell uses to generate its detail view.</p>
+<p>This array must be of type NSMutableArray, as it must support add, delete, and move operations. If you do not wish to allow these operations on your array, you can either pass an array using [NSMutableArray arrayWithArray:myArray], or you can disable the functionality from the user interface by setting the allowAddingItems, allowDeletingItems, allowMovingItems, and allowEditDetailView properties. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="itemsSet"></a>itemsSet</h3>
+      <code class="methodDeclaration">@property NSMutableSet *itemsSet</code>
+      <h5>Discussion</h5>
+<p>The mutable set of objects that the cell will use to generate its detail view. Note: This property should only be set when representing a Core Data relationship. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="sortItemsSetAscending"></a>sortItemsSetAscending</h3>
+      <code class="methodDeclaration">@property BOOL sortItemsSetAscending</code>
+      <h5>Discussion</h5>
+<p>If TRUE, objects in itemsSet are sorted ascendingly, otherwise they're sorted descendingly. Note: Only applicable if itemsSet has been assigned. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="itemsClassDefinitions"></a>itemsClassDefinitions</h3>
+      <code class="methodDeclaration">@property NSMutableDictionary *itemsClassDefinitions</code>
+      <h5>Discussion</h5>
+<p>Contains all the different class definitions of all the objects in the items array. Each dictionary entry should contain a key with the <a href="SCClassDefinition.html">SCClassDefinition</a> class name, and a value with the actual <a href="SCClassDefinition.html">SCClassDefinition</a>.</p>
+<p>Tip: The class name of the <a href="SCClassDefinition.html">SCClassDefinition</a> can be easily determined using the SClassDefinition.className property. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowAddingItems"></a>allowAddingItems</h3>
+      <code class="methodDeclaration">@property BOOL allowAddingItems</code>
+      <h5>Discussion</h5>
+<p>Allows/disables adding new objects to the items array. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowDeletingItems"></a>allowDeletingItems</h3>
+      <code class="methodDeclaration">@property BOOL allowDeletingItems</code>
+      <h5>Discussion</h5>
+<p>Allows/disables deleting new objects from the items array. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowMovingItems"></a>allowMovingItems</h3>
+      <code class="methodDeclaration">@property BOOL allowMovingItems</code>
+      <h5>Discussion</h5>
+<p>Allows/disables moving objects from one row to another. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowEditDetailView"></a>allowEditDetailView</h3>
+      <code class="methodDeclaration">@property BOOL allowEditDetailView</code>
+      <h5>Discussion</h5>
+<p>Allows/disables editing detail views for objects. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowRowSelection"></a>allowRowSelection</h3>
+      <code class="methodDeclaration">@property BOOL allowRowSelection</code>
+      <h5>Discussion</h5>
+<p>Allows/disables row selection. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="displayItemsCountInBadgeView"></a>displayItemsCountInBadgeView</h3>
+      <code class="methodDeclaration">@property BOOL displayItemsCountInBadgeView</code>
+      <h5>Discussion</h5>
+<p>Allows/disables displaying the number of objects in the cell's badgeView. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>
