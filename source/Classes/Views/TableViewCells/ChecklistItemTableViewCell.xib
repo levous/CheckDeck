@@ -47,17 +47,31 @@
 						<int key="NSvFlags">256</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUIView" id="171218474">
+								<reference key="NSNextResponder" ref="436597612"/>
+								<int key="NSvFlags">274</int>
+								<string key="NSFrameSize">{320, 44}</string>
+								<reference key="NSSuperview" ref="436597612"/>
+								<object class="NSColor" key="IBUIBackgroundColor">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MQA</bytes>
+									<object class="NSColorSpace" key="NSCustomColorSpace">
+										<int key="NSID">2</int>
+									</object>
+								</object>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
 							<object class="IBUIImageView" id="468846671">
 								<reference key="NSNextResponder" ref="436597612"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{0, -10}, {320, 64}}</string>
+								<string key="NSFrameSize">{480, 44}</string>
 								<reference key="NSSuperview" ref="436597612"/>
 								<object class="NSColor" key="IBUIBackgroundColor" id="621370267">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MQA</bytes>
 								</object>
 								<float key="IBUIAlpha">0.31690141558647156</float>
-								<int key="IBUIContentMode">2</int>
+								<int key="IBUIContentMode">5</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
@@ -68,7 +82,7 @@
 							<object class="IBUIImageView" id="861304951">
 								<reference key="NSNextResponder" ref="436597612"/>
 								<int key="NSvFlags">290</int>
-								<string key="NSFrameSize">{320, 15}</string>
+								<string key="NSFrameSize">{480, 15}</string>
 								<reference key="NSSuperview" ref="436597612"/>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -80,7 +94,7 @@
 							<object class="IBUIButton" id="488954929">
 								<reference key="NSNextResponder" ref="436597612"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 0}, {44, 44}}</string>
+								<string key="NSFrameSize">{44, 44}</string>
 								<reference key="NSSuperview" ref="436597612"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -107,8 +121,8 @@
 							</object>
 							<object class="IBUILabel" id="605780071">
 								<reference key="NSNextResponder" ref="436597612"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{72, 7}, {228, 30}}</string>
+								<int key="NSvFlags">274</int>
+								<string key="NSFrame">{{52, 8}, {248, 34}}</string>
 								<reference key="NSSuperview" ref="436597612"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -180,6 +194,14 @@
 					</object>
 					<int key="connectionID">7</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">backgroundView</string>
+						<reference key="source" ref="847631757"/>
+						<reference key="destination" ref="171218474"/>
+					</object>
+					<int key="connectionID">13</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -206,12 +228,21 @@
 						<reference key="object" ref="847631757"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="468846671"/>
-							<reference ref="861304951"/>
 							<reference ref="488954929"/>
+							<reference ref="861304951"/>
+							<reference ref="468846671"/>
+							<reference ref="171218474"/>
 							<reference ref="605780071"/>
 						</object>
 						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">12</int>
+						<reference key="object" ref="171218474"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+						</object>
+						<reference key="parent" ref="847631757"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
@@ -242,6 +273,8 @@
 					<string>-2.CustomClassName</string>
 					<string>10.IBPluginDependency</string>
 					<string>10.IBViewBoundsToFrameTransform</string>
+					<string>12.IBPluginDependency</string>
+					<string>12.IBViewBoundsToFrameTransform</string>
 					<string>2.CustomClassName</string>
 					<string>2.IBEditorWindowLastContentRect</string>
 					<string>2.IBPluginDependency</string>
@@ -258,24 +291,22 @@
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform"/>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform"/>
 					<string>CheckListItemTableViewCell</string>
-					<string>{{467, 1090}, {320, 44}}</string>
+					<string>{{522, 1090}, {320, 44}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAwigAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AUGgAAAAAAAAA</bytes>
-					</object>
+					<object class="NSAffineTransform"/>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AUKQAABA4AAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDYgAAwhQAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AQAAAADBIAAAA</bytes>
-					</object>
+					<object class="NSAffineTransform"/>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -294,7 +325,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">11</int>
+			<int key="maxID">13</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

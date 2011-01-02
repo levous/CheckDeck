@@ -28,7 +28,7 @@
 }
 
 - (void)awakeFromNib{
-  [[self contentView]setBackgroundColor:[UIColor yellowColor]];
+  //[[self contentView]setBackgroundColor:[UIColor yellowColor]];
 }
 
 

@@ -106,13 +106,13 @@
     [super viewDidDisappear:animated];
 }
 */
-/*
-// Override to allow orientations other than the default portrait orientation.
+
+#pragma mark -
+#pragma mark Device rotation orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+  return YES;
 }
-*/
+
 
 
 #pragma mark -
@@ -122,7 +122,34 @@
   // Return the number of sections.
   return [[[self fetchedResultsController] sections] count];
 }
+/*
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+  return [[self fetchedResultsController] sectionIndexTitles];
+}
+ */
+/*
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+  return [[[self fetchedResultsController] sectionIndexTitles] objectAtIndex:section];
+}
+*/
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+  id <NSFetchedResultsSectionInfo> sectionInfo = [[[self fetchedResultsController] sections] objectAtIndex:section];
+  NSString *sectionTitle = [sectionInfo name];
+  //TODO: use a stylesheet for this config
+  UIView *labelContainer = [[[UIView alloc] initWithFrame:CGRectZero] autorelease]; // frame gets set by UITableView
+  [labelContainer setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+  [labelContainer autoresizesSubviews];
+  [labelContainer setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Pearl-gray.jpg"]]];
+  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 0, [tableView frame].size.width, 22)];
+  [label setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+  [label setText:sectionTitle];
+  [label setTextColor:[UIColor whiteColor]];
+  [label setBackgroundColor:[UIColor clearColor]];
+  [labelContainer addSubview:label];
+  [label release];
+  return labelContainer;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   // Return the number of rows in the section.
@@ -135,7 +162,11 @@
   CheckListItem *item = (CheckListItem *)[self.fetchedResultsController objectAtIndexPath:indexPath];
   CheckListItemTableViewCell *listItemCell = (CheckListItemTableViewCell *)cell;
   [[listItemCell titleLabel] setText:[item title]];
-  [[listItemCell contentView] setBackgroundColor:[UIColor colorWithRed:0.6 green:0.2 blue:0.2 alpha:1.0]];
+  [[listItemCell backgroundView] setBackgroundColor:[UIColor colorWithRed:0.6 green:0.2 blue:0.2 alpha:1.0]];
+  UIView *backView = [[UIView alloc] initWithFrame:[listItemCell frame]];
+  [backView setBackgroundColor:[UIColor colorWithRed:0.1 green:0.6 blue:0.0 alpha:1.0]];
+  [cell setSelectedBackgroundView:backView];
+  [backView release];
  
 }
 
@@ -257,6 +288,7 @@
   return fetchedResultsController_;
 }
 
+#pragma mark NSFetchedResultsControllerDelegate
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
   [self.tableView beginUpdates];
@@ -276,6 +308,9 @@
       [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex]
                     withRowAnimation:UITableViewRowAnimationFade];
       break;
+    case NSFetchedResultsChangeUpdate:
+      break;
+      
   }
 }
 

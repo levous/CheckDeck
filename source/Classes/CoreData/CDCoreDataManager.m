@@ -97,7 +97,7 @@ static CDCoreDataManager *_sharedInstance;
   //[fetchRequest setPredicate:[self generatePatientListPredicate]];
   
   // set sort
-  [fetchRequest setSortDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"sortOrder" ascending:YES]]];
+  [fetchRequest setSortDescriptors:[NSArray arrayWithObjects:[NSSortDescriptor sortDescriptorWithKey:@"checkListGroup.title" ascending:YES], [NSSortDescriptor sortDescriptorWithKey:@"sortOrder" ascending:YES], nil]];
   
   // Edit the section name key path and cache name if appropriate.
   // nil for section name key path means "no sections".
@@ -109,8 +109,8 @@ static CDCoreDataManager *_sharedInstance;
    */
   
   NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext 
-                                                                                                sectionNameKeyPath:nil // this key defines the sections
-                                                                                                         cacheName:nil]; // setting cacheName to nil until we know how to update appropriately on data changes
+                                                                                                sectionNameKeyPath:@"checkListGroup.title" // this key defines the sections
+                                                                                                         cacheName:@"Root"]; 
   
   
   
