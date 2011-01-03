@@ -24,6 +24,10 @@
 		FB4805A312787EAD003ADC47 /* CheckListItemGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48059F12787EAD003ADC47 /* CheckListItemGroup.m */; };
 		FB4805C512788049003ADC47 /* CheckListItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4805C412788049003ADC47 /* CheckListItem+Additions.m */; };
 		FB6245E1127397BD00F90B52 /* CDCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6245E0127397BD00F90B52 /* CDCoreDataManager.m */; };
+		FB91CBCE12D157DE00E3BD4C /* CDStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = FB91CBCD12D157DE00E3BD4C /* CDStyleSheet.m */; };
+		FB91CCAB12D163F300E3BD4C /* SoundEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FB91CCAA12D163F300E3BD4C /* SoundEffects.m */; };
+		FB91CCAD12D1644C00E3BD4C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB91CCAC12D1644C00E3BD4C /* AVFoundation.framework */; };
+		FB91CCC412D1653000E3BD4C /* burp.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB91CCC312D1653000E3BD4C /* burp.wav */; };
 		FBCCBD8F12730A0000157BC4 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD4B127309DE00157BC4 /* libThree20.a */; };
 		FBCCBD9012730A0000157BC4 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD6B127309F000157BC4 /* libThree20Core.a */; };
 		FBCCBD9112730A0000157BC4 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD71127309F000157BC4 /* libThree20Network.a */; };
@@ -259,6 +263,12 @@
 		FB5C2CF5127884AE00ED4E6C /* SimpleModelPrototypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModelPrototypes.h; sourceTree = "<group>"; };
 		FB6245DF127397BD00F90B52 /* CDCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCoreDataManager.h; sourceTree = "<group>"; };
 		FB6245E0127397BD00F90B52 /* CDCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCoreDataManager.m; sourceTree = "<group>"; };
+		FB91CBCC12D157DE00E3BD4C /* CDStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStyleSheet.h; sourceTree = "<group>"; };
+		FB91CBCD12D157DE00E3BD4C /* CDStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDStyleSheet.m; sourceTree = "<group>"; };
+		FB91CCA912D163F300E3BD4C /* SoundEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffects.h; sourceTree = "<group>"; };
+		FB91CCAA12D163F300E3BD4C /* SoundEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffects.m; sourceTree = "<group>"; };
+		FB91CCAC12D1644C00E3BD4C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FB91CCC312D1653000E3BD4C /* burp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = burp.wav; sourceTree = "<group>"; };
 		FBCCBD1F127309DE00157BC4 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FBCCBD56127309F000157BC4 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = ../three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FBCCBD59127309F000157BC4 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = ../three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -332,6 +342,7 @@
 				FBCCBDA612730A5F00157BC4 /* QuartzCore.framework in Frameworks */,
 				FBCCBE841273520100157BC4 /* CoreData.framework in Frameworks */,
 				FBEE736212C9377600352968 /* libLevousCore.a in Frameworks */,
+				FB91CCAD12D1644C00E3BD4C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +355,7 @@
 				FBCCBEA3127354E900157BC4 /* CoreData */,
 				FBCCBDD8127310C400157BC4 /* Models */,
 				FBCCBDBF12730AEF00157BC4 /* Navigation */,
+				FB91CBB212D155B000E3BD4C /* UITheme */,
 				FBCCBDD112730BA200157BC4 /* ViewControllers */,
 				FBCCBDEE127349A700157BC4 /* Views */,
 				28216C950DB411BC00E5133A /* FirstViewController.h */,
@@ -390,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				FBCCBDF312734B6500157BC4 /* images */,
+				FB91CCC212D1653000E3BD4C /* sounds */,
 				2840D7CD1179279E00D7F93C /* FirstView.xib */,
 				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
@@ -406,6 +419,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
 				FBCCBE831273520100157BC4 /* CoreData.framework */,
+				FB91CCAC12D1644C00E3BD4C /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -427,6 +441,26 @@
 			);
 			name = LevousCore;
 			path = "../../../Levous-iOS-Core/source";
+			sourceTree = "<group>";
+		};
+		FB91CBB212D155B000E3BD4C /* UITheme */ = {
+			isa = PBXGroup;
+			children = (
+				FB91CBCC12D157DE00E3BD4C /* CDStyleSheet.h */,
+				FB91CBCD12D157DE00E3BD4C /* CDStyleSheet.m */,
+				FB91CCA912D163F300E3BD4C /* SoundEffects.h */,
+				FB91CCAA12D163F300E3BD4C /* SoundEffects.m */,
+			);
+			path = UITheme;
+			sourceTree = "<group>";
+		};
+		FB91CCC212D1653000E3BD4C /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FB91CCC312D1653000E3BD4C /* burp.wav */,
+			);
+			name = sounds;
+			path = Resources/sounds;
 			sourceTree = "<group>";
 		};
 		FBCCBD19127308B400157BC4 /* Libraries */ = {
@@ -871,6 +905,7 @@
 				FBEAA7E912C3B99600168BD2 /* 15px-shadow-tile.png in Resources */,
 				FB10D93712C9C1F800C8B061 /* Bearded-Dragon-Scales.png in Resources */,
 				FB10D94812CA1C2600C8B061 /* Pearl-gray.jpg in Resources */,
+				FB91CCC412D1653000E3BD4C /* burp.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -905,6 +940,8 @@
 				FBF7F2D612D02D5300389C42 /* SCViewController.m in Sources */,
 				FBF7F2D712D02D5300389C42 /* SCPropertyAttributes.m in Sources */,
 				FBF7F30D12D0372100389C42 /* GenericDetailTableViewController.m in Sources */,
+				FB91CBCE12D157DE00E3BD4C /* CDStyleSheet.m in Sources */,
+				FB91CCAB12D163F300E3BD4C /* SoundEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

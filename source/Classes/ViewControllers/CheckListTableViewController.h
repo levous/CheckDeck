@@ -14,6 +14,7 @@
   NSFetchedResultsController *fetchedResultsController_;
   UITableViewController *detailViewController;
   SCTableViewModel *detailViewModel;
+  CDStyleSheet *styleSheet;
 }
 
 @property (retain, nonatomic, readonly) NSFetchedResultsController *fetchedResultsController; 

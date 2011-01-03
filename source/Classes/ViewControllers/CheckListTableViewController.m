@@ -37,6 +37,7 @@
 - (void)initializeSelf{
   coreDataManager = [CDCoreDataManager instance];
   [self setManagedObjectContext:[coreDataManager managedObjectContext]];
+  styleSheet = (CDStyleSheet *)[CDStyleSheet newDefaultStyleSheet];
 }
 
 #pragma mark -
@@ -140,11 +141,14 @@
   UIView *labelContainer = [[[UIView alloc] initWithFrame:CGRectZero] autorelease]; // frame gets set by UITableView
   [labelContainer setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
   [labelContainer autoresizesSubviews];
-  [labelContainer setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Pearl-gray.jpg"]]];
-  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 0, [tableView frame].size.width, 22)];
+  [labelContainer setBackgroundColor:[UIColor colorWithPatternImage:[styleSheet detailCellTiledBackgroundImage]]];
+  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 0, [tableView frame].size.width, 20)];
   [label setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
   [label setText:sectionTitle];
-  [label setTextColor:[UIColor whiteColor]];
+  [label setTextColor:[styleSheet subHeaderFontColor]];
+  [label setFont:[UIFont boldSystemFontOfSize:18.0]];
+  [label setShadowColor:[styleSheet subHeaderFontShadowColor]];
+  [label setShadowOffset:CGSizeMake(0.6, 0.9)];
   [label setBackgroundColor:[UIColor clearColor]];
   [labelContainer addSubview:label];
   [label release];
@@ -162,9 +166,9 @@
   CheckListItem *item = (CheckListItem *)[self.fetchedResultsController objectAtIndexPath:indexPath];
   CheckListItemTableViewCell *listItemCell = (CheckListItemTableViewCell *)cell;
   [[listItemCell titleLabel] setText:[item title]];
-  [[listItemCell backgroundView] setBackgroundColor:[UIColor colorWithRed:0.6 green:0.2 blue:0.2 alpha:1.0]];
+  [[listItemCell backgroundView] setBackgroundColor:[styleSheet detailCellBackgroundColor]];
   UIView *backView = [[UIView alloc] initWithFrame:[listItemCell frame]];
-  [backView setBackgroundColor:[UIColor colorWithRed:0.1 green:0.6 blue:0.0 alpha:1.0]];
+  [backView setBackgroundColor:[styleSheet detailCellSelectedBackgroundColor]];
   [cell setSelectedBackgroundView:backView];
   [backView release];
  

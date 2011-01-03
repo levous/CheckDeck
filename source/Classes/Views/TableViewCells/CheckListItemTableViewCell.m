@@ -7,6 +7,7 @@
 //
 
 #import "CheckListItemTableViewCell.h"
+#import "SoundEffects.h"
 
 // these should go elsewhere
 // This is defined in Math.h
@@ -63,6 +64,10 @@ static NSString *reuseIdentifier_ = @"CheckListItemTableViewCell";
   [UIView setAnimationDidStopSelector:@selector(checkTouchAnimationDidStop:finished:context:)];
   [checkButton setAlpha:0.0];
   [UIView commitAnimations];
+  
+  //TODO: move this to shared class.. this is demo only :)
+  SoundEffects *sfx = [[SoundEffects alloc] init];
+  [sfx playCheckedOffSound];
 }
 
 - (void)checkTouchAnimationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context{

@@ -11,4 +11,5 @@
 #import "CDCoreDataManager.h"
 #import "SimpleModel.h"
 #import "SCTableViewModel.h"
+#import "CDStyleSheet.h"
 #endif
