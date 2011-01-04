@@ -134,6 +134,11 @@
 }
 */
 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+  return 24.0;
+}
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
   id <NSFetchedResultsSectionInfo> sectionInfo = [[[self fetchedResultsController] sections] objectAtIndex:section];
   NSString *sectionTitle = [sectionInfo name];
@@ -142,14 +147,11 @@
   [labelContainer setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
   [labelContainer autoresizesSubviews];
   [labelContainer setBackgroundColor:[UIColor colorWithPatternImage:[styleSheet detailCellTiledBackgroundImage]]];
-  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 0, [tableView frame].size.width, 20)];
+  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 0, [tableView frame].size.width, 22)];
   [label setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
   [label setText:sectionTitle];
-  [label setTextColor:[styleSheet subHeaderFontColor]];
-  [label setFont:[UIFont boldSystemFontOfSize:18.0]];
-  [label setShadowColor:[styleSheet subHeaderFontShadowColor]];
-  [label setShadowOffset:CGSizeMake(0.6, 0.9)];
-  [label setBackgroundColor:[UIColor clearColor]];
+  // aply default sub header style to label
+  [[styleSheet subHeaderTextStyle] applyStyleToLabel:label];
   [labelContainer addSubview:label];
   [label release];
   return labelContainer;
@@ -254,13 +256,39 @@
   
   
   // Create a class definition for CheckListItem
-	SCClassDefinition *scClassDef = [SCClassDefinition definitionWithEntityName:@"CheckListItem" 
+	SCClassDefinition *checkListItemSCClassDef = [SCClassDefinition definitionWithEntityName:@"CheckListItem" 
                                                                   withManagedObjectContext:[self managedObjectContext]
                                                            autoGeneratePropertyDefinitions:YES];
   
+  
+  // Create a class definition for CheckListItemGroup
+	SCClassDefinition *checkListItemGroupSCClassDef = [SCClassDefinition definitionWithEntityName:@"CheckListItemGroup" 
+                                                                       withManagedObjectContext:[self managedObjectContext]
+                                                                autoGeneratePropertyDefinitions:YES];
+  
+  // Create a class definition for CheckList
+	SCClassDefinition *checkListSCClassDef = [SCClassDefinition definitionWithEntityName:@"CheckList"
+                                                              withManagedObjectContext:managedObjectContext
+                                                       autoGeneratePropertyDefinitions:YES];
+  
+  
+  // associate the CheckListItemGroup def with the CheckListItem def
+  SCPropertyDefinition *checkListItemGroupPropertyDef = [checkListItemSCClassDef propertyDefinitionWithName:@"checkListGroup"];
+  [checkListItemGroupPropertyDef setType:SCPropertyTypeObject];
+  [checkListItemGroupPropertyDef setTitle:@"Group"];
+  [checkListItemGroupPropertyDef setAttributes:[SCObjectAttributes attributesWithObjectClassDefinition:checkListItemGroupSCClassDef]];
+  
+  // associate the CheckList def with the CheckListItemGroup def
+  SCPropertyDefinition *checkListPropertyDef = [checkListItemGroupSCClassDef propertyDefinitionWithName:@"checkList"];
+  [checkListPropertyDef setType:SCPropertyTypeObject];
+  [checkListPropertyDef setTitle:@"List"];
+  [checkListPropertyDef setAttributes:[SCObjectAttributes attributesWithObjectClassDefinition:checkListSCClassDef]];
+  
+  
   // Create an SCObjectSection for the detail model
   SCObjectSection *objectSection = [SCObjectSection sectionWithHeaderTitle:nil
-                                                           withBoundObject:item withClassDefinition:scClassDef];
+                                                           withBoundObject:item 
+                                                       withClassDefinition:checkListItemSCClassDef];
   
   // add the section to the tableview controller's table model
   [[self detailViewModel] addSection:objectSection];
