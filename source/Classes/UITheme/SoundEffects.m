@@ -10,12 +10,22 @@
 
 
 @implementation SoundEffects
+
+- (id)init{
+  if (self == [super init]) {
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"burp" ofType:@"wav"];
+    checkItemSound = [[AVAudioPlayer alloc] initWithData:[NSData dataWithContentsOfFile:path] error:nil];
+    [checkItemSound performSelectorInBackground:@selector(prepareToPlay) withObject:nil];
+  }
+  return self;
+}
+
 - (void)playCheckedOffSound{
-  NSString * path = [[NSBundle mainBundle] pathForResource:@"burp" ofType:@"wav"];
-	
-  AVAudioPlayer *soundPlayer = [[AVAudioPlayer alloc] initWithData:[NSData dataWithContentsOfFile:path] error:nil];
-  //[soundPlayer setDelegate:self];
-  [soundPlayer prepareToPlay];
-  [soundPlayer play];
+  [checkItemSound play];
+}
+
+- (void)dealloc{
+  [checkItemSound release];
+  [super dealloc];
 }
 @end

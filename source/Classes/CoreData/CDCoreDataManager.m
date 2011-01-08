@@ -60,6 +60,24 @@ static CDCoreDataManager *_sharedInstance;
   return newInstance;
 }
 
+- (id)insertReviewForCheckListItem:(CheckListItem *)checkListItem andCheckListReview:(CheckListReview *)checkListReview{
+  CheckListItemReview *review = (CheckListItemReview *)[NSEntityDescription insertNewObjectForEntityForName:@"CheckListItemReview" inManagedObjectContext:[self managedObjectContext]];
+  [review setCheckListReview:checkListReview];
+  [review setCheckListItem:checkListItem];
+  return review;
+}
+
+- (id)insertReviewForCheckList:(CheckList *)checkList{
+  CheckListReview *review = (CheckListReview *)[NSEntityDescription insertNewObjectForEntityForName:@"CheckListReview" inManagedObjectContext:[self managedObjectContext]];
+  [review setCreatedOn:[NSDate date]];
+  [review setCheckList:checkList];
+  for (CheckListItemGroup *checkListItemGroup in [checkList checkListGroups]){
+    for (CheckListItem *checkListItem in [checkListItemGroup checkListItems]) {
+      [self insertReviewForCheckListItem:checkListItem andCheckListReview:review];
+    }
+  }
+  return review;
+}
 
 - (void)intializeModelWithTestData{
   
@@ -69,6 +87,8 @@ static CDCoreDataManager *_sharedInstance;
   [self insertCheckListItemForGroup:group withTitle:@"5 Crickets"];
   [self insertCheckListItemForGroup:group withTitle:@"Greens"];
   [self insertCheckListItemForGroup:group withTitle:@"Water"];
+  // create review from checklist
+  [self insertReviewForCheckList:checkList];
 	// save
 	[self commitPendingChanges:nil];
 	
@@ -78,7 +98,7 @@ static CDCoreDataManager *_sharedInstance;
 #pragma mark -
 #pragma mark FetchResultsController
 
-- (NSFetchedResultsController *)getFetchResultsControllerForCheckListItems{
+- (NSFetchedResultsController *)getFetchResultsControllerForCheckListReview{
   
   
   if (fetchedResultsControllerForCheckListItems_ != nil) {
@@ -88,7 +108,7 @@ static CDCoreDataManager *_sharedInstance;
   // Set up the fetched results controller.
   
   // Create the fetch request for the entity.
-  NSFetchRequest *fetchRequest = [self fetchForEntityNamed:@"CheckListItem"];
+  NSFetchRequest *fetchRequest = [self fetchForEntityNamed:@"CheckListItemReview"];
   
   // Set the batch size to a suitable number.
   [fetchRequest setFetchBatchSize:20];
@@ -97,8 +117,8 @@ static CDCoreDataManager *_sharedInstance;
   //[fetchRequest setPredicate:[self generatePatientListPredicate]];
   
   // set sort
-  [fetchRequest setSortDescriptors:[NSArray arrayWithObjects:[NSSortDescriptor sortDescriptorWithKey:@"checkListGroup.title" ascending:YES], [NSSortDescriptor sortDescriptorWithKey:@"sortOrder" ascending:YES], nil]];
-  
+  [fetchRequest setSortDescriptors:[NSArray arrayWithObjects:[NSSortDescriptor sortDescriptorWithKey:@"checkListItem.checkListGroup.title" ascending:YES], [NSSortDescriptor sortDescriptorWithKey:@"checkListItem.sortOrder" ascending:YES], nil]];
+  [fetchRequest setRelationshipKeyPathsForPrefetching:[NSArray arrayWithObjects:@"checkListItem.checkListGroup.checkList", @"checkListReview", nil]];
   // Edit the section name key path and cache name if appropriate.
   // nil for section name key path means "no sections".
   /*
@@ -109,7 +129,7 @@ static CDCoreDataManager *_sharedInstance;
    */
   
   NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext 
-                                                                                                sectionNameKeyPath:@"checkListGroup.title" // this key defines the sections
+                                                                                                sectionNameKeyPath:@"checkListItem.checkListGroup.title" // this key defines the sections
                                                                                                          cacheName:@"Root"]; 
   
   
