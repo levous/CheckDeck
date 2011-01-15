@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCSelectionCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCSelectionCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCLabelCell.html">SCLabelCell</a> : 
+<a href="SCControlCell.html">SCControlCell</a> : 
+<a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Conforms to</label></td>
+        <td><a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a></td>
+      </tr>
+      <tr class="alt">
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell that provides the end-user with an automatically generated detail view of options to choose from, much like the Ringtone selection cell in the iPhone's sound settings. The selection items are provided in the form of an array of NSStrings, called the items array. SCSelection cell can be configured to allow multiple selection and to allow no selection at all. If allow multiple selection is disabled, then the bound property name or bound key value of this cell must be of type NSNumber, otherwise it must be of type NSMutableSet.</p>
+<p>See also: <a href="SCSelectionSection.html">SCSelectionSection</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#items>items</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#selectedItemIndex>selectedItemIndex</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#selectedItemsIndexes>selectedItemsIndexes</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowMultipleSelection>allowMultipleSelection</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowNoSelection>allowNoSelection</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoDismissDetailView>autoDismissDetailView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#hideDetailViewNavigationBar>hideDetailViewNavigationBar</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#displaySelection>displaySelection</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#delimeter>delimeter</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withSelectedIndexPropertyName:withItems:>+ cellWithText:withBoundObject:withSelectedIndexPropertyName:withItems:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withSelectedIndexesPropertyName:withItems:allowMultipleSelection:>+ cellWithText:withBoundObject:withSelectedIndexesPropertyName:withItems:allowMultipleSelection:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withSelectionStringPropertyName:withItems:>+ cellWithText:withBoundObject:withSelectionStringPropertyName:withItems:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundKey:withSelectedIndexValue:withItems:>+ cellWithText:withBoundKey:withSelectedIndexValue:withItems:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundKey:withSelectedIndexesValue:withItems:allowMultipleSelection:>+ cellWithText:withBoundKey:withSelectedIndexesValue:withItems:allowMultipleSelection:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundObject:withSelectedIndexPropertyName:withItems:>- initWithText:withBoundObject:withSelectedIndexPropertyName:withItems:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundObject:withSelectedIndexesPropertyName:withItems:allowMultipleSelection:>- initWithText:withBoundObject:withSelectedIndexesPropertyName:withItems:allowMultipleSelection:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundObject:withSelectionStringPropertyName:withItems:>- initWithText:withBoundObject:withSelectionStringPropertyName:withItems:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundKey:withSelectedIndexValue:withItems:>- initWithText:withBoundKey:withSelectedIndexValue:withItems:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundKey:withSelectedIndexesValue:withItems:allowMultipleSelection:>- initWithText:withBoundKey:withSelectedIndexesValue:withItems:allowMultipleSelection:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cellWithText:withBoundObject:withSelectedIndexPropertyName:withItems:"></a>cellWithText:withBoundObject:withSelectedIndexPropertyName:withItems:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSelectedIndexPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the selected item index. Property must be of an NSNumber type and cannot be a readonly property. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSelectionCell given cell text, bound object, an NSNumber bound property name, and an array of selection items. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundObject:withSelectedIndexesPropertyName:withItems:allowMultipleSelection:"></a>cellWithText:withBoundObject:withSelectedIndexesPropertyName:withItems:allowMultipleSelection:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSelectedIndexesPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+ allowMultipleSelection:(BOOL)        <span class="parameter">multipleSelection</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the selected items indexes set. Property must be of an NSMutableSet type and can be a readonly property. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+        <dt>multipleSelection</dt>
+        <dd><p>Determines if multiple selection is allowed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSelectionCell given cell text, bound object, a bound property name, an array of selection items, and whether to allow multiple selection. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundObject:withSelectionStringPropertyName:withItems:"></a>cellWithText:withBoundObject:withSelectionStringPropertyName:withItems:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSelectionStringPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the selected item string. Property must be of an NSString type and cannot be a readonly property. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSelectionCell given cell text, bound object, an NSString bound property name, and an array of selection items. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundKey:withSelectedIndexValue:withItems:"></a>cellWithText:withBoundKey:withSelectedIndexValue:withItems:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withSelectedIndexValue:(NSNumber *)        <span class="parameter">selectedIndexValue</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>selectedIndexValue</dt>
+        <dd><p>An NSNumber with the initially selected item index. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSelectionCell given cell text, bound key, an initial selected index value, and an array of selection items. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundKey:withSelectedIndexesValue:withItems:allowMultipleSelection:"></a>cellWithText:withBoundKey:withSelectedIndexesValue:withItems:allowMultipleSelection:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withSelectedIndexesValue:(NSMutableSet *)        <span class="parameter">selectedIndexesValue</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+ allowMultipleSelection:(BOOL)        <span class="parameter">multipleSelection</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>selectedIndexesValue</dt>
+        <dd><p>A set with all the initially selected items' indexes. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+        <dt>multipleSelection</dt>
+        <dd><p>Determines if multiple selection is allowed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSelectionCell given cell text, bound key, an initial selected indexes value, an array of selection items, and whether to allow multiple selection. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithText:withBoundObject:withSelectedIndexPropertyName:withItems:"></a>initWithText:withBoundObject:withSelectedIndexPropertyName:withItems:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSelectedIndexPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the selected item index. Property must be of an NSNumber type and cannot be a readonly property. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCSelectionCell given cell text, bound object, an NSNumber bound property name, and an array of selection items. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundObject:withSelectedIndexesPropertyName:withItems:allowMultipleSelection:"></a>initWithText:withBoundObject:withSelectedIndexesPropertyName:withItems:allowMultipleSelection:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSelectedIndexesPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+ allowMultipleSelection:(BOOL)        <span class="parameter">multipleSelection</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the selected items indexes set. Property must be of an NSMutableSet type and can be a readonly property. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+        <dt>multipleSelection</dt>
+        <dd><p>Determines if multiple selection is allowed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCSelectionCell given cell text, bound object, a bound property name, an array of selection items, and whether to allow multiple selection. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundObject:withSelectionStringPropertyName:withItems:"></a>initWithText:withBoundObject:withSelectionStringPropertyName:withItems:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSelectionStringPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the selected item string. Property must be of an NSString type and cannot be a readonly property. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCSelectionCell given cell text, bound object, an NSString bound property name, and an array of selection items. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundKey:withSelectedIndexValue:withItems:"></a>initWithText:withBoundKey:withSelectedIndexValue:withItems:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withSelectedIndexValue:(NSNumber *)        <span class="parameter">selectedIndexValue</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>selectedIndexValue</dt>
+        <dd><p>An NSNumber with the initially selected item index. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCSelectionCell given cell text, bound key, an initial selected index value, and an array of selection items. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundKey:withSelectedIndexesValue:withItems:allowMultipleSelection:"></a>initWithText:withBoundKey:withSelectedIndexesValue:withItems:allowMultipleSelection:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withSelectedIndexesValue:(NSMutableSet *)        <span class="parameter">selectedIndexesValue</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+ allowMultipleSelection:(BOOL)        <span class="parameter">multipleSelection</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>selectedIndexesValue</dt>
+        <dd><p>A set will all the initially selected items' indexes. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSString type. </p>
+</dd>
+        <dt>multipleSelection</dt>
+        <dd><p>Determines if multiple selection is allowed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSelectionCell given cell text, bound key, an initial selected indexes value, an array of selection items, and whether to allow multiple selection. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="items"></a>items</h3>
+      <code class="methodDeclaration">@property NSArray *items</code>
+      <h5>Discussion</h5>
+<p>The selection items array. All array elements must be of NSString type. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="selectedItemIndex"></a>selectedItemIndex</h3>
+      <code class="methodDeclaration">@property NSNumber *selectedItemIndex</code>
+      <h5>Discussion</h5>
+<p>This property reflects the current cell's selection. You can set this property to define the cell's selection.</p>
+<p>Note: If you have bound this cell to an object or a key, you can define the cell's selection using either the bound property value or the key value, respectively. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="selectedItemsIndexes"></a>selectedItemsIndexes</h3>
+      <code class="methodDeclaration">@property NSMutableSet *selectedItemsIndexes</code>
+      <h5>Discussion</h5>
+<p>This property reflects the current cell's selection(s). You can add index(es) to the set to define the cell's selection.</p>
+<p>Note: If you have bound this cell to an object or a key, you can define the cell's selection using either the bound property value or the key value, respectively. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowMultipleSelection"></a>allowMultipleSelection</h3>
+      <code class="methodDeclaration">@property BOOL allowMultipleSelection</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the cell allows multiple selection. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowNoSelection"></a>allowNoSelection</h3>
+      <code class="methodDeclaration">@property BOOL allowNoSelection</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the cell allows no selection at all. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="autoDismissDetailView"></a>autoDismissDetailView</h3>
+      <code class="methodDeclaration">@property BOOL autoDismissDetailView</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the detail view is automatically dismissed when an item is selected. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="hideDetailViewNavigationBar"></a>hideDetailViewNavigationBar</h3>
+      <code class="methodDeclaration">@property BOOL hideDetailViewNavigationBar</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the detail view's navigation bar is hidder. Default: FALSE. Note: Only applicable when autoDismissDetailView is TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="displaySelection"></a>displaySelection</h3>
+      <code class="methodDeclaration">@property BOOL displaySelection</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the cell displays the selected items' titles inside the cell in a left aligned label. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="delimeter"></a>delimeter</h3>
+      <code class="methodDeclaration">@property NSString *delimeter</code>
+      <h5>Discussion</h5>
+<p>The delimeter that separates the titles of the selected items. Default: " ,".</p>
+<p>Note: This property is applicable only if displaySelection is TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCPropertyAttributes class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCPropertyAttributes class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td>NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCPropertyAttributes.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class is an abstract base class that represents a set of <a href="SCPropertyDefinition.html">SCPropertyDefinition</a> attributes.</p>
+<p>Each subclass of SCPropertyAttributes is used to extend the definition of an <a href="SCPropertyDefinition.html">SCPropertyDefinition</a> instance according to its respective type. Set the attributes property of an <a href="SCPropertyDefinition.html">SCPropertyDefinition</a> instance to a subclass to be able to further customize the user interface element that will be generated for this property definition.</p>
+<p>You should never make instances of this class. Use subclasses instead. </p>
+      <h2>Tasks</h2>
+      <h3>Other</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#imageView>imageView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#imageViewArray>imageViewArray</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h2>Properties</h2>
+      <h3><a name="imageView"></a>imageView</h3>
+      <code class="methodDeclaration">@property UIImageView *imageView</code>
+      <h5>Discussion</h5>
+<p>The image view assigned to the generated UI element. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="imageViewArray"></a>imageViewArray</h3>
+      <code class="methodDeclaration">@property NSArray *imageViewArray</code>
+      <h5>Discussion</h5>
+<p>The array of image views assigned to the detail elements of the generated UI element. The property is applicable to property definitions of type SCPropertyTypeSelection, SCPropertyTypeObject, and SCPropertyTypeArrayOfObjects. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

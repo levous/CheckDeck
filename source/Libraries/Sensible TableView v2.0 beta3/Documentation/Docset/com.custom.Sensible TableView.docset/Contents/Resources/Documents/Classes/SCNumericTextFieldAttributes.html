@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCNumericTextFieldAttributes class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCNumericTextFieldAttributes class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCTextFieldAttributes.html">SCTextFieldAttributes</a> : 
+<a href="SCPropertyAttributes.html">SCPropertyAttributes</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCPropertyAttributes.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class is used to extend the definition of an SCPropertyAttributes instance of type SCPropertyTypeNumericTextField, thus allowing further customization of the generated control by the user. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#minimumValue>minimumValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#maximumValue>maximumValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowFloatValue>allowFloatValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#attributesWithMinimumValue:maximumValue:allowFloatValue:>+ attributesWithMinimumValue:maximumValue:allowFloatValue:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#attributesWithMinimumValue:maximumValue:allowFloatValue:placeholder:>+ attributesWithMinimumValue:maximumValue:allowFloatValue:placeholder:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithMinimumValue:maximumValue:allowFloatValue:>- initWithMinimumValue:maximumValue:allowFloatValue:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithMinimumValue:maximumValue:allowFloatValue:placeholder:>- initWithMinimumValue:maximumValue:allowFloatValue:placeholder:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="attributesWithMinimumValue:maximumValue:allowFloatValue:"></a>attributesWithMinimumValue:maximumValue:allowFloatValue:</h3>
+      <code class="methodDeclaration">+ (id)attributesWithMinimumValue:(NSNumber *)        <span class="parameter">minValue</span>
+ maximumValue:(NSNumber *)        <span class="parameter">maxValue</span>
+ allowFloatValue:(BOOL)        <span class="parameter">allowFloat</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>minValue</dt>
+        <dd><p>The minimum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+        <dt>maxValue</dt>
+        <dd><p>The maximum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+        <dt>allowFloat</dt>
+        <dd><p>Determines if the generated numeric text field control allows float values. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCNumericTextFieldAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="attributesWithMinimumValue:maximumValue:allowFloatValue:placeholder:"></a>attributesWithMinimumValue:maximumValue:allowFloatValue:placeholder:</h3>
+      <code class="methodDeclaration">+ (id)attributesWithMinimumValue:(NSNumber *)        <span class="parameter">minValue</span>
+ maximumValue:(NSNumber *)        <span class="parameter">maxValue</span>
+ allowFloatValue:(BOOL)        <span class="parameter">allowFloat</span>
+ placeholder:(NSString *)        <span class="parameter">_placeholder</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>minValue</dt>
+        <dd><p>The minimum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+        <dt>maxValue</dt>
+        <dd><p>The maximum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+        <dt>allowFloat</dt>
+        <dd><p>Determines if the generated numeric text field control allows float values. </p>
+</dd>
+        <dt>_placeholder</dt>
+        <dd><p>The placeholder of the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCNumericTextFieldAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithMinimumValue:maximumValue:allowFloatValue:"></a>initWithMinimumValue:maximumValue:allowFloatValue:</h3>
+      <code class="methodDeclaration">- (id)initWithMinimumValue:(NSNumber *)        <span class="parameter">minValue</span>
+ maximumValue:(NSNumber *)        <span class="parameter">maxValue</span>
+ allowFloatValue:(BOOL)        <span class="parameter">allowFloat</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>minValue</dt>
+        <dd><p>The minimum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+        <dt>maxValue</dt>
+        <dd><p>The maximum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+        <dt>allowFloat</dt>
+        <dd><p>Determines if the generated numeric text field control allows float values. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCNumericTextFieldAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="initWithMinimumValue:maximumValue:allowFloatValue:placeholder:"></a>initWithMinimumValue:maximumValue:allowFloatValue:placeholder:</h3>
+      <code class="methodDeclaration">- (id)initWithMinimumValue:(NSNumber *)        <span class="parameter">minValue</span>
+ maximumValue:(NSNumber *)        <span class="parameter">maxValue</span>
+ allowFloatValue:(BOOL)        <span class="parameter">allowFloat</span>
+ placeholder:(NSString *)        <span class="parameter">_placeholder</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>minValue</dt>
+        <dd><p>The minimum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+        <dt>maxValue</dt>
+        <dd><p>The maximum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+        <dt>allowFloat</dt>
+        <dd><p>Determines if the generated numeric text field control allows float values. </p>
+</dd>
+        <dt>_placeholder</dt>
+        <dd><p>The placeholder of the generated numeric text field control. Set to nil to ignore. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCNumericTextFieldAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h2>Properties</h2>
+      <h3><a name="minimumValue"></a>minimumValue</h3>
+      <code class="methodDeclaration">@property NSNumber *minimumValue</code>
+      <h5>Discussion</h5>
+<p>The minimum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="maximumValue"></a>maximumValue</h3>
+      <code class="methodDeclaration">@property NSNumber *maximumValue</code>
+      <h5>Discussion</h5>
+<p>The maximum value allowed for the generated numeric text field control. Set to nil to ignore. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="allowFloatValue"></a>allowFloatValue</h3>
+      <code class="methodDeclaration">@property BOOL allowFloatValue</code>
+      <h5>Discussion</h5>
+<p>Determines if the generated numeric text field control allows float values. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

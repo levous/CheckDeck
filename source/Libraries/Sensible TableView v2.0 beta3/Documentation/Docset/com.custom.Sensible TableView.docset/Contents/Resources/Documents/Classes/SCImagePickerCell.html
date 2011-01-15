@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCImagePickerCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCImagePickerCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Conforms to</label></td>
+        <td><a href="../Protocols/SCViewControllerDelegate.html">SCViewControllerDelegate</a></td>
+      </tr>
+      <tr class="alt">
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell that provides the end-user with an automatically generated detail view of type UIImagePickerController to pick an image with. As soon as the image is picked, it will be saved to the Documents folder using either an auto generated name from the current time stamp, or a name provided through <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> or <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a>. The bound property name or bound key value of this cell must be of type NSString, and will be bound to the name of the selected image. Once an image is selected, tapping an <a href="">SCImagePickerCell</a> will display the image in a detail view. To select a different image, the table view must be put in edit mode (make sure UITableView's allowsSelectionDuringEditing property is TRUE). Alternatively, make sure that displayClearImageButtonInDetailView property is TRUE, and the user will be able to tap a "Clear Image" button to clear the selected image. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#imagePickerController>imagePickerController</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#selectedImage>selectedImage</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#placeholderImageName>placeholderImageName</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#placeholderImageTitle>placeholderImageTitle</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#displayImageNameAsCellText>displayImageNameAsCellText</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#askForSourceType>askForSourceType</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#clearImageButton>clearImageButton</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#displayClearImageButtonInDetailView>displayClearImageButtonInDetailView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoPositionClearImageButton>autoPositionClearImageButton</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#textLabelFrame>textLabelFrame</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#imageViewFrame>imageViewFrame</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#selectedImageName>selectedImageName</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#resetClearImageButtonStyles>- resetClearImageButtonStyles</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withImageNamePropertyName:>+ cellWithText:withBoundObject:withImageNamePropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundKey:withImageNameValue:>+ cellWithText:withBoundKey:withImageNameValue:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundObject:withImageNamePropertyName:>- initWithText:withBoundObject:withImageNamePropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundKey:withImageNameValue:>- initWithText:withBoundKey:withImageNameValue:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cellWithText:withBoundObject:withImageNamePropertyName:"></a>cellWithText:withBoundObject:withImageNamePropertyName:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withImageNamePropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the cell's selected image name. Property must be a readwrite property of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCImagePickerCell given cell text, bound object, and a bound property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundKey:withImageNameValue:"></a>cellWithText:withBoundKey:withImageNameValue:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withImageNameValue:(NSString *)        <span class="parameter">imageNameValue</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>imageNameValue</dt>
+        <dd><p>An initial value to the cell's selected image name. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCImagePickerCell given cell text, bound key, and initial image name value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="resetClearImageButtonStyles"></a>resetClearImageButtonStyles</h3>
+      <code class="methodDeclaration">- (void)resetClearImageButtonStyles</code>
+      <h5>Discussion</h5>
+<p>Resets the clearImageButton default layer styles such as corneRadius and borderWidth. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundObject:withImageNamePropertyName:"></a>initWithText:withBoundObject:withImageNamePropertyName:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withImageNamePropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the cell's selected image name. Property must be a readwrite property of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCImagePickerCell given cell text, bound object, and a bound property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundKey:withImageNameValue:"></a>initWithText:withBoundKey:withImageNameValue:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withImageNameValue:(NSString *)        <span class="parameter">imageNameValue</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>imageNameValue</dt>
+        <dd><p>An initial value to the cell's selected image name. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCImagePickerCell given cell text, bound key, and initial image name value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="imagePickerController"></a>imagePickerController</h3>
+      <code class="methodDeclaration">@property UIImagePickerController *imagePickerController</code>
+      <h5>Discussion</h5>
+<p>The UIImagePickerController associated with the cell. Even though this property is readonly, feel free to customize any of the controller's relevant properties. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="selectedImage"></a>selectedImage</h3>
+      <code class="methodDeclaration">@property UIImage *selectedImage</code>
+      <h5>Discussion</h5>
+<p>The selected image. Returns nil if no image is selected. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="placeholderImageName"></a>placeholderImageName</h3>
+      <code class="methodDeclaration">@property NSString *placeholderImageName</code>
+      <h5>Discussion</h5>
+<p>The name for an image in the documents folder that will be used as a placeholder if no image is selected. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="placeholderImageTitle"></a>placeholderImageTitle</h3>
+      <code class="methodDeclaration">@property NSString *placeholderImageTitle</code>
+      <h5>Discussion</h5>
+<p>The title for the image specified in the placeholderImageName property. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="displayImageNameAsCellText"></a>displayImageNameAsCellText</h3>
+      <code class="methodDeclaration">@property BOOL displayImageNameAsCellText</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the selected image name will be displayed in the cell's textLabel. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="askForSourceType"></a>askForSourceType</h3>
+      <code class="methodDeclaration">@property BOOL askForSourceType</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the user will be asked for the source type, otherwise, the source type will be determined from imagePickerController's sourceType property. Default: TRUE. Note: If the device has no camera, setting this to TRUE automatically sets the sourceType to UIImagePickerControllerSourceTypePhotoLibrary. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="clearImageButton"></a>clearImageButton</h3>
+      <code class="methodDeclaration">@property UIButton *clearImageButton</code>
+      <h5>Discussion</h5>
+<p>A button that clears the currently selected image when tapped. Feel free to customize the default look and feel of this button. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="displayClearImageButtonInDetailView"></a>displayClearImageButtonInDetailView</h3>
+      <code class="methodDeclaration">@property BOOL displayClearImageButtonInDetailView</code>
+      <h5>Discussion</h5>
+<p>If TRUE, clearImageButton will be displayed in the cell's detail view. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="autoPositionClearImageButton"></a>autoPositionClearImageButton</h3>
+      <code class="methodDeclaration">@property BOOL autoPositionClearImageButton</code>
+      <h5>Discussion</h5>
+<p>If TRUE, clearImageButton will be automatically positioned in the cell's detail view. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="textLabelFrame"></a>textLabelFrame</h3>
+      <code class="methodDeclaration">@property CGRect textLabelFrame</code>
+      <h5>Discussion</h5>
+<p>Set this property to customize the placement of the cell's textLabel. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="imageViewFrame"></a>imageViewFrame</h3>
+      <code class="methodDeclaration">@property CGRect imageViewFrame</code>
+      <h5>Discussion</h5>
+<p>Set this property to customize the placement of the cell's imageView. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="selectedImageName"></a>selectedImageName</h3>
+      <code class="methodDeclaration">@property NSString *selectedImageName</code>
+      <h5>Discussion</h5>
+<p>The name of the selected image. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

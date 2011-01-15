@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCPropertyDefinition class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCPropertyDefinition class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td>NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCClassDefinition.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a property definition for <a href="SCClassDefinition.html">SCClassDefinition</a>. Every property definition should set a property type that determines which user interface element should be generated for the property. In addition, the generated user interface element can be further customized using the property's attributes.</p>
+<p>See also: SCPropertyType, <a href="SCPropertyAttributes.html">SCPropertyAttributes</a>, <a href="SCClassDefinition.html">SCClassDefinition</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#name>name</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#title>title</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#type>type</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#attributes>attributes</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#required>required</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoValidate>autoValidate</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Internal</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#dataType>dataType</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#dataReadOnly>dataReadOnly</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithName:>+ definitionWithName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithName:title:type:>+ definitionWithName:title:type:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithName:>- initWithName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithName:title:type:>- initWithName:title:type:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="definitionWithName:"></a>definitionWithName:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCPropertyDefinition given a property name.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="definitionWithName:title:type:"></a>definitionWithName:title:type:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithName:(NSString *)        <span class="parameter">propertyName</span>
+ title:(NSString *)        <span class="parameter">propertyTitle</span>
+ type:(SCPropertyType)        <span class="parameter">propertyType</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property. </p>
+</dd>
+        <dt>propertyTitle</dt>
+        <dd><p>The title of the property. Property titles are used by user interface elements to generate labels associated with the generated controls. </p>
+</dd>
+        <dt>propertyType</dt>
+        <dd><p>The property type determines which user interface element will be generated for the property. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCPropertyDefinition given a property name, title, and type.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithName:"></a>initWithName:</h3>
+      <code class="methodDeclaration">- (id)initWithName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCPropertyDefinition given a property name.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="initWithName:title:type:"></a>initWithName:title:type:</h3>
+      <code class="methodDeclaration">- (id)initWithName:(NSString *)        <span class="parameter">propertyName</span>
+ title:(NSString *)        <span class="parameter">propertyTitle</span>
+ type:(SCPropertyType)        <span class="parameter">propertyType</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property. </p>
+</dd>
+        <dt>propertyTitle</dt>
+        <dd><p>The title of the property. Property titles are used by user interface elements to generate labels associated with the generated controls. </p>
+</dd>
+        <dt>propertyType</dt>
+        <dd><p>The property type determines which user interface element will be generated for the property. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCPropertyDefinition given a property name, title, and type.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h2>Properties</h2>
+      <h3><a name="name"></a>name</h3>
+      <code class="methodDeclaration">@property NSString *name</code>
+      <h5>Discussion</h5>
+<p>The name of the property associated with the property definition. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="title"></a>title</h3>
+      <code class="methodDeclaration">@property NSString *title</code>
+      <h5>Discussion</h5>
+<p>The title of the property. Property titles are used by user interface elements to generate labels associated with the generated controls. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="type"></a>type</h3>
+      <code class="methodDeclaration">@property SCPropertyType type</code>
+      <h5>Discussion</h5>
+<p>The type of the property. Property types determines which user interface element will be generated for the property. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="attributes"></a>attributes</h3>
+      <code class="methodDeclaration">@property SCPropertyAttributes *attributes</code>
+      <h5>Discussion</h5>
+<p>The attibutes set of the property. Property attributes gives the user the ability to further customize the user interface element that will be generated for the property. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="required"></a>required</h3>
+      <code class="methodDeclaration">@property BOOL required</code>
+      <h5>Discussion</h5>
+<p>Set to TRUE if property is a required property. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="autoValidate"></a>autoValidate</h3>
+      <code class="methodDeclaration">@property BOOL autoValidate</code>
+      <h5>Discussion</h5>
+<p>Set to TRUE if the property value should be automatically validated by the user interface element before commiting it to the property. If the user chooses to provide custom validation using either the cell's <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a>, or the model's <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>, they should set this property to FALSE. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="dataType"></a>dataType</h3>
+      <code class="methodDeclaration">@property SCPropertyDataType dataType</code>
+      <h5>Discussion</h5>
+<p>This property is automatically set by the framework and should never be assigned a value directly. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="dataReadOnly"></a>dataReadOnly</h3>
+      <code class="methodDeclaration">@property BOOL dataReadOnly</code>
+      <h5>Discussion</h5>
+<p>This property is automatically set by the framework and should never be assigned a value directly. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

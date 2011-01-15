@@ -9,7 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface SoundEffects : NSObject {
-  
+  AVAudioPlayer *checkItemSound;
 }
-
+- (void)playCheckedOffSound;
 @end

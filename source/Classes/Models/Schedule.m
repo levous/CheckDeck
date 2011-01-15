@@ -2,7 +2,7 @@
 //  Schedule.m
 //  CheckDeck
 //
-//  Created by Rusty Zarse on 1/2/11.
+//  Created by Rusty Zarse on 1/7/11.
 //  Copyright 2011 LeVous, LLC. All rights reserved.
 //
 

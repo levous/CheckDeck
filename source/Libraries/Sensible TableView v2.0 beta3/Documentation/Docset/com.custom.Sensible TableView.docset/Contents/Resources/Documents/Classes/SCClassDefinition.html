@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCClassDefinition class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCClassDefinition class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td>NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCClassDefinition.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a means to further extend the definition of user-defined classes. Using class definitions, classes like <a href="SCObjectCell.html">SCObjectCell</a> and <a href="SCObjectSection.html">SCObjectSection</a> will be able to better generate user interface elements that truly represent the properties of their bound objects.</p>
+<p>SCClassDefinition mainly consists of one or more property definitions of type <a href="SCPropertyDefinition.html">SCPropertyDefinition</a>. Upon creation, SCClassDefinition will (optionally) automatically generate all the property definitions for the given class. From there, the user will be able to customize the generated property definitions, add new definitions, or remove generated definitions.</p>
+<p>See also: <a href="SCPropertyDefinition.html">SCPropertyDefinition</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cls>cls</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#entity>entity</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#managedObjectContext>managedObjectContext</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#className>className</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#keyPropertyName>keyPropertyName</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#titlePropertyName>titlePropertyName</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#titlePropertyNameDelimiter>titlePropertyNameDelimiter</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#descriptionPropertyName>descriptionPropertyName</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#uiElementDelegate>uiElementDelegate</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Property Definitions</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#propertyDefinitionCount>propertyDefinitionCount</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#addPropertyDefinitionWithName:title:type:>- addPropertyDefinitionWithName:title:type:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#addPropertyDefinition:>- addPropertyDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#insertPropertyDefinition:atIndex:>- insertPropertyDefinition:atIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#removePropertyDefinitionAtIndex:>- removePropertyDefinitionAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#removePropertyDefinitionWithName:>- removePropertyDefinitionWithName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#propertyDefinitionAtIndex:>- propertyDefinitionAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#propertyDefinitionWithName:>- propertyDefinitionWithName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#indexOfPropertyDefinitionWithName:>- indexOfPropertyDefinitionWithName:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithClass:autoGeneratePropertyDefinitions:>+ definitionWithClass:autoGeneratePropertyDefinitions:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithClass:withPropertyNames:>+ definitionWithClass:withPropertyNames:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithClass:withPropertyNames:withPropertyTitles:>+ definitionWithClass:withPropertyNames:withPropertyTitles:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithEntityName:withManagedObjectContext:autoGeneratePropertyDefinitions:>+ definitionWithEntityName:withManagedObjectContext:autoGeneratePropertyDefinitions:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithEntityName:withManagedObjectContext:withPropertyNames:>+ definitionWithEntityName:withManagedObjectContext:withPropertyNames:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithEntityName:withManagedObjectContext:withPropertyNames:withPropertyTitles:>+ definitionWithEntityName:withManagedObjectContext:withPropertyNames:withPropertyTitles:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithClass:autoGeneratePropertyDefinitions:>- initWithClass:autoGeneratePropertyDefinitions:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithClass:withPropertyNames:>- initWithClass:withPropertyNames:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithClass:withPropertyNames:withPropertyTitles:>- initWithClass:withPropertyNames:withPropertyTitles:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithEntityName:withManagedObjectContext:autoGeneratePropertyDefinitions:>- initWithEntityName:withManagedObjectContext:autoGeneratePropertyDefinitions:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithEntityName:withManagedObjectContext:withPropertyNames:>- initWithEntityName:withManagedObjectContext:withPropertyNames:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithEntityName:withManagedObjectContext:withPropertyNames:withPropertyTitles:>- initWithEntityName:withManagedObjectContext:withPropertyNames:withPropertyTitles:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Other</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#propertyDataTypeForPropertyWithName:inObject:>+ propertyDataTypeForPropertyWithName:inObject:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#isValidPropertyName:>- isValidPropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#titleValueForObject:>- titleValueForObject:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="definitionWithClass:autoGeneratePropertyDefinitions:"></a>definitionWithClass:autoGeneratePropertyDefinitions:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithClass:(Class)        <span class="parameter">_cls</span>
+ autoGeneratePropertyDefinitions:(BOOL)        <span class="parameter">autoGenerate</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_cls</dt>
+        <dd><p>A class for which the definition will be extended. </p>
+</dd>
+        <dt>autoGenerate</dt>
+        <dd><p>If TRUE, SCClassDefinition will automatically generate all the property definitions for the given class. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a class and the option to auto generate property definitions for the given class.</p>
+<p>The method will also generate user friendly property titles from the names of the generated properties. These titles can be modified by the user later as part of the property definition customization.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="definitionWithClass:withPropertyNames:"></a>definitionWithClass:withPropertyNames:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithClass:(Class)        <span class="parameter">_cls</span>
+ withPropertyNames:(NSArray *)        <span class="parameter">propertyNames</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_cls</dt>
+        <dd><p>A class for which the definition will be extended. </p>
+</dd>
+        <dt>propertyNames</dt>
+        <dd><p>An array of the names of properties to be generated. All array elements must be of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a class and an array of the property names to generate property definitions from.</p>
+<p>The method will also generate user friendly property titles from the names of the given properties. These titles can be modified by the user later as part of the property definition customization.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="definitionWithClass:withPropertyNames:withPropertyTitles:"></a>definitionWithClass:withPropertyNames:withPropertyTitles:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithClass:(Class)        <span class="parameter">_cls</span>
+ withPropertyNames:(NSArray *)        <span class="parameter">propertyNames</span>
+ withPropertyTitles:(NSArray *)        <span class="parameter">propertyTitles</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_cls</dt>
+        <dd><p>A class for which the definition will be extended. </p>
+</dd>
+        <dt>propertyNames</dt>
+        <dd><p>An array of the names of properties to be generated. All array elements must be of type NSString. </p>
+</dd>
+        <dt>propertyTitles</dt>
+        <dd><p>An array of titles to the properties in propertyNames. All array elements must be of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a class, an array of the property names to generate property definitions from, and array of titles for these properties.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="definitionWithEntityName:withManagedObjectContext:autoGeneratePropertyDefinitions:"></a>definitionWithEntityName:withManagedObjectContext:autoGeneratePropertyDefinitions:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithEntityName:(NSString *)        <span class="parameter">entityName</span>
+ withManagedObjectContext:(NSManagedObjectContext *)        <span class="parameter">context</span>
+ autoGeneratePropertyDefinitions:(BOOL)        <span class="parameter">autoGenerate</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>entityName</dt>
+        <dd><p>The name of the entity for which the definition will be extended. </p>
+</dd>
+        <dt>context</dt>
+        <dd><p>The managed object context of the entity. </p>
+</dd>
+        <dt>autoGenerate</dt>
+        <dd><p>If TRUE, SCClassDefinition will automatically generate all the property definitions for the given entity's attributes.</p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a Core Data entity name and the option to auto generate property definitions for the given entity's properties.</p>
+<p>The method will also generate user friendly property titles from the names of the generated properties. These titles can be modified by the user later as part of the property definition customization.</p>
+<p>
+Note: This method is used when creating an extended class definition for Core Data's managed object. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="definitionWithEntityName:withManagedObjectContext:withPropertyNames:"></a>definitionWithEntityName:withManagedObjectContext:withPropertyNames:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithEntityName:(NSString *)        <span class="parameter">entityName</span>
+ withManagedObjectContext:(NSManagedObjectContext *)        <span class="parameter">context</span>
+ withPropertyNames:(NSArray *)        <span class="parameter">propertyNames</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>entityName</dt>
+        <dd><p>The name of the entity for which the definition will be extended. </p>
+</dd>
+        <dt>context</dt>
+        <dd><p>The managed object context of the entity. </p>
+</dd>
+        <dt>propertyNames</dt>
+        <dd><p>An array of the names of properties to be generated. All array elements must be of type NSString.</p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a Core Data entity name and an array of the property names to generate property definitions for.</p>
+<p>The method will also generate user friendly property titles from the names of the given properties. These titles can be modified by the user later as part of the property definition customization.</p>
+<p>
+Note: This method is used when creating an extended class definition for Core Data's managed object. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="definitionWithEntityName:withManagedObjectContext:withPropertyNames:withPropertyTitles:"></a>definitionWithEntityName:withManagedObjectContext:withPropertyNames:withPropertyTitles:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithEntityName:(NSString *)        <span class="parameter">entityName</span>
+ withManagedObjectContext:(NSManagedObjectContext *)        <span class="parameter">context</span>
+ withPropertyNames:(NSArray *)        <span class="parameter">propertyNames</span>
+ withPropertyTitles:(NSArray *)        <span class="parameter">propertyTitles</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>entityName</dt>
+        <dd><p>The name of the entity for which the definition will be extended. </p>
+</dd>
+        <dt>context</dt>
+        <dd><p>The managed object context of the entity. </p>
+</dd>
+        <dt>propertyNames</dt>
+        <dd><p>An array of the names of properties to be generated. All array elements must be of type NSString. </p>
+</dd>
+        <dt>propertyTitles</dt>
+        <dd><p>An array of titles to the properties in propertyNames. All array elements must be of type NSString.</p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a Core Data entity name, an array of the property names to generate property definitions for, and array of titles for these properties.</p>
+<p>
+Note: This method is used when creating an extended class definition for Core Data's managed object. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="propertyDataTypeForPropertyWithName:inObject:"></a>propertyDataTypeForPropertyWithName:inObject:</h3>
+      <code class="methodDeclaration">+ (SCPropertyDataType)propertyDataTypeForPropertyWithName:(NSString *)        <span class="parameter">propertyName</span>
+ inObject:(NSObject *)        <span class="parameter">object</span>
+</code>
+      <h5>Discussion</h5>
+<p>Returns the property data type of any property given its name and its object. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="addPropertyDefinitionWithName:title:type:"></a>addPropertyDefinitionWithName:title:type:</h3>
+      <code class="methodDeclaration">- (BOOL)addPropertyDefinitionWithName:(NSString *)        <span class="parameter">propertyName</span>
+ title:(NSString *)        <span class="parameter">propertyTitle</span>
+ type:(SCPropertyType)        <span class="parameter">propertyType</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property. </p>
+</dd>
+        <dt>propertyTitle</dt>
+        <dd><p>The title of the property. If no value is provided, the method automatically generates a user friendly name for the property. </p>
+</dd>
+        <dt>propertyType</dt>
+        <dd><p>The property type. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>Returns TRUE if adding the definition was successful. The main reason for addition failure is if the property name does not match an existing property in cls. </p>
+      <h5>Discussion</h5>
+<p>Methods adds a new property definition. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="addPropertyDefinition:"></a>addPropertyDefinition:</h3>
+      <code class="methodDeclaration">- (BOOL)addPropertyDefinition:(SCPropertyDefinition *)        <span class="parameter">propertyDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyDefinition</dt>
+        <dd><p>The property definition to be added. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>Returns TRUE if adding the definition was successful. The main reason for addition failure is if the property name does not match an existing property in cls (not required if property definition is an <a href="SCCustomPropertyDefinition.html">SCCustomPropertyDefinition</a>). </p>
+      <h5>Discussion</h5>
+<p>Methods adds a new property definition. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="insertPropertyDefinition:atIndex:"></a>insertPropertyDefinition:atIndex:</h3>
+      <code class="methodDeclaration">- (BOOL)insertPropertyDefinition:(SCPropertyDefinition *)        <span class="parameter">propertyDefinition</span>
+ atIndex:(NSInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyDefinition</dt>
+        <dd><p>The property definition to be added. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>The index to insert the property definition at. Must be less than propertyDefinitionCount. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>Returns TRUE if inserting the definition was successful. The main reason for insertion failure is if the property name does not match an existing property in cls (not required if property definition is an <a href="SCCustomPropertyDefinition.html">SCCustomPropertyDefinition</a>). </p>
+      <h5>Discussion</h5>
+<p>Methods inserts a new property definition at the given index. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="removePropertyDefinitionAtIndex:"></a>removePropertyDefinitionAtIndex:</h3>
+      <code class="methodDeclaration">- (void)removePropertyDefinitionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>index</dt>
+        <dd><p>Must be less than the total number of property definitions. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Removes the property definition at the given index. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="removePropertyDefinitionWithName:"></a>removePropertyDefinitionWithName:</h3>
+      <code class="methodDeclaration">- (void)removePropertyDefinitionWithName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property to be removed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Removes the property definition with the given name. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="propertyDefinitionAtIndex:"></a>propertyDefinitionAtIndex:</h3>
+      <code class="methodDeclaration">- (SCPropertyDefinition *)propertyDefinitionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>index</dt>
+        <dd><p>Must be less than the total number of property definitions. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns the property definition at the given index. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="propertyDefinitionWithName:"></a>propertyDefinitionWithName:</h3>
+      <code class="methodDeclaration">- (SCPropertyDefinition *)propertyDefinitionWithName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property who's definition to be returned. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns the property definition with the given name. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="indexOfPropertyDefinitionWithName:"></a>indexOfPropertyDefinitionWithName:</h3>
+      <code class="methodDeclaration">- (NSUInteger)indexOfPropertyDefinitionWithName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property who's index to be returned. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns the index for the property definition with the given name. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="initWithClass:autoGeneratePropertyDefinitions:"></a>initWithClass:autoGeneratePropertyDefinitions:</h3>
+      <code class="methodDeclaration">- (id)initWithClass:(Class)        <span class="parameter">_cls</span>
+ autoGeneratePropertyDefinitions:(BOOL)        <span class="parameter">autoGenerate</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_cls</dt>
+        <dd><p>A class for which the definition will be extended. </p>
+</dd>
+        <dt>autoGenerate</dt>
+        <dd><p>If TRUE, SCClassDefinition will automatically generate all the property definitions for the given class. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a class and the option to auto generate property definitions for the given class.</p>
+<p>The method will also generate user friendly property titles from the names of the generated properties. These titles can be modified by the user later as part of the property definition customization.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="initWithClass:withPropertyNames:"></a>initWithClass:withPropertyNames:</h3>
+      <code class="methodDeclaration">- (id)initWithClass:(Class)        <span class="parameter">_cls</span>
+ withPropertyNames:(NSArray *)        <span class="parameter">propertyNames</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_cls</dt>
+        <dd><p>A class for which the definition will be extended. </p>
+</dd>
+        <dt>propertyNames</dt>
+        <dd><p>An array of the names of properties to be generated. All array elements must be of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a class and an array of the property names to generate property definitions from.</p>
+<p>The method will also generate user friendly property titles from the names of the given properties. These titles can be modified by the user later as part of the property definition customization.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="initWithClass:withPropertyNames:withPropertyTitles:"></a>initWithClass:withPropertyNames:withPropertyTitles:</h3>
+      <code class="methodDeclaration">- (id)initWithClass:(Class)        <span class="parameter">_cls</span>
+ withPropertyNames:(NSArray *)        <span class="parameter">propertyNames</span>
+ withPropertyTitles:(NSArray *)        <span class="parameter">propertyTitles</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_cls</dt>
+        <dd><p>A class for which the definition will be extended. </p>
+</dd>
+        <dt>propertyNames</dt>
+        <dd><p>An array of the names of properties to be generated. All array elements must be of type NSString. </p>
+</dd>
+        <dt>propertyTitles</dt>
+        <dd><p>An array of titles to the properties in propertyNames. All array elements must be of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCClassDefinition given a class, an array of the property names to generate property definitions from, and array of titles for these properties.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="initWithEntityName:withManagedObjectContext:autoGeneratePropertyDefinitions:"></a>initWithEntityName:withManagedObjectContext:autoGeneratePropertyDefinitions:</h3>
+      <code class="methodDeclaration">- (id)initWithEntityName:(NSString *)        <span class="parameter">entityName</span>
+ withManagedObjectContext:(NSManagedObjectContext *)        <span class="parameter">context</span>
+ autoGeneratePropertyDefinitions:(BOOL)        <span class="parameter">autoGenerate</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>entityName</dt>
+        <dd><p>The name of the entity for which the definition will be extended. </p>
+</dd>
+        <dt>context</dt>
+        <dd><p>The managed object context of the entity. </p>
+</dd>
+        <dt>autoGenerate</dt>
+        <dd><p>If TRUE, SCClassDefinition will automatically generate all the property definitions for the given entity's attributes.</p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCClassDefinition given a Core Data entity name and the option to auto generate property definitions for the given entity's properties.</p>
+<p>The method will also generate user friendly property titles from the names of the generated properties. These titles can be modified by the user later as part of the property definition customization.</p>
+<p>
+Note: This method is used when creating an extended class definition for Core Data's managed object. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="initWithEntityName:withManagedObjectContext:withPropertyNames:"></a>initWithEntityName:withManagedObjectContext:withPropertyNames:</h3>
+      <code class="methodDeclaration">- (id)initWithEntityName:(NSString *)        <span class="parameter">entityName</span>
+ withManagedObjectContext:(NSManagedObjectContext *)        <span class="parameter">context</span>
+ withPropertyNames:(NSArray *)        <span class="parameter">propertyNames</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>entityName</dt>
+        <dd><p>The name of the entity for which the definition will be extended. </p>
+</dd>
+        <dt>context</dt>
+        <dd><p>The managed object context of the entity. </p>
+</dd>
+        <dt>propertyNames</dt>
+        <dd><p>An array of the names of properties to be generated. All array elements must be of type NSString.</p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCClassDefinition given a Core Data entity name and an array of the property names to generate property definitions for.</p>
+<p>The method will also generate user friendly property titles from the names of the given properties. These titles can be modified by the user later as part of the property definition customization.</p>
+<p>
+Note: This method is used when creating an extended class definition for Core Data's managed object. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="initWithEntityName:withManagedObjectContext:withPropertyNames:withPropertyTitles:"></a>initWithEntityName:withManagedObjectContext:withPropertyNames:withPropertyTitles:</h3>
+      <code class="methodDeclaration">- (id)initWithEntityName:(NSString *)        <span class="parameter">entityName</span>
+ withManagedObjectContext:(NSManagedObjectContext *)        <span class="parameter">context</span>
+ withPropertyNames:(NSArray *)        <span class="parameter">propertyNames</span>
+ withPropertyTitles:(NSArray *)        <span class="parameter">propertyTitles</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>entityName</dt>
+        <dd><p>The name of the entity for which the definition will be extended. </p>
+</dd>
+        <dt>context</dt>
+        <dd><p>The managed object context of the entity. </p>
+</dd>
+        <dt>propertyNames</dt>
+        <dd><p>An array of the names of properties to be generated. All array elements must be of type NSString. </p>
+</dd>
+        <dt>propertyTitles</dt>
+        <dd><p>An array of titles to the properties in propertyNames. All array elements must be of type NSString.</p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCClassDefinition given a Core Data entity name, an array of the property names to generate property definitions for, and array of titles for these properties.</p>
+<p>
+Note: This method is used when creating an extended class definition for Core Data's managed object. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="isValidPropertyName:"></a>isValidPropertyName:</h3>
+      <code class="methodDeclaration">- (BOOL)isValidPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The name of the property who's validity is to be checked. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns TRUE if propertyName is valid. A propertyName is valid if it exists within the associated class or entity. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="titleValueForObject:"></a>titleValueForObject:</h3>
+      <code class="methodDeclaration">- (NSString *)titleValueForObject:(NSObject *)        <span class="parameter">object</span>
+</code>
+      <h5>Discussion</h5>
+<p>Returns the title string value for the given object. The title value is determined based on the value of the titlePropertyName property. Note: object must be an instance of the same class or entity defined in the class definition. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h2>Properties</h2>
+      <h3><a name="cls"></a>cls</h3>
+      <code class="methodDeclaration">@property Class cls</code>
+      <h5>Discussion</h5>
+<p>The class associated with the definition. Note: Only applicable with class definition is initialized with a class. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="entity"></a>entity</h3>
+      <code class="methodDeclaration">@property NSEntityDescription *entity</code>
+      <h5>Discussion</h5>
+<p>The entity associated with the definition. Note: Only applicable when class definition is initialized with an entity name. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="managedObjectContext"></a>managedObjectContext</h3>
+      <code class="methodDeclaration">@property NSManagedObjectContext *managedObjectContext</code>
+      <h5>Discussion</h5>
+<p>The managed object context of the entity associated with the definition. Note: Only applicable when class definition is initialized with an entity name. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="className"></a>className</h3>
+      <code class="methodDeclaration">@property NSString *className</code>
+      <h5>Discussion</h5>
+<p>The string name of cls or entity </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="keyPropertyName"></a>keyPropertyName</h3>
+      <code class="methodDeclaration">@property NSString *keyPropertyName</code>
+      <h5>Discussion</h5>
+<p>The key of the entity associated with the definition. The key is usually used when a set of entities is sorted. By default, SCClassDefinition sets this property to the name of the first property in the entity. Note: Only applicable when class definition is initialized with an entity name. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="titlePropertyName"></a>titlePropertyName</h3>
+      <code class="methodDeclaration">@property NSString *titlePropertyName</code>
+      <h5>Discussion</h5>
+<p>The name of the title property for the class or entity. Title properties are used in user interface elements to display title information based on the value of the property named here. By default, SCClassDefinition sets this property to the name of the first property in cls or entity. Note: To have the title set to more than one property value, separate the property names by a semi-colon (e.g.: "firstName;lastName"). When displayed, the titles will be separated by the value of the titlePropertyNameDelimiter property. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="titlePropertyNameDelimiter"></a>titlePropertyNameDelimiter</h3>
+      <code class="methodDeclaration">@property NSString *titlePropertyNameDelimiter</code>
+      <h5>Discussion</h5>
+<p>The delimiter used to separate the titles specified in titlePropertyName. Default: " ". </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="descriptionPropertyName"></a>descriptionPropertyName</h3>
+      <code class="methodDeclaration">@property NSString *descriptionPropertyName</code>
+      <h5>Discussion</h5>
+<p>The name of the description property for the class or entity. Description properties are used in user interface elements to display description information based on the value of the property named here. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="uiElementDelegate"></a>uiElementDelegate</h3>
+      <code class="methodDeclaration">@property id uiElementDelegate</code>
+      <h5>Discussion</h5>
+<p>The delegate for the user interface elements that will be generated for the property definitions. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="propertyDefinitionCount"></a>propertyDefinitionCount</h3>
+      <code class="methodDeclaration">@property NSUInteger propertyDefinitionCount</code>
+      <h5>Discussion</h5>
+<p>The number of property definitions. </p>
+      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

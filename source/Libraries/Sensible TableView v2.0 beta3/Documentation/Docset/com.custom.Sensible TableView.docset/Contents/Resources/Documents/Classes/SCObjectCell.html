@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCObjectCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCObjectCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Conforms to</label></td>
+        <td><a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a></td>
+      </tr>
+      <tr class="alt">
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell that is able to automatically generate a detail view with cells generated from a given bound object's properties. If the bound object is given without an extended class definition (<a href="SCClassDefinition.html">SCClassDefinition</a>), then the cells will only be generated for properties of type NSString and NSNumber, and will be either of type <a href="SCTextFieldCell.html">SCTextFieldCell</a> or <a href="SCNumericTextFieldCell.html">SCNumericTextFieldCell</a>, respectively. If an <a href="SCClassDefinition.html">SCClassDefinition</a> is provided for the bound object, a full fledged detail view of cells will be generated.</p>
+<p>When SCObjectCell is selected by the end-user, a detail view optionally fires up to to give the user the ability to edit the object's properties.</p>
+<p>See also: <a href="SCObjectSection.html">SCObjectSection</a>, <a href="SCArrayOfObjectsSection.html">SCArrayOfObjectsSection</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#objectClassDefinition>objectClassDefinition</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundObjectTitleText>boundObjectTitleText</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowDetailView>allowDetailView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewModal>detailViewModal</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithBoundObject:>+ cellWithBoundObject:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithBoundObject:withClassDefinition:>+ cellWithBoundObject:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithBoundObject:>- initWithBoundObject:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithBoundObject:withClassDefinition:>- initWithBoundObject:withClassDefinition:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Internal Methods (do not use)</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#setBoundPropertyName:>- setBoundPropertyName:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cellWithBoundObject:"></a>cellWithBoundObject:</h3>
+      <code class="methodDeclaration">+ (id)cellWithBoundObject:(NSObject *)        <span class="parameter">object</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>object</dt>
+        <dd><p>The object that SCObjectCell will use to generate its detail view cells. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCObjectCell given a bound object.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithBoundObject:withClassDefinition:"></a>cellWithBoundObject:withClassDefinition:</h3>
+      <code class="methodDeclaration">+ (id)cellWithBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>object</dt>
+        <dd><p>The object that SCObjectCell will use to generate its detail view cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The extended class definition for the object. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCObjectCell given a bound object and a class definition.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithBoundObject:"></a>initWithBoundObject:</h3>
+      <code class="methodDeclaration">- (id)initWithBoundObject:(NSObject *)        <span class="parameter">object</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>object</dt>
+        <dd><p>The object that SCObjectCell will use to generate its detail view cells. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCObjectCell given a bound object.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithBoundObject:withClassDefinition:"></a>initWithBoundObject:withClassDefinition:</h3>
+      <code class="methodDeclaration">- (id)initWithBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>object</dt>
+        <dd><p>The object that SCObjectCell will use to generate its detail view cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The extended class definition for the object. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCObjectCell given a bound object and a class definition.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="setBoundPropertyName:"></a>setBoundPropertyName:</h3>
+      <code class="methodDeclaration">- (void)setBoundPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method is for internal use only, never call this method directly. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="objectClassDefinition"></a>objectClassDefinition</h3>
+      <code class="methodDeclaration">@property SCClassDefinition *objectClassDefinition</code>
+      <h5>Discussion</h5>
+<p>The extended class definition of the bound object. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="boundObjectTitleText"></a>boundObjectTitleText</h3>
+      <code class="methodDeclaration">@property NSString *boundObjectTitleText</code>
+      <h5>Discussion</h5>
+<p>The bound object title that will appear in the cell's textLabel.</p>
+<p>If this value is nil, SCObjectCell uses the value of the title property found in objectClassDefinition. Set this value to override the default behaviour and provide your own title text for the object. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowDetailView"></a>allowDetailView</h3>
+      <code class="methodDeclaration">@property BOOL allowDetailView</code>
+      <h5>Discussion</h5>
+<p>Allows/disables a detail view for editing the bound object's properties. Default: TRUE.</p>
+<p>A detail view is automatically generated for editing the bound object's properties. You can control wether the view appears as a modal view or gets pushed to the navigation stack using the detailViewModal property. Modal views have the added feature of giving the end user a Cancel and Done buttons. The Cancel button cancels all user's actions, while the Done button commits them. Also, if the cell's validation is enabled, the Done button will remain disabled until all cells' values are valid. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailViewModal"></a>detailViewModal</h3>
+      <code class="methodDeclaration">@property BOOL detailViewModal</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the detail view always appears as a modal view. If FALSE and a navigation controller exists, the detail view is pushed to the navigation controller's stack, otherwise the view appears modally. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

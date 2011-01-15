@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCArrayOfObjectsSection class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCArrayOfObjectsSection class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCArrayOfItemsSection.html">SCArrayOfItemsSection</a> : 
+<a href="SCTableViewSection.html">SCTableViewSection</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewSection.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as an <a href="SCTableViewModel.html">SCTableViewModel</a> section that is able to represent an array of any kind of objects and automatically generate its cells from these objects. In addition, SCArrayOfObjectsSection generates its detail views from the properties of the corresponding object in its items array. Objects in the items array need not all be of the same object type, but they must all decend from NSObject. If more than one type of object is present in the items array, then their respective class definitions should be added to the itemsClassDefinitions set.</p>
+<p>See also: <a href="SCObjectSection.html">SCObjectSection</a>, <a href="SCObjectCell.html">SCObjectCell</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#itemsClassDefinitions>itemsClassDefinitions</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#itemsSet>itemsSet</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sortItemsSetAscending>sortItemsSetAscending</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:withItems:withClassDefinition:>+ sectionWithHeaderTitle:withItems:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:withItemsSet:withClassDefinition:>+ sectionWithHeaderTitle:withItemsSet:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:withEntityClassDefinition:>+ sectionWithHeaderTitle:withEntityClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:withEntityClassDefinition:usingPredicate:>+ sectionWithHeaderTitle:withEntityClassDefinition:usingPredicate:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:withItems:withClassDefinition:>- initWithHeaderTitle:withItems:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:withItemsSet:withClassDefinition:>- initWithHeaderTitle:withItemsSet:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:withEntityClassDefinition:>- initWithHeaderTitle:withEntityClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:withEntityClassDefinition:usingPredicate:>- initWithHeaderTitle:withEntityClassDefinition:usingPredicate:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="sectionWithHeaderTitle:withItems:withClassDefinition:"></a>sectionWithHeaderTitle:withItems:withClassDefinition:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withItems:(NSMutableArray *)        <span class="parameter">sectionItems</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>sectionItems</dt>
+        <dd><p>A mutable array of objects that the section will use to generate its cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the class or entity of the objects in the objects array. If the array contains more than one type of object, then their respective class definitions must be added to the itemsClassDefinitions dictionary after initialization. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCArrayOfObjectsSection given a header title and an array of objects.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="sectionWithHeaderTitle:withItemsSet:withClassDefinition:"></a>sectionWithHeaderTitle:withItemsSet:withClassDefinition:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withItemsSet:(NSMutableSet *)        <span class="parameter">sectionItemsSet</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>sectionItemsSet</dt>
+        <dd><p>A mutable set of objects that the section will use to generate its cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCArrayOfObjectsSection given a header title and a mutable set of objects. This method should only be used to create a section with the contents of a Core Data relationship.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="sectionWithHeaderTitle:withEntityClassDefinition:"></a>sectionWithHeaderTitle:withEntityClassDefinition:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withEntityClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCArrayOfObjectsSection given a header title and an entity class definition. Note: This method creates a section with all the objects that exist in classDefinition's entity's managedObjectContext. To create a section with only a subset of these objects, consider using the other section initializers.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="sectionWithHeaderTitle:withEntityClassDefinition:usingPredicate:"></a>sectionWithHeaderTitle:withEntityClassDefinition:usingPredicate:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withEntityClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+ usingPredicate:(NSPredicate *)        <span class="parameter">predicate</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+        <dt>perdicate</dt>
+        <dd><p>The predicate that will be used to fetch the objects. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCArrayOfObjectsSection given a header title, an entity class definition, and an NSPredicate.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithHeaderTitle:withItems:withClassDefinition:"></a>initWithHeaderTitle:withItems:withClassDefinition:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withItems:(NSMutableArray *)        <span class="parameter">sectionItems</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>sectionItems</dt>
+        <dd><p>An array of objects that the section will use to generate its cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the class or entity of the objects in the objects array. If the array contains more than one type of object, then their respective class definitions must be added to the itemsClassDefinitions dictionary after initialization. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCArrayOfObjectsSection given a header title and an array of objects.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="initWithHeaderTitle:withItemsSet:withClassDefinition:"></a>initWithHeaderTitle:withItemsSet:withClassDefinition:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withItemsSet:(NSMutableSet *)        <span class="parameter">sectionItemsSet</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>sectionItemsSet</dt>
+        <dd><p>A mutable set of objects that the section will use to generate its cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCArrayOfObjectsSection given a header title and a mutable set of objects. This method should only be used to create a section with the contents of a Core Data relationship.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="initWithHeaderTitle:withEntityClassDefinition:"></a>initWithHeaderTitle:withEntityClassDefinition:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withEntityClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCArrayOfObjectsSection given a header title and an entity class definition. Note: This method creates a section with all the objects that exist in classDefinition's entity's managedObjectContext. To create a section with only a subset of these objects, consider using the other section initializers.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="initWithHeaderTitle:withEntityClassDefinition:usingPredicate:"></a>initWithHeaderTitle:withEntityClassDefinition:usingPredicate:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withEntityClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+ usingPredicate:(NSPredicate *)        <span class="parameter">predicate</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The class definition of the entity of the objects in the objects set. </p>
+</dd>
+        <dt>perdicate</dt>
+        <dd><p>The predicate that will be used to fetch the objects. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCArrayOfObjectsSection given a header title, an entity class definition, and an NSPredicate.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h2>Properties</h2>
+      <h3><a name="itemsClassDefinitions"></a>itemsClassDefinitions</h3>
+      <code class="methodDeclaration">@property NSMutableDictionary *itemsClassDefinitions</code>
+      <h5>Discussion</h5>
+<p>Contains all the different class definitions of all the objects in the items array. Each dictionary entry should contain a key with the <a href="SCClassDefinition.html">SCClassDefinition</a> class name, and a value with the actual <a href="SCClassDefinition.html">SCClassDefinition</a>.</p>
+<p>Tip: The class name of the <a href="SCClassDefinition.html">SCClassDefinition</a> can be easily determined using the SClassDefinition.className property. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="itemsSet"></a>itemsSet</h3>
+      <code class="methodDeclaration">@property NSMutableSet *itemsSet</code>
+      <h5>Discussion</h5>
+<p>The mutable set of objects that the section will use to generate its cells. Note: This property should only be set when representing a Core Data relationship. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="sortItemsSetAscending"></a>sortItemsSetAscending</h3>
+      <code class="methodDeclaration">@property BOOL sortItemsSetAscending</code>
+      <h5>Discussion</h5>
+<p>If TRUE, objects in itemsSet are sorted ascendingly, otherwise they're sorted descendingly. Note: Only applicable if itemsSet has been assigned. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

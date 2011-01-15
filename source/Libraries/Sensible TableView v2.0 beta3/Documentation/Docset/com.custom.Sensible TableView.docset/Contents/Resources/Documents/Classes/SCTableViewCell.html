@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCTableViewCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCTableViewCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td>NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell for <a href="SCTableViewSection.html">SCTableViewSection</a>. SCTableViewCell is extensively subclassed to create cells with special controls such as UITextField and UISlider.</p>
+<p>SCTableViewCell provides the user with the infrastructure to access the cell's value using two main methods: Bound Object and Bound Key.<ul>
+<li><p>Bound Object method: This works by binding the cell to an object, called the bound object, and to a property of this object, called the bound property. The cell initializes its value from the value of the bound property, and when its values changes, it sets the property back automatically.</p>
+</li>
+<li><p>Bound Key method: This works by binding the cell to a key, called the bound key. The cell initializes its value from the value associated with this key, found in ownerTableViewModel modelKeyValues dictionary. When the cell's value change, the value of the bound key set set back in the same modelKeyValues dictionary.</p>
+</li>
+</ul>
+</p>
+<p>Please note that even though a cell value is not applicable to SCTableViewCell itself, SCTableViewCell still provides the bound object / bound key functionality as a framework to all its subclasses to use. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#ownerTableViewModel>ownerTableViewModel</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#delegate>delegate</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundObject>boundObject</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundPropertyName>boundPropertyName</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundKey>boundKey</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#height>height</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#editable>editable</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#movable>movable</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#selectable>selectable</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#badgeView>badgeView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewTitle>detailViewTitle</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailTableViewStyle>detailTableViewStyle</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailCellsImageViews>detailCellsImageViews</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewHidesBottomBar>detailViewHidesBottomBar</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoResignFirstResponder>autoResignFirstResponder</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellEditingStyle>cellEditingStyle</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#valueRequired>valueRequired</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoValidateValue>autoValidateValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#valueIsValid>valueIsValid</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Cell Value</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#commitChangesLive>commitChangesLive</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#needsCommit>needsCommit</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#commitChanges>- commitChanges</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#reloadBoundValue>- reloadBoundValue</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Internal Properties & Methods (should only be used when subclassing)</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundValue>boundValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tempDetailModel>tempDetailModel</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#reuseId>reuseId</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#beingReused>beingReused</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#performInitialization>- performInitialization</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellValueChanged>- cellValueChanged</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tempDetailModelModified>- tempDetailModelModified</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#commitDetailModelChanges:>- commitDetailModelChanges:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#willDisplay>- willDisplay</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#didSelectCell>- didSelectCell</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#willDeselectCell>- willDeselectCell</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#setAttributesTo:>- setAttributesTo:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#getValueIsValid>- getValueIsValid</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cell>+ cell</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:>+ cellWithText:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withPropertyName:>+ cellWithText:withBoundObject:withPropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundKey:withValue:>+ cellWithText:withBoundKey:withValue:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:>- initWithText:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundObject:withPropertyName:>- initWithText:withBoundObject:withPropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundKey:withValue:>- initWithText:withBoundKey:withValue:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cell"></a>cell</h3>
+      <code class="methodDeclaration">+ (id)cell</code>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTableViewCell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:"></a>cellWithText:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTableViewCell given cell text. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundObject:withPropertyName:"></a>cellWithText:withBoundObject:withPropertyName:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name (see class overview). </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTableViewCell given cell text, bound object, and a bound property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundKey:withValue:"></a>cellWithText:withBoundKey:withValue:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withValue:(NSObject *)        <span class="parameter">keyValue</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see class overview). </p>
+</dd>
+        <dt>keyValue</dt>
+        <dd><p>An initial value for the bound key. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTableViewCell given cell text, bound key, and an initial key value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="commitChanges"></a>commitChanges</h3>
+      <code class="methodDeclaration">- (void)commitChanges</code>
+      <h5>Discussion</h5>
+<p>Commits any changes to the cell's value either to the bound object or the bound key where applicable (see class overview). </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="reloadBoundValue"></a>reloadBoundValue</h3>
+      <code class="methodDeclaration">- (void)reloadBoundValue</code>
+      <h5>Discussion</h5>
+<p>Reload's the cell's bound value in case the associated bound object or key's value has changed by means other than the cell itself (e.g. external custom code). </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="performInitialization"></a>performInitialization</h3>
+      <code class="methodDeclaration">- (void)performInitialization</code>
+      <h5>Discussion</h5>
+<p>Method should be overridden by subclasses to perform any required initialization. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellValueChanged"></a>cellValueChanged</h3>
+      <code class="methodDeclaration">- (void)cellValueChanged</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the cell value changes. This method should only be used when subclassing SCTableViewCell. If what you want is to get notified when a cell value changes, consider using either <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a> or <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> methods. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="tempDetailModelModified"></a>tempDetailModelModified</h3>
+      <code class="methodDeclaration">- (void)tempDetailModelModified</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally by framework. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="commitDetailModelChanges:"></a>commitDetailModelChanges:</h3>
+      <code class="methodDeclaration">- (void)commitDetailModelChanges:(SCTableViewModel *)        <span class="parameter">detailModel</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally by framework. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="willDisplay"></a>willDisplay</h3>
+      <code class="methodDeclaration">- (void)willDisplay</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the cell is about to be displayed. This method should only be used when subclassing SCTableViewCell. If what you want is to get notified when a cell is about to be displayed, consider using either <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a> or <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> methods. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="didSelectCell"></a>didSelectCell</h3>
+      <code class="methodDeclaration">- (void)didSelectCell</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the cell gets selected. This method should only be used when subclassing SCTableViewCell. If what you want is to get notified when a cell gets selected, consider using either <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a> or <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> methods. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="willDeselectCell"></a>willDeselectCell</h3>
+      <code class="methodDeclaration">- (void)willDeselectCell</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the cell gets deselected. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="setAttributesTo:"></a>setAttributesTo:</h3>
+      <code class="methodDeclaration">- (void)setAttributesTo:(SCPropertyAttributes *)        <span class="parameter">attributes</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method should be overridden by subclasses to support property attributes. The method should be able to set the subclass' specific attributes to its corresponding <a href="SCPropertyAttributes.html">SCPropertyAttributes</a> subclass. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="getValueIsValid"></a>getValueIsValid</h3>
+      <code class="methodDeclaration">- (BOOL)getValueIsValid</code>
+      <h5>Discussion</h5>
+<p>Method should be overridden by subclasses to provide subclass specific validation of the cell's value. If what you want is to be able to provide custom cell value validation, consider using either <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a> or <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> methods. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:"></a>initWithText:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCTableViewCell given cell text. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundObject:withPropertyName:"></a>initWithText:withBoundObject:withPropertyName:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name (see class overview). </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCTableViewCell given cell text, bound object, and a bound property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundKey:withValue:"></a>initWithText:withBoundKey:withValue:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withValue:(NSObject *)        <span class="parameter">keyValue</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see class overview). </p>
+</dd>
+        <dt>keyValue</dt>
+        <dd><p>An initial value for the bound key. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCTableViewCell given cell text, bound key, and an initial key value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="ownerTableViewModel"></a>ownerTableViewModel</h3>
+      <code class="methodDeclaration">@property SCTableViewModel *ownerTableViewModel</code>
+      <h5>Discussion</h5>
+<p>The owner table view model of the cell.</p>
+<p>Important: This property gets set automatically by the cell's owner, you should never set this property manually </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="delegate"></a>delegate</h3>
+      <code class="methodDeclaration">@property id delegate</code>
+      <h5>Discussion</h5>
+<p>The object that acts as the delegate of SCTableViewCell. The object must adopt the <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a> protocol. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="boundObject"></a>boundObject</h3>
+      <code class="methodDeclaration">@property NSObject *boundObject</code>
+      <h5>Discussion</h5>
+<p>The cell's bound object (see class overview). </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="boundPropertyName"></a>boundPropertyName</h3>
+      <code class="methodDeclaration">@property NSString *boundPropertyName</code>
+      <h5>Discussion</h5>
+<p>The cell's bound property name (see class overview). </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="boundKey"></a>boundKey</h3>
+      <code class="methodDeclaration">@property NSString *boundKey</code>
+      <h5>Discussion</h5>
+<p>The cell's bound key (see class overview). </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="height"></a>height</h3>
+      <code class="methodDeclaration">@property CGFloat height</code>
+      <h5>Discussion</h5>
+<p>The height of the cell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="editable"></a>editable</h3>
+      <code class="methodDeclaration">@property BOOL editable</code>
+      <h5>Discussion</h5>
+<p>The editable state of the cell. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="movable"></a>movable</h3>
+      <code class="methodDeclaration">@property BOOL movable</code>
+      <h5>Discussion</h5>
+<p>The movable state of the cell. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="selectable"></a>selectable</h3>
+      <code class="methodDeclaration">@property BOOL selectable</code>
+      <h5>Discussion</h5>
+<p>Determines if the cell can be selected. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="badgeView"></a>badgeView</h3>
+      <code class="methodDeclaration">@property SCBadgeView *badgeView</code>
+      <h5>Discussion</h5>
+<p>The cell's badge view. When assigned a text value, the badgeView displays a badge similar to the badge displayed by the iPhone's mail application for its mail folders. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailViewTitle"></a>detailViewTitle</h3>
+      <code class="methodDeclaration">@property NSString *detailViewTitle</code>
+      <h5>Discussion</h5>
+<p>The title of the cell's detail view. If not set, the detail view's title defaults to the cell's textLabel. Note: Only applicable to cells with detail views. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailTableViewStyle"></a>detailTableViewStyle</h3>
+      <code class="methodDeclaration">@property UITableViewStyle detailTableViewStyle</code>
+      <h5>Discussion</h5>
+<p>The modal presentation style of the cell's detail view. Note: Only applicable to cells with detail views.</p>
+<p>The style of the cell's detail table view. Default: Depends on subclassed cell. Note: Only applicable to cells with detail table views. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailCellsImageViews"></a>detailCellsImageViews</h3>
+      <code class="methodDeclaration">@property NSArray *detailCellsImageViews</code>
+      <h5>Discussion</h5>
+<p>Set this property to an array of UIImageView objects to be set to each of the cell's detail cells. Note: Only applicable to cells with detail views. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailViewHidesBottomBar"></a>detailViewHidesBottomBar</h3>
+      <code class="methodDeclaration">@property BOOL detailViewHidesBottomBar</code>
+      <h5>Discussion</h5>
+<p>Indicates whether the bar at the bottom of the screen is hidden when the cell's detail view is pushed. Default: TRUE. Note: Only applicable to cells with detail views. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="autoResignFirstResponder"></a>autoResignFirstResponder</h3>
+      <code class="methodDeclaration">@property BOOL autoResignFirstResponder</code>
+      <h5>Discussion</h5>
+<p>If property is TRUE, the cell automatically dismisses the keyboard (if applicable) when another cell is selected or when the value of another cell is changed. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellEditingStyle"></a>cellEditingStyle</h3>
+      <code class="methodDeclaration">@property UITableViewCellEditingStyle cellEditingStyle</code>
+      <h5>Discussion</h5>
+<p>The cell's editing style. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="valueRequired"></a>valueRequired</h3>
+      <code class="methodDeclaration">@property BOOL valueRequired</code>
+      <h5>Discussion</h5>
+<p>Determines if the cell's value is required. If TRUE, valueIsValid will only return true if the cells value is not empty. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="autoValidateValue"></a>autoValidateValue</h3>
+      <code class="methodDeclaration">@property BOOL autoValidateValue</code>
+      <h5>Discussion</h5>
+<p>Determines whether to automatically validate the cell's value. Where applicable, each subclass provides its own rules for validating the cell's value. If the user chooses to provide custom validation using either the cell's <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a>, or the model's <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>, they should set this property to FALSE. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="valueIsValid"></a>valueIsValid</h3>
+      <code class="methodDeclaration">@property BOOL valueIsValid</code>
+      <h5>Discussion</h5>
+<p>This property is TRUE if the cell's value is valid. The validity of the cell's value depend on the valueRequired and the validateValue properties. If valueRequired is TRUE, valueIsValid is TRUE only if the cell contains a value. If validateValue is TRUE, valueIsValid depends on each subclass to provide validation of the cell's value. For validation, the user can also provide custom validation using either the cell's <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a>, or the model's <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="commitChangesLive"></a>commitChangesLive</h3>
+      <code class="methodDeclaration">@property BOOL commitChangesLive</code>
+      <h5>Discussion</h5>
+<p>Set this property to TRUE for the cell to commit its value as soon as it is changed. If this value is FALSE, the user must explicitly call commitChanges for the cell to commit its value changes. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="needsCommit"></a>needsCommit</h3>
+      <code class="methodDeclaration">@property BOOL needsCommit</code>
+      <h5>Discussion</h5>
+<p>This propery is TRUE if the cell value has changed and needs to be committed. If commitChangesLive is TRUE, this property always remains FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="boundValue"></a>boundValue</h3>
+      <code class="methodDeclaration">@property NSObject *boundValue</code>
+      <h5>Discussion</h5>
+<p>This property represents the bound value of the cell. If the cell is bound to an object, then the property represents the value of the bound property. If the cell is bound to a key, then the property represents the corresponding value for the bound key in the ownerTableViewModel modelKeyValues dictionary. If the cell isn't bound to an object or a key, the the property represents the initialValue internal variable. This property is made available to sheild subclasses from all the details of dealing with the bound object or the bound key directly. Subclasses should just set boundValue to their value and SCTableViewCell will take care of the rest. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="tempDetailModel"></a>tempDetailModel</h3>
+      <code class="methodDeclaration">@property SCTableViewModel *tempDetailModel</code>
+      <h5>Discussion</h5>
+<p>Property used internally by framework to manage custom detail models. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="reuseId"></a>reuseId</h3>
+      <code class="methodDeclaration">@property NSString *reuseId</code>
+      <h5>Discussion</h5>
+<p>Property used internally by framework to change reuseIdentifier after the cell have been created. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="beingReused"></a>beingReused</h3>
+      <code class="methodDeclaration">@property bool beingReused</code>
+      <h5>Discussion</h5>
+<p>Property used internally by framework to determine if cell is being dequed and reused. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

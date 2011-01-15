@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCDateCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCDateCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCLabelCell.html">SCLabelCell</a> : 
+<a href="SCControlCell.html">SCControlCell</a> : 
+<a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Conforms to</label></td>
+        <td><a href="../Protocols/SCViewControllerDelegate.html">SCViewControllerDelegate</a></td>
+      </tr>
+      <tr class="alt">
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell that provides the end-user with an automatically generated detail view of a UIDatePicker to choose a date from. The bound property name or bound key value of this cell must be of type NSDate. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#datePicker>datePicker</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#dateFormatter>dateFormatter</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#displaySelectedDate>displaySelectedDate</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowDetailView>allowDetailView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewModal>detailViewModal</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withDatePropertyName:>+ cellWithText:withBoundObject:withDatePropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundKey:withDateValue:>+ cellWithText:withBoundKey:withDateValue:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundObject:withDatePropertyName:>- initWithText:withBoundObject:withDatePropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundKey:withDateValue:>- initWithText:withBoundKey:withDateValue:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cellWithText:withBoundObject:withDatePropertyName:"></a>cellWithText:withBoundObject:withDatePropertyName:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withDatePropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the cell's date selection. Property must be a readwrite property of type NSDate. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCDateCell given cell text, bound object, and a bound property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundKey:withDateValue:"></a>cellWithText:withBoundKey:withDateValue:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withDateValue:(NSDate *)        <span class="parameter">dateValue</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>dateValue</dt>
+        <dd><p>An initial value to the cell's date selection. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCDateCell given cell text, bound key, and initial date value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithText:withBoundObject:withDatePropertyName:"></a>initWithText:withBoundObject:withDatePropertyName:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withDatePropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the cell's date selection. Property must be a readwrite property of type NSDate. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCDateCell given cell text, bound object, and a bound property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundKey:withDateValue:"></a>initWithText:withBoundKey:withDateValue:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withDateValue:(NSDate *)        <span class="parameter">dateValue</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>dateValue</dt>
+        <dd><p>An initial value to the cell's date selection. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCDateCell given cell text, bound key, and initial date value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="datePicker"></a>datePicker</h3>
+      <code class="methodDeclaration">@property UIDatePicker *datePicker</code>
+      <h5>Discussion</h5>
+<p>The UIDatePicker control associated with the cell. Even though this property is readonly, feel free to customize any of the control's properties. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="dateFormatter"></a>dateFormatter</h3>
+      <code class="methodDeclaration">@property NSDateFormatter *dateFormatter</code>
+      <h5>Discussion</h5>
+<p>Set to customize how the cell display's the selected date. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="displaySelectedDate"></a>displaySelectedDate</h3>
+      <code class="methodDeclaration">@property BOOL displaySelectedDate</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the cell displays the selected date in a left aligned label. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowDetailView"></a>allowDetailView</h3>
+      <code class="methodDeclaration">@property BOOL allowDetailView</code>
+      <h5>Discussion</h5>
+<p>Allows/disables a detail view for editing the cell's date. Default: TRUE.</p>
+<p>A detail view is automatically generated for editing the cell's date. You can control wether the view appears as a modal view or gets pushed to the navigation stack using the detailViewModal property. Modal views have the added feature of giving the end user a Cancel and Done buttons. The Cancel button cancels all user's actions, while the Done button commits them. Also, if the cell's validation is enabled, the Done button will remain disabled until all cells' values are valid. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="detailViewModal"></a>detailViewModal</h3>
+      <code class="methodDeclaration">@property BOOL detailViewModal</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the detail view always appears as a modal view. If FALSE and a navigation controller exists, the detail view is pushed to the navigation controller's stack, otherwise the view appears modally. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

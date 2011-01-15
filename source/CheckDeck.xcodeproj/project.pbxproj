@@ -18,10 +18,6 @@
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
 		FB10D93712C9C1F800C8B061 /* Bearded-Dragon-Scales.png in Resources */ = {isa = PBXBuildFile; fileRef = FB10D93612C9C1F800C8B061 /* Bearded-Dragon-Scales.png */; };
 		FB10D94812CA1C2600C8B061 /* Pearl-gray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB10D94712CA1C2600C8B061 /* Pearl-gray.jpg */; };
-		FB4805A012787EAD003ADC47 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48059912787EAD003ADC47 /* Schedule.m */; };
-		FB4805A112787EAD003ADC47 /* CheckList.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48059B12787EAD003ADC47 /* CheckList.m */; };
-		FB4805A212787EAD003ADC47 /* CheckListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48059D12787EAD003ADC47 /* CheckListItem.m */; };
-		FB4805A312787EAD003ADC47 /* CheckListItemGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48059F12787EAD003ADC47 /* CheckListItemGroup.m */; };
 		FB4805C512788049003ADC47 /* CheckListItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4805C412788049003ADC47 /* CheckListItem+Additions.m */; };
 		FB6245E1127397BD00F90B52 /* CDCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6245E0127397BD00F90B52 /* CDCoreDataManager.m */; };
 		FB91CBCE12D157DE00E3BD4C /* CDStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = FB91CBCD12D157DE00E3BD4C /* CDStyleSheet.m */; };
@@ -30,6 +26,12 @@
 		FB91CCC412D1653000E3BD4C /* burp.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB91CCC312D1653000E3BD4C /* burp.wav */; };
 		FB91CE6D12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.m in Sources */ = {isa = PBXBuildFile; fileRef = FB91CE6B12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.m */; };
 		FB91CE6E12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB91CE6C12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.xib */; };
+		FBC9EE3712D81BFC00BEF45A /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9EE2C12D81BFC00BEF45A /* Schedule.m */; };
+		FBC9EE3812D81BFC00BEF45A /* CheckList.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9EE2E12D81BFC00BEF45A /* CheckList.m */; };
+		FBC9EE3A12D81BFC00BEF45A /* CheckListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9EE3212D81BFC00BEF45A /* CheckListItem.m */; };
+		FBC9EE3C12D81BFC00BEF45A /* CheckListReview.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9EE3612D81BFC00BEF45A /* CheckListReview.m */; };
+		FBC9EE4112D81D6E00BEF45A /* CheckListItemGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9EE4012D81D6E00BEF45A /* CheckListItemGroup.m */; };
+		FBC9EE7412D8213300BEF45A /* CheckListItemReview.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9EE7312D8213300BEF45A /* CheckListItemReview.m */; };
 		FBCCBD8F12730A0000157BC4 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD4B127309DE00157BC4 /* libThree20.a */; };
 		FBCCBD9012730A0000157BC4 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD6B127309F000157BC4 /* libThree20Core.a */; };
 		FBCCBD9112730A0000157BC4 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBD71127309F000157BC4 /* libThree20Network.a */; };
@@ -41,12 +43,12 @@
 		FBCCBDC212730B2100157BC4 /* NavigationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBDC112730B2100157BC4 /* NavigationCoordinator.m */; };
 		FBCCBDD712730BF300157BC4 /* CDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBDD512730BF300157BC4 /* CDTabBarController.m */; };
 		FBCCBDDA127310FB00157BC4 /* CheckDeck.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBDD9127310FB00157BC4 /* CheckDeck.xcdatamodel */; };
-		FBCCBDF1127349EF00157BC4 /* CheckListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBDF0127349EF00157BC4 /* CheckListItemTableViewCell.xib */; };
+		FBCCBDF1127349EF00157BC4 /* CheckListItemReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBDF0127349EF00157BC4 /* CheckListItemReviewTableViewCell.xib */; };
 		FBCCBDF712734B6500157BC4 /* Unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBDF512734B6500157BC4 /* Unchecked.png */; };
 		FBCCBDF812734B6500157BC4 /* Unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBDF612734B6500157BC4 /* Unchecked@2x.png */; };
-		FBCCBE7A127350BA00157BC4 /* CheckListItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBE79127350BA00157BC4 /* CheckListItemTableViewCell.m */; };
-		FBCCBE81127351C700157BC4 /* CheckListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBE7F127351C700157BC4 /* CheckListTableViewController.m */; };
-		FBCCBE82127351C700157BC4 /* CheckListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBE80127351C700157BC4 /* CheckListTableViewController.xib */; };
+		FBCCBE7A127350BA00157BC4 /* CheckListItemReviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBE79127350BA00157BC4 /* CheckListItemReviewTableViewCell.m */; };
+		FBCCBE81127351C700157BC4 /* CheckListReviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCBE7F127351C700157BC4 /* CheckListReviewTableViewController.m */; };
+		FBCCBE82127351C700157BC4 /* CheckListReviewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBE80127351C700157BC4 /* CheckListReviewTableViewController.xib */; };
 		FBCCBE841273520100157BC4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCCBE831273520100157BC4 /* CoreData.framework */; };
 		FBCCBEAD127355D000157BC4 /* CDConstants.h in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBEAC127355D000157BC4 /* CDConstants.h */; };
 		FBDFD89F128244A100E7D34B /* CheckDeck.xcdatamodel in Resources */ = {isa = PBXBuildFile; fileRef = FBCCBDD9127310FB00157BC4 /* CheckDeck.xcdatamodel */; };
@@ -253,14 +255,6 @@
 		8D1107310486CEB800E47090 /* CheckDeck-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CheckDeck-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		FB10D93612C9C1F800C8B061 /* Bearded-Dragon-Scales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bearded-Dragon-Scales.png"; sourceTree = "<group>"; };
 		FB10D94712CA1C2600C8B061 /* Pearl-gray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pearl-gray.jpg"; sourceTree = "<group>"; };
-		FB48059812787EAD003ADC47 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
-		FB48059912787EAD003ADC47 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
-		FB48059A12787EAD003ADC47 /* CheckList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckList.h; sourceTree = "<group>"; };
-		FB48059B12787EAD003ADC47 /* CheckList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckList.m; sourceTree = "<group>"; };
-		FB48059C12787EAD003ADC47 /* CheckListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListItem.h; sourceTree = "<group>"; };
-		FB48059D12787EAD003ADC47 /* CheckListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListItem.m; sourceTree = "<group>"; };
-		FB48059E12787EAD003ADC47 /* CheckListItemGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListItemGroup.h; sourceTree = "<group>"; };
-		FB48059F12787EAD003ADC47 /* CheckListItemGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListItemGroup.m; sourceTree = "<group>"; };
 		FB4805C312788049003ADC47 /* CheckListItem+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CheckListItem+Additions.h"; sourceTree = "<group>"; };
 		FB4805C412788049003ADC47 /* CheckListItem+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CheckListItem+Additions.m"; sourceTree = "<group>"; };
 		FB5C2CF5127884AE00ED4E6C /* SimpleModelPrototypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModelPrototypes.h; sourceTree = "<group>"; };
@@ -275,6 +269,18 @@
 		FB91CE6A12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListTableViewTheSCWay.h; sourceTree = "<group>"; };
 		FB91CE6B12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListTableViewTheSCWay.m; sourceTree = "<group>"; };
 		FB91CE6C12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTableViewTheSCWay.xib; sourceTree = "<group>"; };
+		FBC9EE2B12D81BFC00BEF45A /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		FBC9EE2C12D81BFC00BEF45A /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		FBC9EE2D12D81BFC00BEF45A /* CheckList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckList.h; sourceTree = "<group>"; };
+		FBC9EE2E12D81BFC00BEF45A /* CheckList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckList.m; sourceTree = "<group>"; };
+		FBC9EE3112D81BFC00BEF45A /* CheckListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListItem.h; sourceTree = "<group>"; };
+		FBC9EE3212D81BFC00BEF45A /* CheckListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListItem.m; sourceTree = "<group>"; };
+		FBC9EE3512D81BFC00BEF45A /* CheckListReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListReview.h; sourceTree = "<group>"; };
+		FBC9EE3612D81BFC00BEF45A /* CheckListReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListReview.m; sourceTree = "<group>"; };
+		FBC9EE3F12D81D6E00BEF45A /* CheckListItemGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListItemGroup.h; sourceTree = "<group>"; };
+		FBC9EE4012D81D6E00BEF45A /* CheckListItemGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListItemGroup.m; sourceTree = "<group>"; };
+		FBC9EE7212D8213300BEF45A /* CheckListItemReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListItemReview.h; sourceTree = "<group>"; };
+		FBC9EE7312D8213300BEF45A /* CheckListItemReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListItemReview.m; sourceTree = "<group>"; };
 		FBCCBD1F127309DE00157BC4 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FBCCBD56127309F000157BC4 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = ../three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FBCCBD59127309F000157BC4 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = ../three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -288,14 +294,14 @@
 		FBCCBDD512730BF300157BC4 /* CDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDTabBarController.m; path = Classes/Navigation/CDTabBarController.m; sourceTree = SOURCE_ROOT; };
 		FBCCBDD612730BF300157BC4 /* CDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDTabBarController.h; path = Classes/Navigation/CDTabBarController.h; sourceTree = SOURCE_ROOT; };
 		FBCCBDD9127310FB00157BC4 /* CheckDeck.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = CheckDeck.xcdatamodel; sourceTree = "<group>"; };
-		FBCCBDF0127349EF00157BC4 /* CheckListItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListItemTableViewCell.xib; sourceTree = "<group>"; };
+		FBCCBDF0127349EF00157BC4 /* CheckListItemReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListItemReviewTableViewCell.xib; sourceTree = "<group>"; };
 		FBCCBDF512734B6500157BC4 /* Unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unchecked.png; sourceTree = "<group>"; };
 		FBCCBDF612734B6500157BC4 /* Unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Unchecked@2x.png"; sourceTree = "<group>"; };
-		FBCCBE78127350BA00157BC4 /* CheckListItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListItemTableViewCell.h; sourceTree = "<group>"; };
-		FBCCBE79127350BA00157BC4 /* CheckListItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListItemTableViewCell.m; sourceTree = "<group>"; };
-		FBCCBE7E127351C700157BC4 /* CheckListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListTableViewController.h; sourceTree = "<group>"; };
-		FBCCBE7F127351C700157BC4 /* CheckListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListTableViewController.m; sourceTree = "<group>"; };
-		FBCCBE80127351C700157BC4 /* CheckListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTableViewController.xib; sourceTree = "<group>"; };
+		FBCCBE78127350BA00157BC4 /* CheckListItemReviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListItemReviewTableViewCell.h; sourceTree = "<group>"; };
+		FBCCBE79127350BA00157BC4 /* CheckListItemReviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListItemReviewTableViewCell.m; sourceTree = "<group>"; };
+		FBCCBE7E127351C700157BC4 /* CheckListReviewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListReviewTableViewController.h; sourceTree = "<group>"; };
+		FBCCBE7F127351C700157BC4 /* CheckListReviewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListReviewTableViewController.m; sourceTree = "<group>"; };
+		FBCCBE80127351C700157BC4 /* CheckListReviewTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListReviewTableViewController.xib; sourceTree = "<group>"; };
 		FBCCBE831273520100157BC4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FBCCBEAC127355D000157BC4 /* CDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConstants.h; sourceTree = "<group>"; };
 		FBEAA52012C3963100168BD2 /* LevousCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LevousCore.xcodeproj; path = "../../Levous-iOS-Core/source/LevousCore.xcodeproj"; sourceTree = SOURCE_ROOT; };
@@ -569,9 +575,9 @@
 		FBCCBDD112730BA200157BC4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FBCCBE7E127351C700157BC4 /* CheckListTableViewController.h */,
-				FBCCBE7F127351C700157BC4 /* CheckListTableViewController.m */,
-				FBCCBE80127351C700157BC4 /* CheckListTableViewController.xib */,
+				FBCCBE7E127351C700157BC4 /* CheckListReviewTableViewController.h */,
+				FBCCBE7F127351C700157BC4 /* CheckListReviewTableViewController.m */,
+				FBCCBE80127351C700157BC4 /* CheckListReviewTableViewController.xib */,
 				FBF7F30B12D0372100389C42 /* GenericDetailTableViewController.h */,
 				FBF7F30C12D0372100389C42 /* GenericDetailTableViewController.m */,
 				FB91CE6A12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.h */,
@@ -585,14 +591,18 @@
 			isa = PBXGroup;
 			children = (
 				FB48059712787E3E003ADC47 /* Categories */,
-				FB48059812787EAD003ADC47 /* Schedule.h */,
-				FB48059912787EAD003ADC47 /* Schedule.m */,
-				FB48059A12787EAD003ADC47 /* CheckList.h */,
-				FB48059B12787EAD003ADC47 /* CheckList.m */,
-				FB48059C12787EAD003ADC47 /* CheckListItem.h */,
-				FB48059D12787EAD003ADC47 /* CheckListItem.m */,
-				FB48059E12787EAD003ADC47 /* CheckListItemGroup.h */,
-				FB48059F12787EAD003ADC47 /* CheckListItemGroup.m */,
+				FBC9EE2D12D81BFC00BEF45A /* CheckList.h */,
+				FBC9EE2E12D81BFC00BEF45A /* CheckList.m */,
+				FBC9EE3112D81BFC00BEF45A /* CheckListItem.h */,
+				FBC9EE3212D81BFC00BEF45A /* CheckListItem.m */,
+				FBC9EE3F12D81D6E00BEF45A /* CheckListItemGroup.h */,
+				FBC9EE4012D81D6E00BEF45A /* CheckListItemGroup.m */,
+				FBC9EE7212D8213300BEF45A /* CheckListItemReview.h */,
+				FBC9EE7312D8213300BEF45A /* CheckListItemReview.m */,
+				FBC9EE3512D81BFC00BEF45A /* CheckListReview.h */,
+				FBC9EE3612D81BFC00BEF45A /* CheckListReview.m */,
+				FBC9EE2B12D81BFC00BEF45A /* Schedule.h */,
+				FBC9EE2C12D81BFC00BEF45A /* Schedule.m */,
 				FBCCBDD9127310FB00157BC4 /* CheckDeck.xcdatamodel */,
 			);
 			path = Models;
@@ -609,9 +619,9 @@
 		FBCCBDEF127349BA00157BC4 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				FBCCBE78127350BA00157BC4 /* CheckListItemTableViewCell.h */,
-				FBCCBE79127350BA00157BC4 /* CheckListItemTableViewCell.m */,
-				FBCCBDF0127349EF00157BC4 /* CheckListItemTableViewCell.xib */,
+				FBCCBE78127350BA00157BC4 /* CheckListItemReviewTableViewCell.h */,
+				FBCCBE79127350BA00157BC4 /* CheckListItemReviewTableViewCell.m */,
+				FBCCBDF0127349EF00157BC4 /* CheckListItemReviewTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -906,10 +916,10 @@
 				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
 				282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */,
 				2840D7CE1179279E00D7F93C /* FirstView.xib in Resources */,
-				FBCCBDF1127349EF00157BC4 /* CheckListItemTableViewCell.xib in Resources */,
+				FBCCBDF1127349EF00157BC4 /* CheckListItemReviewTableViewCell.xib in Resources */,
 				FBCCBDF712734B6500157BC4 /* Unchecked.png in Resources */,
 				FBCCBDF812734B6500157BC4 /* Unchecked@2x.png in Resources */,
-				FBCCBE82127351C700157BC4 /* CheckListTableViewController.xib in Resources */,
+				FBCCBE82127351C700157BC4 /* CheckListReviewTableViewController.xib in Resources */,
 				FBCCBEAD127355D000157BC4 /* CDConstants.h in Resources */,
 				FBEAA71E12C3AC7C00168BD2 /* Checked.png in Resources */,
 				FBEAA71F12C3AC7C00168BD2 /* Checked@2x.png in Resources */,
@@ -940,13 +950,9 @@
 				FBCCBDC212730B2100157BC4 /* NavigationCoordinator.m in Sources */,
 				FBCCBDD712730BF300157BC4 /* CDTabBarController.m in Sources */,
 				FBCCBDDA127310FB00157BC4 /* CheckDeck.xcdatamodel in Sources */,
-				FBCCBE7A127350BA00157BC4 /* CheckListItemTableViewCell.m in Sources */,
-				FBCCBE81127351C700157BC4 /* CheckListTableViewController.m in Sources */,
+				FBCCBE7A127350BA00157BC4 /* CheckListItemReviewTableViewCell.m in Sources */,
+				FBCCBE81127351C700157BC4 /* CheckListReviewTableViewController.m in Sources */,
 				FB6245E1127397BD00F90B52 /* CDCoreDataManager.m in Sources */,
-				FB4805A012787EAD003ADC47 /* Schedule.m in Sources */,
-				FB4805A112787EAD003ADC47 /* CheckList.m in Sources */,
-				FB4805A212787EAD003ADC47 /* CheckListItem.m in Sources */,
-				FB4805A312787EAD003ADC47 /* CheckListItemGroup.m in Sources */,
 				FB4805C512788049003ADC47 /* CheckListItem+Additions.m in Sources */,
 				FBF7F30D12D0372100389C42 /* GenericDetailTableViewController.m in Sources */,
 				FB91CBCE12D157DE00E3BD4C /* CDStyleSheet.m in Sources */,
@@ -961,6 +967,12 @@
 				FBEFE48912D65BAD0006F7A5 /* SCTableViewModel.m in Sources */,
 				FBEFE48A12D65BAD0006F7A5 /* SCTableViewSection.m in Sources */,
 				FBEFE48B12D65BAD0006F7A5 /* SCViewController.m in Sources */,
+				FBC9EE3712D81BFC00BEF45A /* Schedule.m in Sources */,
+				FBC9EE3812D81BFC00BEF45A /* CheckList.m in Sources */,
+				FBC9EE3A12D81BFC00BEF45A /* CheckListItem.m in Sources */,
+				FBC9EE3C12D81BFC00BEF45A /* CheckListReview.m in Sources */,
+				FBC9EE4112D81D6E00BEF45A /* CheckListItemGroup.m in Sources */,
+				FBC9EE7412D8213300BEF45A /* CheckListItemReview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

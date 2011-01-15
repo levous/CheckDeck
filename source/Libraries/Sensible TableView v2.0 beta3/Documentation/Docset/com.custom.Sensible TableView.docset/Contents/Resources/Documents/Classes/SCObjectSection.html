@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCObjectSection class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCObjectSection class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCTableViewSection.html">SCTableViewSection</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewSection.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as an <a href="SCTableViewModel.html">SCTableViewModel</a> section that is able to automatically generate its cells from a given bound object's properties. If the bound object is given without an extended class definition (<a href="SCClassDefinition.html">SCClassDefinition</a>), then cells will only be generated for properties of type NSString and NSNumber, and will be either of type <a href="SCTextFieldCell.html">SCTextFieldCell</a> or <a href="SCNumericTextFieldCell.html">SCNumericTextFieldCell</a>, respectively. If an <a href="SCClassDefinition.html">SCClassDefinition</a> is provided for the bound object, a full fledged section of cells will be generated.</p>
+<p>Note: For your convenience, the tag property of each generated cell will have a number corresponding to the index of it's corresponding property in bound object.</p>
+<p>See also: <a href="SCArrayOfObjectsSection.html">SCArrayOfObjectsSection</a>, <a href="SCObjectCell.html">SCObjectCell</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:withBoundObject:>+ sectionWithHeaderTitle:withBoundObject:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:withBoundObject:withClassDefinition:>+ sectionWithHeaderTitle:withBoundObject:withClassDefinition:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:withBoundObject:>- initWithHeaderTitle:withBoundObject:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:withBoundObject:withClassDefinition:>- initWithHeaderTitle:withBoundObject:withClassDefinition:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Cell Management</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellForPropertyName:>- cellForPropertyName:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="sectionWithHeaderTitle:withBoundObject:"></a>sectionWithHeaderTitle:withBoundObject:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The object that SCObjectSection will use to generate its cells. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCObjectSection given a header title and a bound object.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="sectionWithHeaderTitle:withBoundObject:withClassDefinition:"></a>sectionWithHeaderTitle:withBoundObject:withClassDefinition:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The object that SCObjectSection will use to generate its cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The extended class definition for the object. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCObjectSection given a header title, a bound object and its extended class definition.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithHeaderTitle:withBoundObject:"></a>initWithHeaderTitle:withBoundObject:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The object that SCObjectSection will use to generate its cells. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCObjectSection given a header title and a bound object.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="initWithHeaderTitle:withBoundObject:withClassDefinition:"></a>initWithHeaderTitle:withBoundObject:withClassDefinition:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withClassDefinition:(SCClassDefinition *)        <span class="parameter">classDefinition</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The object that SCObjectSection will use to generate its cells. </p>
+</dd>
+        <dt>classDefinition</dt>
+        <dd><p>The extended class definition for the object. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCObjectSection given a header title, a bound object and its extended class definition.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="cellForPropertyName:"></a>cellForPropertyName:</h3>
+      <code class="methodDeclaration">- (SCTableViewCell *)cellForPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>propertyName</dt>
+        <dd><p>The bound object's property name. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>Returns nil if no cell have been generated for the given property name, or if the property name does not exist within the bound object. </p>
+      <h5>Discussion</h5>
+<p>Returns the cell associated with the given bound object's property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

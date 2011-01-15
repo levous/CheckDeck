@@ -13,11 +13,14 @@
 #import "CheckListItem.h"
 #import "CheckListItemGroup.h"
 #import "CheckList.h"
+#import "CheckListItemReview.h"
+#import "CheckListReview.h"
 
 @interface CDCoreDataManager : LVCoreDataManager {
 @private
   NSFetchedResultsController *fetchedResultsControllerForCheckListItems_;
 }
-- (NSFetchedResultsController *)getFetchResultsControllerForCheckListItems;
+- (NSFetchedResultsController *)getFetchResultsControllerForCheckListReview;
+
 + (CDCoreDataManager *)instance;
 @end
