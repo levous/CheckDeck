@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCTableViewController class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCTableViewController class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td>NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewController.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class simplifies development with <a href="SCTableViewModel.html">SCTableViewModel</a> the same way that UITableViewController simplifies development with UITableView.</p>
+<p>SCTableViewController conveniently creates an automatic tableViewModel that is ready to be populated with sections and cells. It also provides several ready made navigation bar types based on SCNavigationBarType, provided that it is a subview of a navigation controller. Furthermore, it automatically connects its doneButton (if present) to tableViewModel's commitButton. In addition, SCTableViewController provides several delegate methods as part of <a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a> that notifies the delegate object of events like the view appearing or disappearing.</p>
+<p>Note: You do NOT have to use SCTableViewController in order to be able to use <a href="SCTableViewModel.html">SCTableViewModel</a>, it is just provided as an additional convenience to you.</p>
+<p>Note: Some Sensible TableView objects use SCTableViewController to display their own detail views. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel>tableViewModel</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#navigationBarType>navigationBarType</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#addButton>addButton</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#editButton>editButton</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cancelButton>cancelButton</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#doneButton>doneButton</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Button Events</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cancelButtonTapped>cancelButtonTapped</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#doneButtonTapped>doneButtonTapped</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Delegate</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#delegate>delegate</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Internal Properties Methods (should only be used when subclassing)</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#ownerViewController>ownerViewController</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cancelButtonAction>- cancelButtonAction</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#doneButtonAction>- doneButtonAction</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#dismissWithCancelValue:doneValue:>- dismissWithCancelValue:doneValue:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithStyle:withNavigationBarType:>- initWithStyle:withNavigationBarType:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Instance methods</h2>
+      <h3><a name="cancelButtonAction"></a>cancelButtonAction</h3>
+      <code class="methodDeclaration">- (void)cancelButtonAction</code>
+      <h5>Discussion</h5>
+<p>Method gets called when the Cancel button is tapped. If what you want is to get notified when the Cancel button gets tapped without subclassing SCTableViewController, consider using <a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="doneButtonAction"></a>doneButtonAction</h3>
+      <code class="methodDeclaration">- (void)doneButtonAction</code>
+      <h5>Discussion</h5>
+<p>Method gets called when the Done button is tapped. If what you want is to get notified when the Cancel button gets tapped without subclassing SCTableViewController, consider using <a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a>. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="dismissWithCancelValue:doneValue:"></a>dismissWithCancelValue:doneValue:</h3>
+      <code class="methodDeclaration">- (void)dismissWithCancelValue:(BOOL)        <span class="parameter">cancelValue</span>
+ doneValue:(BOOL)        <span class="parameter">doneValue</span>
+</code>
+      <h5>Discussion</h5>
+<p>Dismisses the view controller with the specified values for cancel and done. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="initWithStyle:withNavigationBarType:"></a>initWithStyle:withNavigationBarType:</h3>
+      <code class="methodDeclaration">- (id)initWithStyle:(UITableViewStyle)        <span class="parameter">style</span>
+ withNavigationBarType:(SCNavigationBarType)        <span class="parameter">type</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>style</dt>
+        <dd><p>The style of the table view. </p>
+</dd>
+        <dt>type</dt>
+        <dd><p>The type of the navigation bar. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCTableViewController given a navigation bar type.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h2>Properties</h2>
+      <h3><a name="tableViewModel"></a>tableViewModel</h3>
+      <code class="methodDeclaration">@property SCTableViewModel *tableViewModel</code>
+      <h5>Discussion</h5>
+<p>The associated table view model. This model is configured and ready to be populated with sections and cells. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="navigationBarType"></a>navigationBarType</h3>
+      <code class="methodDeclaration">@property SCNavigationBarType navigationBarType</code>
+      <h5>Discussion</h5>
+<p>The type of the navigation bar. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="addButton"></a>addButton</h3>
+      <code class="methodDeclaration">@property UIBarButtonItem *addButton</code>
+      <h5>Discussion</h5>
+<p>The navigation bar's Add button. Only contains a value if the button exists on the bar. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="editButton"></a>editButton</h3>
+      <code class="methodDeclaration">@property UIBarButtonItem *editButton</code>
+      <h5>Discussion</h5>
+<p>The editButtonItem of SCTableViewController's superclass. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="cancelButton"></a>cancelButton</h3>
+      <code class="methodDeclaration">@property UIBarButtonItem *cancelButton</code>
+      <h5>Discussion</h5>
+<p>The navigation bar's Cancel button. Only contains a value if the button exists on the bar. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="doneButton"></a>doneButton</h3>
+      <code class="methodDeclaration">@property UIBarButtonItem *doneButton</code>
+      <h5>Discussion</h5>
+<p>The navigation bar's Done button. Only contains a value if the button exists on the bar. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="cancelButtonTapped"></a>cancelButtonTapped</h3>
+      <code class="methodDeclaration">@property BOOL cancelButtonTapped</code>
+      <h5>Discussion</h5>
+<p>Property is TRUE if the view controller have been dismissed due to the user tapping the Cancel button. This property is useful if you do not wish to subclass this view controller. See also <a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a> to get notified when the view controller is dismissed. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="doneButtonTapped"></a>doneButtonTapped</h3>
+      <code class="methodDeclaration">@property BOOL doneButtonTapped</code>
+      <h5>Discussion</h5>
+<p>Property is TRUE if the view controller have been dismissed due to the user tapping the Done button. This property is useful if you do not wish to subclass this view controller. See also <a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a> to get notified when the view controller is dismissed. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="delegate"></a>delegate</h3>
+      <code class="methodDeclaration">@property id delegate</code>
+      <h5>Discussion</h5>
+<p>The object that acts as the delegate of SCTableViewController. The object must adopt the <a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a> protocol. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="ownerViewController"></a>ownerViewController</h3>
+      <code class="methodDeclaration">@property UIViewController *ownerViewController</code>
+      <h5>Discussion</h5>
+<p>The view controller's owner (used internally) </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

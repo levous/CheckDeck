@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Samples App' target in the 'Samples App' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCSelectionAttributes class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCSelectionAttributes class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCPropertyAttributes.html">SCPropertyAttributes</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCPropertyAttributes.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class is used to extend the definition of an SCPropertyAttributes instance of type SCPropertyTypeSelection, thus allowing further customization of the generated control by the user. </p>
+      <h2>Tasks</h2>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#items>items</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowMultipleSelection>allowMultipleSelection</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowNoSelection>allowNoSelection</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoDismissDetailView>autoDismissDetailView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#hideDetailViewNavigationBar>hideDetailViewNavigationBar</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#attributesWithItems:allowMultipleSelection:allowNoSelection:>+ attributesWithItems:allowMultipleSelection:allowNoSelection:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#attributesWithItems:allowMultipleSelection:allowNoSelection:autoDismissDetailView:hideDetailViewNavigationBar:>+ attributesWithItems:allowMultipleSelection:allowNoSelection:autoDismissDetailView:hideDetailViewNavigationBar:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithItems:allowMultipleSelection:allowNoSelection:>- initWithItems:allowMultipleSelection:allowNoSelection:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithItems:allowMultipleSelection:allowNoSelection:autoDismissDetailView:hideDetailViewNavigationBar:>- initWithItems:allowMultipleSelection:allowNoSelection:autoDismissDetailView:hideDetailViewNavigationBar:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="attributesWithItems:allowMultipleSelection:allowNoSelection:"></a>attributesWithItems:allowMultipleSelection:allowNoSelection:</h3>
+      <code class="methodDeclaration">+ (id)attributesWithItems:(NSArray *)        <span class="parameter">_items</span>
+ allowMultipleSelection:(BOOL)        <span class="parameter">allowMultipleSel</span>
+ allowNoSelection:(BOOL)        <span class="parameter">allowNoSel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_items</dt>
+        <dd><p>The items of the generated selection control. Set to nil to ignore. </p>
+</dd>
+        <dt>allowMultipleSel</dt>
+        <dd><p>Determines if the generated selection control allows multiple selection. </p>
+</dd>
+        <dt>allowNoSel</dt>
+        <dd><p>Determines if the generated selection control allows no selection. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSelectionAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="attributesWithItems:allowMultipleSelection:allowNoSelection:autoDismissDetailView:hideDetailViewNavigationBar:"></a>attributesWithItems:allowMultipleSelection:allowNoSelection:autoDismissDetailView:hideDetailViewNavigationBar:</h3>
+      <code class="methodDeclaration">+ (id)attributesWithItems:(NSArray *)        <span class="parameter">_items</span>
+ allowMultipleSelection:(BOOL)        <span class="parameter">allowMultipleSel</span>
+ allowNoSelection:(BOOL)        <span class="parameter">allowNoSel</span>
+ autoDismissDetailView:(BOOL)        <span class="parameter">autoDismiss</span>
+ hideDetailViewNavigationBar:(BOOL)        <span class="parameter">hideNavBar</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_items</dt>
+        <dd><p>The items of the generated selection control. Set to nil to ignore. </p>
+</dd>
+        <dt>allowMultipleSel</dt>
+        <dd><p>Determines if the generated selection control allows multiple selection. </p>
+</dd>
+        <dt>allowNoSel</dt>
+        <dd><p>Determines if the generated selection control allows no selection. </p>
+</dd>
+        <dt>autoDismiss</dt>
+        <dd><p>Set to TRUE to automatically dismiss the selection detail view when an item is selected. </p>
+</dd>
+        <dt>hideNavBar</dt>
+        <dd><p>Set to TRUE to hide the detail view's navigation bar. Note: Only applicable if autoDismiss is TRUE. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSelectionAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithItems:allowMultipleSelection:allowNoSelection:"></a>initWithItems:allowMultipleSelection:allowNoSelection:</h3>
+      <code class="methodDeclaration">- (id)initWithItems:(NSArray *)        <span class="parameter">_items</span>
+ allowMultipleSelection:(BOOL)        <span class="parameter">allowMultipleSel</span>
+ allowNoSelection:(BOOL)        <span class="parameter">allowNoSel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_items</dt>
+        <dd><p>The items of the generated selection control. Set to nil to ignore. </p>
+</dd>
+        <dt>allowMultipleSel</dt>
+        <dd><p>Determines if the generated selection control allows multiple selection. </p>
+</dd>
+        <dt>allowNoSel</dt>
+        <dd><p>Determines if the generated selection control allows no selection. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCSelectionAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="initWithItems:allowMultipleSelection:allowNoSelection:autoDismissDetailView:hideDetailViewNavigationBar:"></a>initWithItems:allowMultipleSelection:allowNoSelection:autoDismissDetailView:hideDetailViewNavigationBar:</h3>
+      <code class="methodDeclaration">- (id)initWithItems:(NSArray *)        <span class="parameter">_items</span>
+ allowMultipleSelection:(BOOL)        <span class="parameter">allowMultipleSel</span>
+ allowNoSelection:(BOOL)        <span class="parameter">allowNoSel</span>
+ autoDismissDetailView:(BOOL)        <span class="parameter">autoDismiss</span>
+ hideDetailViewNavigationBar:(BOOL)        <span class="parameter">hideNavBar</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_items</dt>
+        <dd><p>The items of the generated selection control. Set to nil to ignore. </p>
+</dd>
+        <dt>allowMultipleSel</dt>
+        <dd><p>Determines if the generated selection control allows multiple selection. </p>
+</dd>
+        <dt>allowNoSel</dt>
+        <dd><p>Determines if the generated selection control allows no selection. </p>
+</dd>
+        <dt>autoDismiss</dt>
+        <dd><p>Set to TRUE to automatically dismiss the selection detail view when an item is selected. </p>
+</dd>
+        <dt>hideNavBar</dt>
+        <dd><p>Set to TRUE to hide the detail view's navigation bar. Note: Only applicable if autoDismiss is TRUE. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCSelectionAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h2>Properties</h2>
+      <h3><a name="items"></a>items</h3>
+      <code class="methodDeclaration">@property NSArray *items</code>
+      <h5>Discussion</h5>
+<p>The items of the generated selection control. Set to nil to ignore. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="allowMultipleSelection"></a>allowMultipleSelection</h3>
+      <code class="methodDeclaration">@property BOOL allowMultipleSelection</code>
+      <h5>Discussion</h5>
+<p>Determines if the generated selection control allows multiple selection. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="allowNoSelection"></a>allowNoSelection</h3>
+      <code class="methodDeclaration">@property BOOL allowNoSelection</code>
+      <h5>Discussion</h5>
+<p>Determines if the generated selection control allows no selection. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="autoDismissDetailView"></a>autoDismissDetailView</h3>
+      <code class="methodDeclaration">@property BOOL autoDismissDetailView</code>
+      <h5>Discussion</h5>
+<p>Set to TRUE to automatically dismiss the selection detail view when an item is selected. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="hideDetailViewNavigationBar"></a>hideDetailViewNavigationBar</h3>
+      <code class="methodDeclaration">@property BOOL hideDetailViewNavigationBar</code>
+      <h5>Discussion</h5>
+<p>Set to TRUE to hide the detail view's navigation bar. Note: Only applicable if autoDismissDetailView is TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

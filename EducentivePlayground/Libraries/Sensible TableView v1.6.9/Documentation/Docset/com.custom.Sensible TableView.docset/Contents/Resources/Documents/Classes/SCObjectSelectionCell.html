@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCObjectSelectionCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCObjectSelectionCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCSelectionCell.html">SCSelectionCell</a> : 
+<a href="SCLabelCell.html">SCLabelCell</a> : 
+<a href="SCControlCell.html">SCControlCell</a> : 
+<a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell that provides the end-user with an automatically generated detail view of objects to choose from. The selection items are provided in the form of an array of NSObjects, called the items array. SCSelection cell can be configured to allow multiple selection and to allow no selection at all. If allow multiple selection is disabled, then the bound property name of this cell must be of type NSObject, otherwise it must be of type NSMutableSet. Note: This class is usually used to represent a selection relationship between a Core Data object and other object(s). </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#titlePropertyName>titlePropertyName</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withSelectedObjectPropertyName:withItems:withItemTitlePropertyName:>+ cellWithText:withBoundObject:withSelectedObjectPropertyName:withItems:withItemTitlePropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundObject:withSelectedObjectPropertyName:withItems:withItemTitlePropertyName:>- initWithText:withBoundObject:withSelectedObjectPropertyName:withItems:withItemTitlePropertyName:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cellWithText:withBoundObject:withSelectedObjectPropertyName:withItems:withItemTitlePropertyName:"></a>cellWithText:withBoundObject:withSelectedObjectPropertyName:withItems:withItemTitlePropertyName:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSelectedObjectPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+ withItemTitlePropertyName:(NSString *)        <span class="parameter">itemTitlePropertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the object selection. If multiple selection is allowed, then property must be of an NSMutableSet type, otherwise, property must be of type NSObject and cannot be a readonly property. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSObject type and all items must be instances of the same class. </p>
+</dd>
+        <dt>itemTitlePropertyName</dt>
+        <dd><p>The property name of the objects in cellItems, the value of which will be used as the objects' titles when they are displayed for selection. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCObjectSelectionCell given cell text, bound object, a bound property name, and an array of selection items. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithText:withBoundObject:withSelectedObjectPropertyName:withItems:withItemTitlePropertyName:"></a>initWithText:withBoundObject:withSelectedObjectPropertyName:withItems:withItemTitlePropertyName:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSelectedObjectPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+ withItems:(NSArray *)        <span class="parameter">cellItems</span>
+ withItemTitlePropertyName:(NSString *)        <span class="parameter">itemTitlePropertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the object selection. If multiple selection is allowed, then property must be of an NSMutableSet type, otherwise, property must be of type NSObject and cannot be a readonly property. </p>
+</dd>
+        <dt>cellItems</dt>
+        <dd><p>An array of the items that the user will choose from. All items must be of an NSObject type and all items must be instances of the same class. </p>
+</dd>
+        <dt>itemTitlePropertyName</dt>
+        <dd><p>The property name of the objects in cellItems, the value of which will be used as the objects' titles when they are displayed for selection. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCObjectSelectionCell given cell text, bound object, a bound property name, and an array of selection items. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="titlePropertyName"></a>titlePropertyName</h3>
+      <code class="methodDeclaration">@property NSString *titlePropertyName</code>
+      <h5>Discussion</h5>
+<p>The property name of the objects in cellItems, the value of which will be used as the objects' titles when they are displayed for selection. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

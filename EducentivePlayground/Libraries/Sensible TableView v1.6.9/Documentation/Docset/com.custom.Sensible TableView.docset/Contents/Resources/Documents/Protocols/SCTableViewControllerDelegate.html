@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCTableViewControllerDelegate protocol reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCTableViewControllerDelegate protocol reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewController.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This protocol should be adopted by objects that want to mediate as a delegate for <a href="../Classes/SCTableViewController.html">SCTableViewController</a>. All methods for this protocol are optional. </p>
+      <h2>Tasks</h2>
+      <h3>Other</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewControllerDidAppear:>- tableViewControllerDidAppear:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewControllerDidDisappear:cancelButtonTapped:doneButtonTapped:>- tableViewControllerDidDisappear:cancelButtonTapped:doneButtonTapped:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewControllerWillAppear:>- tableViewControllerWillAppear:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewControllerWillDisappear:cancelButtonTapped:doneButtonTapped:>- tableViewControllerWillDisappear:cancelButtonTapped:doneButtonTapped:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Instance methods</h2>
+      <h3><a name="tableViewControllerDidAppear:"></a>tableViewControllerDidAppear:</h3>
+      <code class="methodDeclaration">- (void)tableViewControllerDidAppear:(SCTableViewController *)        <span class="parameter">tableViewController</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewController</dt>
+        <dd><p>The view controller informing the delegate of the event. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the view controller has appeared. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="tableViewControllerDidDisappear:cancelButtonTapped:doneButtonTapped:"></a>tableViewControllerDidDisappear:cancelButtonTapped:doneButtonTapped:</h3>
+      <code class="methodDeclaration">- (void)tableViewControllerDidDisappear:(SCTableViewController *)        <span class="parameter">tableViewController</span>
+ cancelButtonTapped:(BOOL)        <span class="parameter">cancelTapped</span>
+ doneButtonTapped:(BOOL)        <span class="parameter">doneTapped</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewController</dt>
+        <dd><p>The view controller informing the delegate of the event. </p>
+</dd>
+        <dt>cancelTapped</dt>
+        <dd><p>TRUE if Cancel button has been tapped to dismiss the view controller. </p>
+</dd>
+        <dt>doneTapped</dt>
+        <dd><p>TRUE if Done button has been tapped to dismiss the view controller. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the view controller has disappeared. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="tableViewControllerWillAppear:"></a>tableViewControllerWillAppear:</h3>
+      <code class="methodDeclaration">- (void)tableViewControllerWillAppear:(SCTableViewController *)        <span class="parameter">tableViewController</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewController</dt>
+        <dd><p>The view controller informing the delegate of the event. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the view controller will appear. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+      <h3><a name="tableViewControllerWillDisappear:cancelButtonTapped:doneButtonTapped:"></a>tableViewControllerWillDisappear:cancelButtonTapped:doneButtonTapped:</h3>
+      <code class="methodDeclaration">- (void)tableViewControllerWillDisappear:(SCTableViewController *)        <span class="parameter">tableViewController</span>
+ cancelButtonTapped:(BOOL)        <span class="parameter">cancelTapped</span>
+ doneButtonTapped:(BOOL)        <span class="parameter">doneTapped</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewController</dt>
+        <dd><p>The view controller informing the delegate of the event. </p>
+</dd>
+        <dt>cancelTapped</dt>
+        <dd><p>TRUE if Cancel button has been tapped to dismiss the view controller. </p>
+</dd>
+        <dt>doneTapped</dt>
+        <dd><p>TRUE if Done button has been tapped to dismiss the view controller. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the view controller will disappear. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewController.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

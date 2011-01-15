@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCSwitchCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCSwitchCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCControlCell.html">SCControlCell</a> : 
+<a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell with a UISwitch control. The bound property name or bound key value of this cell must be of type NSNumber. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#switchControl>switchControl</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withSwitchOnPropertyName:>+ cellWithText:withBoundObject:withSwitchOnPropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundKey:withSwitchOnValue:>+ cellWithText:withBoundKey:withSwitchOnValue:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundObject:withSwitchOnPropertyName:>- initWithText:withBoundObject:withSwitchOnPropertyName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithText:withBoundKey:withSwitchOnValue:>- initWithText:withBoundKey:withSwitchOnValue:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Internal Methods (should only be used when subclassing)</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#switchControlChanged>- switchControlChanged</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cellWithText:withBoundObject:withSwitchOnPropertyName:"></a>cellWithText:withBoundObject:withSwitchOnPropertyName:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSwitchOnPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the UISwitch's on value. Property must be a readwrite property of type NSNumber. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSwitchCell given cell text, bound object, and a bound property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withBoundKey:withSwitchOnValue:"></a>cellWithText:withBoundKey:withSwitchOnValue:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withSwitchOnValue:(NSNumber *)        <span class="parameter">switchOnValue</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>switchOnValue</dt>
+        <dd><p>An initial value for UISwitch's on value. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCSwitchCell given cell text, bound key, and an initial key value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithText:withBoundObject:withSwitchOnPropertyName:"></a>initWithText:withBoundObject:withSwitchOnPropertyName:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withSwitchOnPropertyName:(NSString *)        <span class="parameter">propertyName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>propertyName</dt>
+        <dd><p>The cell's bound property name corresponding to the UISwitch's on value. Property must be a readwrite property of type NSNumber. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCSwitchCell given cell text, bound object, and a bound property name. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="initWithText:withBoundKey:withSwitchOnValue:"></a>initWithText:withBoundKey:withSwitchOnValue:</h3>
+      <code class="methodDeclaration">- (id)initWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundKey:(NSString *)        <span class="parameter">key</span>
+ withSwitchOnValue:(NSNumber *)        <span class="parameter">switchOnValue</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>key</dt>
+        <dd><p>The cell's bound key (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>switchOnValue</dt>
+        <dd><p>An initial value for UISwitch's on value. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCSwitchCell given cell text, bound key, and an initial key value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="switchControlChanged"></a>switchControlChanged</h3>
+      <code class="methodDeclaration">- (void)switchControlChanged</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the value of switch control is changed. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="switchControl"></a>switchControl</h3>
+      <code class="methodDeclaration">@property UISwitch *switchControl</code>
+      <h5>Discussion</h5>
+<p>The UISwitch control associated with the cell. Even though this property is readonly, feel free to customize any of the control's properties. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-15)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>
