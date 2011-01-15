@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCControlCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCControlCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a base class for all cells that require user controls to be present inside their content view. The following is a summary of each control that can be automatically bound, in addition to the boundObject property or boundKey value type that it must be associated with:</p>
+<p>UILabel: NSString UITextField: NSString UITextView: NSString UISlider: NSNumber UISegmentedControl: NSNumber UISwitch: NSNumber </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#control>control</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#objectBindings>objectBindings</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#keyBindings>keyBindings</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#maxTextLabelWidth>maxTextLabelWidth</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#controlIndentation>controlIndentation</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#controlMargin>controlMargin</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withBoundObject:withObjectBindings:withNibName:>+ cellWithText:withBoundObject:withObjectBindings:withNibName:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellWithText:withKeyBindings:withNibName:>+ cellWithText:withKeyBindings:withNibName:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Custom Controls</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#controlWithTag:>- controlWithTag:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#boundValueForControlWithTag:>- boundValueForControlWithTag:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Internal Methods (should only be used when subclassing)</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#setBoundObject:>- setBoundObject:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#configureCustomControls>- configureCustomControls</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#loadBindingsIntoCustomControls>- loadBindingsIntoCustomControls</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#loadBoundValueIntoControl>- loadBoundValueIntoControl</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#textFieldEditingChanged:>- textFieldEditingChanged:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sliderValueChanged:>- sliderValueChanged:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#segmentedControlValueChanged:>- segmentedControlValueChanged:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#switchControlChanged:>- switchControlChanged:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="cellWithText:withBoundObject:withObjectBindings:withNibName:"></a>cellWithText:withBoundObject:withObjectBindings:withNibName:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withBoundObject:(NSObject *)        <span class="parameter">object</span>
+ withObjectBindings:(NSDictionary *)        <span class="parameter">bindings</span>
+ withNibName:(NSString *)        <span class="parameter">nibName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>object</dt>
+        <dd><p>The cell's bound object (see <a href="SCTableViewCell.html">SCTableViewCell</a> class overview). </p>
+</dd>
+        <dt>bindings</dt>
+        <dd><p>The cell's object bindings. This dictionary specifies how each of the cell's custom controls binds itself to the boundObject's properties. Each dictionary key should be the tag string value of one of the cell's custom controls, and the value should be the name of the boundObject's property that is bound to that control. IMPORTANT: All control tags must be greater than zero. </p>
+</dd>
+        <dt>nibName</dt>
+        <dd><p>The name of the nib file to load the cell from. The nib file should only contain one cell, and it should be a subclass of SCControlCell. Note: it's ok for this parameter to be nil if the cell has no corresponding nib file. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCControlCell given cell text, bound object, custom object bindings, and a nib file name. Note: This constructor is usually used to construct custom cells that are either created in Interface Builder, or created by subclassing SCControlCell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="cellWithText:withKeyBindings:withNibName:"></a>cellWithText:withKeyBindings:withNibName:</h3>
+      <code class="methodDeclaration">+ (id)cellWithText:(NSString *)        <span class="parameter">cellText</span>
+ withKeyBindings:(NSDictionary *)        <span class="parameter">bindings</span>
+ withNibName:(NSString *)        <span class="parameter">nibName</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cellText</dt>
+        <dd><p>The text that will appear in the cell's textLabel. </p>
+</dd>
+        <dt>bindings</dt>
+        <dd><p>The cell's key bindings. This dictionary specifies how each of the cell's custom controls binds itself to the model's modelKeyValues dictionary. Each customBindings dictionary key should be the tag string value of one of the cell's custom controls, and the value should be the name of the key that is bound that control. IMPORTANT: All control tags must be greater than zero. </p>
+</dd>
+        <dt>nibName</dt>
+        <dd><p>The name of the nib file to load the cell from. The nib file should only contain one cell, and it should be a subclass of SCControlCell. Note: it's ok for this parameter to be nil if the cell has no corresponding nib file. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCControlCell given cell text, bound key, custom key bindings, and a nib file name. Note: This constructor is usually used to construct custom cells that are either created in Interface Builder, or created by subclassing SCControlCell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="controlWithTag:"></a>controlWithTag:</h3>
+      <code class="methodDeclaration">- (UIView *)controlWithTag:(NSInteger)        <span class="parameter">controlTag</span>
+</code>
+      <h5>Discussion</h5>
+<p>Returns the control with the given tag value. Returns nil if controlTag is less than 1. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="boundValueForControlWithTag:"></a>boundValueForControlWithTag:</h3>
+      <code class="methodDeclaration">- (NSObject *)boundValueForControlWithTag:(NSInteger)        <span class="parameter">controlTag</span>
+</code>
+      <h5>Discussion</h5>
+<p>Returns the bound value for the control with the given tag value. Returns nil if controlTag is less than 1. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="setBoundObject:"></a>setBoundObject:</h3>
+      <code class="methodDeclaration">- (void)setBoundObject:(NSObject *)        <span class="parameter">object</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method called internally by framework. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="configureCustomControls"></a>configureCustomControls</h3>
+      <code class="methodDeclaration">- (void)configureCustomControls</code>
+      <h5>Discussion</h5>
+<p>Method must be called by subclasses to configure any added custom controls for automatic binding. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="loadBindingsIntoCustomControls"></a>loadBindingsIntoCustomControls</h3>
+      <code class="methodDeclaration">- (void)loadBindingsIntoCustomControls</code>
+      <h5>Discussion</h5>
+<p>Method called internally by framework. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="loadBoundValueIntoControl"></a>loadBoundValueIntoControl</h3>
+      <code class="methodDeclaration">- (void)loadBoundValueIntoControl</code>
+      <h5>Discussion</h5>
+<p>Method should be overridden by subclasses to load the cell's bound value into their controls. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="textFieldEditingChanged:"></a>textFieldEditingChanged:</h3>
+      <code class="methodDeclaration">- (void)textFieldEditingChanged:(id)        <span class="parameter">sender</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the value of a UITextField control is changed. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="sliderValueChanged:"></a>sliderValueChanged:</h3>
+      <code class="methodDeclaration">- (void)sliderValueChanged:(id)        <span class="parameter">sender</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the value of a UISlider control is changed. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="segmentedControlValueChanged:"></a>segmentedControlValueChanged:</h3>
+      <code class="methodDeclaration">- (void)segmentedControlValueChanged:(id)        <span class="parameter">sender</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the value of a UISegmentedControl is changed. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="switchControlChanged:"></a>switchControlChanged:</h3>
+      <code class="methodDeclaration">- (void)switchControlChanged:(id)        <span class="parameter">sender</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the value of a UISwitch control is changed. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h2>Properties</h2>
+      <h3><a name="control"></a>control</h3>
+      <code class="methodDeclaration">@property UIView *control</code>
+      <h5>Discussion</h5>
+<p>The control associated with the cell. Even though this property is readonly, feel free to customize any of the control's properties.</p>
+<p>Note: The type of the control has been choosen to be of type UIView instead of UIControl as not all user controls decend from UIControl (e.g. UITextView). </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="objectBindings"></a>objectBindings</h3>
+      <code class="methodDeclaration">@property NSMutableDictionary *objectBindings</code>
+      <h5>Discussion</h5>
+<p>This dictionary specifies how each of the cell's custom controls binds itself to the boundObject's properties. Each dictionary key should be the tag string value of one of the cell's custom controls, and the value should be the name of the boundObject's property that is bound to that control. IMPORTANT: All control tags must be greater than zero. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="keyBindings"></a>keyBindings</h3>
+      <code class="methodDeclaration">@property NSMutableDictionary *keyBindings</code>
+      <h5>Discussion</h5>
+<p>This dictionary specifies how each of the cell's custom controls binds itself to the model's modelKeyValues dictionary. Each customBindings dictionary key should be the tag string value of one of the cell's custom controls, and the value should be the name of the key that is bound that control. IMPORTANT: All control tags must be greater than zero. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="maxTextLabelWidth"></a>maxTextLabelWidth</h3>
+      <code class="methodDeclaration">@property CGFloat maxTextLabelWidth</code>
+      <h5>Discussion</h5>
+<p>The maximum width of the cell's textLabel </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="controlIndentation"></a>controlIndentation</h3>
+      <code class="methodDeclaration">@property CGFloat controlIndentation</code>
+      <h5>Discussion</h5>
+<p>The indentation of the control from the cell's left border. This indentation keeps the control at a specific distance from the cell's border unless the textLabel's text exceeds this distance, in which case the control is moved accordingly to the right. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="controlMargin"></a>controlMargin</h3>
+      <code class="methodDeclaration">@property CGFloat controlMargin</code>
+      <h5>Discussion</h5>
+<p>The margin between the control and the cell's textLabel. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

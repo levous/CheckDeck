@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCDictionaryDefinition class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCDictionaryDefinition class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCClassDefinition.html">SCClassDefinition</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCClassDefinition.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a means to further extend the key definitions of an NSMutableDictionary. Using dictionary definitions, classes like <a href="SCObjectCell.html">SCObjectCell</a> and <a href="SCObjectSection.html">SCObjectSection</a> will be able to better generate user interface elements that truly represent the keys of their bound mutable dictionaries.</p>
+<p>SCDictionaryDefinition directly decends from <a href="SCClassDefinition.html">SCClassDefinition</a>.</p>
+<p>See also: <a href="SCPropertyDefinition.html">SCPropertyDefinition</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Other</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithDictionaryKeyNames:>+ definitionWithDictionaryKeyNames:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#definitionWithDictionaryKeyNames:withKeyTitles:>+ definitionWithDictionaryKeyNames:withKeyTitles:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Other</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithDictionaryKeyNames:>- initWithDictionaryKeyNames:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithDictionaryKeyNames:withKeyTitles:>- initWithDictionaryKeyNames:withKeyTitles:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="definitionWithDictionaryKeyNames:"></a>definitionWithDictionaryKeyNames:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithDictionaryKeyNames:(NSArray *)        <span class="parameter">keyNames</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>keyNames</dt>
+        <dd><p>An array of the dictionary key names. All array elements must be of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCDictionaryDefinition given the key names of the mutable dictionary to be defined. By default, all property definitions generated for the given keyNames will have a type of SCPropertyTypeTextField. This can be fully customized after initialization.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="definitionWithDictionaryKeyNames:withKeyTitles:"></a>definitionWithDictionaryKeyNames:withKeyTitles:</h3>
+      <code class="methodDeclaration">+ (id)definitionWithDictionaryKeyNames:(NSArray *)        <span class="parameter">keyNames</span>
+ withKeyTitles:(NSArray *)        <span class="parameter">keyTitles</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>keyNames</dt>
+        <dd><p>An array of the dictionary key names. All array elements must be of type NSString. </p>
+</dd>
+        <dt>keyTitles</dt>
+        <dd><p>An array of titles to the keys in keyNames. All array elements must be of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCDictionaryDefinition given the key names and titles of the mutable dictionary to be defined. By default, all property definitions generated for the given keyNames will have a type of SCPropertyTypeTextField. This can be fully customized after initialization.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithDictionaryKeyNames:"></a>initWithDictionaryKeyNames:</h3>
+      <code class="methodDeclaration">- (id)initWithDictionaryKeyNames:(NSArray *)        <span class="parameter">keyNames</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>keyNames</dt>
+        <dd><p>An array of the dictionary key names. All array elements must be of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCDictionaryDefinition given the key names of the mutable dictionary to be defined. By default, all property definitions generated for the given keyNames will have a type of SCPropertyTypeTextField. This can be fully customized after initialization.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+      <h3><a name="initWithDictionaryKeyNames:withKeyTitles:"></a>initWithDictionaryKeyNames:withKeyTitles:</h3>
+      <code class="methodDeclaration">- (id)initWithDictionaryKeyNames:(NSArray *)        <span class="parameter">keyNames</span>
+ withKeyTitles:(NSArray *)        <span class="parameter">keyTitles</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>keyNames</dt>
+        <dd><p>An array of the dictionary key names. All array elements must be of type NSString. </p>
+</dd>
+        <dt>keyTitles</dt>
+        <dd><p>An array of titles to the keys in keyNames. All array elements must be of type NSString. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCDictionaryDefinition given the key names and titles of the mutable dictionary to be defined. By default, all property definitions generated for the given keyNames will have a type of SCPropertyTypeTextField. This can be fully customized after initialization.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCClassDefinition.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

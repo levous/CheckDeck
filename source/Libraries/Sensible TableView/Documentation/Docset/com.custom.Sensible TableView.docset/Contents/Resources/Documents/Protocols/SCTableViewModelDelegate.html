@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCTableViewModelDelegate protocol reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCTableViewModelDelegate protocol reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewModel.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This protocol should be adopted by objects that want to mediate as a delegate for <a href="../Classes/SCTableViewModel.html">SCTableViewModel</a>. All methods for this protocol are optional. </p>
+      <h2>Tasks</h2>
+      <h3>Managing TableView Model</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelWillBeginEditing:>- tableViewModelWillBeginEditing:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelDidBeginEditing:>- tableViewModelDidBeginEditing:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelWillEndEditing:>- tableViewModelWillEndEditing:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelDidEndEditing:>- tableViewModelDidEndEditing:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Sections</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:valueChangedForSectionAtIndex:>- tableViewModel:valueChangedForSectionAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:detailModelCreatedForSectionAtIndex:detailTableViewModel:>- tableViewModel:detailModelCreatedForSectionAtIndex:detailTableViewModel:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:detailViewWillAppearForSectionAtIndex:withDetailTableViewModel:>- tableViewModel:detailViewWillAppearForSectionAtIndex:withDetailTableViewModel:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:detailViewWillDisappearForSectionAtIndex:>- tableViewModel:detailViewWillDisappearForSectionAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:detailViewDidDisappearForSectionAtIndex:>- tableViewModel:detailViewDidDisappearForSectionAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:itemCreatedForSectionAtIndex:item:>- tableViewModel:itemCreatedForSectionAtIndex:item:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:itemAddedForSectionAtIndexPath:item:>- tableViewModel:itemAddedForSectionAtIndexPath:item:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:itemEditedForSectionAtIndexPath:item:>- tableViewModel:itemEditedForSectionAtIndexPath:item:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Cells</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:willConfigureCell:forRowAtIndexPath:>- tableViewModel:willConfigureCell:forRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:didLayoutSubviewsForCell:forRowAtIndexPath:>- tableViewModel:didLayoutSubviewsForCell:forRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:willDisplayCell:forRowAtIndexPath:>- tableViewModel:willDisplayCell:forRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:willSelectRowAtIndexPath:>- tableViewModel:willSelectRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:didSelectRowAtIndexPath:>- tableViewModel:didSelectRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:didDeselectRowAtIndexPath:>- tableViewModel:didDeselectRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:accessoryButtonTappedForRowWithIndexPath:>- tableViewModel:accessoryButtonTappedForRowWithIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:valueChangedForRowAtIndexPath:>- tableViewModel:valueChangedForRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:valueIsValidForRowAtIndexPath:>- tableViewModel:valueIsValidForRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:returnButtonTappedForRowAtIndexPath:>- tableViewModel:returnButtonTappedForRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:didInsertRowAtIndexPath:>- tableViewModel:didInsertRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:willRemoveRowAtIndexPath:>- tableViewModel:willRemoveRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:didRemoveRowAtIndexPath:>- tableViewModel:didRemoveRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:detailModelCreatedForRowAtIndexPath:detailTableViewModel:>- tableViewModel:detailModelCreatedForRowAtIndexPath:detailTableViewModel:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:detailViewWillAppearForRowAtIndexPath:withDetailTableViewModel:>- tableViewModel:detailViewWillAppearForRowAtIndexPath:withDetailTableViewModel:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:detailViewWillDisappearForRowAtIndexPath:>- tableViewModel:detailViewWillDisappearForRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:detailViewDidDisappearForRowAtIndexPath:>- tableViewModel:detailViewDidDisappearForRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:newImageNameForRowAtIndexPath:>- tableViewModel:newImageNameForRowAtIndexPath:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>SCArrayOfItemsModel methods</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:sectionGenerated:atIndex:>- tableViewModel:sectionGenerated:atIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModel:searchBarSelectedScopeButtonIndexDidChange:>- tableViewModel:searchBarSelectedScopeButtonIndexDidChange:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelSearchBarBookmarkButtonClicked:>- tableViewModelSearchBarBookmarkButtonClicked:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelSearchBarCancelButtonClicked:>- tableViewModelSearchBarCancelButtonClicked:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelSearchBarResultsListButtonClicked:>- tableViewModelSearchBarResultsListButtonClicked:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelSearchBarSearchButtonClicked:>- tableViewModelSearchBarSearchButtonClicked:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Instance methods</h2>
+      <h3><a name="tableViewModelWillBeginEditing:"></a>tableViewModelWillBeginEditing:</h3>
+      <code class="methodDeclaration">- (void)tableViewModelWillBeginEditing:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the table view will enter editing mode. Note: For this method to get fired, the <a href="../Classes/SCTableViewModel.html">SCTableViewModel</a> editButtonItem property must be set. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModelDidBeginEditing:"></a>tableViewModelDidBeginEditing:</h3>
+      <code class="methodDeclaration">- (void)tableViewModelDidBeginEditing:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the table view did enter editing mode. Note: For this method to get fired, the <a href="../Classes/SCTableViewModel.html">SCTableViewModel</a> editButtonItem property must be set. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModelWillEndEditing:"></a>tableViewModelWillEndEditing:</h3>
+      <code class="methodDeclaration">- (void)tableViewModelWillEndEditing:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the table view will exit editing mode. Note: For this method to get fired, the <a href="../Classes/SCTableViewModel.html">SCTableViewModel</a> editButtonItem property must be set. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModelDidEndEditing:"></a>tableViewModelDidEndEditing:</h3>
+      <code class="methodDeclaration">- (void)tableViewModelDidEndEditing:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+</code>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the table view did exit editing mode. Note: For this method to get fired, the <a href="../Classes/SCTableViewModel.html">SCTableViewModel</a> editButtonItem property must be set. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:valueChangedForSectionAtIndex:"></a>tableViewModel:valueChangedForSectionAtIndex:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ valueChangedForSectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>The index of the section who's value has changed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the value for the section at the specified index has changed.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:detailModelCreatedForSectionAtIndex:detailTableViewModel:"></a>tableViewModel:detailModelCreatedForSectionAtIndex:detailTableViewModel:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ detailModelCreatedForSectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+ detailTableViewModel:(SCTableViewModel *)        <span class="parameter">detailTableViewModel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>The index of the section who's detail model has been created. </p>
+</dd>
+        <dt>detailTableViewModel</dt>
+        <dd><p>The model for the section's detail view. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the detail model for the section at the specified index has been created. This is the perfect time to do any customizations to the section's detail table view model before any automatically generated sections are added, including setting its dataSource and delegate properties.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:detailViewWillAppearForSectionAtIndex:withDetailTableViewModel:"></a>tableViewModel:detailViewWillAppearForSectionAtIndex:withDetailTableViewModel:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ detailViewWillAppearForSectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+ withDetailTableViewModel:(SCTableViewModel *)        <span class="parameter">detailTableViewModel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>The index of the section who's detail view will appear. </p>
+</dd>
+        <dt>detailTableViewModel</dt>
+        <dd><p>The model for the section's detail view. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the detail view for the section at the specified index will appear. This is the perfect time to do any customizations to the section's detail view controller.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:detailViewWillDisappearForSectionAtIndex:"></a>tableViewModel:detailViewWillDisappearForSectionAtIndex:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ detailViewWillDisappearForSectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>The index of the section who's detail view will disappear. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the detail view for the section at the specified index will disappear.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:detailViewDidDisappearForSectionAtIndex:"></a>tableViewModel:detailViewDidDisappearForSectionAtIndex:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ detailViewDidDisappearForSectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>The index of the section who's detail view has disappeared. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the detail view for the section at the specified index has disappeared.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:itemCreatedForSectionAtIndex:item:"></a>tableViewModel:itemCreatedForSectionAtIndex:item:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ itemCreatedForSectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+ item:(NSObject *)        <span class="parameter">item</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>The index of the section who's a new item has been created for. </p>
+</dd>
+        <dt>item</dt>
+        <dd><p>The item that has been created. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that a new item bound cell has been created for the section at the specified index. Note: Method usually called for SCArrayOfItemsSection's subclasses. Important: Although item has been created, it's still not added to the section and can be deallocated if the user cancels the item's detail view.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:itemAddedForSectionAtIndexPath:item:"></a>tableViewModel:itemAddedForSectionAtIndexPath:item:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ itemAddedForSectionAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+ item:(NSObject *)        <span class="parameter">item</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path the new item bound cell has been added to. </p>
+</dd>
+        <dt>item</dt>
+        <dd><p>The item that has been added. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that a new item bound cell has been added to a section at the specified indexPath. Note: Method usually called for SCArrayOfItemsSection's subclasses.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:itemEditedForSectionAtIndexPath:item:"></a>tableViewModel:itemEditedForSectionAtIndexPath:item:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ itemEditedForSectionAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+ item:(NSObject *)        <span class="parameter">item</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path the new item bound cell has been added to. </p>
+</dd>
+        <dt>item</dt>
+        <dd><p>The item that has been edited. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that an item bound cell has been edited for a section at the specified indexPath. Note: Method usually called for SCArrayOfItemsSection's subclasses.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:willConfigureCell:forRowAtIndexPath:"></a>tableViewModel:willConfigureCell:forRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ willConfigureCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+ forRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>cell</dt>
+        <dd><p>The cell that is about to layout controls. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell at the specified indexPath is about to be configured in its owner UITableView. This is the perfect time to do any customization to the cell's height, editable, and movable properties.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:didLayoutSubviewsForCell:forRowAtIndexPath:"></a>tableViewModel:didLayoutSubviewsForCell:forRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ didLayoutSubviewsForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+ forRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>cell</dt>
+        <dd><p>The cell that performed layout to its subviews. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell at the specified indexPath did perform layout to its subviews. This is the perfect place to do any customization to the cell's subviews' layouts/frames.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:willDisplayCell:forRowAtIndexPath:"></a>tableViewModel:willDisplayCell:forRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ willDisplayCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+ forRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>cell</dt>
+        <dd><p>The cell that will be displayed. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell that will be displayed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell at the specified indexPath will be displayed. This is the perfect place to do any customization to the cell's appearance.</p>
+<p>Note: To change cell properties like the height, editable, or movable states, use the willConfigureCell delegate method instead.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:willSelectRowAtIndexPath:"></a>tableViewModel:willSelectRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ willSelectRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell that will be selected. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell at the specified indexPath will be selected.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:didSelectRowAtIndexPath:"></a>tableViewModel:didSelectRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ didSelectRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell that has been selected. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell at the specified indexPath has been selected.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:didDeselectRowAtIndexPath:"></a>tableViewModel:didDeselectRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ didDeselectRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell that has been deselected. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the cell at the specified indexPath has been deselected.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:accessoryButtonTappedForRowWithIndexPath:"></a>tableViewModel:accessoryButtonTappedForRowWithIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell with the accessory button. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the accessory button for the cell at the specified indexPath has been selected.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:valueChangedForRowAtIndexPath:"></a>tableViewModel:valueChangedForRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ valueChangedForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell who's value has changed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the value of the cell at the specified indexPath has changed.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:valueIsValidForRowAtIndexPath:"></a>tableViewModel:valueIsValidForRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (BOOL)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ valueIsValidForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model asking the delegate for validation. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell who's value needs validation. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Asks the delegate if the value is valid for the cell at the specified indexPath. Define this method if you want to override the cells' default value validation and provide your own custom validation.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:returnButtonTappedForRowAtIndexPath:"></a>tableViewModel:returnButtonTappedForRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ returnButtonTappedForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model asking the delegate for validation. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell who's keyboard return key has been tapped. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the return keyboard button has been tapped for the cell at the specified indexPath. Define this method if you want to override the cells' default behaviour for tapping the return button.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:didInsertRowAtIndexPath:"></a>tableViewModel:didInsertRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ didInsertRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell who has been newly inserted. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that cell at the specified indexPath has been newly inserted.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:willRemoveRowAtIndexPath:"></a>tableViewModel:willRemoveRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (BOOL)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ willRemoveRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell that will be removed. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>Return TRUE to proceed with the remove operation, otherwise return FALSE. </p>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that cell at the specified indexPath will be removed.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:didRemoveRowAtIndexPath:"></a>tableViewModel:didRemoveRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ didRemoveRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell that has been removed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that cell at the specified indexPath has been removed.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:detailModelCreatedForRowAtIndexPath:detailTableViewModel:"></a>tableViewModel:detailModelCreatedForRowAtIndexPath:detailTableViewModel:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ detailModelCreatedForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+ detailTableViewModel:(SCTableViewModel *)        <span class="parameter">detailTableViewModel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell who's detail model has been created. </p>
+</dd>
+        <dt>detailTableViewModel</dt>
+        <dd><p>The model for the section's detail view. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the detail model for the cell at the specified index path has been created. This is the perfect time to do any customizations to the cell's detail table view model before any automatically generated sections are added, including setting its dataSource and delegate properties.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:detailViewWillAppearForRowAtIndexPath:withDetailTableViewModel:"></a>tableViewModel:detailViewWillAppearForRowAtIndexPath:withDetailTableViewModel:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ detailViewWillAppearForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+ withDetailTableViewModel:(SCTableViewModel *)        <span class="parameter">detailTableViewModel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the cell who's detail view will appear. </p>
+</dd>
+        <dt>detailTableViewModel</dt>
+        <dd><p>The model for the cell's detail view. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the detail view for the cell at the specified indexPath will appear. This is the perfect time to do any customizations to the cell's detail view model after the automatically generated sections have been added.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:detailViewWillDisappearForRowAtIndexPath:"></a>tableViewModel:detailViewWillDisappearForRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ detailViewWillDisappearForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index of the cell who's detail view will disappear. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the detail view for the cell at the specified indexPath will disappear.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:detailViewDidDisappearForRowAtIndexPath:"></a>tableViewModel:detailViewDidDisappearForRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ detailViewDidDisappearForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index of the cell who's detail view has disappeared. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the detail view for the cell at the specified indexPath has disappeared.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:newImageNameForRowAtIndexPath:"></a>tableViewModel:newImageNameForRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (NSString *)tableViewModel:(SCTableViewModel *)        <span class="parameter">tableViewModel</span>
+ newImageNameForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model asking the delegate for validation. </p>
+</dd>
+        <dt>indexPath</dt>
+        <dd><p>The index path of the <a href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a> who needs a new image name. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Asks the delegate for a new image name for the <a href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a> at the specified indexPath. Define this method to provide a new name for the selected image, instead of using the auto generated one.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:sectionGenerated:atIndex:"></a>tableViewModel:sectionGenerated:atIndex:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCArrayOfItemsModel *)        <span class="parameter">tableViewModel</span>
+ sectionGenerated:(SCTableViewSection *)        <span class="parameter">section</span>
+ atIndex:(NSInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>section</dt>
+        <dd><p>The auto generated section. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>The section's index </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that a section has been automatically generated at the specified index.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModel:searchBarSelectedScopeButtonIndexDidChange:"></a>tableViewModel:searchBarSelectedScopeButtonIndexDidChange:</h3>
+      <code class="methodDeclaration">- (void)tableViewModel:(SCArrayOfItemsModel *)        <span class="parameter">tableViewModel</span>
+ searchBarSelectedScopeButtonIndexDidChange:(NSInteger)        <span class="parameter">selectedScope</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+        <dt>selectedScope</dt>
+        <dd><p>The index of the selected scope button. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the search bar scope button selection changed.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModelSearchBarBookmarkButtonClicked:"></a>tableViewModelSearchBarBookmarkButtonClicked:</h3>
+      <code class="methodDeclaration">- (void)tableViewModelSearchBarBookmarkButtonClicked:(SCArrayOfItemsModel *)        <span class="parameter">tableViewModel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the search bar bookmark button was tapped.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModelSearchBarCancelButtonClicked:"></a>tableViewModelSearchBarCancelButtonClicked:</h3>
+      <code class="methodDeclaration">- (void)tableViewModelSearchBarCancelButtonClicked:(SCArrayOfItemsModel *)        <span class="parameter">tableViewModel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the search bar cancel button was tapped.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModelSearchBarResultsListButtonClicked:"></a>tableViewModelSearchBarResultsListButtonClicked:</h3>
+      <code class="methodDeclaration">- (void)tableViewModelSearchBarResultsListButtonClicked:(SCArrayOfItemsModel *)        <span class="parameter">tableViewModel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the search bar results list button was tapped.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tableViewModelSearchBarSearchButtonClicked:"></a>tableViewModelSearchBarSearchButtonClicked:</h3>
+      <code class="methodDeclaration">- (void)tableViewModelSearchBarSearchButtonClicked:(SCArrayOfItemsModel *)        <span class="parameter">tableViewModel</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>tableViewModel</dt>
+        <dd><p>The model informing the delegate of the event. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Notifies the delegate that the search bar search button was tapped.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

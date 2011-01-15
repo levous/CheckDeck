@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCArrayOfItemsSection class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCArrayOfItemsSection class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCTableViewSection.html">SCTableViewSection</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Conforms to</label></td>
+        <td><a href="../Protocols/SCTableViewControllerDelegate.html">SCTableViewControllerDelegate</a></td>
+      </tr>
+      <tr class="alt">
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewSection.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as an <a href="SCTableViewModel.html">SCTableViewModel</a> section that is able to represent an array of any kind of items and automatically generate its cells from these items. The section is also able to handle all end-user interaction with the generated cells, including adding, editing, deleting, and moving the cells. When cells are added or edited, detail views are automatically generated for this purpose. To enable adding cells, the class' user should set the addButtonItem property of the section to a valid UIBarButtonItem, the section then will automatically add new items when the button is tapped.</p>
+<p>When adding new items to the array, the section starts by first asking the model's data source to provide a new item using its tableViewModel:newItemForArrayOfItemsSectionAtIndex: <a href="../Protocols/SCTableViewModelDataSource.html">SCTableViewModelDataSource</a> protocol method.</p>
+<p>This class is an abstract base class. Subclasses of this class must override the buildDetailTableModel method. This method should return a model for the detail view to display.</p>
+<p>Important: This is an abstract base class, you should never make any direct instances of it.</p>
+<p>See also: <a href="SCArrayOfStringsSection.html">SCArrayOfStringsSection</a>, <a href="SCArrayOfObjectsSection.html">SCArrayOfObjectsSection</a>. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#items>items</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#itemsAccessoryType>itemsAccessoryType</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowAddingItems>allowAddingItems</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowDeletingItems>allowDeletingItems</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowMovingItems>allowMovingItems</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowEditDetailView>allowEditDetailView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowRowSelection>allowRowSelection</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewModal>detailViewModal</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailTableViewStyle>detailTableViewStyle</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailViewHidesBottomBar>detailViewHidesBottomBar</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#addButtonItem>addButtonItem</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Internal Properties & Methods (should only be used when subclassing)</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellIdentifier>cellIdentifier</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#createCellAtIndex:>- createCellAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#setPropertiesForCell:withIndex:>- setPropertiesForCell:withIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#textForCellAtIndex:>- textForCellAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#detailTextForCellAtIndex:>- detailTextForCellAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#didSelectCellAtIndexPath:>- didSelectCellAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#commitEditingStyle:forCellAtIndexPath:>- commitEditingStyle:forCellAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#moveCellAtIndexPath:toIndexPath:>- moveCellAtIndexPath:toIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#didTapAddButtonItem>- didTapAddButtonItem</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#createNewItem>- createNewItem</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#buildDetailTableModel:forItem:>- buildDetailTableModel:forItem:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#addNewItem:>- addNewItem:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tempDetailModelModified>- tempDetailModelModified</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#commitDetailModelChanges:>- commitDetailModelChanges:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:withItems:>+ sectionWithHeaderTitle:withItems:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithHeaderTitle:withItems:>- initWithHeaderTitle:withItems:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Manual Event Control</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#dispatchAddNewItemEvent>- dispatchAddNewItemEvent</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#dispatchSelectRowAtIndexPathEvent:>- dispatchSelectRowAtIndexPathEvent:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#dispatchRemoveRowAtIndexPathEvent:>- dispatchRemoveRowAtIndexPathEvent:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="sectionWithHeaderTitle:withItems:"></a>sectionWithHeaderTitle:withItems:</h3>
+      <code class="methodDeclaration">+ (id)sectionWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withItems:(NSMutableArray *)        <span class="parameter">sectionItems</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>sectionItems</dt>
+        <dd><p>An array of items that the section will use to generate its cells. This array must be of type NSMutableArray, as it must support the section's add, delete, and move operations. If you do not with to allow these operations on your array, you can either pass an array using [NSMutableArray arrayWithArray:myArray], or you can disable the functionality from the user interface by setting the allowAddingItems, allowDeletingItems, and allowMovingItems properties. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCArrayOfItemsSection given a header title and an array of items.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="createCellAtIndex:"></a>createCellAtIndex:</h3>
+      <code class="methodDeclaration">- (SCTableViewCell *)createCellAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to handle the creation of section cells </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="setPropertiesForCell:withIndex:"></a>setPropertiesForCell:withIndex:</h3>
+      <code class="methodDeclaration">- (void)setPropertiesForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+ withIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to manage setting the properties cells after being dequed from the table view </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="textForCellAtIndex:"></a>textForCellAtIndex:</h3>
+      <code class="methodDeclaration">- (NSString *)textForCellAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to set the text for each generated cell </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="detailTextForCellAtIndex:"></a>detailTextForCellAtIndex:</h3>
+      <code class="methodDeclaration">- (NSString *)detailTextForCellAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to set the detail text for each generated cell </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="didSelectCellAtIndexPath:"></a>didSelectCellAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)didSelectCellAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to handle when generated cells are selected </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="commitEditingStyle:forCellAtIndexPath:"></a>commitEditingStyle:forCellAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)commitEditingStyle:(UITableViewCellEditingStyle)        <span class="parameter">editingStyle</span>
+ forCellAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to handle when generated cells are deleted </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="moveCellAtIndexPath:toIndexPath:"></a>moveCellAtIndexPath:toIndexPath:</h3>
+      <code class="methodDeclaration">- (void)moveCellAtIndexPath:(NSIndexPath *)        <span class="parameter">fromIndexPath</span>
+ toIndexPath:(NSIndexPath *)        <span class="parameter">toIndexPath</span>
+</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to handle when generated cells are moved </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="didTapAddButtonItem"></a>didTapAddButtonItem</h3>
+      <code class="methodDeclaration">- (void)didTapAddButtonItem</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to handle when addButtonItem is tapped </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="createNewItem"></a>createNewItem</h3>
+      <code class="methodDeclaration">- (NSObject *)createNewItem</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to handle creating a new item </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="buildDetailTableModel:forItem:"></a>buildDetailTableModel:forItem:</h3>
+      <code class="methodDeclaration">- (void)buildDetailTableModel:(SCTableViewModel *)        <span class="parameter">detailTableModel</span>
+ forItem:(NSObject *)        <span class="parameter">item</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>detailTableModel</dt>
+        <dd><p>This is an empty model. Method should add sections and cells to this model. </p>
+</dd>
+        <dt>item</dt>
+        <dd><p>The item that the model should be built for. If item is nil, a model should be buil for a new item. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Subclasses must override this method to build a model for the generated detail view. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="addNewItem:"></a>addNewItem:</h3>
+      <code class="methodDeclaration">- (void)addNewItem:(NSObject *)        <span class="parameter">newItem</span>
+</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to handle adding a new item (method called internally by framework) </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="tempDetailModelModified"></a>tempDetailModelModified</h3>
+      <code class="methodDeclaration">- (void)tempDetailModelModified</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally by framework. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="commitDetailModelChanges:"></a>commitDetailModelChanges:</h3>
+      <code class="methodDeclaration">- (void)commitDetailModelChanges:(SCTableViewModel *)        <span class="parameter">detailModel</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method gets called internally by framework. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="initWithHeaderTitle:withItems:"></a>initWithHeaderTitle:withItems:</h3>
+      <code class="methodDeclaration">- (id)initWithHeaderTitle:(NSString *)        <span class="parameter">sectionHeaderTitle</span>
+ withItems:(NSMutableArray *)        <span class="parameter">sectionItems</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sectionHeaderTitle</dt>
+        <dd><p>A header title for the section. </p>
+</dd>
+        <dt>sectionItems</dt>
+        <dd><p>An array of items that the section will use to generate its cells. This array must be of type NSMutableArray, as it must support the section's add, delete, and move operations. If you do not wish to allow these operations on your array, you can either pass an array using [NSMutableArray arrayWithArray:myArray], or you can disable the functionality from the user interface by setting the allowAddingItems, allowDeletingItems, and allowMovingItems properties. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCArrayOfItemsSection given a header title and an array of items.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="dispatchAddNewItemEvent"></a>dispatchAddNewItemEvent</h3>
+      <code class="methodDeclaration">- (void)dispatchAddNewItemEvent</code>
+      <h5>Discussion</h5>
+<p>User can call this method to dispatch an AddNewItem event, the same event dispached when the end-user taps addButtonItem. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="dispatchSelectRowAtIndexPathEvent:"></a>dispatchSelectRowAtIndexPathEvent:</h3>
+      <code class="methodDeclaration">- (void)dispatchSelectRowAtIndexPathEvent:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Discussion</h5>
+<p>User can call this method to dispatch a SelectRow event, the same event dispached when the end-user selects a cell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="dispatchRemoveRowAtIndexPathEvent:"></a>dispatchRemoveRowAtIndexPathEvent:</h3>
+      <code class="methodDeclaration">- (void)dispatchRemoveRowAtIndexPathEvent:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Discussion</h5>
+<p>User can call this method to dispatch a RemoveRow event, the same event dispached when the end-user taps the delete button on a cell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h2>Properties</h2>
+      <h3><a name="items"></a>items</h3>
+      <code class="methodDeclaration">@property NSMutableArray *items</code>
+      <h5>Discussion</h5>
+<p>The array of items that the section uses to generate its cells from.</p>
+<p>This array must be of type NSMutableArray, as it must support the section's add, delete, and move operations. If you do not wish to allow these operations on your array, you can either pass an array using [NSMutableArray arrayWithArray:myArray], or you can disable the functionality from the user interface by setting the allowAddingItems, allowDeletingItems, allowMovingItems, and allowEditDetailView properties. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="itemsAccessoryType"></a>itemsAccessoryType</h3>
+      <code class="methodDeclaration">@property UITableViewCellAccessoryType itemsAccessoryType</code>
+      <h5>Discussion</h5>
+<p>The accessory type of the generated cells. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="allowAddingItems"></a>allowAddingItems</h3>
+      <code class="methodDeclaration">@property BOOL allowAddingItems</code>
+      <h5>Discussion</h5>
+<p>Allows/disables adding new cells/items to the items array. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="allowDeletingItems"></a>allowDeletingItems</h3>
+      <code class="methodDeclaration">@property BOOL allowDeletingItems</code>
+      <h5>Discussion</h5>
+<p>Allows/disables deleting new cells/items from the items array. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="allowMovingItems"></a>allowMovingItems</h3>
+      <code class="methodDeclaration">@property BOOL allowMovingItems</code>
+      <h5>Discussion</h5>
+<p>Allows/disables moving cells/items from one row to another. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="allowEditDetailView"></a>allowEditDetailView</h3>
+      <code class="methodDeclaration">@property BOOL allowEditDetailView</code>
+      <h5>Discussion</h5>
+<p>Allows/disables a detail view for editing items' values. Default: TRUE.</p>
+<p>Detail views are automatically generated for editing new items. You can control wether the view appears as a modal view or gets pushed to the navigation stack using the detailViewModal property. Modal views have the added feature of giving the end user a Cancel and Done buttons. The Cancel button cancels all user's actions, while the Done button commits them. Also, if the cell's validation is enabled, the Done button will remain disabled until all cells' values are valid. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="allowRowSelection"></a>allowRowSelection</h3>
+      <code class="methodDeclaration">@property BOOL allowRowSelection</code>
+      <h5>Discussion</h5>
+<p>Allows/disables row selection. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="detailViewModal"></a>detailViewModal</h3>
+      <code class="methodDeclaration">@property BOOL detailViewModal</code>
+      <h5>Discussion</h5>
+<p>If TRUE, the detail view always appears as a modal view. If FALSE and a navigation controller exists, the detail view is pushed to the navigation controller's stack, otherwise the view appears modally. Default: FALSE.</p>
+<p>Note: This value has no effect on the detail view generated to add new items, as it always appears modally. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="detailTableViewStyle"></a>detailTableViewStyle</h3>
+      <code class="methodDeclaration">@property UITableViewStyle detailTableViewStyle</code>
+      <h5>Discussion</h5>
+<p>The modal presentation style of the section's detail view.</p>
+<p>The view style of the detail view's table. Default: UITableViewStyleGrouped. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="detailViewHidesBottomBar"></a>detailViewHidesBottomBar</h3>
+      <code class="methodDeclaration">@property BOOL detailViewHidesBottomBar</code>
+      <h5>Discussion</h5>
+<p>Indicates whether the bar at the bottom of the screen is hidden when the section's detail view is pushed. Default: TRUE. Note: Only applicable to cells with detail views. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="addButtonItem"></a>addButtonItem</h3>
+      <code class="methodDeclaration">@property UIBarButtonItem *addButtonItem</code>
+      <h5>Discussion</h5>
+<p>Set this property to a valid UIBarButtonItem. When addButtonItem is tapped and allowAddingItems is TRUE, a detail view is automatically generated for the user to enter the new items properties. If the properties are commited, a new item is added to the array </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+      <h3><a name="cellIdentifier"></a>cellIdentifier</h3>
+      <code class="methodDeclaration">@property NSString *cellIdentifier</code>
+      <h5>Discussion</h5>
+<p>Subclasses should use this property when creating new dequeable cells </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewSection.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

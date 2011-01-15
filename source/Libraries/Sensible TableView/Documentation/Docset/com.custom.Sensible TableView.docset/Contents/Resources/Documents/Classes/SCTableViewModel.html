@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCTableViewModel class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCTableViewModel class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td>NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewModel.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class is the master mind behind all of Sensible TableView's functionality.</p>
+<p>Sensible TableView provides an alternative easy way to create sophisticated table views very quickly. The sophistication of these table views can range from simple text cells, to cells with controls, to cells that get automatically generated from your own classes. SCTableViewModel also automatically generates detail views for common tasks such as selecting cell values or creating new objects. Using SCTableViewModel, you can simply create full functioning applications in a matter of minutes.</p>
+<p>SCTableViewModel is designed to be loosely coupled with your user interface elements. What this means is that you can use SCTableViewModel with Apple's default UITableView or with any of your custom UITableView subclasses. Similarly, you can use SCTableViewModel with any UIViewController, or any of its subclasses, including UITableViewController or your own subclasses. In addition, SCTableViewModel's auto generated detail views will work whether you use a navigation controller or not.</p>
+<p>Architecture:</p>
+<p>An SCTableViewModel defines a table view model with several sections, each section being of type <a href="SCTableViewSection.html">SCTableViewSection</a>. Each <a href="SCTableViewSection.html">SCTableViewSection</a> can contain several cells, each cell being of type <a href="SCTableViewCell.html">SCTableViewCell</a>. SCTableViewModel's functionality can also be extended using <a href="../Protocols/SCTableViewModelDataSource.html">SCTableViewModelDataSource</a> and <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a></p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#editButtonItem>editButtonItem</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoResizeForKeyboard>autoResizeForKeyboard</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionIndexTitles>sectionIndexTitles</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoGenerateSectionIndexTitles>autoGenerateSectionIndexTitles</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoSortSections>autoSortSections</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#hideSectionHeaderTitles>hideSectionHeaderTitles</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#lockCellSelection>lockCellSelection</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tag>tag</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#pauseAutoResizeForKeyboard>- pauseAutoResizeForKeyboard</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#resumeAutoResizeForKeyboard>- resumeAutoResizeForKeyboard</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Sections</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionCount>sectionCount</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#addSection:>- addSection:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#insertSection:atIndex:>- insertSection:atIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionAtIndex:>- sectionAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#sectionWithHeaderTitle:>- sectionWithHeaderTitle:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#indexForSection:>- indexForSection:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#removeSectionAtIndex:>- removeSectionAtIndex:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Cells</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#previousActiveCell>previousActiveCell</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#activeCell>activeCell</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#activeCellIndexPath>activeCellIndexPath</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellAtIndexPath:>- cellAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#indexPathForCell:>- indexPathForCell:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#cellAfterCell:rewindIfLastCell:>- cellAfterCell:rewindIfLastCell:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Model Values</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#modelKeyValues>modelKeyValues</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#valuesAreValid>valuesAreValid</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#commitButton>commitButton</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#reloadBoundValues>- reloadBoundValues</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing the Data Source and Delegate</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#dataSource>dataSource</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#delegate>delegate</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Miscellaneous</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#modeledTableView>modeledTableView</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#viewController>viewController</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#clear>- clear</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Internal Properties & Methods (should only be used internally by the framework)</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#masterModel>masterModel</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#valueChangedForSectionAtIndex:>- valueChangedForSectionAtIndex:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#valueChangedForRowAtIndexPath:>- valueChangedForRowAtIndexPath:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#setTargetForModelModifiedEvent:action:>- setTargetForModelModifiedEvent:action:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#didTapEditButtonItem>- didTapEditButtonItem</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#replaceModeledTableViewWith:>- replaceModeledTableViewWith:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#tableViewModelWithTableView:withViewController:>+ tableViewModelWithTableView:withViewController:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithTableView:withViewController:>- initWithTableView:withViewController:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h3>Managing Custom Detail Views</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#prepareModelForCustomDetailViewAppearing>- prepareModelForCustomDetailViewAppearing</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#prepareModelForCustomDetailViewDisappearing>- prepareModelForCustomDetailViewDisappearing</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="tableViewModelWithTableView:withViewController:"></a>tableViewModelWithTableView:withViewController:</h3>
+      <code class="methodDeclaration">+ (id)tableViewModelWithTableView:(UITableView *)        <span class="parameter">_modeledTableView</span>
+ withViewController:(UIViewController *)        <span class="parameter">_viewController</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_modeledTableView</dt>
+        <dd><p>The UITableView to be bound to the model.</p>
+</dd>
+        <dt>_viewController</dt>
+        <dd><p>The UIViewController to be bound to the model. _viewController must be the view controller that contains the modeledTableView. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTableViewModel bound to a UITableView and a UIViewController.</p>
+<p>Upon the model's initialization, the model sets itself as the modeledTableView's dataSource and delegate, and starts providing it with its sections and cells.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="pauseAutoResizeForKeyboard"></a>pauseAutoResizeForKeyboard</h3>
+      <code class="methodDeclaration">- (void)pauseAutoResizeForKeyboard</code>
+      <h5>Discussion</h5>
+<p>Pauses auto resizing when keyboard appears. This method should be called before displaying any of your own detail view controllers on top of the model's view controller. This is to disable the model from processing and acting to keyboard notifications. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="resumeAutoResizeForKeyboard"></a>resumeAutoResizeForKeyboard</h3>
+      <code class="methodDeclaration">- (void)resumeAutoResizeForKeyboard</code>
+      <h5>Discussion</h5>
+<p>Resumes auto resizing if autoResizeForKeyboard was TRUE at the time pauseAutoResizeForKeyboard was called, otherwise it does nothing. Method should be called after your own detail controller disappears. This method should only be called if pauseAutoResizeForKeyboard was called first. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="addSection:"></a>addSection:</h3>
+      <code class="methodDeclaration">- (void)addSection:(SCTableViewSection *)        <span class="parameter">section</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>section</dt>
+        <dd><p>Must be a valid non nil <a href="SCTableViewSection.html">SCTableViewSection</a>. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Adds a new section to the model. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="insertSection:atIndex:"></a>insertSection:atIndex:</h3>
+      <code class="methodDeclaration">- (void)insertSection:(SCTableViewSection *)        <span class="parameter">section</span>
+ atIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>section</dt>
+        <dd><p>Must be a valid non nil <a href="SCTableViewSection.html">SCTableViewSection</a>. </p>
+</dd>
+        <dt>index</dt>
+        <dd><p>Must be less than the total number of sections. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Inserts a new section at the specified index. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="sectionAtIndex:"></a>sectionAtIndex:</h3>
+      <code class="methodDeclaration">- (SCTableViewSection *)sectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>index</dt>
+        <dd><p>Must be less than the total number of sections. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns the section at the specified index. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="sectionWithHeaderTitle:"></a>sectionWithHeaderTitle:</h3>
+      <code class="methodDeclaration">- (SCTableViewSection *)sectionWithHeaderTitle:(NSString *)        <span class="parameter">title</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>title</dt>
+        <dd><p>The header title. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns the first section with the specified header title. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="indexForSection:"></a>indexForSection:</h3>
+      <code class="methodDeclaration">- (NSUInteger)indexForSection:(SCTableViewSection *)        <span class="parameter">section</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>section</dt>
+        <dd><p>Must be a valid non nil <a href="SCTableViewSection.html">SCTableViewSection</a>. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>If section is not found, method returns NSNotFound. </p>
+      <h5>Discussion</h5>
+<p>Returns the index of the specified section. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="removeSectionAtIndex:"></a>removeSectionAtIndex:</h3>
+      <code class="methodDeclaration">- (void)removeSectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>index</dt>
+        <dd><p>Must be less than the total number of section. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Removes the section at the specified index from the model. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="cellAtIndexPath:"></a>cellAtIndexPath:</h3>
+      <code class="methodDeclaration">- (SCTableViewCell *)cellAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>indexPath</dt>
+        <dd><p>Must be a valid non nil NSIndexPath. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns the cell at the specified indexPath. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="indexPathForCell:"></a>indexPathForCell:</h3>
+      <code class="methodDeclaration">- (NSIndexPath *)indexPathForCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cell</dt>
+        <dd><p>Must be a valid non nil <a href="SCTableViewCell.html">SCTableViewCell</a>. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>If cell is not found, method returns NSNotFound. </p>
+      <h5>Discussion</h5>
+<p>Returns the index path for the specified cell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="cellAfterCell:rewindIfLastCell:"></a>cellAfterCell:rewindIfLastCell:</h3>
+      <code class="methodDeclaration">- (SCTableViewCell *)cellAfterCell:(SCTableViewCell *)        <span class="parameter">cell</span>
+ rewindIfLastCell:(BOOL)        <span class="parameter">rewind</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>cell</dt>
+        <dd><p>Must be a valid non nil <a href="SCTableViewCell.html">SCTableViewCell</a>. </p>
+</dd>
+        <dt>rewind</dt>
+        <dd><p>If TRUE and cell is the very last cell in the model, method returns the cell at the very top. </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>Returns nil if cell is the last cell in the model and rewind is FALSE, or if cell does not exist in the model. </p>
+      <h5>Discussion</h5>
+<p>Returns the cell that comes after the specified cell in the model. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="reloadBoundValues"></a>reloadBoundValues</h3>
+      <code class="methodDeclaration">- (void)reloadBoundValues</code>
+      <h5>Discussion</h5>
+<p>Reload's the model's bound values in case the associated bound objects or keys valuea has changed by means other than the cells themselves (e.g. external custom code). </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="clear"></a>clear</h3>
+      <code class="methodDeclaration">- (void)clear</code>
+      <h5>Discussion</h5>
+<p>Clears all contents of the model. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="valueChangedForSectionAtIndex:"></a>valueChangedForSectionAtIndex:</h3>
+      <code class="methodDeclaration">- (void)valueChangedForSectionAtIndex:(NSUInteger)        <span class="parameter">index</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>index</dt>
+        <dd><p>Index of the section changed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the value of a section changes. This method should only be used when subclassing SCTableViewModel. If what you want is to get notified when a section value changes, consider using <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> methods.</p>
+<p>When subclassing SCTableViewModel, you can override this method to define custom behaviour when a section value changes. However, you should always call [super valueChangedForSectionAtIndex:] somewhere in your subclassed method.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="valueChangedForRowAtIndexPath:"></a>valueChangedForRowAtIndexPath:</h3>
+      <code class="methodDeclaration">- (void)valueChangedForRowAtIndexPath:(NSIndexPath *)        <span class="parameter">indexPath</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>indexPath</dt>
+        <dd><p>Index path of the cell changed. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Method gets called internally whenever the value of a cell changes. This method should only be used when subclassing SCTableViewModel. If what you want is to get notified when a cell value changes, consider using either <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> or <a href="../Protocols/SCTableViewCellDelegate.html">SCTableViewCellDelegate</a> methods.</p>
+<p>When subclassing SCTableViewModel, you can override this method to define custom behaviour when a cell value changes. However, you should always call [super valueChangedForRowAtIndexPath:] somewhere in your subclassed method.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="setTargetForModelModifiedEvent:action:"></a>setTargetForModelModifiedEvent:action:</h3>
+      <code class="methodDeclaration">- (void)setTargetForModelModifiedEvent:(id)        <span class="parameter">_target</span>
+ action:(SEL)        <span class="parameter">_action</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method used internally by the framework to monitor model modification events. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="didTapEditButtonItem"></a>didTapEditButtonItem</h3>
+      <code class="methodDeclaration">- (void)didTapEditButtonItem</code>
+      <h5>Discussion</h5>
+<p>Subclasses should override this method to handle when editButtonItem is tapped. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="replaceModeledTableViewWith:"></a>replaceModeledTableViewWith:</h3>
+      <code class="methodDeclaration">- (void)replaceModeledTableViewWith:(UITableView *)        <span class="parameter">tableView</span>
+</code>
+      <h5>Discussion</h5>
+<p>Method used internally to replace the modeled tableview. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="initWithTableView:withViewController:"></a>initWithTableView:withViewController:</h3>
+      <code class="methodDeclaration">- (id)initWithTableView:(UITableView *)        <span class="parameter">_modeledTableView</span>
+ withViewController:(UIViewController *)        <span class="parameter">_viewController</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>_modeledTableView</dt>
+        <dd><p>The UITableView to be bound to the model.</p>
+</dd>
+        <dt>_viewController</dt>
+        <dd><p>The UIViewController to be bound to the model. _viewController must be the view controller that contains the modeledTableView. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCTableViewModel bound to a UITableView and a UIViewController.</p>
+<p>Upon the model's initialization, the model sets itself as the modeledTableView's dataSource and delegate, and starts providing it with its sections and cells.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="prepareModelForCustomDetailViewAppearing"></a>prepareModelForCustomDetailViewAppearing</h3>
+      <code class="methodDeclaration">- (void)prepareModelForCustomDetailViewAppearing</code>
+      <h5>Discussion</h5>
+<p>Method *must* be called before a custom detail view appears. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="prepareModelForCustomDetailViewDisappearing"></a>prepareModelForCustomDetailViewDisappearing</h3>
+      <code class="methodDeclaration">- (void)prepareModelForCustomDetailViewDisappearing</code>
+      <h5>Discussion</h5>
+<p>Method *must* be called before a custom detail view disappears. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h2>Properties</h2>
+      <h3><a name="editButtonItem"></a>editButtonItem</h3>
+      <code class="methodDeclaration">@property UIBarButtonItem *editButtonItem</code>
+      <h5>Discussion</h5>
+<p>When set to a valid UIBarButtonItem, <a href="">SCTableViewModel</a> automatically puts its table view in edit mode when the button is tapped. Note: Not required if your view controller is a UITableViewController subclass, or if you do not wish to implement editing specific <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> methods. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="autoResizeForKeyboard"></a>autoResizeForKeyboard</h3>
+      <code class="methodDeclaration">@property BOOL autoResizeForKeyboard</code>
+      <h5>Discussion</h5>
+<p>If TRUE, SCTableViewModel will automatically resize the modeledTableView when the keyboard appears. Property has no effect if viewController is a UITableViewController, as the UITableViewController will handle the resizing itself. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="sectionIndexTitles"></a>sectionIndexTitles</h3>
+      <code class="methodDeclaration">@property NSArray *sectionIndexTitles</code>
+      <h5>Discussion</h5>
+<p>An array of strings that serve as the title of sections in the modeledTableView and appear in the index list on the right side of the modeledTableView. modeledTableView must be in plain style for the index to appear. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="autoGenerateSectionIndexTitles"></a>autoGenerateSectionIndexTitles</h3>
+      <code class="methodDeclaration">@property BOOL autoGenerateSectionIndexTitles</code>
+      <h5>Discussion</h5>
+<p>If TRUE, SCTableViewModel will automatically generate the sectionIndexTitles array from the first letter of each section's header title. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="autoSortSections"></a>autoSortSections</h3>
+      <code class="methodDeclaration">@property BOOL autoSortSections</code>
+      <h5>Discussion</h5>
+<p>If TRUE, SCTableViewModel will automatically sort its sections according to their header title value. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="hideSectionHeaderTitles"></a>hideSectionHeaderTitles</h3>
+      <code class="methodDeclaration">@property BOOL hideSectionHeaderTitles</code>
+      <h5>Discussion</h5>
+<p>If TRUE, all section header titles will be hidden. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="lockCellSelection"></a>lockCellSelection</h3>
+      <code class="methodDeclaration">@property BOOL lockCellSelection</code>
+      <h5>Discussion</h5>
+<p>If TRUE, SCTableViewModel will prevent any cell from being selected. Default: FALSE. Note: for preventing individual cells from being selected, use <a href="SCTableViewCell.html">SCTableViewCell</a> "selectable" property. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="tag"></a>tag</h3>
+      <code class="methodDeclaration">@property NSInteger tag</code>
+      <h5>Discussion</h5>
+<p>An integer that you can use to identify different table view models in your application. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="sectionCount"></a>sectionCount</h3>
+      <code class="methodDeclaration">@property NSUInteger sectionCount</code>
+      <h5>Discussion</h5>
+<p>The number of sections in the model. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="previousActiveCell"></a>previousActiveCell</h3>
+      <code class="methodDeclaration">@property SCTableViewCell *previousActiveCell</code>
+      <h5>Discussion</h5>
+<p>The cell that was active previous to the current activeCell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="activeCell"></a>activeCell</h3>
+      <code class="methodDeclaration">@property SCTableViewCell *activeCell</code>
+      <h5>Discussion</h5>
+<p>The current active cell. A cell becomes active if it is selected or if its value changes. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="activeCellIndexPath"></a>activeCellIndexPath</h3>
+      <code class="methodDeclaration">@property NSIndexPath *activeCellIndexPath</code>
+      <h5>Discussion</h5>
+<p>The indexPath of the activeCell. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="modelKeyValues"></a>modelKeyValues</h3>
+      <code class="methodDeclaration">@property NSMutableDictionary *modelKeyValues</code>
+      <h5>Discussion</h5>
+<p>An NSMutableDictionary of all the model's key/value pairs. The keys and their respective values are present only if the model's cells and sections are bound to these keys. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="valuesAreValid"></a>valuesAreValid</h3>
+      <code class="methodDeclaration">@property BOOL valuesAreValid</code>
+      <h5>Discussion</h5>
+<p>TRUE if all the model's section and cell values are valid. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="commitButton"></a>commitButton</h3>
+      <code class="methodDeclaration">@property UIBarButtonItem *commitButton</code>
+      <h5>Discussion</h5>
+<p>SCTableViewModel will automatically enable/disable the commitButton based on the valuesAreValid property, where commitButton is enabled if valuesAreValid is TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="dataSource"></a>dataSource</h3>
+      <code class="methodDeclaration">@property id dataSource</code>
+      <h5>Discussion</h5>
+<p>The object that acts as the data source of SCTableViewModel. The object must adopt the <a href="../Protocols/SCTableViewModelDataSource.html">SCTableViewModelDataSource</a> protocol. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="delegate"></a>delegate</h3>
+      <code class="methodDeclaration">@property id delegate</code>
+      <h5>Discussion</h5>
+<p>The object that acts as the delegate of SCTableViewModel. The object must adopt the <a href="../Protocols/SCTableViewModelDelegate.html">SCTableViewModelDelegate</a> protocol. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="modeledTableView"></a>modeledTableView</h3>
+      <code class="methodDeclaration">@property UITableView *modeledTableView</code>
+      <h5>Discussion</h5>
+<p>The UITableView bound to SCTableViewModel. This property is readonly, to set modeledTableView, use the class initilizers. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="viewController"></a>viewController</h3>
+      <code class="methodDeclaration">@property UIViewController *viewController</code>
+      <h5>Discussion</h5>
+<p>The UIViewController bound to SCTableViewModel. This property is readonly, to set viewController, use the class initilizers. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+      <h3><a name="masterModel"></a>masterModel</h3>
+      <code class="methodDeclaration">@property SCTableViewModel *masterModel</code>
+      <h5>Discussion</h5>
+<p>Property is used internally by the framework to set the master model in a master-detail relationship. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewModel.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

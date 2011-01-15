@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCTextViewAttributes class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCTextViewAttributes class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCPropertyAttributes.html">SCPropertyAttributes</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCPropertyAttributes.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class is used to extend the definition of an SCPropertyAttributes instance of type SCPropertyTypeTextView, thus allowing further customization of the generated control by the user. </p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#minimumHeight>minimumHeight</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#maximumHeight>maximumHeight</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#autoResize>autoResize</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#editable>editable</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Creation and Initialization</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#attributesWithMinimumHeight:maximumHeight:autoResize:editable:>+ attributesWithMinimumHeight:maximumHeight:autoResize:editable:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#initWithMinimumHeight:maximumHeight:autoResize:editable:>- initWithMinimumHeight:maximumHeight:autoResize:editable:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Class methods</h2>
+      <h3><a name="attributesWithMinimumHeight:maximumHeight:autoResize:editable:"></a>attributesWithMinimumHeight:maximumHeight:autoResize:editable:</h3>
+      <code class="methodDeclaration">+ (id)attributesWithMinimumHeight:(CGFloat)        <span class="parameter">minHeight</span>
+ maximumHeight:(CGFloat)        <span class="parameter">maxHeight</span>
+ autoResize:(BOOL)        <span class="parameter">_autoResize</span>
+ editable:(BOOL)        <span class="parameter">_editable</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>minHeight</dt>
+        <dd><p>The minimum height of the generated UITextView control. Set to a negative value to ignore. </p>
+</dd>
+        <dt>maxHeight</dt>
+        <dd><p>The maximum height of the generated UITextView control. Set to a negative value to ignore. </p>
+</dd>
+        <dt>_autoResize</dt>
+        <dd><p>Determines whether the generated UITextView control will auto resize. </p>
+</dd>
+        <dt>_editable</dt>
+        <dd><p>Determines whether the generated UITextView control will be editable. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Allocates and returns an initialized SCTextViewAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h2>Instance methods</h2>
+      <h3><a name="initWithMinimumHeight:maximumHeight:autoResize:editable:"></a>initWithMinimumHeight:maximumHeight:autoResize:editable:</h3>
+      <code class="methodDeclaration">- (id)initWithMinimumHeight:(CGFloat)        <span class="parameter">minHeight</span>
+ maximumHeight:(CGFloat)        <span class="parameter">maxHeight</span>
+ autoResize:(BOOL)        <span class="parameter">_autoResize</span>
+ editable:(BOOL)        <span class="parameter">_editable</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>minHeight</dt>
+        <dd><p>The minimum height of the generated UITextView control. Set to a negative value to ignore. </p>
+</dd>
+        <dt>maxHeight</dt>
+        <dd><p>The maximum height of the generated UITextView control. Set to a negative value to ignore. </p>
+</dd>
+        <dt>_autoResize</dt>
+        <dd><p>Determines whether the generated UITextView control will auto resize. </p>
+</dd>
+        <dt>_editable</dt>
+        <dd><p>Determines whether the generated UITextView control will be editable. </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Returns an initialized SCTextViewAttributes.</p>
+<p>      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h2>Properties</h2>
+      <h3><a name="minimumHeight"></a>minimumHeight</h3>
+      <code class="methodDeclaration">@property CGFloat minimumHeight</code>
+      <h5>Discussion</h5>
+<p>The minimum height of the generated UITextView control. Set to a negative value to ignore. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="maximumHeight"></a>maximumHeight</h3>
+      <code class="methodDeclaration">@property CGFloat maximumHeight</code>
+      <h5>Discussion</h5>
+<p>The maximum height of the generated UITextView control. Set to a negative value to ignore. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="autoResize"></a>autoResize</h3>
+      <code class="methodDeclaration">@property BOOL autoResize</code>
+      <h5>Discussion</h5>
+<p>Determines whether the generated UITextView control will auto resize. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+      <h3><a name="editable"></a>editable</h3>
+      <code class="methodDeclaration">@property BOOL editable</code>
+      <h5>Discussion</h5>
+<p>Determines whether the generated UITextView control will be editable. </p>
+      <h5>Declared in</h5>
+      <code>SCPropertyAttributes.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

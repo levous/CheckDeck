@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SCNumericTextFieldCell class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>SCNumericTextFieldCell class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td><a href="SCTextFieldCell.html">SCTextFieldCell</a> : 
+<a href="SCControlCell.html">SCControlCell</a> : 
+<a href="SCTableViewCell.html">SCTableViewCell</a> : 
+NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>SCTableViewCell.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>This class functions as a cell with a UITextField control with numeric values. The bound property name or bound key value of this cell must be of type NSNumber. SCNumericTextFieldCell defines its own validation rules according to the following criteria:<ul>
+<li><p>Value is valid only if it's a numeric value.</p>
+</li>
+<li><p>If minimumValue is not nil, then value is only valid if it's greater than or equal to this value.</p>
+</li>
+<li><p>If maximumValue is not nil, then value is only valid if it's less than or equal to this value.</p>
+</li>
+<li><p>If allowFloatValue is FALSE, then value is only valid if it's an integer value. </p>
+</li>
+</ul>
+</p>
+      <h2>Tasks</h2>
+      <h3>Configuration</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#minimumValue>minimumValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#maximumValue>maximumValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowFloatValue>allowFloatValue</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#displayZeroAsBlank>displayZeroAsBlank</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h2>Properties</h2>
+      <h3><a name="minimumValue"></a>minimumValue</h3>
+      <code class="methodDeclaration">@property NSNumber *minimumValue</code>
+      <h5>Discussion</h5>
+<p>The minimum valid cell value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="maximumValue"></a>maximumValue</h3>
+      <code class="methodDeclaration">@property NSNumber *maximumValue</code>
+      <h5>Discussion</h5>
+<p>The maximum valid cell value. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="allowFloatValue"></a>allowFloatValue</h3>
+      <code class="methodDeclaration">@property BOOL allowFloatValue</code>
+      <h5>Discussion</h5>
+<p>If FALSE, only integer cell values are valid. Default: TRUE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+      <h3><a name="displayZeroAsBlank"></a>displayZeroAsBlank</h3>
+      <code class="methodDeclaration">@property BOOL displayZeroAsBlank</code>
+      <h5>Discussion</h5>
+<p>If TRUE, an empty space is displayed if the bound value equals zero. Default: FALSE. </p>
+      <h5>Declared in</h5>
+      <code>SCTableViewCell.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-12-30)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>
