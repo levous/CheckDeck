@@ -59,15 +59,16 @@
 		FBEAA7E112C3B93700168BD2 /* Carbon-Fiber-Thick-12.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7E012C3B93700168BD2 /* Carbon-Fiber-Thick-12.png */; };
 		FBEAA7E912C3B99600168BD2 /* 15px-shadow-tile.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAA7E812C3B99600168BD2 /* 15px-shadow-tile.png */; };
 		FBEE736212C9377600352968 /* libLevousCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEE72ED12C9344500352968 /* libLevousCore.a */; };
-		FBF7F2CF12D02D5300389C42 /* SCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2BC12D02D5300389C42 /* SCTableViewCell.m */; };
-		FBF7F2D012D02D5300389C42 /* SCTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2BD12D02D5300389C42 /* SCTableViewModel.m */; };
-		FBF7F2D112D02D5300389C42 /* SCTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2C012D02D5300389C42 /* SCTableViewSection.m */; };
-		FBF7F2D212D02D5300389C42 /* SCGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2C512D02D5300389C42 /* SCGlobals.m */; };
-		FBF7F2D312D02D5300389C42 /* SCClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2C612D02D5300389C42 /* SCClassDefinition.m */; };
-		FBF7F2D412D02D5300389C42 /* SCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2C712D02D5300389C42 /* SCBadgeView.m */; };
-		FBF7F2D512D02D5300389C42 /* SCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2C812D02D5300389C42 /* SCTableViewController.m */; };
-		FBF7F2D612D02D5300389C42 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2C912D02D5300389C42 /* SCViewController.m */; };
-		FBF7F2D712D02D5300389C42 /* SCPropertyAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2CC12D02D5300389C42 /* SCPropertyAttributes.m */; };
+		FBEFE48212D65BAD0006F7A5 /* LICENSE AGREEMENT.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FBEFE46F12D65BAD0006F7A5 /* LICENSE AGREEMENT.rtf */; };
+		FBEFE48312D65BAD0006F7A5 /* SCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE47112D65BAD0006F7A5 /* SCBadgeView.m */; };
+		FBEFE48412D65BAD0006F7A5 /* SCClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE47312D65BAD0006F7A5 /* SCClassDefinition.m */; };
+		FBEFE48512D65BAD0006F7A5 /* SCGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE47512D65BAD0006F7A5 /* SCGlobals.m */; };
+		FBEFE48612D65BAD0006F7A5 /* SCPropertyAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE47712D65BAD0006F7A5 /* SCPropertyAttributes.m */; };
+		FBEFE48712D65BAD0006F7A5 /* SCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE47912D65BAD0006F7A5 /* SCTableViewCell.m */; };
+		FBEFE48812D65BAD0006F7A5 /* SCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE47B12D65BAD0006F7A5 /* SCTableViewController.m */; };
+		FBEFE48912D65BAD0006F7A5 /* SCTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE47D12D65BAD0006F7A5 /* SCTableViewModel.m */; };
+		FBEFE48A12D65BAD0006F7A5 /* SCTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE47F12D65BAD0006F7A5 /* SCTableViewSection.m */; };
+		FBEFE48B12D65BAD0006F7A5 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEFE48112D65BAD0006F7A5 /* SCViewController.m */; };
 		FBF7F30D12D0372100389C42 /* GenericDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F30C12D0372100389C42 /* GenericDetailTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -306,25 +307,25 @@
 		FBEAA7D812C3B90600168BD2 /* Carbon-Fiber-Thick-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Carbon-Fiber-Thick-25.png"; path = "Resources/images/Background/Carbon-Fiber-Thick-25.png"; sourceTree = SOURCE_ROOT; };
 		FBEAA7E012C3B93700168BD2 /* Carbon-Fiber-Thick-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Carbon-Fiber-Thick-12.png"; path = "Resources/images/Background/Carbon-Fiber-Thick-12.png"; sourceTree = SOURCE_ROOT; };
 		FBEAA7E812C3B99600168BD2 /* 15px-shadow-tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "15px-shadow-tile.png"; path = "Resources/images/Layout/15px-shadow-tile.png"; sourceTree = SOURCE_ROOT; };
-		FBF7F2BC12D02D5300389C42 /* SCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTableViewCell.m; path = "Sensible TableView/SCTableViewCell.m"; sourceTree = "<group>"; };
-		FBF7F2BD12D02D5300389C42 /* SCTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTableViewModel.m; path = "Sensible TableView/SCTableViewModel.m"; sourceTree = "<group>"; };
-		FBF7F2BE12D02D5300389C42 /* SCTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTableViewModel.h; path = "Sensible TableView/SCTableViewModel.h"; sourceTree = "<group>"; };
-		FBF7F2BF12D02D5300389C42 /* SCTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTableViewSection.h; path = "Sensible TableView/SCTableViewSection.h"; sourceTree = "<group>"; };
-		FBF7F2C012D02D5300389C42 /* SCTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTableViewSection.m; path = "Sensible TableView/SCTableViewSection.m"; sourceTree = "<group>"; };
-		FBF7F2C112D02D5300389C42 /* SCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTableViewCell.h; path = "Sensible TableView/SCTableViewCell.h"; sourceTree = "<group>"; };
-		FBF7F2C212D02D5300389C42 /* SCPropertyAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPropertyAttributes.h; path = "Sensible TableView/SCPropertyAttributes.h"; sourceTree = "<group>"; };
-		FBF7F2C312D02D5300389C42 /* SCClassDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCClassDefinition.h; path = "Sensible TableView/SCClassDefinition.h"; sourceTree = "<group>"; };
-		FBF7F2C412D02D5300389C42 /* SCGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCGlobals.h; path = "Sensible TableView/SCGlobals.h"; sourceTree = "<group>"; };
-		FBF7F2C512D02D5300389C42 /* SCGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCGlobals.m; path = "Sensible TableView/SCGlobals.m"; sourceTree = "<group>"; };
-		FBF7F2C612D02D5300389C42 /* SCClassDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCClassDefinition.m; path = "Sensible TableView/SCClassDefinition.m"; sourceTree = "<group>"; };
-		FBF7F2C712D02D5300389C42 /* SCBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCBadgeView.m; path = "Sensible TableView/SCBadgeView.m"; sourceTree = "<group>"; };
-		FBF7F2C812D02D5300389C42 /* SCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTableViewController.m; path = "Sensible TableView/SCTableViewController.m"; sourceTree = "<group>"; };
-		FBF7F2C912D02D5300389C42 /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCViewController.m; path = "Sensible TableView/SCViewController.m"; sourceTree = "<group>"; };
-		FBF7F2CA12D02D5300389C42 /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCViewController.h; path = "Sensible TableView/SCViewController.h"; sourceTree = "<group>"; };
-		FBF7F2CB12D02D5300389C42 /* SCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTableViewController.h; path = "Sensible TableView/SCTableViewController.h"; sourceTree = "<group>"; };
-		FBF7F2CC12D02D5300389C42 /* SCPropertyAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPropertyAttributes.m; path = "Sensible TableView/SCPropertyAttributes.m"; sourceTree = "<group>"; };
-		FBF7F2CD12D02D5300389C42 /* SCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCBadgeView.h; path = "Sensible TableView/SCBadgeView.h"; sourceTree = "<group>"; };
-		FBF7F2CE12D02D5300389C42 /* LICENSE AGREEMENT.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "LICENSE AGREEMENT.rtf"; path = "Sensible TableView/LICENSE AGREEMENT.rtf"; sourceTree = "<group>"; };
+		FBEFE46F12D65BAD0006F7A5 /* LICENSE AGREEMENT.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "LICENSE AGREEMENT.rtf"; sourceTree = "<group>"; };
+		FBEFE47012D65BAD0006F7A5 /* SCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBadgeView.h; sourceTree = "<group>"; };
+		FBEFE47112D65BAD0006F7A5 /* SCBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBadgeView.m; sourceTree = "<group>"; };
+		FBEFE47212D65BAD0006F7A5 /* SCClassDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCClassDefinition.h; sourceTree = "<group>"; };
+		FBEFE47312D65BAD0006F7A5 /* SCClassDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCClassDefinition.m; sourceTree = "<group>"; };
+		FBEFE47412D65BAD0006F7A5 /* SCGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGlobals.h; sourceTree = "<group>"; };
+		FBEFE47512D65BAD0006F7A5 /* SCGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGlobals.m; sourceTree = "<group>"; };
+		FBEFE47612D65BAD0006F7A5 /* SCPropertyAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPropertyAttributes.h; sourceTree = "<group>"; };
+		FBEFE47712D65BAD0006F7A5 /* SCPropertyAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPropertyAttributes.m; sourceTree = "<group>"; };
+		FBEFE47812D65BAD0006F7A5 /* SCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableViewCell.h; sourceTree = "<group>"; };
+		FBEFE47912D65BAD0006F7A5 /* SCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableViewCell.m; sourceTree = "<group>"; };
+		FBEFE47A12D65BAD0006F7A5 /* SCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableViewController.h; sourceTree = "<group>"; };
+		FBEFE47B12D65BAD0006F7A5 /* SCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableViewController.m; sourceTree = "<group>"; };
+		FBEFE47C12D65BAD0006F7A5 /* SCTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableViewModel.h; sourceTree = "<group>"; };
+		FBEFE47D12D65BAD0006F7A5 /* SCTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableViewModel.m; sourceTree = "<group>"; };
+		FBEFE47E12D65BAD0006F7A5 /* SCTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableViewSection.h; sourceTree = "<group>"; };
+		FBEFE47F12D65BAD0006F7A5 /* SCTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableViewSection.m; sourceTree = "<group>"; };
+		FBEFE48012D65BAD0006F7A5 /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
+		FBEFE48112D65BAD0006F7A5 /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
 		FBF7F30B12D0372100389C42 /* GenericDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericDetailTableViewController.h; sourceTree = "<group>"; };
 		FBF7F30C12D0372100389C42 /* GenericDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericDetailTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -668,31 +669,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FBEFE46E12D65BAD0006F7A5 /* Sensible TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FBEFE46F12D65BAD0006F7A5 /* LICENSE AGREEMENT.rtf */,
+				FBEFE47012D65BAD0006F7A5 /* SCBadgeView.h */,
+				FBEFE47112D65BAD0006F7A5 /* SCBadgeView.m */,
+				FBEFE47212D65BAD0006F7A5 /* SCClassDefinition.h */,
+				FBEFE47312D65BAD0006F7A5 /* SCClassDefinition.m */,
+				FBEFE47412D65BAD0006F7A5 /* SCGlobals.h */,
+				FBEFE47512D65BAD0006F7A5 /* SCGlobals.m */,
+				FBEFE47612D65BAD0006F7A5 /* SCPropertyAttributes.h */,
+				FBEFE47712D65BAD0006F7A5 /* SCPropertyAttributes.m */,
+				FBEFE47812D65BAD0006F7A5 /* SCTableViewCell.h */,
+				FBEFE47912D65BAD0006F7A5 /* SCTableViewCell.m */,
+				FBEFE47A12D65BAD0006F7A5 /* SCTableViewController.h */,
+				FBEFE47B12D65BAD0006F7A5 /* SCTableViewController.m */,
+				FBEFE47C12D65BAD0006F7A5 /* SCTableViewModel.h */,
+				FBEFE47D12D65BAD0006F7A5 /* SCTableViewModel.m */,
+				FBEFE47E12D65BAD0006F7A5 /* SCTableViewSection.h */,
+				FBEFE47F12D65BAD0006F7A5 /* SCTableViewSection.m */,
+				FBEFE48012D65BAD0006F7A5 /* SCViewController.h */,
+				FBEFE48112D65BAD0006F7A5 /* SCViewController.m */,
+			);
+			path = "Sensible TableView";
+			sourceTree = "<group>";
+		};
 		FBF7F2BB12D02D1D00389C42 /* Sensible TableView */ = {
 			isa = PBXGroup;
 			children = (
-				FBF7F2BC12D02D5300389C42 /* SCTableViewCell.m */,
-				FBF7F2BD12D02D5300389C42 /* SCTableViewModel.m */,
-				FBF7F2BE12D02D5300389C42 /* SCTableViewModel.h */,
-				FBF7F2BF12D02D5300389C42 /* SCTableViewSection.h */,
-				FBF7F2C012D02D5300389C42 /* SCTableViewSection.m */,
-				FBF7F2C112D02D5300389C42 /* SCTableViewCell.h */,
-				FBF7F2C212D02D5300389C42 /* SCPropertyAttributes.h */,
-				FBF7F2C312D02D5300389C42 /* SCClassDefinition.h */,
-				FBF7F2C412D02D5300389C42 /* SCGlobals.h */,
-				FBF7F2C512D02D5300389C42 /* SCGlobals.m */,
-				FBF7F2C612D02D5300389C42 /* SCClassDefinition.m */,
-				FBF7F2C712D02D5300389C42 /* SCBadgeView.m */,
-				FBF7F2C812D02D5300389C42 /* SCTableViewController.m */,
-				FBF7F2C912D02D5300389C42 /* SCViewController.m */,
-				FBF7F2CA12D02D5300389C42 /* SCViewController.h */,
-				FBF7F2CB12D02D5300389C42 /* SCTableViewController.h */,
-				FBF7F2CC12D02D5300389C42 /* SCPropertyAttributes.m */,
-				FBF7F2CD12D02D5300389C42 /* SCBadgeView.h */,
-				FBF7F2CE12D02D5300389C42 /* LICENSE AGREEMENT.rtf */,
+				FBEFE46E12D65BAD0006F7A5 /* Sensible TableView */,
 			);
-			name = "Sensible TableView";
-			path = "Sensible TableView v1.6.9";
+			path = "Sensible TableView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -915,6 +923,7 @@
 				FB10D94812CA1C2600C8B061 /* Pearl-gray.jpg in Resources */,
 				FB91CCC412D1653000E3BD4C /* burp.wav in Resources */,
 				FB91CE6E12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.xib in Resources */,
+				FBEFE48212D65BAD0006F7A5 /* LICENSE AGREEMENT.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,19 +948,19 @@
 				FB4805A212787EAD003ADC47 /* CheckListItem.m in Sources */,
 				FB4805A312787EAD003ADC47 /* CheckListItemGroup.m in Sources */,
 				FB4805C512788049003ADC47 /* CheckListItem+Additions.m in Sources */,
-				FBF7F2CF12D02D5300389C42 /* SCTableViewCell.m in Sources */,
-				FBF7F2D012D02D5300389C42 /* SCTableViewModel.m in Sources */,
-				FBF7F2D112D02D5300389C42 /* SCTableViewSection.m in Sources */,
-				FBF7F2D212D02D5300389C42 /* SCGlobals.m in Sources */,
-				FBF7F2D312D02D5300389C42 /* SCClassDefinition.m in Sources */,
-				FBF7F2D412D02D5300389C42 /* SCBadgeView.m in Sources */,
-				FBF7F2D512D02D5300389C42 /* SCTableViewController.m in Sources */,
-				FBF7F2D612D02D5300389C42 /* SCViewController.m in Sources */,
-				FBF7F2D712D02D5300389C42 /* SCPropertyAttributes.m in Sources */,
 				FBF7F30D12D0372100389C42 /* GenericDetailTableViewController.m in Sources */,
 				FB91CBCE12D157DE00E3BD4C /* CDStyleSheet.m in Sources */,
 				FB91CCAB12D163F300E3BD4C /* SoundEffects.m in Sources */,
 				FB91CE6D12D2D45C00E3BD4C /* CheckListTableViewTheSCWay.m in Sources */,
+				FBEFE48312D65BAD0006F7A5 /* SCBadgeView.m in Sources */,
+				FBEFE48412D65BAD0006F7A5 /* SCClassDefinition.m in Sources */,
+				FBEFE48512D65BAD0006F7A5 /* SCGlobals.m in Sources */,
+				FBEFE48612D65BAD0006F7A5 /* SCPropertyAttributes.m in Sources */,
+				FBEFE48712D65BAD0006F7A5 /* SCTableViewCell.m in Sources */,
+				FBEFE48812D65BAD0006F7A5 /* SCTableViewController.m in Sources */,
+				FBEFE48912D65BAD0006F7A5 /* SCTableViewModel.m in Sources */,
+				FBEFE48A12D65BAD0006F7A5 /* SCTableViewSection.m in Sources */,
+				FBEFE48B12D65BAD0006F7A5 /* SCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

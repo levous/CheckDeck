@@ -77,6 +77,20 @@
 #pragma mark -
 #pragma mark SCTableViewModelDataSource methods
 
+- (SCControlCell *)tableViewModel:(SCTableViewModel *)tableViewModel
+      customCellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	// Create & return a custom cell based on the cell in ContactOverviewCell.xib
+	NSDictionary *contactOverviewBindings = [NSDictionary 
+                                           dictionaryWithObjects:[NSArray arrayWithObjects:@"title", nil] 
+                                           forKeys:[NSArray arrayWithObjects:@"1", nil]]; // 1,2,3 are the control tags
+	SCControlCell *contactOverviewCell = [SCControlCell cellWithText:nil withBoundObject:nil withObjectBindings:contactOverviewBindings
+                                                       withNibName:@"CheckListItemTableViewCell"];
+	
+	return contactOverviewCell;
+}
+
+
 - (NSString *)tableViewModel:(SCArrayOfItemsModel *)tableViewModel sectionHeaderTitleForItem:(NSObject *)item AtIndex:(NSUInteger)index
 {
 	// Cast not technically neccessary, done just for clarity

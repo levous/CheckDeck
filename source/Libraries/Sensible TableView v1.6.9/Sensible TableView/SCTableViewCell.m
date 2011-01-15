@@ -463,16 +463,23 @@
 @synthesize controlIndentation;
 @synthesize controlMargin;
 
+- (void)initializeDefaults{
+  pauseControlEvents = FALSE;
+  control = nil;
+  maxTextLabelWidth = SC_DefaultMaxTextLabelWidth;
+  controlIndentation = SC_DefaultControlIndentation;
+  controlMargin = SC_DefaultControlMargin;
+}
+
+- (void)awakeFromNib{
+  [self initializeDefaults];
+}
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
 	if( (self=[super initWithStyle:style reuseIdentifier:reuseIdentifier]) )
 	{
-		pauseControlEvents = FALSE;
-		control = nil;
-		maxTextLabelWidth = SC_DefaultMaxTextLabelWidth;
-		controlIndentation = SC_DefaultControlIndentation;
-		controlMargin = SC_DefaultControlMargin;
+		[self initializeDefaults];
 	}
 	return self;
 }

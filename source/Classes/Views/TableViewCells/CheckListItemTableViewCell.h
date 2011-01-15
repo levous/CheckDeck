@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CheckListItemTableViewCell : UITableViewCell {
+@interface CheckListItemTableViewCell : SCControlCell {
   
 }
 @property (retain, nonatomic) CheckListItem *checkListItem;
