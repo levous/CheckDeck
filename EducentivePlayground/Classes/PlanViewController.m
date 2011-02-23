@@ -29,8 +29,8 @@
 	
 	// Create a class definition for IncentiveAccomplishment
 	SCClassDefinition *incentiveAccomplishmentDef =
-		[SCClassDefinition definitionWithEntityName:@"IncentiveAccomplishments" withManagedObjectContext:managedObjectContext
-								  withPropertyNames:[NSArray arrayWithObjects:@"title", nil]];
+		[SCClassDefinition definitionWithEntityName:@"IncentiveAccomplishment" withManagedObjectContext:managedObjectContext
+								  withPropertyNames:[NSArray arrayWithObjects:@"title", @"pointValue", nil]];
 	
 	// Create a class definition for IncentiveReward
 	SCClassDefinition *rewardDef = 
@@ -40,7 +40,7 @@
 	// Create a class definition for IncentivePlan
 	SCClassDefinition *incentivePlanDef =
 		[SCClassDefinition definitionWithEntityName:@"IncentivePlan" withManagedObjectContext:managedObjectContext
-								  withPropertyNames: [NSArray arrayWithObjects:@"title", @"reward", @"incentiveAccomplishments", nil]];
+								  withPropertyNames: [NSArray arrayWithObjects:@"title", @"reward", @"targetDate", @"incentiveAccomplishments", nil]];
 	// Do some property definition customization
 	SCPropertyDefinition *planTitlePropertyDef = [incentivePlanDef propertyDefinitionWithName:@"title"];
 	planTitlePropertyDef.title = @"Title";

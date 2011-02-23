@@ -282,7 +282,7 @@
                                                       withViewController:[self detailViewController]]];
   
   
-  // Create a class definition for CheckListItem
+  // Create a class definition  for CheckListItem
 	SCClassDefinition *checkListItemSCClassDef = [SCClassDefinition definitionWithEntityName:@"CheckListItem" 
                                                                   withManagedObjectContext:[self managedObjectContext]
                                                            autoGeneratePropertyDefinitions:YES];

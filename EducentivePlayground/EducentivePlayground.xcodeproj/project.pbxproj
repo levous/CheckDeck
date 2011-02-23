@@ -17,6 +17,11 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28D3F202112F7DC200FD0661 /* EducentivePlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* EducentivePlayground.xcdatamodeld */; };
+		FB5401F81315C0BA00DD2042 /* target-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5401F71315C0BA00DD2042 /* target-icon.png */; };
+		FB62D393130C868400E6071E /* bike.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB62D392130C868400E6071E /* bike.jpeg */; };
+		FB62D397130C86B400E6071E /* PlanOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62D395130C86B400E6071E /* PlanOverviewViewController.m */; };
+		FB62D398130C86B400E6071E /* PlanOverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB62D396130C86B400E6071E /* PlanOverviewViewController.xib */; };
+		FB62D39C130C872F00E6071E /* 15px-shadow-tile.png in Resources */ = {isa = PBXBuildFile; fileRef = FB62D39B130C872F00E6071E /* 15px-shadow-tile.png */; };
 		FBC9F20D12D8C25600BEF45A /* LICENSE AGREEMENT.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FBC9F15812D8C25600BEF45A /* LICENSE AGREEMENT.rtf */; };
 		FBC9F20E12D8C25600BEF45A /* SCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F15A12D8C25600BEF45A /* SCBadgeView.m */; };
 		FBC9F20F12D8C25600BEF45A /* SCClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F15C12D8C25600BEF45A /* SCClassDefinition.m */; };
@@ -47,6 +52,12 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* EducentivePlayground-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EducentivePlayground-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FB5401F71315C0BA00DD2042 /* target-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target-icon.png"; path = "Layout/target-icon.png"; sourceTree = "<group>"; };
+		FB62D392130C868400E6071E /* bike.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bike.jpeg; sourceTree = "<group>"; };
+		FB62D394130C86B400E6071E /* PlanOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanOverviewViewController.h; sourceTree = "<group>"; };
+		FB62D395130C86B400E6071E /* PlanOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanOverviewViewController.m; sourceTree = "<group>"; };
+		FB62D396130C86B400E6071E /* PlanOverviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanOverviewViewController.xib; sourceTree = "<group>"; };
+		FB62D39B130C872F00E6071E /* 15px-shadow-tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15px-shadow-tile.png"; sourceTree = "<group>"; };
 		FBC9F15812D8C25600BEF45A /* LICENSE AGREEMENT.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "LICENSE AGREEMENT.rtf"; sourceTree = "<group>"; };
 		FBC9F15912D8C25600BEF45A /* SCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBadgeView.h; sourceTree = "<group>"; };
 		FBC9F15A12D8C25600BEF45A /* SCBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBadgeView.m; sourceTree = "<group>"; };
@@ -89,14 +100,16 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FBC9F23D12D8C32F00BEF45A /* PlanViewController.xib */,
-				FBC9F23E12D8C32F00BEF45A /* PlanViewController.m */,
 				FBC9F23F12D8C32F00BEF45A /* PlanViewController.h */,
-				FBC9F05312D8C1D700BEF45A /* Models */,
+				FBC9F23E12D8C32F00BEF45A /* PlanViewController.m */,
+				FBC9F23D12D8C32F00BEF45A /* PlanViewController.xib */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* EducentivePlaygroundAppDelegate.h */,
 				1D3623250D0F684500981E51 /* EducentivePlaygroundAppDelegate.m */,
+				FB62D394130C86B400E6071E /* PlanOverviewViewController.h */,
+				FB62D395130C86B400E6071E /* PlanOverviewViewController.m */,
+				FB62D396130C86B400E6071E /* PlanOverviewViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -134,6 +147,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FB62D391130C868400E6071E /* images */,
 				28D3F201112F7DC200FD0661 /* EducentivePlayground.xcdatamodeld */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
@@ -153,11 +167,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FBC9F05312D8C1D700BEF45A /* Models */ = {
+		FB62D391130C868400E6071E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FB5401F71315C0BA00DD2042 /* target-icon.png */,
+				FB62D39A130C872F00E6071E /* Layout */,
+				FB62D392130C868400E6071E /* bike.jpeg */,
 			);
-			path = Models;
+			name = images;
+			path = Resources/images;
+			sourceTree = "<group>";
+		};
+		FB62D39A130C872F00E6071E /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				FB62D39B130C872F00E6071E /* 15px-shadow-tile.png */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		FBC9F05D12D8C25600BEF45A /* Libraries */ = {
@@ -256,6 +282,10 @@
 				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
 				FBC9F20D12D8C25600BEF45A /* LICENSE AGREEMENT.rtf in Resources */,
 				FBC9F24012D8C32F00BEF45A /* PlanViewController.xib in Resources */,
+				FB62D393130C868400E6071E /* bike.jpeg in Resources */,
+				FB62D398130C86B400E6071E /* PlanOverviewViewController.xib in Resources */,
+				FB62D39C130C872F00E6071E /* 15px-shadow-tile.png in Resources */,
+				FB5401F81315C0BA00DD2042 /* target-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +310,7 @@
 				FBC9F21512D8C25600BEF45A /* SCTableViewSection.m in Sources */,
 				FBC9F21612D8C25600BEF45A /* SCViewController.m in Sources */,
 				FBC9F24112D8C32F00BEF45A /* PlanViewController.m in Sources */,
+				FB62D397130C86B400E6071E /* PlanOverviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
