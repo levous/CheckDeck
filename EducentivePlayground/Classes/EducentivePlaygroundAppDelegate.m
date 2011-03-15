@@ -14,12 +14,13 @@
 
 @synthesize window;
 @synthesize navigationController;
+@synthesize tabBarController;
 
 
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (void)awakeFromNib {    
+- (void)awakeFromNib {
     
 }
 
@@ -28,8 +29,11 @@
     
     // Override point for customization after application launch.
 
-    // Add\ the navigation controller's view to the window and display.
-    [self.window addSubview:navigationController.view];
+	// core data init
+	[EducentiveCoreDataManager instance];
+
+    // Add the navigation controller's view to the window and display.
+    [self.window addSubview:tabBarController.view];
     [self.window makeKeyAndVisible];
 
     return YES;

@@ -17,11 +17,16 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28D3F202112F7DC200FD0661 /* EducentivePlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* EducentivePlayground.xcdatamodeld */; };
+		FB293EEE131941DD009CDB1B /* IncentiveReward.m in Sources */ = {isa = PBXBuildFile; fileRef = FB293EE9131941DD009CDB1B /* IncentiveReward.m */; };
+		FB293EEF131941DD009CDB1B /* IncentiveAccomplishment.m in Sources */ = {isa = PBXBuildFile; fileRef = FB293EEB131941DD009CDB1B /* IncentiveAccomplishment.m */; };
+		FB293EF0131941DD009CDB1B /* IncentivePlan.m in Sources */ = {isa = PBXBuildFile; fileRef = FB293EED131941DD009CDB1B /* IncentivePlan.m */; };
 		FB5401F81315C0BA00DD2042 /* target-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5401F71315C0BA00DD2042 /* target-icon.png */; };
 		FB62D393130C868400E6071E /* bike.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB62D392130C868400E6071E /* bike.jpeg */; };
 		FB62D397130C86B400E6071E /* PlanOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62D395130C86B400E6071E /* PlanOverviewViewController.m */; };
 		FB62D398130C86B400E6071E /* PlanOverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB62D396130C86B400E6071E /* PlanOverviewViewController.xib */; };
 		FB62D39C130C872F00E6071E /* 15px-shadow-tile.png in Resources */ = {isa = PBXBuildFile; fileRef = FB62D39B130C872F00E6071E /* 15px-shadow-tile.png */; };
+		FBAC20C9131947EC003F321D /* libLevousCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBAC20C2131947C9003F321D /* libLevousCore.a */; };
+		FBAC2492131DA053003F321D /* EducentiveCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC2491131DA053003F321D /* EducentiveCoreDataManager.m */; };
 		FBC9F20D12D8C25600BEF45A /* LICENSE AGREEMENT.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FBC9F15812D8C25600BEF45A /* LICENSE AGREEMENT.rtf */; };
 		FBC9F20E12D8C25600BEF45A /* SCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F15A12D8C25600BEF45A /* SCBadgeView.m */; };
 		FBC9F20F12D8C25600BEF45A /* SCClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F15C12D8C25600BEF45A /* SCClassDefinition.m */; };
@@ -35,6 +40,23 @@
 		FBC9F24012D8C32F00BEF45A /* PlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC9F23D12D8C32F00BEF45A /* PlanViewController.xib */; };
 		FBC9F24112D8C32F00BEF45A /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F23E12D8C32F00BEF45A /* PlanViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBAC20C1131947C9003F321D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBAC20BA131947C9003F321D /* LevousCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = LevousCore;
+		};
+		FBAC20CA131947FB003F321D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBAC20BA131947C9003F321D /* LevousCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = LevousCore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,12 +74,39 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* EducentivePlayground-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EducentivePlayground-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FB293EE8131941DD009CDB1B /* IncentiveReward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncentiveReward.h; sourceTree = "<group>"; };
+		FB293EE9131941DD009CDB1B /* IncentiveReward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncentiveReward.m; sourceTree = "<group>"; };
+		FB293EEA131941DD009CDB1B /* IncentiveAccomplishment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncentiveAccomplishment.h; sourceTree = "<group>"; };
+		FB293EEB131941DD009CDB1B /* IncentiveAccomplishment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncentiveAccomplishment.m; sourceTree = "<group>"; };
+		FB293EEC131941DD009CDB1B /* IncentivePlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncentivePlan.h; sourceTree = "<group>"; };
+		FB293EED131941DD009CDB1B /* IncentivePlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncentivePlan.m; sourceTree = "<group>"; };
+		FB293FB4131946BA009CDB1B /* LVConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVConstants.h; sourceTree = "<group>"; };
 		FB5401F71315C0BA00DD2042 /* target-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "target-icon.png"; path = "Layout/target-icon.png"; sourceTree = "<group>"; };
 		FB62D392130C868400E6071E /* bike.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bike.jpeg; sourceTree = "<group>"; };
 		FB62D394130C86B400E6071E /* PlanOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanOverviewViewController.h; sourceTree = "<group>"; };
 		FB62D395130C86B400E6071E /* PlanOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanOverviewViewController.m; sourceTree = "<group>"; };
 		FB62D396130C86B400E6071E /* PlanOverviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanOverviewViewController.xib; sourceTree = "<group>"; };
 		FB62D39B130C872F00E6071E /* 15px-shadow-tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15px-shadow-tile.png"; sourceTree = "<group>"; };
+		FBAC20BA131947C9003F321D /* LevousCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LevousCore.xcodeproj; path = "../../Levous-iOS-Core/source/LevousCore.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		FBAC223E131C5278003F321D /* LevousCoreHeadersImportAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevousCoreHeadersImportAll.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/LevousCoreHeadersImportAll.h"; sourceTree = SOURCE_ROOT; };
+		FBAC223F131C5278003F321D /* LVConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LVConstants.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/LVConstants.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2240131C5278003F321D /* LVCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LVCoreDataManager.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/LVCoreDataManager.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2241131C5278003F321D /* LVInstrumentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LVInstrumentationController.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/LVInstrumentationController.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2242131C5278003F321D /* LVStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LVStyleSheet.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/LVStyleSheet.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2243131C5278003F321D /* LVTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LVTextStyle.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/LVTextStyle.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2244131C5278003F321D /* NSManagedObject+Levous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Levous.h"; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/NSManagedObject+Levous.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2245131C5278003F321D /* NSMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSMutableArray.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/NSMutableArray.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2246131C5278003F321D /* NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObject.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/NSObject.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2247131C5278003F321D /* NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSString.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/NSString.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2248131C5278003F321D /* SDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDTableViewController.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/SDTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2249131C5278003F321D /* SimpleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleModel.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/SimpleModel.h"; sourceTree = SOURCE_ROOT; };
+		FBAC224A131C5278003F321D /* SimpleStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleStore.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/SimpleStore.h"; sourceTree = SOURCE_ROOT; };
+		FBAC224B131C5278003F321D /* UIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIApplication.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/UIApplication.h"; sourceTree = SOURCE_ROOT; };
+		FBAC224C131C5278003F321D /* UITableViewCell+CustomNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+CustomNib.h"; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/UITableViewCell+CustomNib.h"; sourceTree = SOURCE_ROOT; };
+		FBAC2311131D5B27003F321D /* ModelImports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelImports.h; sourceTree = "<group>"; };
+		FBAC2488131D9F62003F321D /* LVFetchedResultsControllerTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVFetchedResultsControllerTableViewDataSource.h; sourceTree = "<group>"; };
+		FBAC2490131DA053003F321D /* EducentiveCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducentiveCoreDataManager.h; sourceTree = "<group>"; };
+		FBAC2491131DA053003F321D /* EducentiveCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducentiveCoreDataManager.m; sourceTree = "<group>"; };
 		FBC9F15812D8C25600BEF45A /* LICENSE AGREEMENT.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "LICENSE AGREEMENT.rtf"; sourceTree = "<group>"; };
 		FBC9F15912D8C25600BEF45A /* SCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBadgeView.h; sourceTree = "<group>"; };
 		FBC9F15A12D8C25600BEF45A /* SCBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBadgeView.m; sourceTree = "<group>"; };
@@ -91,6 +140,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
 				28860BE50F44EE6400985440 /* CoreData.framework in Frameworks */,
+				FBAC20C9131947EC003F321D /* libLevousCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +150,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FB293EF5131942E5009CDB1B /* CoreData */,
+				FB293EE713194183009CDB1B /* Model */,
 				FBC9F23F12D8C32F00BEF45A /* PlanViewController.h */,
 				FBC9F23E12D8C32F00BEF45A /* PlanViewController.m */,
 				FBC9F23D12D8C32F00BEF45A /* PlanViewController.xib */,
@@ -110,6 +162,7 @@
 				FB62D394130C86B400E6071E /* PlanOverviewViewController.h */,
 				FB62D395130C86B400E6071E /* PlanOverviewViewController.m */,
 				FB62D396130C86B400E6071E /* PlanOverviewViewController.xib */,
+				FB293FB4131946BA009CDB1B /* LVConstants.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -167,6 +220,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB293EE713194183009CDB1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB293EE8131941DD009CDB1B /* IncentiveReward.h */,
+				FB293EE9131941DD009CDB1B /* IncentiveReward.m */,
+				FB293EEA131941DD009CDB1B /* IncentiveAccomplishment.h */,
+				FB293EEB131941DD009CDB1B /* IncentiveAccomplishment.m */,
+				FB293EEC131941DD009CDB1B /* IncentivePlan.h */,
+				FB293EED131941DD009CDB1B /* IncentivePlan.m */,
+				FBAC2311131D5B27003F321D /* ModelImports.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB293EF5131942E5009CDB1B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC2490131DA053003F321D /* EducentiveCoreDataManager.h */,
+				FBAC2491131DA053003F321D /* EducentiveCoreDataManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		FB62D391130C868400E6071E /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,9 +262,51 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
+		FBAC20BB131947C9003F321D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC20C2131947C9003F321D /* libLevousCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBAC20C5131947DC003F321D /* LevousCore */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC223D131C5278003F321D /* LevousCoreHeaders */,
+				FBAC20BA131947C9003F321D /* LevousCore.xcodeproj */,
+			);
+			name = LevousCore;
+			sourceTree = "<group>";
+		};
+		FBAC223D131C5278003F321D /* LevousCoreHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC2488131D9F62003F321D /* LVFetchedResultsControllerTableViewDataSource.h */,
+				FBAC223E131C5278003F321D /* LevousCoreHeadersImportAll.h */,
+				FBAC223F131C5278003F321D /* LVConstants.h */,
+				FBAC2240131C5278003F321D /* LVCoreDataManager.h */,
+				FBAC2241131C5278003F321D /* LVInstrumentationController.h */,
+				FBAC2242131C5278003F321D /* LVStyleSheet.h */,
+				FBAC2243131C5278003F321D /* LVTextStyle.h */,
+				FBAC2244131C5278003F321D /* NSManagedObject+Levous.h */,
+				FBAC2245131C5278003F321D /* NSMutableArray.h */,
+				FBAC2246131C5278003F321D /* NSObject.h */,
+				FBAC2247131C5278003F321D /* NSString.h */,
+				FBAC2248131C5278003F321D /* SDTableViewController.h */,
+				FBAC2249131C5278003F321D /* SimpleModel.h */,
+				FBAC224A131C5278003F321D /* SimpleStore.h */,
+				FBAC224B131C5278003F321D /* UIApplication.h */,
+				FBAC224C131C5278003F321D /* UITableViewCell+CustomNib.h */,
+			);
+			name = LevousCoreHeaders;
+			path = "../../Levous-iOS-Core/source/LevousCoreHeaders";
+			sourceTree = SOURCE_ROOT;
+		};
 		FBC9F05D12D8C25600BEF45A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				FBAC20C5131947DC003F321D /* LevousCore */,
 				FBC9F06112D8C25600BEF45A /* Sensible TableView v1.6.9 */,
 			);
 			path = Libraries;
@@ -242,6 +360,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FBAC20CB131947FB003F321D /* PBXTargetDependency */,
 			);
 			name = EducentivePlayground;
 			productName = EducentivePlayground;
@@ -266,12 +385,28 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FBAC20BB131947C9003F321D /* Products */;
+					ProjectRef = FBAC20BA131947C9003F321D /* LevousCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* EducentivePlayground */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FBAC20C2131947C9003F321D /* libLevousCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLevousCore.a;
+			remoteRef = FBAC20C1131947C9003F321D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -311,10 +446,22 @@
 				FBC9F21612D8C25600BEF45A /* SCViewController.m in Sources */,
 				FBC9F24112D8C32F00BEF45A /* PlanViewController.m in Sources */,
 				FB62D397130C86B400E6071E /* PlanOverviewViewController.m in Sources */,
+				FB293EEE131941DD009CDB1B /* IncentiveReward.m in Sources */,
+				FB293EEF131941DD009CDB1B /* IncentiveAccomplishment.m in Sources */,
+				FB293EF0131941DD009CDB1B /* IncentivePlan.m in Sources */,
+				FBAC2492131DA053003F321D /* EducentiveCoreDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBAC20CB131947FB003F321D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LevousCore;
+			targetProxy = FBAC20CA131947FB003F321D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -322,10 +469,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Libraries/libGHUnitIPhone4_0-0\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -360,6 +504,14 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Levous-iOS-Core/source",
+					../three20/Build/Products/three20,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
