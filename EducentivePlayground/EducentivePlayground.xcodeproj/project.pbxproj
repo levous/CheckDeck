@@ -25,6 +25,8 @@
 		FB62D397130C86B400E6071E /* PlanOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB62D395130C86B400E6071E /* PlanOverviewViewController.m */; };
 		FB62D398130C86B400E6071E /* PlanOverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB62D396130C86B400E6071E /* PlanOverviewViewController.xib */; };
 		FB62D39C130C872F00E6071E /* 15px-shadow-tile.png in Resources */ = {isa = PBXBuildFile; fileRef = FB62D39B130C872F00E6071E /* 15px-shadow-tile.png */; };
+		FB6FA54213438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6FA54113438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.m */; };
+		FB6FA54413438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6FA54313438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.xib */; };
 		FBAC20C9131947EC003F321D /* libLevousCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBAC20C2131947C9003F321D /* libLevousCore.a */; };
 		FBAC2492131DA053003F321D /* EducentiveCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC2491131DA053003F321D /* EducentiveCoreDataManager.m */; };
 		FBC9F20D12D8C25600BEF45A /* LICENSE AGREEMENT.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FBC9F15812D8C25600BEF45A /* LICENSE AGREEMENT.rtf */; };
@@ -87,6 +89,9 @@
 		FB62D395130C86B400E6071E /* PlanOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanOverviewViewController.m; sourceTree = "<group>"; };
 		FB62D396130C86B400E6071E /* PlanOverviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanOverviewViewController.xib; sourceTree = "<group>"; };
 		FB62D39B130C872F00E6071E /* 15px-shadow-tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15px-shadow-tile.png"; sourceTree = "<group>"; };
+		FB6FA54013438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncentiveAccomplishmentTableViewCell.h; sourceTree = "<group>"; };
+		FB6FA54113438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncentiveAccomplishmentTableViewCell.m; sourceTree = "<group>"; };
+		FB6FA54313438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncentiveAccomplishmentTableViewCell.xib; sourceTree = "<group>"; };
 		FBAC20BA131947C9003F321D /* LevousCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LevousCore.xcodeproj; path = "../../Levous-iOS-Core/source/LevousCore.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		FBAC223E131C5278003F321D /* LevousCoreHeadersImportAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevousCoreHeadersImportAll.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/LevousCoreHeadersImportAll.h"; sourceTree = SOURCE_ROOT; };
 		FBAC223F131C5278003F321D /* LVConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LVConstants.h; path = "../../Levous-iOS-Core/source/LevousCoreHeaders/LVConstants.h"; sourceTree = SOURCE_ROOT; };
@@ -150,6 +155,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FB6FA53E13438EE7001A6298 /* Views */,
 				FB293EF5131942E5009CDB1B /* CoreData */,
 				FB293EE713194183009CDB1B /* Model */,
 				FBC9F23F12D8C32F00BEF45A /* PlanViewController.h */,
@@ -260,6 +266,24 @@
 				FB62D39B130C872F00E6071E /* 15px-shadow-tile.png */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		FB6FA53E13438EE7001A6298 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FA53F13438EE7001A6298 /* CustomTableCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB6FA53F13438EE7001A6298 /* CustomTableCells */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FA54013438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.h */,
+				FB6FA54113438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.m */,
+				FB6FA54313438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.xib */,
+			);
+			path = CustomTableCells;
 			sourceTree = "<group>";
 		};
 		FBAC20BB131947C9003F321D /* Products */ = {
@@ -421,6 +445,7 @@
 				FB62D398130C86B400E6071E /* PlanOverviewViewController.xib in Resources */,
 				FB62D39C130C872F00E6071E /* 15px-shadow-tile.png in Resources */,
 				FB5401F81315C0BA00DD2042 /* target-icon.png in Resources */,
+				FB6FA54413438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +475,7 @@
 				FB293EEF131941DD009CDB1B /* IncentiveAccomplishment.m in Sources */,
 				FB293EF0131941DD009CDB1B /* IncentivePlan.m in Sources */,
 				FBAC2492131DA053003F321D /* EducentiveCoreDataManager.m in Sources */,
+				FB6FA54213438EE7001A6298 /* IncentiveAccomplishmentTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
