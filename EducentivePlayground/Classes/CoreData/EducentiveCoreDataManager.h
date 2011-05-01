@@ -12,4 +12,10 @@
 
 }
 + (EducentiveCoreDataManager *)instance;
+
+/*************************************************************/
+/** Fetch the plan that is currently active
+ *************************************************************/
+- (IncentivePlan *)getActivePlan;
+
 @end

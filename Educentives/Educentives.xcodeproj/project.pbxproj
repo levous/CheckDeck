@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB1A0C69134F97BB00D77B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C68134F97BB00D77B8C /* UIKit.framework */; };
+		FB1A0C6B134F97BB00D77B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C6A134F97BB00D77B8C /* Foundation.framework */; };
+		FB1A0C6D134F97BB00D77B8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C6C134F97BB00D77B8C /* CoreGraphics.framework */; };
+		FB1A0C73134F97BB00D77B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C71134F97BB00D77B8C /* InfoPlist.strings */; };
+		FB1A0C76134F97BB00D77B8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C75134F97BB00D77B8C /* main.m */; };
+		FB1A0C79134F97BB00D77B8C /* EducentivesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C78134F97BB00D77B8C /* EducentivesAppDelegate.m */; };
+		FB1A0C7C134F97BB00D77B8C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C7A134F97BB00D77B8C /* MainWindow.xib */; };
+		FB1A0C7F134F97BB00D77B8C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C7E134F97BB00D77B8C /* FirstViewController.m */; };
+		FB1A0C82134F97BB00D77B8C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C81134F97BB00D77B8C /* SecondViewController.m */; };
+		FB1A0C85134F97BB00D77B8C /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C83134F97BB00D77B8C /* FirstView.xib */; };
+		FB1A0C88134F97BB00D77B8C /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C86134F97BB00D77B8C /* SecondView.xib */; };
+		FB1A0C8F134F97BB00D77B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C68134F97BB00D77B8C /* UIKit.framework */; };
+		FB1A0C90134F97BB00D77B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C6A134F97BB00D77B8C /* Foundation.framework */; };
+		FB1A0C91134F97BB00D77B8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C6C134F97BB00D77B8C /* CoreGraphics.framework */; };
+		FB1A0C99134F97BB00D77B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C97134F97BB00D77B8C /* InfoPlist.strings */; };
+		FB1A0C9C134F97BB00D77B8C /* EducentivesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C9B134F97BB00D77B8C /* EducentivesTests.h */; };
+		FB1A0C9E134F97BB00D77B8C /* EducentivesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C9D134F97BB00D77B8C /* EducentivesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB1A0C92134F97BB00D77B8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB1A0C5B134F97BB00D77B8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB1A0C63134F97BB00D77B8C;
+			remoteInfo = Educentives;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB1A0C64134F97BB00D77B8C /* Educentives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Educentives.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1A0C68134F97BB00D77B8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB1A0C6A134F97BB00D77B8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB1A0C6C134F97BB00D77B8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB1A0C70134F97BB00D77B8C /* Educentives-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Educentives-Info.plist"; sourceTree = "<group>"; };
+		FB1A0C72134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB1A0C74134F97BB00D77B8C /* Educentives-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Educentives-Prefix.pch"; sourceTree = "<group>"; };
+		FB1A0C75134F97BB00D77B8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB1A0C77134F97BB00D77B8C /* EducentivesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducentivesAppDelegate.h; sourceTree = "<group>"; };
+		FB1A0C78134F97BB00D77B8C /* EducentivesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducentivesAppDelegate.m; sourceTree = "<group>"; };
+		FB1A0C7B134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		FB1A0C7D134F97BB00D77B8C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		FB1A0C7E134F97BB00D77B8C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		FB1A0C80134F97BB00D77B8C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FB1A0C81134F97BB00D77B8C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FB1A0C84134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		FB1A0C87134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		FB1A0C8E134F97BB00D77B8C /* EducentivesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EducentivesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1A0C96134F97BB00D77B8C /* EducentivesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EducentivesTests-Info.plist"; sourceTree = "<group>"; };
+		FB1A0C98134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB1A0C9A134F97BB00D77B8C /* EducentivesTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EducentivesTests-Prefix.pch"; sourceTree = "<group>"; };
+		FB1A0C9B134F97BB00D77B8C /* EducentivesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducentivesTests.h; sourceTree = "<group>"; };
+		FB1A0C9D134F97BB00D77B8C /* EducentivesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducentivesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB1A0C61134F97BB00D77B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1A0C69134F97BB00D77B8C /* UIKit.framework in Frameworks */,
+				FB1A0C6B134F97BB00D77B8C /* Foundation.framework in Frameworks */,
+				FB1A0C6D134F97BB00D77B8C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1A0C8A134F97BB00D77B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1A0C8F134F97BB00D77B8C /* UIKit.framework in Frameworks */,
+				FB1A0C90134F97BB00D77B8C /* Foundation.framework in Frameworks */,
+				FB1A0C91134F97BB00D77B8C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB1A0C59134F97BB00D77B8C = {
+			isa = PBXGroup;
+			children = (
+				FB1A0C6E134F97BB00D77B8C /* Educentives */,
+				FB1A0C94134F97BB00D77B8C /* EducentivesTests */,
+				FB1A0C67134F97BB00D77B8C /* Frameworks */,
+				FB1A0C65134F97BB00D77B8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB1A0C65134F97BB00D77B8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB1A0C64134F97BB00D77B8C /* Educentives.app */,
+				FB1A0C8E134F97BB00D77B8C /* EducentivesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB1A0C67134F97BB00D77B8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB1A0C68134F97BB00D77B8C /* UIKit.framework */,
+				FB1A0C6A134F97BB00D77B8C /* Foundation.framework */,
+				FB1A0C6C134F97BB00D77B8C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB1A0C6E134F97BB00D77B8C /* Educentives */ = {
+			isa = PBXGroup;
+			children = (
+				FB1A0C77134F97BB00D77B8C /* EducentivesAppDelegate.h */,
+				FB1A0C78134F97BB00D77B8C /* EducentivesAppDelegate.m */,
+				FB1A0C7A134F97BB00D77B8C /* MainWindow.xib */,
+				FB1A0C7D134F97BB00D77B8C /* FirstViewController.h */,
+				FB1A0C7E134F97BB00D77B8C /* FirstViewController.m */,
+				FB1A0C80134F97BB00D77B8C /* SecondViewController.h */,
+				FB1A0C81134F97BB00D77B8C /* SecondViewController.m */,
+				FB1A0C83134F97BB00D77B8C /* FirstView.xib */,
+				FB1A0C86134F97BB00D77B8C /* SecondView.xib */,
+				FB1A0C6F134F97BB00D77B8C /* Supporting Files */,
+			);
+			path = Educentives;
+			sourceTree = "<group>";
+		};
+		FB1A0C6F134F97BB00D77B8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB1A0C70134F97BB00D77B8C /* Educentives-Info.plist */,
+				FB1A0C71134F97BB00D77B8C /* InfoPlist.strings */,
+				FB1A0C74134F97BB00D77B8C /* Educentives-Prefix.pch */,
+				FB1A0C75134F97BB00D77B8C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB1A0C94134F97BB00D77B8C /* EducentivesTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB1A0C9B134F97BB00D77B8C /* EducentivesTests.h */,
+				FB1A0C9D134F97BB00D77B8C /* EducentivesTests.m */,
+				FB1A0C95134F97BB00D77B8C /* Supporting Files */,
+			);
+			path = EducentivesTests;
+			sourceTree = "<group>";
+		};
+		FB1A0C95134F97BB00D77B8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB1A0C96134F97BB00D77B8C /* EducentivesTests-Info.plist */,
+				FB1A0C97134F97BB00D77B8C /* InfoPlist.strings */,
+				FB1A0C9A134F97BB00D77B8C /* EducentivesTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB1A0C63134F97BB00D77B8C /* Educentives */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB1A0CA1134F97BB00D77B8C /* Build configuration list for PBXNativeTarget "Educentives" */;
+			buildPhases = (
+				FB1A0C60134F97BB00D77B8C /* Sources */,
+				FB1A0C61134F97BB00D77B8C /* Frameworks */,
+				FB1A0C62134F97BB00D77B8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Educentives;
+			productName = Educentives;
+			productReference = FB1A0C64134F97BB00D77B8C /* Educentives.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB1A0C8D134F97BB00D77B8C /* EducentivesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB1A0CA4134F97BB00D77B8C /* Build configuration list for PBXNativeTarget "EducentivesTests" */;
+			buildPhases = (
+				FB1A0C89134F97BB00D77B8C /* Sources */,
+				FB1A0C8A134F97BB00D77B8C /* Frameworks */,
+				FB1A0C8B134F97BB00D77B8C /* Resources */,
+				FB1A0C8C134F97BB00D77B8C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB1A0C93134F97BB00D77B8C /* PBXTargetDependency */,
+			);
+			name = EducentivesTests;
+			productName = EducentivesTests;
+			productReference = FB1A0C8E134F97BB00D77B8C /* EducentivesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB1A0C5B134F97BB00D77B8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "LeVous, LLC";
+			};
+			buildConfigurationList = FB1A0C5E134F97BB00D77B8C /* Build configuration list for PBXProject "Educentives" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB1A0C59134F97BB00D77B8C;
+			productRefGroup = FB1A0C65134F97BB00D77B8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB1A0C63134F97BB00D77B8C /* Educentives */,
+				FB1A0C8D134F97BB00D77B8C /* EducentivesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB1A0C62134F97BB00D77B8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1A0C73134F97BB00D77B8C /* InfoPlist.strings in Resources */,
+				FB1A0C7C134F97BB00D77B8C /* MainWindow.xib in Resources */,
+				FB1A0C85134F97BB00D77B8C /* FirstView.xib in Resources */,
+				FB1A0C88134F97BB00D77B8C /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1A0C8B134F97BB00D77B8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1A0C99134F97BB00D77B8C /* InfoPlist.strings in Resources */,
+				FB1A0C9C134F97BB00D77B8C /* EducentivesTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FB1A0C8C134F97BB00D77B8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB1A0C60134F97BB00D77B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1A0C76134F97BB00D77B8C /* main.m in Sources */,
+				FB1A0C79134F97BB00D77B8C /* EducentivesAppDelegate.m in Sources */,
+				FB1A0C7F134F97BB00D77B8C /* FirstViewController.m in Sources */,
+				FB1A0C82134F97BB00D77B8C /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1A0C89134F97BB00D77B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1A0C9E134F97BB00D77B8C /* EducentivesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB1A0C93134F97BB00D77B8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB1A0C63134F97BB00D77B8C /* Educentives */;
+			targetProxy = FB1A0C92134F97BB00D77B8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB1A0C71134F97BB00D77B8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB1A0C72134F97BB00D77B8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FB1A0C7A134F97BB00D77B8C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB1A0C7B134F97BB00D77B8C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		FB1A0C83134F97BB00D77B8C /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB1A0C84134F97BB00D77B8C /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		FB1A0C86134F97BB00D77B8C /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB1A0C87134F97BB00D77B8C /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		FB1A0C97134F97BB00D77B8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB1A0C98134F97BB00D77B8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB1A0C9F134F97BB00D77B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB1A0CA0134F97BB00D77B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FB1A0CA2134F97BB00D77B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Educentives/Educentives-Prefix.pch";
+				INFOPLIST_FILE = "Educentives/Educentives-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FB1A0CA3134F97BB00D77B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Educentives/Educentives-Prefix.pch";
+				INFOPLIST_FILE = "Educentives/Educentives-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FB1A0CA5134F97BB00D77B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Educentives.app/Educentives";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EducentivesTests/EducentivesTests-Prefix.pch";
+				INFOPLIST_FILE = "EducentivesTests/EducentivesTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FB1A0CA6134F97BB00D77B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Educentives.app/Educentives";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EducentivesTests/EducentivesTests-Prefix.pch";
+				INFOPLIST_FILE = "EducentivesTests/EducentivesTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB1A0C5E134F97BB00D77B8C /* Build configuration list for PBXProject "Educentives" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1A0C9F134F97BB00D77B8C /* Debug */,
+				FB1A0CA0134F97BB00D77B8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB1A0CA1134F97BB00D77B8C /* Build configuration list for PBXNativeTarget "Educentives" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1A0CA2134F97BB00D77B8C /* Debug */,
+				FB1A0CA3134F97BB00D77B8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB1A0CA4134F97BB00D77B8C /* Build configuration list for PBXNativeTarget "EducentivesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1A0CA5134F97BB00D77B8C /* Debug */,
+				FB1A0CA6134F97BB00D77B8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB1A0C5B134F97BB00D77B8C /* Project object */;
+}

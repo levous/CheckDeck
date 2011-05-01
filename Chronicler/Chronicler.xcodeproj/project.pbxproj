@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A905EFC5136CFB38003007CF /* document-photo-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A905EFC4136CFB38003007CF /* document-photo-placeholder.png */; };
+		A905EFD1136CFFF1003007CF /* PngImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD0136CFFF1003007CF /* PngImageTransformer.m */; };
+		A905EFD2136CFFF1003007CF /* PngImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD0136CFFF1003007CF /* PngImageTransformer.m */; };
+		A905EFD5136D00EB003007CF /* LogEntryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD4136D00EB003007CF /* LogEntryPhoto.m */; };
+		A905EFD6136D00EB003007CF /* LogEntryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD4136D00EB003007CF /* LogEntryPhoto.m */; };
+		A95F0F481365DDD000058585 /* LogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A95F0F451365DDD000058585 /* LogEntry.m */; };
+		A986E08E135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */; };
+		A986E08F135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */; };
+		A9928909135FC91600099FCB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9928908135FC91600099FCB /* MobileCoreServices.framework */; };
+		A9CCE55F135E11DD0066FD2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE55E135E11DD0066FD2C /* UIKit.framework */; };
+		A9CCE561135E11DD0066FD2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE560135E11DD0066FD2C /* Foundation.framework */; };
+		A9CCE563135E11DD0066FD2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE562135E11DD0066FD2C /* CoreGraphics.framework */; };
+		A9CCE565135E11DD0066FD2C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE564135E11DD0066FD2C /* CoreData.framework */; };
+		A9CCE56B135E11DD0066FD2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE569135E11DD0066FD2C /* InfoPlist.strings */; };
+		A9CCE56E135E11DD0066FD2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE56D135E11DD0066FD2C /* main.m */; };
+		A9CCE571135E11DD0066FD2C /* ChroniclerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE570135E11DD0066FD2C /* ChroniclerAppDelegate.m */; };
+		A9CCE574135E11DD0066FD2C /* Chronicler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE572135E11DD0066FD2C /* Chronicler.xcdatamodeld */; };
+		A9CCE577135E11DD0066FD2C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE575135E11DD0066FD2C /* MainWindow.xib */; };
+		A9CCE57A135E11DD0066FD2C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE579135E11DD0066FD2C /* RootViewController.m */; };
+		A9CCE57D135E11DD0066FD2C /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE57B135E11DD0066FD2C /* RootViewController.xib */; };
+		A9CCE584135E11DD0066FD2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE55E135E11DD0066FD2C /* UIKit.framework */; };
+		A9CCE585135E11DD0066FD2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE560135E11DD0066FD2C /* Foundation.framework */; };
+		A9CCE586135E11DD0066FD2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE562135E11DD0066FD2C /* CoreGraphics.framework */; };
+		A9CCE587135E11DD0066FD2C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE564135E11DD0066FD2C /* CoreData.framework */; };
+		A9CCE58F135E11DD0066FD2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE58D135E11DD0066FD2C /* InfoPlist.strings */; };
+		A9CCE592135E11DD0066FD2C /* ChroniclerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE591135E11DD0066FD2C /* ChroniclerTests.h */; };
+		A9CCE594135E11DD0066FD2C /* ChroniclerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE593135E11DD0066FD2C /* ChroniclerTests.m */; };
+		A9CCE5A8135E12C50066FD2C /* LogEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE5A6135E12C50066FD2C /* LogEntryViewController.m */; };
+		A9CCE5A9135E12C50066FD2C /* LogEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE5A6135E12C50066FD2C /* LogEntryViewController.m */; };
+		A9CCE5AA135E12C50066FD2C /* LogEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE5A7135E12C50066FD2C /* LogEntryViewController.xib */; };
+		A9CCE5AB135E12C50066FD2C /* LogEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE5A7135E12C50066FD2C /* LogEntryViewController.xib */; };
+		A9EB0EB31365DF0E006B80C9 /* ChroniclerCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EB0EB21365DF0E006B80C9 /* ChroniclerCoreDataManager.m */; };
+		A9EB0EB41365DF0E006B80C9 /* ChroniclerCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EB0EB21365DF0E006B80C9 /* ChroniclerCoreDataManager.m */; };
+		A9EB0ECC1365E23B006B80C9 /* libLevousCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EB0ECB1365E23B006B80C9 /* libLevousCore.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A94E4522136CB53C0015C61B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A986E07A135FD1F90078E12E /* LevousCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9DC653A13666FE100DA53E5;
+			remoteInfo = LevousCoreTests;
+		};
+		A986E081135FD1F90078E12E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A986E07A135FD1F90078E12E /* LevousCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = LevousCore;
+		};
+		A9CCE588135E11DD0066FD2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CCE551135E11DD0066FD2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CCE559135E11DD0066FD2C;
+			remoteInfo = Chronicler;
+		};
+		A9EB0EC91365E234006B80C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A986E07A135FD1F90078E12E /* LevousCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = LevousCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A905EFC4136CFB38003007CF /* document-photo-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "document-photo-placeholder.png"; sourceTree = "<group>"; };
+		A905EFCF136CFFF1003007CF /* PngImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PngImageTransformer.h; sourceTree = "<group>"; };
+		A905EFD0136CFFF1003007CF /* PngImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PngImageTransformer.m; sourceTree = "<group>"; };
+		A905EFD3136D00EB003007CF /* LogEntryPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntryPhoto.h; sourceTree = "<group>"; };
+		A905EFD4136D00EB003007CF /* LogEntryPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntryPhoto.m; sourceTree = "<group>"; };
+		A95F0F451365DDD000058585 /* LogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntry.m; sourceTree = "<group>"; };
+		A95F0F461365DDD000058585 /* LogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntry.h; sourceTree = "<group>"; };
+		A986E07A135FD1F90078E12E /* LevousCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LevousCore.xcodeproj; path = "../../Levous-iOS-Core/source/LevousCore.xcodeproj"; sourceTree = "<group>"; };
+		A986E08C135FD60A0078E12E /* WordProcessingMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordProcessingMLDocument.h; sourceTree = "<group>"; };
+		A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordProcessingMLDocument.m; sourceTree = "<group>"; };
+		A9928908135FC91600099FCB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A9CCE55A135E11DD0066FD2C /* Chronicler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chronicler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CCE55E135E11DD0066FD2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9CCE560135E11DD0066FD2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9CCE562135E11DD0066FD2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9CCE564135E11DD0066FD2C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A9CCE568135E11DD0066FD2C /* Chronicler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chronicler-Info.plist"; sourceTree = "<group>"; };
+		A9CCE56A135E11DD0066FD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9CCE56C135E11DD0066FD2C /* Chronicler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chronicler-Prefix.pch"; sourceTree = "<group>"; };
+		A9CCE56D135E11DD0066FD2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9CCE56F135E11DD0066FD2C /* ChroniclerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChroniclerAppDelegate.h; sourceTree = "<group>"; };
+		A9CCE570135E11DD0066FD2C /* ChroniclerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChroniclerAppDelegate.m; sourceTree = "<group>"; };
+		A9CCE573135E11DD0066FD2C /* Chronicler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chronicler.xcdatamodel; sourceTree = "<group>"; };
+		A9CCE576135E11DD0066FD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A9CCE578135E11DD0066FD2C /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A9CCE579135E11DD0066FD2C /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A9CCE57C135E11DD0066FD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		A9CCE583135E11DD0066FD2C /* ChroniclerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChroniclerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CCE58C135E11DD0066FD2C /* ChroniclerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChroniclerTests-Info.plist"; sourceTree = "<group>"; };
+		A9CCE58E135E11DD0066FD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9CCE590135E11DD0066FD2C /* ChroniclerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChroniclerTests-Prefix.pch"; sourceTree = "<group>"; };
+		A9CCE591135E11DD0066FD2C /* ChroniclerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChroniclerTests.h; sourceTree = "<group>"; };
+		A9CCE593135E11DD0066FD2C /* ChroniclerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChroniclerTests.m; sourceTree = "<group>"; };
+		A9CCE5A5135E12C50066FD2C /* LogEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntryViewController.h; sourceTree = "<group>"; };
+		A9CCE5A6135E12C50066FD2C /* LogEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntryViewController.m; sourceTree = "<group>"; };
+		A9CCE5A7135E12C50066FD2C /* LogEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogEntryViewController.xib; sourceTree = "<group>"; };
+		A9EB0EB11365DF0E006B80C9 /* ChroniclerCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChroniclerCoreDataManager.h; sourceTree = "<group>"; };
+		A9EB0EB21365DF0E006B80C9 /* ChroniclerCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChroniclerCoreDataManager.m; sourceTree = "<group>"; };
+		A9EB0ECB1365E23B006B80C9 /* libLevousCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libLevousCore.a; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9CCE557135E11DD0066FD2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EB0ECC1365E23B006B80C9 /* libLevousCore.a in Frameworks */,
+				A9CCE55F135E11DD0066FD2C /* UIKit.framework in Frameworks */,
+				A9CCE561135E11DD0066FD2C /* Foundation.framework in Frameworks */,
+				A9CCE563135E11DD0066FD2C /* CoreGraphics.framework in Frameworks */,
+				A9CCE565135E11DD0066FD2C /* CoreData.framework in Frameworks */,
+				A9928909135FC91600099FCB /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCE57F135E11DD0066FD2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CCE584135E11DD0066FD2C /* UIKit.framework in Frameworks */,
+				A9CCE585135E11DD0066FD2C /* Foundation.framework in Frameworks */,
+				A9CCE586135E11DD0066FD2C /* CoreGraphics.framework in Frameworks */,
+				A9CCE587135E11DD0066FD2C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A905EFC2136CFB38003007CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A905EFC3136CFB38003007CF /* images */,
+			);
+			name = Resources;
+			path = Chronicler/Resources;
+			sourceTree = "<group>";
+		};
+		A905EFC3136CFB38003007CF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A905EFC4136CFB38003007CF /* document-photo-placeholder.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A905EFCE136CFFA9003007CF /* ValueTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				A905EFCF136CFFF1003007CF /* PngImageTransformer.h */,
+				A905EFD0136CFFF1003007CF /* PngImageTransformer.m */,
+			);
+			path = ValueTransformers;
+			sourceTree = "<group>";
+		};
+		A95F0EC61365DADA00058585 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A95F0F451365DDD000058585 /* LogEntry.m */,
+				A95F0F461365DDD000058585 /* LogEntry.h */,
+				A905EFD3136D00EB003007CF /* LogEntryPhoto.h */,
+				A905EFD4136D00EB003007CF /* LogEntryPhoto.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A986E07B135FD1F90078E12E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A986E082135FD1F90078E12E /* libLevousCore.a */,
+				A94E4523136CB53C0015C61B /* LevousCoreTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A986E084135FD2000078E12E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A986E07A135FD1F90078E12E /* LevousCore.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		A986E08B135FD5950078E12E /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				A986E08C135FD60A0078E12E /* WordProcessingMLDocument.h */,
+				A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		A9CCE54F135E11DD0066FD2C = {
+			isa = PBXGroup;
+			children = (
+				A9CCE566135E11DD0066FD2C /* Chronicler */,
+				A9CCE58A135E11DD0066FD2C /* ChroniclerTests */,
+				A905EFC2136CFB38003007CF /* Resources */,
+				A9CCE55D135E11DD0066FD2C /* Frameworks */,
+				A9CCE55B135E11DD0066FD2C /* Products */,
+				A986E084135FD2000078E12E /* Libraries */,
+			);
+			sourceTree = "<group>";
+		};
+		A9CCE55B135E11DD0066FD2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9CCE55A135E11DD0066FD2C /* Chronicler.app */,
+				A9CCE583135E11DD0066FD2C /* ChroniclerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9CCE55D135E11DD0066FD2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB0ECB1365E23B006B80C9 /* libLevousCore.a */,
+				A9928908135FC91600099FCB /* MobileCoreServices.framework */,
+				A9CCE55E135E11DD0066FD2C /* UIKit.framework */,
+				A9CCE560135E11DD0066FD2C /* Foundation.framework */,
+				A9CCE562135E11DD0066FD2C /* CoreGraphics.framework */,
+				A9CCE564135E11DD0066FD2C /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9CCE566135E11DD0066FD2C /* Chronicler */ = {
+			isa = PBXGroup;
+			children = (
+				A9CCE5A3135E12C50066FD2C /* Classes */,
+				A9CCE56F135E11DD0066FD2C /* ChroniclerAppDelegate.h */,
+				A9CCE570135E11DD0066FD2C /* ChroniclerAppDelegate.m */,
+				A9CCE575135E11DD0066FD2C /* MainWindow.xib */,
+				A9CCE578135E11DD0066FD2C /* RootViewController.h */,
+				A9CCE579135E11DD0066FD2C /* RootViewController.m */,
+				A9CCE57B135E11DD0066FD2C /* RootViewController.xib */,
+				A9CCE572135E11DD0066FD2C /* Chronicler.xcdatamodeld */,
+				A9CCE567135E11DD0066FD2C /* Supporting Files */,
+			);
+			path = Chronicler;
+			sourceTree = "<group>";
+		};
+		A9CCE567135E11DD0066FD2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9CCE568135E11DD0066FD2C /* Chronicler-Info.plist */,
+				A9CCE569135E11DD0066FD2C /* InfoPlist.strings */,
+				A9CCE56C135E11DD0066FD2C /* Chronicler-Prefix.pch */,
+				A9CCE56D135E11DD0066FD2C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9CCE58A135E11DD0066FD2C /* ChroniclerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9CCE591135E11DD0066FD2C /* ChroniclerTests.h */,
+				A9CCE593135E11DD0066FD2C /* ChroniclerTests.m */,
+				A9CCE58B135E11DD0066FD2C /* Supporting Files */,
+			);
+			path = ChroniclerTests;
+			sourceTree = "<group>";
+		};
+		A9CCE58B135E11DD0066FD2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9CCE58C135E11DD0066FD2C /* ChroniclerTests-Info.plist */,
+				A9CCE58D135E11DD0066FD2C /* InfoPlist.strings */,
+				A9CCE590135E11DD0066FD2C /* ChroniclerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9CCE5A3135E12C50066FD2C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB0E3A1365DECA006B80C9 /* CoreData */,
+				A986E08B135FD5950078E12E /* Document */,
+				A95F0EC61365DADA00058585 /* Models */,
+				A9CCE5A4135E12C50066FD2C /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A9CCE5A4135E12C50066FD2C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9CCE5A5135E12C50066FD2C /* LogEntryViewController.h */,
+				A9CCE5A6135E12C50066FD2C /* LogEntryViewController.m */,
+				A9CCE5A7135E12C50066FD2C /* LogEntryViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A9EB0E3A1365DECA006B80C9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A905EFCE136CFFA9003007CF /* ValueTransformers */,
+				A9EB0EB11365DF0E006B80C9 /* ChroniclerCoreDataManager.h */,
+				A9EB0EB21365DF0E006B80C9 /* ChroniclerCoreDataManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9CCE559135E11DD0066FD2C /* Chronicler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CCE597135E11DD0066FD2C /* Build configuration list for PBXNativeTarget "Chronicler" */;
+			buildPhases = (
+				A9CCE556135E11DD0066FD2C /* Sources */,
+				A9CCE557135E11DD0066FD2C /* Frameworks */,
+				A9CCE558135E11DD0066FD2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9EB0ECA1365E234006B80C9 /* PBXTargetDependency */,
+			);
+			name = Chronicler;
+			productName = Chronicler;
+			productReference = A9CCE55A135E11DD0066FD2C /* Chronicler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9CCE582135E11DD0066FD2C /* ChroniclerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CCE59A135E11DD0066FD2C /* Build configuration list for PBXNativeTarget "ChroniclerTests" */;
+			buildPhases = (
+				A9CCE57E135E11DD0066FD2C /* Sources */,
+				A9CCE57F135E11DD0066FD2C /* Frameworks */,
+				A9CCE580135E11DD0066FD2C /* Resources */,
+				A9CCE581135E11DD0066FD2C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9CCE589135E11DD0066FD2C /* PBXTargetDependency */,
+			);
+			name = ChroniclerTests;
+			productName = ChroniclerTests;
+			productReference = A9CCE583135E11DD0066FD2C /* ChroniclerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9CCE551135E11DD0066FD2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "LeVous, LLC";
+			};
+			buildConfigurationList = A9CCE554135E11DD0066FD2C /* Build configuration list for PBXProject "Chronicler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9CCE54F135E11DD0066FD2C;
+			productRefGroup = A9CCE55B135E11DD0066FD2C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A986E07B135FD1F90078E12E /* Products */;
+					ProjectRef = A986E07A135FD1F90078E12E /* LevousCore.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A9CCE559135E11DD0066FD2C /* Chronicler */,
+				A9CCE582135E11DD0066FD2C /* ChroniclerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A94E4523136CB53C0015C61B /* LevousCoreTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = LevousCoreTests.app;
+			remoteRef = A94E4522136CB53C0015C61B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A986E082135FD1F90078E12E /* libLevousCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLevousCore.a;
+			remoteRef = A986E081135FD1F90078E12E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9CCE558135E11DD0066FD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CCE56B135E11DD0066FD2C /* InfoPlist.strings in Resources */,
+				A9CCE577135E11DD0066FD2C /* MainWindow.xib in Resources */,
+				A9CCE57D135E11DD0066FD2C /* RootViewController.xib in Resources */,
+				A9CCE5AA135E12C50066FD2C /* LogEntryViewController.xib in Resources */,
+				A905EFC5136CFB38003007CF /* document-photo-placeholder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCE580135E11DD0066FD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CCE58F135E11DD0066FD2C /* InfoPlist.strings in Resources */,
+				A9CCE592135E11DD0066FD2C /* ChroniclerTests.h in Resources */,
+				A9CCE5AB135E12C50066FD2C /* LogEntryViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9CCE581135E11DD0066FD2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9CCE556135E11DD0066FD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CCE56E135E11DD0066FD2C /* main.m in Sources */,
+				A9CCE571135E11DD0066FD2C /* ChroniclerAppDelegate.m in Sources */,
+				A9CCE574135E11DD0066FD2C /* Chronicler.xcdatamodeld in Sources */,
+				A9CCE57A135E11DD0066FD2C /* RootViewController.m in Sources */,
+				A9CCE5A8135E12C50066FD2C /* LogEntryViewController.m in Sources */,
+				A986E08E135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */,
+				A95F0F481365DDD000058585 /* LogEntry.m in Sources */,
+				A9EB0EB31365DF0E006B80C9 /* ChroniclerCoreDataManager.m in Sources */,
+				A905EFD1136CFFF1003007CF /* PngImageTransformer.m in Sources */,
+				A905EFD5136D00EB003007CF /* LogEntryPhoto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCE57E135E11DD0066FD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CCE594135E11DD0066FD2C /* ChroniclerTests.m in Sources */,
+				A9CCE5A9135E12C50066FD2C /* LogEntryViewController.m in Sources */,
+				A986E08F135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */,
+				A9EB0EB41365DF0E006B80C9 /* ChroniclerCoreDataManager.m in Sources */,
+				A905EFD2136CFFF1003007CF /* PngImageTransformer.m in Sources */,
+				A905EFD6136D00EB003007CF /* LogEntryPhoto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9CCE589135E11DD0066FD2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CCE559135E11DD0066FD2C /* Chronicler */;
+			targetProxy = A9CCE588135E11DD0066FD2C /* PBXContainerItemProxy */;
+		};
+		A9EB0ECA1365E234006B80C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LevousCore;
+			targetProxy = A9EB0EC91365E234006B80C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9CCE569135E11DD0066FD2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CCE56A135E11DD0066FD2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9CCE575135E11DD0066FD2C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CCE576135E11DD0066FD2C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A9CCE57B135E11DD0066FD2C /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CCE57C135E11DD0066FD2C /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		A9CCE58D135E11DD0066FD2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CCE58E135E11DD0066FD2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9CCE595135E11DD0066FD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Volumes/Macintosh HD/Users/rustyzarse/dev/xcode projects/Levous-iOS-Core/source/LevousCoreHeaders\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9CCE596135E11DD0066FD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Volumes/Macintosh HD/Users/rustyzarse/dev/xcode projects/Levous-iOS-Core/source/LevousCoreHeaders\"",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(BUILT_PRODUCTS_DIR)/../../../Levous-iOS-Core/source/LevousCoreHeaders";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A9CCE598135E11DD0066FD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chronicler/Chronicler-Prefix.pch";
+				INFOPLIST_FILE = "Chronicler/Chronicler-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9CCE599135E11DD0066FD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chronicler/Chronicler-Prefix.pch";
+				INFOPLIST_FILE = "Chronicler/Chronicler-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9CCE59B135E11DD0066FD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chronicler.app/Chronicler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChroniclerTests/ChroniclerTests-Prefix.pch";
+				INFOPLIST_FILE = "ChroniclerTests/ChroniclerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A9CCE59C135E11DD0066FD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chronicler.app/Chronicler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChroniclerTests/ChroniclerTests-Prefix.pch";
+				INFOPLIST_FILE = "ChroniclerTests/ChroniclerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9CCE554135E11DD0066FD2C /* Build configuration list for PBXProject "Chronicler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CCE595135E11DD0066FD2C /* Debug */,
+				A9CCE596135E11DD0066FD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CCE597135E11DD0066FD2C /* Build configuration list for PBXNativeTarget "Chronicler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CCE598135E11DD0066FD2C /* Debug */,
+				A9CCE599135E11DD0066FD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CCE59A135E11DD0066FD2C /* Build configuration list for PBXNativeTarget "ChroniclerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CCE59B135E11DD0066FD2C /* Debug */,
+				A9CCE59C135E11DD0066FD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A9CCE572135E11DD0066FD2C /* Chronicler.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9CCE573135E11DD0066FD2C /* Chronicler.xcdatamodel */,
+			);
+			currentVersion = A9CCE573135E11DD0066FD2C /* Chronicler.xcdatamodel */;
+			path = Chronicler.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A9CCE551135E11DD0066FD2C /* Project object */;
+}

@@ -33,6 +33,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	[self setPlan:[[EducentiveCoreDataManager instance] getActivePlan]];
 	fetchedResultsDataSource = [[LVFetchedResultsControllerTableViewDataSource alloc] init];
 	[fetchedResultsDataSource setCoreDataManager:[EducentiveCoreDataManager instance]];
 	[fetchedResultsDataSource setFetchedEntityName:@"IncentiveAccomplishment"];

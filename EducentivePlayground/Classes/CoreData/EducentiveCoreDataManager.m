@@ -33,5 +33,13 @@ static EducentiveCoreDataManager *_sharedInstance;
 	return [self initWithDbName:@"EducentivePlayground.sqlite"];
 }
 
+#pragma mark -
+#pragma mark Plan 
+
+- (IncentivePlan *)getActivePlan{
+	NSFetchRequest *fetch = [self fetchForEntityNamed:@"IncentivePlan"];
+	NSArray *results = [self executeFetch:fetch];
+	return ([results count] > 0) ? [results objectAtIndex:0] : nil;
+}
 
 @end
