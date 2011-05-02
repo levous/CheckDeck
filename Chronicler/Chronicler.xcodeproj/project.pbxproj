@@ -10,9 +10,17 @@
 		A905EFC5136CFB38003007CF /* document-photo-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A905EFC4136CFB38003007CF /* document-photo-placeholder.png */; };
 		A905EFD1136CFFF1003007CF /* PngImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD0136CFFF1003007CF /* PngImageTransformer.m */; };
 		A905EFD2136CFFF1003007CF /* PngImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD0136CFFF1003007CF /* PngImageTransformer.m */; };
-		A905EFD5136D00EB003007CF /* LogEntryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD4136D00EB003007CF /* LogEntryPhoto.m */; };
-		A905EFD6136D00EB003007CF /* LogEntryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD4136D00EB003007CF /* LogEntryPhoto.m */; };
-		A95F0F481365DDD000058585 /* LogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A95F0F451365DDD000058585 /* LogEntry.m */; };
+		A905EFDA136DE6D4003007CF /* LogEntryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD8136DE6D4003007CF /* LogEntryListViewController.m */; };
+		A905EFDB136DE6D4003007CF /* LogEntryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905EFD8136DE6D4003007CF /* LogEntryListViewController.m */; };
+		A905EFDC136DE6D4003007CF /* LogEntryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A905EFD9136DE6D4003007CF /* LogEntryListViewController.xib */; };
+		A905EFDD136DE6D4003007CF /* LogEntryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A905EFD9136DE6D4003007CF /* LogEntryListViewController.xib */; };
+		A92076FC136DEE7D0028A813 /* LogEntryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A92076FB136DEE7D0028A813 /* LogEntryPhoto.m */; };
+		A92076FD136DEE7D0028A813 /* LogEntryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A92076FB136DEE7D0028A813 /* LogEntryPhoto.m */; };
+		A9207700136DEE940028A813 /* LogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A92076FF136DEE940028A813 /* LogEntry.m */; };
+		A9207701136DEE940028A813 /* LogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A92076FF136DEE940028A813 /* LogEntry.m */; };
+		A9207705136DF6EF0028A813 /* LogEntry+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9207704136DF6EF0028A813 /* LogEntry+Additions.m */; };
+		A9207706136DF6EF0028A813 /* LogEntry+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9207704136DF6EF0028A813 /* LogEntry+Additions.m */; };
+		A9613BE0136E6F5E00D4E766 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9613BDF136E6F5E00D4E766 /* ImageIO.framework */; };
 		A986E08E135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */; };
 		A986E08F135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */; };
 		A9928909135FC91600099FCB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9928908135FC91600099FCB /* MobileCoreServices.framework */; };
@@ -25,8 +33,6 @@
 		A9CCE571135E11DD0066FD2C /* ChroniclerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE570135E11DD0066FD2C /* ChroniclerAppDelegate.m */; };
 		A9CCE574135E11DD0066FD2C /* Chronicler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE572135E11DD0066FD2C /* Chronicler.xcdatamodeld */; };
 		A9CCE577135E11DD0066FD2C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE575135E11DD0066FD2C /* MainWindow.xib */; };
-		A9CCE57A135E11DD0066FD2C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CCE579135E11DD0066FD2C /* RootViewController.m */; };
-		A9CCE57D135E11DD0066FD2C /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CCE57B135E11DD0066FD2C /* RootViewController.xib */; };
 		A9CCE584135E11DD0066FD2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE55E135E11DD0066FD2C /* UIKit.framework */; };
 		A9CCE585135E11DD0066FD2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE560135E11DD0066FD2C /* Foundation.framework */; };
 		A9CCE586135E11DD0066FD2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CCE562135E11DD0066FD2C /* CoreGraphics.framework */; };
@@ -78,10 +84,16 @@
 		A905EFC4136CFB38003007CF /* document-photo-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "document-photo-placeholder.png"; sourceTree = "<group>"; };
 		A905EFCF136CFFF1003007CF /* PngImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PngImageTransformer.h; sourceTree = "<group>"; };
 		A905EFD0136CFFF1003007CF /* PngImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PngImageTransformer.m; sourceTree = "<group>"; };
-		A905EFD3136D00EB003007CF /* LogEntryPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntryPhoto.h; sourceTree = "<group>"; };
-		A905EFD4136D00EB003007CF /* LogEntryPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntryPhoto.m; sourceTree = "<group>"; };
-		A95F0F451365DDD000058585 /* LogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntry.m; sourceTree = "<group>"; };
-		A95F0F461365DDD000058585 /* LogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntry.h; sourceTree = "<group>"; };
+		A905EFD7136DE6D4003007CF /* LogEntryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntryListViewController.h; sourceTree = "<group>"; };
+		A905EFD8136DE6D4003007CF /* LogEntryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntryListViewController.m; sourceTree = "<group>"; };
+		A905EFD9136DE6D4003007CF /* LogEntryListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogEntryListViewController.xib; sourceTree = "<group>"; };
+		A92076FA136DEE7D0028A813 /* LogEntryPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntryPhoto.h; sourceTree = "<group>"; };
+		A92076FB136DEE7D0028A813 /* LogEntryPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntryPhoto.m; sourceTree = "<group>"; };
+		A92076FE136DEE940028A813 /* LogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntry.h; sourceTree = "<group>"; };
+		A92076FF136DEE940028A813 /* LogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntry.m; sourceTree = "<group>"; };
+		A9207703136DF6EF0028A813 /* LogEntry+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LogEntry+Additions.h"; sourceTree = "<group>"; };
+		A9207704136DF6EF0028A813 /* LogEntry+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LogEntry+Additions.m"; sourceTree = "<group>"; };
+		A9613BDF136E6F5E00D4E766 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A986E07A135FD1F90078E12E /* LevousCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LevousCore.xcodeproj; path = "../../Levous-iOS-Core/source/LevousCore.xcodeproj"; sourceTree = "<group>"; };
 		A986E08C135FD60A0078E12E /* WordProcessingMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordProcessingMLDocument.h; sourceTree = "<group>"; };
 		A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordProcessingMLDocument.m; sourceTree = "<group>"; };
@@ -99,9 +111,6 @@
 		A9CCE570135E11DD0066FD2C /* ChroniclerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChroniclerAppDelegate.m; sourceTree = "<group>"; };
 		A9CCE573135E11DD0066FD2C /* Chronicler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chronicler.xcdatamodel; sourceTree = "<group>"; };
 		A9CCE576135E11DD0066FD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A9CCE578135E11DD0066FD2C /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		A9CCE579135E11DD0066FD2C /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		A9CCE57C135E11DD0066FD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		A9CCE583135E11DD0066FD2C /* ChroniclerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChroniclerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CCE58C135E11DD0066FD2C /* ChroniclerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChroniclerTests-Info.plist"; sourceTree = "<group>"; };
 		A9CCE58E135E11DD0066FD2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -121,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9613BE0136E6F5E00D4E766 /* ImageIO.framework in Frameworks */,
 				A9EB0ECC1365E23B006B80C9 /* libLevousCore.a in Frameworks */,
 				A9CCE55F135E11DD0066FD2C /* UIKit.framework in Frameworks */,
 				A9CCE561135E11DD0066FD2C /* Foundation.framework in Frameworks */,
@@ -170,13 +180,23 @@
 			path = ValueTransformers;
 			sourceTree = "<group>";
 		};
+		A9207702136DF6C80028A813 /* ModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				A9207703136DF6EF0028A813 /* LogEntry+Additions.h */,
+				A9207704136DF6EF0028A813 /* LogEntry+Additions.m */,
+			);
+			path = ModelCategories;
+			sourceTree = "<group>";
+		};
 		A95F0EC61365DADA00058585 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A95F0F451365DDD000058585 /* LogEntry.m */,
-				A95F0F461365DDD000058585 /* LogEntry.h */,
-				A905EFD3136D00EB003007CF /* LogEntryPhoto.h */,
-				A905EFD4136D00EB003007CF /* LogEntryPhoto.m */,
+				A9207702136DF6C80028A813 /* ModelCategories */,
+				A92076FE136DEE940028A813 /* LogEntry.h */,
+				A92076FF136DEE940028A813 /* LogEntry.m */,
+				A92076FA136DEE7D0028A813 /* LogEntryPhoto.h */,
+				A92076FB136DEE7D0028A813 /* LogEntryPhoto.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				A9EB0ECB1365E23B006B80C9 /* libLevousCore.a */,
+				A9613BDF136E6F5E00D4E766 /* ImageIO.framework */,
 				A9928908135FC91600099FCB /* MobileCoreServices.framework */,
 				A9CCE55E135E11DD0066FD2C /* UIKit.framework */,
 				A9CCE560135E11DD0066FD2C /* Foundation.framework */,
@@ -248,9 +269,6 @@
 				A9CCE56F135E11DD0066FD2C /* ChroniclerAppDelegate.h */,
 				A9CCE570135E11DD0066FD2C /* ChroniclerAppDelegate.m */,
 				A9CCE575135E11DD0066FD2C /* MainWindow.xib */,
-				A9CCE578135E11DD0066FD2C /* RootViewController.h */,
-				A9CCE579135E11DD0066FD2C /* RootViewController.m */,
-				A9CCE57B135E11DD0066FD2C /* RootViewController.xib */,
 				A9CCE572135E11DD0066FD2C /* Chronicler.xcdatamodeld */,
 				A9CCE567135E11DD0066FD2C /* Supporting Files */,
 			);
@@ -305,6 +323,9 @@
 				A9CCE5A5135E12C50066FD2C /* LogEntryViewController.h */,
 				A9CCE5A6135E12C50066FD2C /* LogEntryViewController.m */,
 				A9CCE5A7135E12C50066FD2C /* LogEntryViewController.xib */,
+				A905EFD7136DE6D4003007CF /* LogEntryListViewController.h */,
+				A905EFD8136DE6D4003007CF /* LogEntryListViewController.m */,
+				A905EFD9136DE6D4003007CF /* LogEntryListViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -415,9 +436,9 @@
 			files = (
 				A9CCE56B135E11DD0066FD2C /* InfoPlist.strings in Resources */,
 				A9CCE577135E11DD0066FD2C /* MainWindow.xib in Resources */,
-				A9CCE57D135E11DD0066FD2C /* RootViewController.xib in Resources */,
 				A9CCE5AA135E12C50066FD2C /* LogEntryViewController.xib in Resources */,
 				A905EFC5136CFB38003007CF /* document-photo-placeholder.png in Resources */,
+				A905EFDC136DE6D4003007CF /* LogEntryListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +449,7 @@
 				A9CCE58F135E11DD0066FD2C /* InfoPlist.strings in Resources */,
 				A9CCE592135E11DD0066FD2C /* ChroniclerTests.h in Resources */,
 				A9CCE5AB135E12C50066FD2C /* LogEntryViewController.xib in Resources */,
+				A905EFDD136DE6D4003007CF /* LogEntryListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,13 +479,14 @@
 				A9CCE56E135E11DD0066FD2C /* main.m in Sources */,
 				A9CCE571135E11DD0066FD2C /* ChroniclerAppDelegate.m in Sources */,
 				A9CCE574135E11DD0066FD2C /* Chronicler.xcdatamodeld in Sources */,
-				A9CCE57A135E11DD0066FD2C /* RootViewController.m in Sources */,
 				A9CCE5A8135E12C50066FD2C /* LogEntryViewController.m in Sources */,
 				A986E08E135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */,
-				A95F0F481365DDD000058585 /* LogEntry.m in Sources */,
 				A9EB0EB31365DF0E006B80C9 /* ChroniclerCoreDataManager.m in Sources */,
 				A905EFD1136CFFF1003007CF /* PngImageTransformer.m in Sources */,
-				A905EFD5136D00EB003007CF /* LogEntryPhoto.m in Sources */,
+				A905EFDA136DE6D4003007CF /* LogEntryListViewController.m in Sources */,
+				A92076FC136DEE7D0028A813 /* LogEntryPhoto.m in Sources */,
+				A9207700136DEE940028A813 /* LogEntry.m in Sources */,
+				A9207705136DF6EF0028A813 /* LogEntry+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +499,10 @@
 				A986E08F135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */,
 				A9EB0EB41365DF0E006B80C9 /* ChroniclerCoreDataManager.m in Sources */,
 				A905EFD2136CFFF1003007CF /* PngImageTransformer.m in Sources */,
-				A905EFD6136D00EB003007CF /* LogEntryPhoto.m in Sources */,
+				A905EFDB136DE6D4003007CF /* LogEntryListViewController.m in Sources */,
+				A92076FD136DEE7D0028A813 /* LogEntryPhoto.m in Sources */,
+				A9207701136DEE940028A813 /* LogEntry.m in Sources */,
+				A9207706136DF6EF0028A813 /* LogEntry+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,14 +536,6 @@
 				A9CCE576135E11DD0066FD2C /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		A9CCE57B135E11DD0066FD2C /* RootViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9CCE57C135E11DD0066FD2C /* en */,
-			);
-			name = RootViewController.xib;
 			sourceTree = "<group>";
 		};
 		A9CCE58D135E11DD0066FD2C /* InfoPlist.strings */ = {
@@ -600,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chronicler/Chronicler-Prefix.pch";
@@ -609,6 +628,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

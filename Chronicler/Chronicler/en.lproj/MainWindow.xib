@@ -51,7 +51,6 @@
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -87,7 +86,7 @@
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIParentViewController" ref="701001926"/>
-						<string key="IBUINibName">LogEntryViewController</string>
+						<string key="IBUINibName">LogEntryListViewController</string>
 						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 							<int key="IBUIInterfaceOrientation">1</int>
@@ -213,7 +212,7 @@
 					<string>UIApplication</string>
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>LogEntryViewController</string>
+					<string>LogEntryListViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSMutableDictionary">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -286,61 +285,30 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">LogEntryViewController</string>
+					<string key="className">LVFetchedResultsControllerTableViewDataSource</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/LVFetchedResultsControllerTableViewDataSource.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">LogEntryListViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">captureImageTouched</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">captureImageTouched</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">captureImageTouched</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
 					<object class="NSMutableDictionary" key="outlets">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>logImage</string>
-							<string>noteTextView</string>
-							<string>titleLabel</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>UIImageView</string>
-							<string>UITextView</string>
-							<string>UITextField</string>
-						</object>
+						<string key="NS.key.0">frcDataSource</string>
+						<string key="NS.object.0">LVFetchedResultsControllerTableViewDataSource</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>logImage</string>
-							<string>noteTextView</string>
-							<string>titleLabel</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBToOneOutletInfo">
-								<string key="name">logImage</string>
-								<string key="candidateClassName">UIImageView</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">noteTextView</string>
-								<string key="candidateClassName">UITextView</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">titleLabel</string>
-								<string key="candidateClassName">UITextField</string>
-							</object>
+						<string key="NS.key.0">frcDataSource</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">frcDataSource</string>
+							<string key="candidateClassName">LVFetchedResultsControllerTableViewDataSource</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/LogEntryViewController.h</string>
+						<string key="minorKey">./Classes/LogEntryListViewController.h</string>
 					</object>
 				</object>
 			</object>

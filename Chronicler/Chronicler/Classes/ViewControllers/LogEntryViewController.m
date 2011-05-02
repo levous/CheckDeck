@@ -19,7 +19,7 @@
 @synthesize titleText, scrollView;
 @synthesize logImage;
 @synthesize noteTextView;
-@synthesize logEntry, coreDataManager;
+@synthesize logEntry, coreDataManager, newImage;
 
 
 #pragma -
@@ -61,6 +61,24 @@
 #pragma -
 #pragma UI Actions
 
+- (void)configureLogEntryUI{
+    if ([self logEntry]) {
+        [[self titleText] setText:[[self logEntry] title]];
+        [[self noteTextView] setText:[[self logEntry] note]];
+        //TODO: need to support multiple
+        if( [[[self logEntry] logEntryPhotos] count] > 0 ){
+            LogEntryPhoto *photo = [[[self logEntry] logEntryPhotos] anyObject];
+            UIImage *image = [photo photoData];
+            [[self logImage] setImage:image];
+        }
+    }
+    
+    if( [self newImage] ){
+        [[self logImage] setImage:[self newImage]];
+        
+    }
+}
+
 - (IBAction)captureImageTouched{
     [self startCameraControllerFromViewController:self usingDelegate:self];
 }
@@ -101,25 +119,24 @@
         }
         
         // Save the new image (original or edited) to the Camera Roll
-        // UIImageWriteToSavedPhotosAlbum (imageToSave, nil, nil , nil);
+        //UIImageWriteToSavedPhotosAlbum (imageToSave, nil, nil , nil);
         
         //display the image
         [[self logImage] setImage:imageToSave];
+        [self setNewImage:imageToSave];
         
         WordProcessingMLDocument *doc = [[[WordProcessingMLDocument alloc] init] autorelease];
         NSLog([doc getXml], nil);
     }
     
     // Handle a movie capture
-    if (CFStringCompare ((CFStringRef) mediaType, kUTTypeMovie, 0)
-        == kCFCompareEqualTo) {
+    if (CFStringCompare ((CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
         
         NSString *moviePath = [[info objectForKey:
                                 UIImagePickerControllerMediaURL] path];
         
         if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (moviePath)) {
-            UISaveVideoAtPathToSavedPhotosAlbum (
-                                                 moviePath, nil, nil, nil);
+            UISaveVideoAtPathToSavedPhotosAlbum (moviePath, nil, nil, nil);
         }
     }
     
@@ -134,15 +151,13 @@
 #pragma -
 #pragma Image Capture
 
-- (BOOL) startCameraControllerFromViewController: (UIViewController*) controller
-                                   usingDelegate: (id <UIImagePickerControllerDelegate,
-                                                   UINavigationControllerDelegate>) delegate {
+- (BOOL) startCameraControllerFromViewController:(UIViewController*) controller
+                                   usingDelegate:(id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>) delegate {
     
     UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
     
     
-    if (([UIImagePickerController isSourceTypeAvailable:
-          UIImagePickerControllerSourceTypeCamera] == NO)
+    if (([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO)
         || (delegate == nil)
         || (controller == nil)){
         
@@ -160,15 +175,14 @@
         // Displays a control that allows the user to choose picture or
         // movie capture, if both are available:
         cameraUI.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
-        
-        
+
     }
     
     
     
     // Hides the controls for moving & scaling pictures, or for
     // trimming movies. To instead show the controls, use YES.
-    cameraUI.allowsEditing = NO;
+    cameraUI.allowsEditing = YES;
     
     cameraUI.delegate = delegate;
     
@@ -215,13 +229,19 @@
     // set content view larger than frame
     CGSize tallerThanFrame = CGSizeMake([[self view] frame].size.width, 800);
     [[self scrollView] setContentSize:tallerThanFrame];
+    
+    // configure log entry UI
+    [self configureLogEntryUI];
+    
+    
 }
 
 - (void)viewDidUnload
 {
-    [self setTitleText:nil];
+    /*[self setTitleText:nil];
     [self setLogImage:nil];
-    [self setNoteTextView:nil];
+    [self setNoteTextView:nil];*/
+    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

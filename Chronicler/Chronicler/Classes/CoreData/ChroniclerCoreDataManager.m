@@ -30,6 +30,7 @@ static ChroniclerCoreDataManager *_sharedInstance;
 - (LogEntryPhoto *)addPhoto:(UIImage *)photo forLogEntry:(LogEntry *)logEntry{
     LogEntryPhoto *item = (LogEntryPhoto *)[NSEntityDescription insertNewObjectForEntityForName:@"LogEntryPhoto" inManagedObjectContext:[self managedObjectContext]];
     [item setPhotoData:photo];
+    [logEntry addLogEntryPhotosObject:item];
     return item;
 }
 

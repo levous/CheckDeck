@@ -8,7 +8,6 @@
 
 #import "ChroniclerAppDelegate.h"
 
-#import "RootViewController.h"
 
 @implementation ChroniclerAppDelegate
 

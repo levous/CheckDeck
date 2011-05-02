@@ -2,7 +2,7 @@
 //  LogEntryPhoto.h
 //  Chronicler
 //
-//  Created by Rusty Zarse on 4/30/11.
+//  Created by Rusty Zarse on 5/1/11.
 //  Copyright (c) 2011 LeVous, LLC. All rights reserved.
 //
 
