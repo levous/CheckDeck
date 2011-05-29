@@ -20,6 +20,10 @@
 		A9207701136DEE940028A813 /* LogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A92076FF136DEE940028A813 /* LogEntry.m */; };
 		A9207705136DF6EF0028A813 /* LogEntry+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9207704136DF6EF0028A813 /* LogEntry+Additions.m */; };
 		A9207706136DF6EF0028A813 /* LogEntry+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9207704136DF6EF0028A813 /* LogEntry+Additions.m */; };
+		A932E7FB136F473A00CDF81F /* quilted-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = A932E7FA136F473A00CDF81F /* quilted-paper.png */; };
+		A932E7FC136F473A00CDF81F /* quilted-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = A932E7FA136F473A00CDF81F /* quilted-paper.png */; };
+		A932E7FE136F79FF00CDF81F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A932E7FD136F79FF00CDF81F /* QuartzCore.framework */; };
+		A932E800136F839D00CDF81F /* quilted-paper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A932E7FF136F839D00CDF81F /* quilted-paper@2x.png */; };
 		A9613BE0136E6F5E00D4E766 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9613BDF136E6F5E00D4E766 /* ImageIO.framework */; };
 		A986E08E135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */; };
 		A986E08F135FD60A0078E12E /* WordProcessingMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A986E08D135FD60A0078E12E /* WordProcessingMLDocument.m */; };
@@ -93,6 +97,9 @@
 		A92076FF136DEE940028A813 /* LogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntry.m; sourceTree = "<group>"; };
 		A9207703136DF6EF0028A813 /* LogEntry+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LogEntry+Additions.h"; sourceTree = "<group>"; };
 		A9207704136DF6EF0028A813 /* LogEntry+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LogEntry+Additions.m"; sourceTree = "<group>"; };
+		A932E7FA136F473A00CDF81F /* quilted-paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quilted-paper.png"; sourceTree = "<group>"; };
+		A932E7FD136F79FF00CDF81F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A932E7FF136F839D00CDF81F /* quilted-paper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quilted-paper@2x.png"; sourceTree = "<group>"; };
 		A9613BDF136E6F5E00D4E766 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A986E07A135FD1F90078E12E /* LevousCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LevousCore.xcodeproj; path = "../../Levous-iOS-Core/source/LevousCore.xcodeproj"; sourceTree = "<group>"; };
 		A986E08C135FD60A0078E12E /* WordProcessingMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordProcessingMLDocument.h; sourceTree = "<group>"; };
@@ -130,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A932E7FE136F79FF00CDF81F /* QuartzCore.framework in Frameworks */,
 				A9613BE0136E6F5E00D4E766 /* ImageIO.framework in Frameworks */,
 				A9EB0ECC1365E23B006B80C9 /* libLevousCore.a in Frameworks */,
 				A9CCE55F135E11DD0066FD2C /* UIKit.framework in Frameworks */,
@@ -166,6 +174,7 @@
 		A905EFC3136CFB38003007CF /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A932E7F9136F473A00CDF81F /* bg */,
 				A905EFC4136CFB38003007CF /* document-photo-placeholder.png */,
 			);
 			path = images;
@@ -187,6 +196,15 @@
 				A9207704136DF6EF0028A813 /* LogEntry+Additions.m */,
 			);
 			path = ModelCategories;
+			sourceTree = "<group>";
+		};
+		A932E7F9136F473A00CDF81F /* bg */ = {
+			isa = PBXGroup;
+			children = (
+				A932E7FF136F839D00CDF81F /* quilted-paper@2x.png */,
+				A932E7FA136F473A00CDF81F /* quilted-paper.png */,
+			);
+			path = bg;
 			sourceTree = "<group>";
 		};
 		A95F0EC61365DADA00058585 /* Models */ = {
@@ -252,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				A9EB0ECB1365E23B006B80C9 /* libLevousCore.a */,
+				A932E7FD136F79FF00CDF81F /* QuartzCore.framework */,
 				A9613BDF136E6F5E00D4E766 /* ImageIO.framework */,
 				A9928908135FC91600099FCB /* MobileCoreServices.framework */,
 				A9CCE55E135E11DD0066FD2C /* UIKit.framework */,
@@ -439,6 +458,8 @@
 				A9CCE5AA135E12C50066FD2C /* LogEntryViewController.xib in Resources */,
 				A905EFC5136CFB38003007CF /* document-photo-placeholder.png in Resources */,
 				A905EFDC136DE6D4003007CF /* LogEntryListViewController.xib in Resources */,
+				A932E7FB136F473A00CDF81F /* quilted-paper.png in Resources */,
+				A932E800136F839D00CDF81F /* quilted-paper@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +471,7 @@
 				A9CCE592135E11DD0066FD2C /* ChroniclerTests.h in Resources */,
 				A9CCE5AB135E12C50066FD2C /* LogEntryViewController.xib in Resources */,
 				A905EFDD136DE6D4003007CF /* LogEntryListViewController.xib in Resources */,
+				A932E7FC136F473A00CDF81F /* quilted-paper.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

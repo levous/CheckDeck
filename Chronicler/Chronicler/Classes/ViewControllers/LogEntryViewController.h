@@ -11,15 +11,18 @@
 
 @interface LogEntryViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate> {
 
+    UILabel *noteLabel;
+    UIButton *logImageAddButton;
 }
 
 @property (nonatomic, retain) IBOutlet UITextField *titleText;
 @property (nonatomic, retain) IBOutlet UIImageView *logImage;
 @property (nonatomic, retain) IBOutlet UITextView *noteTextView;
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) IBOutlet UILabel *noteLabel;
+@property (nonatomic, retain) IBOutlet UIButton *logImageAddButton;
 @property (nonatomic, retain) ChroniclerCoreDataManager *coreDataManager;
 @property (nonatomic, retain) LogEntry *logEntry;
-@property (nonatomic, retain) UIImage *newImage;
 
 
 - (IBAction)captureImageTouched;

@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A957250E1392C0A60051C048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957250D1392C0A60051C048 /* Foundation.framework */; };
+		A957251F1392C0DD0051C048 /* LVModelFormConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A95725191392C0DD0051C048 /* LVModelFormConfig.h */; };
+		A95725201392C0DD0051C048 /* LVModelFormConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A957251A1392C0DD0051C048 /* LVModelFormConfig.m */; };
+		A95725211392C0DD0051C048 /* LVModelFormConfigRow.h in Headers */ = {isa = PBXBuildFile; fileRef = A957251B1392C0DD0051C048 /* LVModelFormConfigRow.h */; };
+		A95725221392C0DD0051C048 /* LVModelFormConfigRow.m in Sources */ = {isa = PBXBuildFile; fileRef = A957251C1392C0DD0051C048 /* LVModelFormConfigRow.m */; };
+		A95725231392C0DD0051C048 /* LVModelFormConfigSection.h in Headers */ = {isa = PBXBuildFile; fileRef = A957251D1392C0DD0051C048 /* LVModelFormConfigSection.h */; };
+		A95725241392C0DD0051C048 /* LVModelFormConfigSection.m in Sources */ = {isa = PBXBuildFile; fileRef = A957251E1392C0DD0051C048 /* LVModelFormConfigSection.m */; };
+		A957252C1392C0F50051C048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957252B1392C0F50051C048 /* UIKit.framework */; };
+		A957252D1392C0F50051C048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957250D1392C0A60051C048 /* Foundation.framework */; };
+		A957252F1392C0F50051C048 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957252E1392C0F50051C048 /* CoreGraphics.framework */; };
+		A95725351392C0F50051C048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A95725331392C0F50051C048 /* InfoPlist.strings */; };
+		A95725381392C0F50051C048 /* LVModelFormTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A95725371392C0F50051C048 /* LVModelFormTests.h */; };
+		A957253A1392C0F50051C048 /* LVModelFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95725391392C0F50051C048 /* LVModelFormTests.m */; };
+		A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */; };
+		A957254B1392C3950051C048 /* libLVModelForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A957250A1392C0A60051C048 /* libLVModelForm.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A95725491392C38A0051C048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A95725011392C0A60051C048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A95725091392C0A60051C048;
+			remoteInfo = LVModelForm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A957250A1392C0A60051C048 /* libLVModelForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLVModelForm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A957250D1392C0A60051C048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A95725111392C0A60051C048 /* LVModelForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LVModelForm-Prefix.pch"; sourceTree = "<group>"; };
+		A95725191392C0DD0051C048 /* LVModelFormConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfig.h; sourceTree = "<group>"; };
+		A957251A1392C0DD0051C048 /* LVModelFormConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfig.m; sourceTree = "<group>"; };
+		A957251B1392C0DD0051C048 /* LVModelFormConfigRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigRow.h; sourceTree = "<group>"; };
+		A957251C1392C0DD0051C048 /* LVModelFormConfigRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigRow.m; sourceTree = "<group>"; };
+		A957251D1392C0DD0051C048 /* LVModelFormConfigSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigSection.h; sourceTree = "<group>"; };
+		A957251E1392C0DD0051C048 /* LVModelFormConfigSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigSection.m; sourceTree = "<group>"; };
+		A957252A1392C0F50051C048 /* LVModelFormTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LVModelFormTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A957252B1392C0F50051C048 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A957252E1392C0F50051C048 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A95725321392C0F50051C048 /* LVModelFormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LVModelFormTests-Info.plist"; sourceTree = "<group>"; };
+		A95725341392C0F50051C048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A95725361392C0F50051C048 /* LVModelFormTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LVModelFormTests-Prefix.pch"; sourceTree = "<group>"; };
+		A95725371392C0F50051C048 /* LVModelFormTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVModelFormTests.h; sourceTree = "<group>"; };
+		A95725391392C0F50051C048 /* LVModelFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVModelFormTests.m; sourceTree = "<group>"; };
+		A95725441392C1FA0051C048 /* LVModelFormConfigTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigTests.h; sourceTree = "<group>"; };
+		A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A95725071392C0A60051C048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A957250E1392C0A60051C048 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95725261392C0F50051C048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A957254B1392C3950051C048 /* libLVModelForm.a in Frameworks */,
+				A957252C1392C0F50051C048 /* UIKit.framework in Frameworks */,
+				A957252D1392C0F50051C048 /* Foundation.framework in Frameworks */,
+				A957252F1392C0F50051C048 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A95724FF1392C0A60051C048 = {
+			isa = PBXGroup;
+			children = (
+				A957250A1392C0A60051C048 /* libLVModelForm.a */,
+				A957250F1392C0A60051C048 /* LVModelForm */,
+				A95725301392C0F50051C048 /* LVModelFormTests */,
+				A957250C1392C0A60051C048 /* Frameworks */,
+				A957250B1392C0A60051C048 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A957250B1392C0A60051C048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A957252A1392C0F50051C048 /* LVModelFormTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A957250C1392C0A60051C048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A957250D1392C0A60051C048 /* Foundation.framework */,
+				A957252B1392C0F50051C048 /* UIKit.framework */,
+				A957252E1392C0F50051C048 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A957250F1392C0A60051C048 /* LVModelForm */ = {
+			isa = PBXGroup;
+			children = (
+				A95725171392C0DD0051C048 /* Classes */,
+				A95725101392C0A60051C048 /* Supporting Files */,
+			);
+			path = LVModelForm;
+			sourceTree = "<group>";
+		};
+		A95725101392C0A60051C048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A95725111392C0A60051C048 /* LVModelForm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A95725171392C0DD0051C048 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A95725181392C0DD0051C048 /* ModelForm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A95725181392C0DD0051C048 /* ModelForm */ = {
+			isa = PBXGroup;
+			children = (
+				A95725191392C0DD0051C048 /* LVModelFormConfig.h */,
+				A957251A1392C0DD0051C048 /* LVModelFormConfig.m */,
+				A957251B1392C0DD0051C048 /* LVModelFormConfigRow.h */,
+				A957251C1392C0DD0051C048 /* LVModelFormConfigRow.m */,
+				A957251D1392C0DD0051C048 /* LVModelFormConfigSection.h */,
+				A957251E1392C0DD0051C048 /* LVModelFormConfigSection.m */,
+			);
+			path = ModelForm;
+			sourceTree = "<group>";
+		};
+		A95725301392C0F50051C048 /* LVModelFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				A95725421392C1FA0051C048 /* TestClasses */,
+				A95725371392C0F50051C048 /* LVModelFormTests.h */,
+				A95725391392C0F50051C048 /* LVModelFormTests.m */,
+				A95725311392C0F50051C048 /* Supporting Files */,
+			);
+			path = LVModelFormTests;
+			sourceTree = "<group>";
+		};
+		A95725311392C0F50051C048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A95725321392C0F50051C048 /* LVModelFormTests-Info.plist */,
+				A95725331392C0F50051C048 /* InfoPlist.strings */,
+				A95725361392C0F50051C048 /* LVModelFormTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A95725421392C1FA0051C048 /* TestClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A95725431392C1FA0051C048 /* ModelForm */,
+			);
+			path = TestClasses;
+			sourceTree = "<group>";
+		};
+		A95725431392C1FA0051C048 /* ModelForm */ = {
+			isa = PBXGroup;
+			children = (
+				A95725441392C1FA0051C048 /* LVModelFormConfigTests.h */,
+				A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */,
+			);
+			path = ModelForm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A95725081392C0A60051C048 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A957251F1392C0DD0051C048 /* LVModelFormConfig.h in Headers */,
+				A95725211392C0DD0051C048 /* LVModelFormConfigRow.h in Headers */,
+				A95725231392C0DD0051C048 /* LVModelFormConfigSection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A95725091392C0A60051C048 /* LVModelForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95725141392C0A60051C048 /* Build configuration list for PBXNativeTarget "LVModelForm" */;
+			buildPhases = (
+				A95725061392C0A60051C048 /* Sources */,
+				A95725071392C0A60051C048 /* Frameworks */,
+				A95725081392C0A60051C048 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LVModelForm;
+			productName = LVModelForm;
+			productReference = A957250A1392C0A60051C048 /* libLVModelForm.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A95725291392C0F50051C048 /* LVModelFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A957253B1392C0F50051C048 /* Build configuration list for PBXNativeTarget "LVModelFormTests" */;
+			buildPhases = (
+				A95725251392C0F50051C048 /* Sources */,
+				A95725261392C0F50051C048 /* Frameworks */,
+				A95725271392C0F50051C048 /* Resources */,
+				A95725281392C0F50051C048 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A957254A1392C38A0051C048 /* PBXTargetDependency */,
+			);
+			name = LVModelFormTests;
+			productName = LVModelFormTests;
+			productReference = A957252A1392C0F50051C048 /* LVModelFormTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A95725011392C0A60051C048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "LeVous, LLC";
+			};
+			buildConfigurationList = A95725041392C0A60051C048 /* Build configuration list for PBXProject "LVModelForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A95724FF1392C0A60051C048;
+			productRefGroup = A957250B1392C0A60051C048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A95725091392C0A60051C048 /* LVModelForm */,
+				A95725291392C0F50051C048 /* LVModelFormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A95725271392C0F50051C048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95725351392C0F50051C048 /* InfoPlist.strings in Resources */,
+				A95725381392C0F50051C048 /* LVModelFormTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A95725281392C0F50051C048 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A95725061392C0A60051C048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95725201392C0DD0051C048 /* LVModelFormConfig.m in Sources */,
+				A95725221392C0DD0051C048 /* LVModelFormConfigRow.m in Sources */,
+				A95725241392C0DD0051C048 /* LVModelFormConfigSection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95725251392C0F50051C048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A957253A1392C0F50051C048 /* LVModelFormTests.m in Sources */,
+				A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A957254A1392C38A0051C048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A95725091392C0A60051C048 /* LVModelForm */;
+			targetProxy = A95725491392C38A0051C048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A95725331392C0F50051C048 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A95725341392C0F50051C048 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A95725121392C0A60051C048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A95725131392C0A60051C048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A95725151392C0A60051C048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/LVModelForm.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LVModelForm/LVModelForm-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A95725161392C0A60051C048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/LVModelForm.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LVModelForm/LVModelForm-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A957253C1392C0F50051C048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LVModelFormTests/LVModelFormTests-Prefix.pch";
+				INFOPLIST_FILE = "LVModelFormTests/LVModelFormTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A957253D1392C0F50051C048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LVModelFormTests/LVModelFormTests-Prefix.pch";
+				INFOPLIST_FILE = "LVModelFormTests/LVModelFormTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A95725041392C0A60051C048 /* Build configuration list for PBXProject "LVModelForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95725121392C0A60051C048 /* Debug */,
+				A95725131392C0A60051C048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A95725141392C0A60051C048 /* Build configuration list for PBXNativeTarget "LVModelForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95725151392C0A60051C048 /* Debug */,
+				A95725161392C0A60051C048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A957253B1392C0F50051C048 /* Build configuration list for PBXNativeTarget "LVModelFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A957253C1392C0F50051C048 /* Debug */,
+				A957253D1392C0F50051C048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A95725011392C0A60051C048 /* Project object */;
+}

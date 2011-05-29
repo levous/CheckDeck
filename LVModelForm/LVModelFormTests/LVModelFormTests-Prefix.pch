@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LVModelFormTests' target in the 'LVModelFormTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

@@ -1,15 +1,15 @@
 //
-//  ModelFormTests.m
-//  ModelFormTests
+//  LVModelFormTests.m
+//  LVModelFormTests
 //
-//  Created by Rusty Zarse on 4/25/11.
+//  Created by Rusty Zarse on 5/29/11.
 //  Copyright 2011 LeVous, LLC. All rights reserved.
 //
 
-#import "ModelFormTests.h"
+#import "LVModelFormTests.h"
 
 
-@implementation ModelFormTests
+@implementation LVModelFormTests
 
 - (void)setUp
 {
@@ -27,7 +27,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in ModelFormTests");
+    STFail(@"Unit tests are not implemented yet in LVModelFormTests");
 }
 
 @end
