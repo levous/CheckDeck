@@ -12,5 +12,9 @@
 @interface LVModelFormConfigSection : NSObject {
     
 }
-
+/**
+ Config rows in this section.  Model Config Cells could,
+ potentially, be reused to repeat cells in table.
+ */
+@property(retain, nonatomic) NSMutableArray *configRows;
 @end

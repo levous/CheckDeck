@@ -2,6 +2,12 @@
 // Prefix header for all source files of the 'LVModelForm' target in the 'LVModelForm' project
 //
 
+
 #ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
+    
+#import <Foundation/Foundation.h>
+#import "LVModelFormConfig.h"
+#import "LVModelFormConfigSection.h"
+#import "LVModelFormConfigRow.h"
+
+#endif //__OBJC__

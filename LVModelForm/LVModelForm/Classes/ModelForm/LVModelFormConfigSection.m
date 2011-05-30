@@ -10,5 +10,28 @@
 
 
 @implementation LVModelFormConfigSection
+@synthesize configRows;
+
+- (void)dealloc
+{
+    [super dealloc];
+}
+
+
+
+//=========================================================== 
+// - (id)init
+// default init sets up collections and empty state
+//=========================================================== 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        configRows = [NSMutableArray array];
+    }
+    return self;
+}
+
+
 
 @end

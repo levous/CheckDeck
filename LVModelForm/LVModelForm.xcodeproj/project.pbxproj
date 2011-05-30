@@ -22,6 +22,7 @@
 		A957253A1392C0F50051C048 /* LVModelFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95725391392C0F50051C048 /* LVModelFormTests.m */; };
 		A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */; };
 		A957254B1392C3950051C048 /* libLVModelForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A957250A1392C0A60051C048 /* libLVModelForm.a */; };
+		FB5E02BF139357130016BA3C /* LVModelFormConfigRowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		A95725391392C0F50051C048 /* LVModelFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVModelFormTests.m; sourceTree = "<group>"; };
 		A95725441392C1FA0051C048 /* LVModelFormConfigTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigTests.h; sourceTree = "<group>"; };
 		A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigTests.m; sourceTree = "<group>"; };
+		FB5E02BD139357130016BA3C /* LVModelFormConfigRowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigRowTests.h; sourceTree = "<group>"; };
+		FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigRowTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 			children = (
 				A95725441392C1FA0051C048 /* LVModelFormConfigTests.h */,
 				A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */,
+				FB5E02BD139357130016BA3C /* LVModelFormConfigRowTests.h */,
+				FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */,
 			);
 			path = ModelForm;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			files = (
 				A957253A1392C0F50051C048 /* LVModelFormTests.m in Sources */,
 				A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */,
+				FB5E02BF139357130016BA3C /* LVModelFormConfigRowTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +450,7 @@
 				A95725161392C0A60051C048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A957253B1392C0F50051C048 /* Build configuration list for PBXNativeTarget "LVModelFormTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +459,7 @@
 				A957253D1392C0F50051C048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

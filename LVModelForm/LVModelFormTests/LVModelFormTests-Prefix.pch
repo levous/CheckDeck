@@ -4,4 +4,7 @@
 
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
+#import "LVModelFormConfig.h"
+#import "LVModelFormConfigSection.h"
+#import "LVModelFormConfigRow.h"
 #endif
