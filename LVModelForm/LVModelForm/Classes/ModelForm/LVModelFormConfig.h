@@ -12,5 +12,8 @@
 @interface LVModelFormConfig : NSObject {
     
 }
-- (NSString *)getSomething;
+/**
+ Array of LVModelFormConfigSection describing the data set to UI binding
+ */
+@property(retain, nonatomic) NSMutableArray *configSections;
 @end

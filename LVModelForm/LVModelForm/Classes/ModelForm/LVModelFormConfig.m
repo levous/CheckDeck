@@ -10,7 +10,10 @@
 
 
 @implementation LVModelFormConfig
+@synthesize configSections;
+
 - (NSString *)getSomething{
     return @"something";
 }
+
 @end
