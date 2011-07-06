@@ -37,6 +37,14 @@
 		FB150B2D13B9803B009BE787 /* LVModelFormOrchestrator.m in Sources */ = {isa = PBXBuildFile; fileRef = FB150B2B13B9803B009BE787 /* LVModelFormOrchestrator.m */; };
 		FB150B3213B98287009BE787 /* LVModelFormOrchestratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB150B2F13B98235009BE787 /* LVModelFormOrchestratorTests.m */; };
 		FB150B3613B98672009BE787 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB150B3513B98672009BE787 /* libobjc.A.dylib */; };
+		FB3BB31D13C3A27B00EBF1AB /* MARTNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB150B1013B97E93009BE787 /* MARTNSObject.m */; };
+		FB3BB31E13C3A27B00EBF1AB /* RTIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB150B1313B97E93009BE787 /* RTIvar.m */; };
+		FB3BB31F13C3A27B00EBF1AB /* RTMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FB150B1513B97E93009BE787 /* RTMethod.m */; };
+		FB3BB32013C3A27B00EBF1AB /* RTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FB150B1713B97E93009BE787 /* RTProperty.m */; };
+		FB3BB32113C3A27B00EBF1AB /* RTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FB150B1913B97E93009BE787 /* RTProtocol.m */; };
+		FB3BB32213C3A27B00EBF1AB /* RTUnregisteredClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB150B1B13B97E93009BE787 /* RTUnregisteredClass.m */; };
+		FB3BB32713C3AF7C00EBF1AB /* Frog.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB32613C3AF7C00EBF1AB /* Frog.m */; };
+		FB4105AF13B9889E00455B63 /* libLVModelForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4105AE13B9889700455B63 /* libLVModelForm.a */; };
 		FB5E02BF139357130016BA3C /* LVModelFormConfigRowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +59,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A957250A1392C0A60051C048 /* libLVModelForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLVModelForm.a; path = "/Users/rustyzarse/dev/xcode projects/CheckDeck/LVModelForm/build/Release-iphoneos/libLVModelForm.a"; sourceTree = "<absolute>"; };
 		A957250D1392C0A60051C048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A95725111392C0A60051C048 /* LVModelForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LVModelForm-Prefix.pch"; sourceTree = "<group>"; };
 		A95725191392C0DD0051C048 /* LVModelFormConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfig.h; sourceTree = "<group>"; };
@@ -89,6 +96,9 @@
 		FB150B2E13B98235009BE787 /* LVModelFormOrchestratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormOrchestratorTests.h; sourceTree = "<group>"; };
 		FB150B2F13B98235009BE787 /* LVModelFormOrchestratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormOrchestratorTests.m; sourceTree = "<group>"; };
 		FB150B3513B98672009BE787 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		FB3BB32513C3AF7C00EBF1AB /* Frog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frog.h; sourceTree = "<group>"; };
+		FB3BB32613C3AF7C00EBF1AB /* Frog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frog.m; sourceTree = "<group>"; };
+		FB4105AE13B9889700455B63 /* libLVModelForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLVModelForm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5E02BD139357130016BA3C /* LVModelFormConfigRowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigRowTests.h; sourceTree = "<group>"; };
 		FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigRowTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4105AF13B9889E00455B63 /* libLVModelForm.a in Frameworks */,
 				A957252C1392C0F50051C048 /* UIKit.framework in Frameworks */,
 				A957252D1392C0F50051C048 /* Foundation.framework in Frameworks */,
 				A957252F1392C0F50051C048 /* CoreGraphics.framework in Frameworks */,
@@ -139,6 +150,7 @@
 		A957250C1392C0A60051C048 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB4105AE13B9889700455B63 /* libLVModelForm.a */,
 				A957250D1392C0A60051C048 /* Foundation.framework */,
 				A957252B1392C0F50051C048 /* UIKit.framework */,
 				A957252E1392C0F50051C048 /* CoreGraphics.framework */,
@@ -211,6 +223,7 @@
 		A95725421392C1FA0051C048 /* TestClasses */ = {
 			isa = PBXGroup;
 			children = (
+				FB3BB32413C3AF5200EBF1AB /* ModelExamples */,
 				A95725431392C1FA0051C048 /* ModelForm */,
 			);
 			path = TestClasses;
@@ -257,6 +270,15 @@
 			path = MAObjCRuntime;
 			sourceTree = "<group>";
 		};
+		FB3BB32413C3AF5200EBF1AB /* ModelExamples */ = {
+			isa = PBXGroup;
+			children = (
+				FB3BB32513C3AF7C00EBF1AB /* Frog.h */,
+				FB3BB32613C3AF7C00EBF1AB /* Frog.m */,
+			);
+			path = ModelExamples;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -294,7 +316,7 @@
 			);
 			name = LVModelForm;
 			productName = LVModelForm;
-			productReference = A957250A1392C0A60051C048 /* libLVModelForm.a */;
+			productReference = FB4105AE13B9889700455B63 /* libLVModelForm.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A95725291392C0F50051C048 /* LVModelFormTests */ = {
@@ -396,6 +418,13 @@
 				A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */,
 				FB5E02BF139357130016BA3C /* LVModelFormConfigRowTests.m in Sources */,
 				FB150B3213B98287009BE787 /* LVModelFormOrchestratorTests.m in Sources */,
+				FB3BB31D13C3A27B00EBF1AB /* MARTNSObject.m in Sources */,
+				FB3BB31E13C3A27B00EBF1AB /* RTIvar.m in Sources */,
+				FB3BB31F13C3A27B00EBF1AB /* RTMethod.m in Sources */,
+				FB3BB32013C3A27B00EBF1AB /* RTProperty.m in Sources */,
+				FB3BB32113C3A27B00EBF1AB /* RTProtocol.m in Sources */,
+				FB3BB32213C3A27B00EBF1AB /* RTUnregisteredClass.m in Sources */,
+				FB3BB32713C3AF7C00EBF1AB /* Frog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

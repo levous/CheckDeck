@@ -8,6 +8,7 @@
 
 #import "LVModelFormOrchestratorTests.h"
 #import "LVModelFormOrchestrator.h"
+#import "Frog.h"
 
 @implementation LVModelFormOrchestratorTests
 
@@ -28,7 +29,7 @@
 - (void)testInitWithClass
 {
     
-    LVModelFormOrchestrator *orchestrator = [[LVModelFormOrchestrator alloc] initWithClass:[NSObject class]];
+    LVModelFormOrchestrator *orchestrator = [[LVModelFormOrchestrator alloc] initWithClass:[Frog class]];
     //STAssertNil(orchestrator, @"expected table cell class to be nil immediately after init but got %@", cellClass );
 }
 

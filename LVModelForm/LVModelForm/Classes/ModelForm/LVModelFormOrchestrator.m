@@ -13,8 +13,8 @@
 
 - (id)initWithClass:(Class)targetClass{
     if (self == [super init]) {
-        //NSArray *properties = [NSObject rt_properties];
-        NSArray *methods = [NSString rt_methods];
+        NSArray *properties = [targetClass rt_properties];
+        //NSArray *methods = [targetClass rt_methods];
     }
     return self;
 }
