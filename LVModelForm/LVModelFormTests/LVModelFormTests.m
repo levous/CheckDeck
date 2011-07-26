@@ -30,4 +30,9 @@
     STFail(@"Unit tests are not implemented yet in LVModelFormTests");
 }
 
+- (void)testExample2
+{
+    STAssertEquals(1, 1, @"hui");
+}
+
 @end

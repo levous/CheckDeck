@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LVModelFormConfigSection.h"
+#import "LVModelFormConfigRow.h"
 
 @interface LVModelFormConfig : NSObject {
-    
+
 }
+
+@property(retain, nonatomic) NSMutableArray *configSections;
+
 - (NSString *)getSomething;
 @end

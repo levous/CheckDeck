@@ -10,14 +10,12 @@
 
 
 @implementation LVModelFormConfigSection
-@synthesize configRows;
+@synthesize sectionTitle, sectionHeaderView, configRows;
 
 - (void)dealloc
 {
     [super dealloc];
 }
-
-
 
 //=========================================================== 
 // - (id)init

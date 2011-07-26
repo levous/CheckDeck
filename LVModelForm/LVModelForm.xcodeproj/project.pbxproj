@@ -22,6 +22,7 @@
 		A957253A1392C0F50051C048 /* LVModelFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95725391392C0F50051C048 /* LVModelFormTests.m */; };
 		A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */; };
 		A957254B1392C3950051C048 /* libLVModelForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A957250A1392C0A60051C048 /* libLVModelForm.a */; };
+		A973F7B913DF5A6B00FC814D /* ModelFormTester.m in Sources */ = {isa = PBXBuildFile; fileRef = A973F7B813DF5A6B00FC814D /* ModelFormTester.m */; };
 		FB5E02BF139357130016BA3C /* LVModelFormConfigRowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,9 @@
 		A95725391392C0F50051C048 /* LVModelFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVModelFormTests.m; sourceTree = "<group>"; };
 		A95725441392C1FA0051C048 /* LVModelFormConfigTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigTests.h; sourceTree = "<group>"; };
 		A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigTests.m; sourceTree = "<group>"; };
+		A973F7B713DF5A6B00FC814D /* ModelFormTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelFormTester.h; sourceTree = "<group>"; };
+		A973F7B813DF5A6B00FC814D /* ModelFormTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelFormTester.m; sourceTree = "<group>"; };
+		A9F29CF81395EED300990597 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		FB5E02BD139357130016BA3C /* LVModelFormConfigRowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigRowTests.h; sourceTree = "<group>"; };
 		FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigRowTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,7 @@
 				A95725301392C0F50051C048 /* LVModelFormTests */,
 				A957250C1392C0A60051C048 /* Frameworks */,
 				A957250B1392C0A60051C048 /* Products */,
+				A9F29CF81395EED300990597 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,10 +186,12 @@
 		A95725431392C1FA0051C048 /* ModelForm */ = {
 			isa = PBXGroup;
 			children = (
-				A95725441392C1FA0051C048 /* LVModelFormConfigTests.h */,
-				A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */,
 				FB5E02BD139357130016BA3C /* LVModelFormConfigRowTests.h */,
 				FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */,
+				A95725441392C1FA0051C048 /* LVModelFormConfigTests.h */,
+				A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */,
+				A973F7B713DF5A6B00FC814D /* ModelFormTester.h */,
+				A973F7B813DF5A6B00FC814D /* ModelFormTester.m */,
 			);
 			path = ModelForm;
 			sourceTree = "<group>";
@@ -313,6 +320,7 @@
 				A957253A1392C0F50051C048 /* LVModelFormTests.m in Sources */,
 				A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */,
 				FB5E02BF139357130016BA3C /* LVModelFormConfigRowTests.m in Sources */,
+				A973F7B913DF5A6B00FC814D /* ModelFormTester.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

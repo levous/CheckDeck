@@ -10,7 +10,24 @@
 
 
 @implementation LVModelFormConfig
+@synthesize configSections;
+
+- (void)dealloc{
+    [configSections release], configSections = nil;
+    [super dealloc];
+}
+
+- (id)init{
+    if((self = [super init])){
+        [self setConfigSections:[NSMutableArray array]];
+    }
+    return self;
+}
+
+
 - (NSString *)getSomething{
     return @"something";
 }
+
+
 @end
