@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+/**
+ Corresponds to a section in UITableView
+ */
 @interface LVModelFormConfigSection : NSObject {
     
 }

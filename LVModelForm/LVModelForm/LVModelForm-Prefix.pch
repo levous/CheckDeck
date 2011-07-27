@@ -6,6 +6,7 @@
 #ifdef __OBJC__
     
 #import <Foundation/Foundation.h>
+#import "LVModelFormConstants.h"
 #import "LVModelFormConfig.h"
 #import "LVModelFormConfigSection.h"
 #import "LVModelFormConfigRow.h"

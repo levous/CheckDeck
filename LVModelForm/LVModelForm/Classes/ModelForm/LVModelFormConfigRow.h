@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-
+/**
+ Corresponds to a row (or UITableViewCell) in UITableView 
+ */
 @interface LVModelFormConfigRow : NSObject {
     
 }

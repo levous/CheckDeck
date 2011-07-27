@@ -24,6 +24,20 @@
     return self;
 }
 
+#pragma mark - Section/Row Retrieval
+
+- (LVModelFormConfigSection *)configSectionForSectionIdx:(NSInteger)section{
+    //NSInteger configSectionCount = [[self configSections] count];
+    //LVDASSERT(section < configSectionCount);
+    LVModelFormConfigSection *sectionConfig = [[self configSections] objectAtIndex:section];
+    return sectionConfig;
+}
+
+- (LVModelFormConfigRow *)configRowForIndexPath:(NSIndexPath *)indexPath{
+    LVModelFormConfigSection *configSection = [self configSectionForSectionIdx:[indexPath section]];
+    LVModelFormConfigRow *configRow = [[configSection configRows] objectAtIndex:[indexPath row]];
+    return configRow;
+}
 
 - (NSString *)getSomething{
     return @"something";

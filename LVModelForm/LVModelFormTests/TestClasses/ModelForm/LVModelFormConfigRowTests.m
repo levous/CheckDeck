@@ -29,7 +29,7 @@
 
     LVModelFormConfigRow *row = [[LVModelFormConfigRow alloc] init];
     Class cellClass = [row tableCellClass];
-    STAssertNil(cellClass, @"expected table cell class to be nil immediately after init but got %@", cellClass );
+    STAssertTrue((cellClass == [UITableViewCell class]), @"expected table cell class to be UITabelViewCell immediately after init but got %@", cellClass );
 }
 
 @end

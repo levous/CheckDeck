@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A957250E1392C0A60051C048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957250D1392C0A60051C048 /* Foundation.framework */; };
-		A957251F1392C0DD0051C048 /* LVModelFormConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A95725191392C0DD0051C048 /* LVModelFormConfig.h */; };
+		A957251F1392C0DD0051C048 /* LVModelFormConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A95725191392C0DD0051C048 /* LVModelFormConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A95725201392C0DD0051C048 /* LVModelFormConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A957251A1392C0DD0051C048 /* LVModelFormConfig.m */; };
-		A95725211392C0DD0051C048 /* LVModelFormConfigRow.h in Headers */ = {isa = PBXBuildFile; fileRef = A957251B1392C0DD0051C048 /* LVModelFormConfigRow.h */; };
+		A95725211392C0DD0051C048 /* LVModelFormConfigRow.h in Headers */ = {isa = PBXBuildFile; fileRef = A957251B1392C0DD0051C048 /* LVModelFormConfigRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A95725221392C0DD0051C048 /* LVModelFormConfigRow.m in Sources */ = {isa = PBXBuildFile; fileRef = A957251C1392C0DD0051C048 /* LVModelFormConfigRow.m */; };
-		A95725231392C0DD0051C048 /* LVModelFormConfigSection.h in Headers */ = {isa = PBXBuildFile; fileRef = A957251D1392C0DD0051C048 /* LVModelFormConfigSection.h */; };
+		A95725231392C0DD0051C048 /* LVModelFormConfigSection.h in Headers */ = {isa = PBXBuildFile; fileRef = A957251D1392C0DD0051C048 /* LVModelFormConfigSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A95725241392C0DD0051C048 /* LVModelFormConfigSection.m in Sources */ = {isa = PBXBuildFile; fileRef = A957251E1392C0DD0051C048 /* LVModelFormConfigSection.m */; };
 		A957252C1392C0F50051C048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957252B1392C0F50051C048 /* UIKit.framework */; };
 		A957252D1392C0F50051C048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957250D1392C0A60051C048 /* Foundation.framework */; };
@@ -21,8 +21,14 @@
 		A95725381392C0F50051C048 /* LVModelFormTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A95725371392C0F50051C048 /* LVModelFormTests.h */; };
 		A957253A1392C0F50051C048 /* LVModelFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95725391392C0F50051C048 /* LVModelFormTests.m */; };
 		A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95725451392C1FA0051C048 /* LVModelFormConfigTests.m */; };
-		A957254B1392C3950051C048 /* libLVModelForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A957250A1392C0A60051C048 /* libLVModelForm.a */; };
 		A973F7B913DF5A6B00FC814D /* ModelFormTester.m in Sources */ = {isa = PBXBuildFile; fileRef = A973F7B813DF5A6B00FC814D /* ModelFormTester.m */; };
+		A9F8176C13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F8176A13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9F8176D13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F8176B13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.m */; };
+		A9F817C413DF685E0060BFB2 /* TargetConditionals.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F817C313DF685E0060BFB2 /* TargetConditionals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9F817C613DF68B30060BFB2 /* LVModelFormConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F817C513DF68B30060BFB2 /* LVModelFormConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9F817C913DFABAF0060BFB2 /* LVTableViewCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F817C713DFABAE0060BFB2 /* LVTableViewCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9F817CA13DFABAF0060BFB2 /* LVTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F817C813DFABAE0060BFB2 /* LVTableViewCellController.m */; };
+		A9F817CE13DFB0CF0060BFB2 /* LVTableViewCellControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F817CD13DFB0CF0060BFB2 /* LVTableViewCellControllerTests.m */; };
 		FB5E02BF139357130016BA3C /* LVModelFormConfigRowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A957250A1392C0A60051C048 /* libLVModelForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLVModelForm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A957250A1392C0A60051C048 /* libLVModelForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLVModelForm.a; path = "/Volumes/MacintoshHD/Users/rustyzarse/dev/xcode projects/CheckDeck/LVModelForm/build/Release-iphoneos/libLVModelForm.a"; sourceTree = "<absolute>"; };
 		A957250D1392C0A60051C048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A95725111392C0A60051C048 /* LVModelForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LVModelForm-Prefix.pch"; sourceTree = "<group>"; };
 		A95725191392C0DD0051C048 /* LVModelFormConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfig.h; sourceTree = "<group>"; };
@@ -59,6 +65,14 @@
 		A973F7B713DF5A6B00FC814D /* ModelFormTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelFormTester.h; sourceTree = "<group>"; };
 		A973F7B813DF5A6B00FC814D /* ModelFormTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelFormTester.m; sourceTree = "<group>"; };
 		A9F29CF81395EED300990597 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		A9F8176A13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormTableViewDataSource.h; sourceTree = "<group>"; };
+		A9F8176B13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormTableViewDataSource.m; sourceTree = "<group>"; };
+		A9F817C313DF685E0060BFB2 /* TargetConditionals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TargetConditionals.h; path = Debugging/TargetConditionals.h; sourceTree = "<group>"; };
+		A9F817C513DF68B30060BFB2 /* LVModelFormConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConstants.h; sourceTree = "<group>"; };
+		A9F817C713DFABAE0060BFB2 /* LVTableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTableViewCellController.h; sourceTree = "<group>"; };
+		A9F817C813DFABAE0060BFB2 /* LVTableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTableViewCellController.m; sourceTree = "<group>"; };
+		A9F817CC13DFB0CF0060BFB2 /* LVTableViewCellControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTableViewCellControllerTests.h; sourceTree = "<group>"; };
+		A9F817CD13DFB0CF0060BFB2 /* LVTableViewCellControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTableViewCellControllerTests.m; sourceTree = "<group>"; };
 		FB5E02BD139357130016BA3C /* LVModelFormConfigRowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVModelFormConfigRowTests.h; sourceTree = "<group>"; };
 		FB5E02BE139357130016BA3C /* LVModelFormConfigRowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVModelFormConfigRowTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A957254B1392C3950051C048 /* libLVModelForm.a in Frameworks */,
 				A957252C1392C0F50051C048 /* UIKit.framework in Frameworks */,
 				A957252D1392C0F50051C048 /* Foundation.framework in Frameworks */,
 				A957252F1392C0F50051C048 /* CoreGraphics.framework in Frameworks */,
@@ -89,7 +102,6 @@
 		A95724FF1392C0A60051C048 = {
 			isa = PBXGroup;
 			children = (
-				A957250A1392C0A60051C048 /* libLVModelForm.a */,
 				A957250F1392C0A60051C048 /* LVModelForm */,
 				A95725301392C0F50051C048 /* LVModelFormTests */,
 				A957250C1392C0A60051C048 /* Frameworks */,
@@ -129,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				A95725111392C0A60051C048 /* LVModelForm-Prefix.pch */,
+				A9F817C313DF685E0060BFB2 /* TargetConditionals.h */,
+				A9F817C513DF68B30060BFB2 /* LVModelFormConstants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -136,6 +150,7 @@
 		A95725171392C0DD0051C048 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A9F8176813DF646B0060BFB2 /* UITableView */,
 				A95725181392C0DD0051C048 /* ModelForm */,
 			);
 			path = Classes;
@@ -178,6 +193,7 @@
 		A95725421392C1FA0051C048 /* TestClasses */ = {
 			isa = PBXGroup;
 			children = (
+				A9F817CB13DFB0B00060BFB2 /* UITableView */,
 				A95725431392C1FA0051C048 /* ModelForm */,
 			);
 			path = TestClasses;
@@ -196,6 +212,26 @@
 			path = ModelForm;
 			sourceTree = "<group>";
 		};
+		A9F8176813DF646B0060BFB2 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				A9F8176A13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.h */,
+				A9F8176B13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.m */,
+				A9F817C713DFABAE0060BFB2 /* LVTableViewCellController.h */,
+				A9F817C813DFABAE0060BFB2 /* LVTableViewCellController.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		A9F817CB13DFB0B00060BFB2 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				A9F817CC13DFB0CF0060BFB2 /* LVTableViewCellControllerTests.h */,
+				A9F817CD13DFB0CF0060BFB2 /* LVTableViewCellControllerTests.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -206,6 +242,10 @@
 				A957251F1392C0DD0051C048 /* LVModelFormConfig.h in Headers */,
 				A95725211392C0DD0051C048 /* LVModelFormConfigRow.h in Headers */,
 				A95725231392C0DD0051C048 /* LVModelFormConfigSection.h in Headers */,
+				A9F8176C13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.h in Headers */,
+				A9F817C413DF685E0060BFB2 /* TargetConditionals.h in Headers */,
+				A9F817C613DF68B30060BFB2 /* LVModelFormConstants.h in Headers */,
+				A9F817C913DFABAF0060BFB2 /* LVTableViewCellController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +350,8 @@
 				A95725201392C0DD0051C048 /* LVModelFormConfig.m in Sources */,
 				A95725221392C0DD0051C048 /* LVModelFormConfigRow.m in Sources */,
 				A95725241392C0DD0051C048 /* LVModelFormConfigSection.m in Sources */,
+				A9F8176D13DF64CE0060BFB2 /* LVModelFormTableViewDataSource.m in Sources */,
+				A9F817CA13DFABAF0060BFB2 /* LVTableViewCellController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +363,7 @@
 				A95725481392C2780051C048 /* LVModelFormConfigTests.m in Sources */,
 				FB5E02BF139357130016BA3C /* LVModelFormConfigRowTests.m in Sources */,
 				A973F7B913DF5A6B00FC814D /* ModelFormTester.m in Sources */,
+				A9F817CE13DFB0CF0060BFB2 /* LVTableViewCellControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +456,7 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
+					"-lLVModelForm",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -433,6 +477,7 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
+					"-lLVModelForm",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;

@@ -12,13 +12,6 @@
 
 @implementation LVModelFormConfigTests
 
-- (void)testGetSomething {
-    LVModelFormConfig *mfc = [[LVModelFormConfig alloc] init];
-    NSString *resultString = [mfc getSomething];
-    STAssertNotNil(resultString, @"Expected to get \"something\"" );
-    STAssertEquals(resultString, @"something", @"Expected to get \"something\"");
-    
-}
 
 - (void)testEmptyConfig{
     LVModelFormConfig *mfc = [[LVModelFormConfig alloc] init];
