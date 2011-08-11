@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LVModelFormConfig.h"
 
 @interface LVModelFormOrchestrator : NSObject {
     
 }
 - (id)initWithClass:(Class)targetClass;
-
+@property(retain, nonatomic) LVModelFormConfig *modelFormConfig;
 @end

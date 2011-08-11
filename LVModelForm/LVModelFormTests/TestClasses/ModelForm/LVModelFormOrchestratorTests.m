@@ -30,7 +30,27 @@
 {
     
     LVModelFormOrchestrator *orchestrator = [[LVModelFormOrchestrator alloc] initWithClass:[Frog class]];
-    //STAssertNil(orchestrator, @"expected table cell class to be nil immediately after init but got %@", cellClass );
+    
+    LVModelFormConfig *config = [orchestrator modelFormConfig];
+    STAssertEquals((NSUInteger)1, [[config configSections] count], @"Should have had one section");
+    
+    LVModelFormConfigSection *section = [[config configSections] objectAtIndex:0];
+    STAssertEquals((NSUInteger)4, [[section configRows] count], @"Should have had 4 rows");
+    
+    NSArray *nameArray = [NSArray arrayWithObjects:@"color", @"species", @"croakSound", @"mostRecentMeal", nil];
+    // verify that each prop has a config row
+    for (int nameIdx = 0; nameIdx < [nameArray count]; ++nameIdx) {
+        NSString *name = [nameArray objectAtIndex:nameIdx];
+        BOOL matched = NO;
+        for (LVModelFormConfigRow *row in [section configRows]) {
+            if ([name compare:[row labelText]] == NSOrderedSame) {
+                matched = YES;
+                NSLog(@"Matched %@", name);
+                break;
+            }
+        }  
+        STAssertTrue(matched, @"Should have matched a row on prom name %@", name);
+    }
 }
 
 @end
