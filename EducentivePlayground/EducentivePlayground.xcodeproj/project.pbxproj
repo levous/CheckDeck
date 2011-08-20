@@ -44,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A99F706613F330D90063455C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBAC20BA131947C9003F321D /* LevousCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9DC653A13666FE100DA53E5;
+			remoteInfo = LevousCoreTests;
+		};
 		FBAC20C1131947C9003F321D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FBAC20BA131947C9003F321D /* LevousCore.xcodeproj */;
@@ -290,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				FBAC20C2131947C9003F321D /* libLevousCore.a */,
+				A99F706713F330D90063455C /* LevousCoreTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -423,6 +431,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		A99F706713F330D90063455C /* LevousCoreTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = LevousCoreTests.app;
+			remoteRef = A99F706613F330D90063455C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		FBAC20C2131947C9003F321D /* libLevousCore.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;

@@ -2,16 +2,12 @@
 //  EducentivesTests.h
 //  EducentivesTests
 //
-//  Created by Rusty Zarse on 4/8/11.
+//  Created by Rusty Zarse on 8/20/11.
 //  Copyright 2011 LeVous, LLC. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
 
-
-@interface EducentivesTests : SenTestCase {
-@private
-    
-}
+@interface EducentivesTests : SenTestCase
 
 @end

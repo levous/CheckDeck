@@ -7,172 +7,257 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB1A0C69134F97BB00D77B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C68134F97BB00D77B8C /* UIKit.framework */; };
-		FB1A0C6B134F97BB00D77B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C6A134F97BB00D77B8C /* Foundation.framework */; };
-		FB1A0C6D134F97BB00D77B8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C6C134F97BB00D77B8C /* CoreGraphics.framework */; };
-		FB1A0C73134F97BB00D77B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C71134F97BB00D77B8C /* InfoPlist.strings */; };
-		FB1A0C76134F97BB00D77B8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C75134F97BB00D77B8C /* main.m */; };
-		FB1A0C79134F97BB00D77B8C /* EducentivesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C78134F97BB00D77B8C /* EducentivesAppDelegate.m */; };
-		FB1A0C7C134F97BB00D77B8C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C7A134F97BB00D77B8C /* MainWindow.xib */; };
-		FB1A0C7F134F97BB00D77B8C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C7E134F97BB00D77B8C /* FirstViewController.m */; };
-		FB1A0C82134F97BB00D77B8C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C81134F97BB00D77B8C /* SecondViewController.m */; };
-		FB1A0C85134F97BB00D77B8C /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C83134F97BB00D77B8C /* FirstView.xib */; };
-		FB1A0C88134F97BB00D77B8C /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C86134F97BB00D77B8C /* SecondView.xib */; };
-		FB1A0C8F134F97BB00D77B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C68134F97BB00D77B8C /* UIKit.framework */; };
-		FB1A0C90134F97BB00D77B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C6A134F97BB00D77B8C /* Foundation.framework */; };
-		FB1A0C91134F97BB00D77B8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1A0C6C134F97BB00D77B8C /* CoreGraphics.framework */; };
-		FB1A0C99134F97BB00D77B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C97134F97BB00D77B8C /* InfoPlist.strings */; };
-		FB1A0C9C134F97BB00D77B8C /* EducentivesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FB1A0C9B134F97BB00D77B8C /* EducentivesTests.h */; };
-		FB1A0C9E134F97BB00D77B8C /* EducentivesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A0C9D134F97BB00D77B8C /* EducentivesTests.m */; };
+		A962AEDD140067E8007DA495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A962AEDC140067E8007DA495 /* UIKit.framework */; };
+		A962AEDF140067E8007DA495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A962AEDE140067E8007DA495 /* Foundation.framework */; };
+		A962AEE1140067E8007DA495 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A962AEE0140067E8007DA495 /* CoreGraphics.framework */; };
+		A962AEE7140067E8007DA495 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A962AEE5140067E8007DA495 /* InfoPlist.strings */; };
+		A962AEE9140067E8007DA495 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AEE8140067E8007DA495 /* main.m */; };
+		A962AEED140067E8007DA495 /* EducentivesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AEEC140067E8007DA495 /* EducentivesAppDelegate.m */; };
+		A962AEF1140067E8007DA495 /* EducentivesAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AEF0140067E8007DA495 /* EducentivesAppDelegate_iPhone.m */; };
+		A962AEF4140067E8007DA495 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A962AEF2140067E8007DA495 /* MainWindow_iPhone.xib */; };
+		A962AEF8140067E8007DA495 /* EducentivesAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AEF7140067E8007DA495 /* EducentivesAppDelegate_iPad.m */; };
+		A962AEFB140067E9007DA495 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A962AEF9140067E9007DA495 /* MainWindow_iPad.xib */; };
+		A962AF03140067E9007DA495 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A962AF02140067E9007DA495 /* SenTestingKit.framework */; };
+		A962AF04140067E9007DA495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A962AEDC140067E8007DA495 /* UIKit.framework */; };
+		A962AF05140067E9007DA495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A962AEDE140067E8007DA495 /* Foundation.framework */; };
+		A962AF06140067E9007DA495 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A962AEE0140067E8007DA495 /* CoreGraphics.framework */; };
+		A962AF0E140067E9007DA495 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A962AF0C140067E9007DA495 /* InfoPlist.strings */; };
+		A962AF10140067E9007DA495 /* EducentivesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A962AF0F140067E9007DA495 /* EducentivesTests.h */; };
+		A962AF12140067E9007DA495 /* EducentivesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF11140067E9007DA495 /* EducentivesTests.m */; };
+		A962AF1F1400684D007DA495 /* Educentives.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A962AF1D1400684D007DA495 /* Educentives.xcdatamodeld */; };
+		A962AF201400684D007DA495 /* Educentives.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A962AF1D1400684D007DA495 /* Educentives.xcdatamodeld */; };
+		A962AF2314006DD6007DA495 /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2214006DD6007DA495 /* Patron.m */; };
+		A962AF2414006DD6007DA495 /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2214006DD6007DA495 /* Patron.m */; };
+		A962AF2714006DD7007DA495 /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2614006DD7007DA495 /* Goal.m */; };
+		A962AF2814006DD7007DA495 /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2614006DD7007DA495 /* Goal.m */; };
+		A962AF2B14006DD7007DA495 /* Milestone.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2A14006DD7007DA495 /* Milestone.m */; };
+		A962AF2C14006DD7007DA495 /* Milestone.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2A14006DD7007DA495 /* Milestone.m */; };
+		A962AF2F14006DD7007DA495 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2E14006DD7007DA495 /* Teacher.m */; };
+		A962AF3014006DD7007DA495 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2E14006DD7007DA495 /* Teacher.m */; };
+		A962AF3314006DD7007DA495 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3214006DD7007DA495 /* Student.m */; };
+		A962AF3414006DD7007DA495 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3214006DD7007DA495 /* Student.m */; };
+		A962AF3714006DD7007DA495 /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3614006DD7007DA495 /* StudentGroup.m */; };
+		A962AF3814006DD7007DA495 /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3614006DD7007DA495 /* StudentGroup.m */; };
+		A962AF3B14006DD7007DA495 /* AchievementPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3A14006DD7007DA495 /* AchievementPlan.m */; };
+		A962AF3C14006DD7007DA495 /* AchievementPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3A14006DD7007DA495 /* AchievementPlan.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FB1A0C92134F97BB00D77B8C /* PBXContainerItemProxy */ = {
+		A962AF07140067E9007DA495 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FB1A0C5B134F97BB00D77B8C /* Project object */;
+			containerPortal = A962AECF140067E8007DA495 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FB1A0C63134F97BB00D77B8C;
+			remoteGlobalIDString = A962AED7140067E8007DA495;
 			remoteInfo = Educentives;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB1A0C64134F97BB00D77B8C /* Educentives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Educentives.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB1A0C68134F97BB00D77B8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FB1A0C6A134F97BB00D77B8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FB1A0C6C134F97BB00D77B8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FB1A0C70134F97BB00D77B8C /* Educentives-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Educentives-Info.plist"; sourceTree = "<group>"; };
-		FB1A0C72134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FB1A0C74134F97BB00D77B8C /* Educentives-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Educentives-Prefix.pch"; sourceTree = "<group>"; };
-		FB1A0C75134F97BB00D77B8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FB1A0C77134F97BB00D77B8C /* EducentivesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducentivesAppDelegate.h; sourceTree = "<group>"; };
-		FB1A0C78134F97BB00D77B8C /* EducentivesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducentivesAppDelegate.m; sourceTree = "<group>"; };
-		FB1A0C7B134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		FB1A0C7D134F97BB00D77B8C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FB1A0C7E134F97BB00D77B8C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FB1A0C80134F97BB00D77B8C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FB1A0C81134F97BB00D77B8C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		FB1A0C84134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
-		FB1A0C87134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
-		FB1A0C8E134F97BB00D77B8C /* EducentivesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EducentivesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB1A0C96134F97BB00D77B8C /* EducentivesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EducentivesTests-Info.plist"; sourceTree = "<group>"; };
-		FB1A0C98134F97BB00D77B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FB1A0C9A134F97BB00D77B8C /* EducentivesTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EducentivesTests-Prefix.pch"; sourceTree = "<group>"; };
-		FB1A0C9B134F97BB00D77B8C /* EducentivesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducentivesTests.h; sourceTree = "<group>"; };
-		FB1A0C9D134F97BB00D77B8C /* EducentivesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducentivesTests.m; sourceTree = "<group>"; };
+		A962AED8140067E8007DA495 /* Educentives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Educentives.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A962AEDC140067E8007DA495 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A962AEDE140067E8007DA495 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A962AEE0140067E8007DA495 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A962AEE4140067E8007DA495 /* Educentives-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Educentives-Info.plist"; sourceTree = "<group>"; };
+		A962AEE6140067E8007DA495 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A962AEE8140067E8007DA495 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A962AEEA140067E8007DA495 /* Educentives-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Educentives-Prefix.pch"; sourceTree = "<group>"; };
+		A962AEEB140067E8007DA495 /* EducentivesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducentivesAppDelegate.h; sourceTree = "<group>"; };
+		A962AEEC140067E8007DA495 /* EducentivesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducentivesAppDelegate.m; sourceTree = "<group>"; };
+		A962AEEF140067E8007DA495 /* EducentivesAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EducentivesAppDelegate_iPhone.h; path = iPhone/EducentivesAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		A962AEF0140067E8007DA495 /* EducentivesAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EducentivesAppDelegate_iPhone.m; path = iPhone/EducentivesAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		A962AEF3140067E8007DA495 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		A962AEF6140067E8007DA495 /* EducentivesAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EducentivesAppDelegate_iPad.h; path = iPad/EducentivesAppDelegate_iPad.h; sourceTree = "<group>"; };
+		A962AEF7140067E8007DA495 /* EducentivesAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EducentivesAppDelegate_iPad.m; path = iPad/EducentivesAppDelegate_iPad.m; sourceTree = "<group>"; };
+		A962AEFA140067E9007DA495 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		A962AF01140067E9007DA495 /* EducentivesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EducentivesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A962AF02140067E9007DA495 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A962AF0B140067E9007DA495 /* EducentivesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EducentivesTests-Info.plist"; sourceTree = "<group>"; };
+		A962AF0D140067E9007DA495 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A962AF0F140067E9007DA495 /* EducentivesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducentivesTests.h; sourceTree = "<group>"; };
+		A962AF11140067E9007DA495 /* EducentivesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducentivesTests.m; sourceTree = "<group>"; };
+		A962AF1E1400684D007DA495 /* Educentives.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Educentives.xcdatamodel; sourceTree = "<group>"; };
+		A962AF2114006DD6007DA495 /* Patron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patron.h; sourceTree = "<group>"; };
+		A962AF2214006DD6007DA495 /* Patron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patron.m; sourceTree = "<group>"; };
+		A962AF2514006DD7007DA495 /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
+		A962AF2614006DD7007DA495 /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
+		A962AF2914006DD7007DA495 /* Milestone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milestone.h; sourceTree = "<group>"; };
+		A962AF2A14006DD7007DA495 /* Milestone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milestone.m; sourceTree = "<group>"; };
+		A962AF2D14006DD7007DA495 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		A962AF2E14006DD7007DA495 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		A962AF3114006DD7007DA495 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		A962AF3214006DD7007DA495 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		A962AF3514006DD7007DA495 /* StudentGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentGroup.h; sourceTree = "<group>"; };
+		A962AF3614006DD7007DA495 /* StudentGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentGroup.m; sourceTree = "<group>"; };
+		A962AF3914006DD7007DA495 /* AchievementPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementPlan.h; sourceTree = "<group>"; };
+		A962AF3A14006DD7007DA495 /* AchievementPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementPlan.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FB1A0C61134F97BB00D77B8C /* Frameworks */ = {
+		A962AED5140067E8007DA495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1A0C69134F97BB00D77B8C /* UIKit.framework in Frameworks */,
-				FB1A0C6B134F97BB00D77B8C /* Foundation.framework in Frameworks */,
-				FB1A0C6D134F97BB00D77B8C /* CoreGraphics.framework in Frameworks */,
+				A962AEDD140067E8007DA495 /* UIKit.framework in Frameworks */,
+				A962AEDF140067E8007DA495 /* Foundation.framework in Frameworks */,
+				A962AEE1140067E8007DA495 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB1A0C8A134F97BB00D77B8C /* Frameworks */ = {
+		A962AEFD140067E9007DA495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1A0C8F134F97BB00D77B8C /* UIKit.framework in Frameworks */,
-				FB1A0C90134F97BB00D77B8C /* Foundation.framework in Frameworks */,
-				FB1A0C91134F97BB00D77B8C /* CoreGraphics.framework in Frameworks */,
+				A962AF03140067E9007DA495 /* SenTestingKit.framework in Frameworks */,
+				A962AF04140067E9007DA495 /* UIKit.framework in Frameworks */,
+				A962AF05140067E9007DA495 /* Foundation.framework in Frameworks */,
+				A962AF06140067E9007DA495 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FB1A0C59134F97BB00D77B8C = {
+		A962AECD140067E8007DA495 = {
 			isa = PBXGroup;
 			children = (
-				FB1A0C6E134F97BB00D77B8C /* Educentives */,
-				FB1A0C94134F97BB00D77B8C /* EducentivesTests */,
-				FB1A0C67134F97BB00D77B8C /* Frameworks */,
-				FB1A0C65134F97BB00D77B8C /* Products */,
+				A962AEE2140067E8007DA495 /* Educentives */,
+				A962AF09140067E9007DA495 /* EducentivesTests */,
+				A962AEDB140067E8007DA495 /* Frameworks */,
+				A962AED9140067E8007DA495 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FB1A0C65134F97BB00D77B8C /* Products */ = {
+		A962AED9140067E8007DA495 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB1A0C64134F97BB00D77B8C /* Educentives.app */,
-				FB1A0C8E134F97BB00D77B8C /* EducentivesTests.octest */,
+				A962AED8140067E8007DA495 /* Educentives.app */,
+				A962AF01140067E9007DA495 /* EducentivesTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FB1A0C67134F97BB00D77B8C /* Frameworks */ = {
+		A962AEDB140067E8007DA495 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB1A0C68134F97BB00D77B8C /* UIKit.framework */,
-				FB1A0C6A134F97BB00D77B8C /* Foundation.framework */,
-				FB1A0C6C134F97BB00D77B8C /* CoreGraphics.framework */,
+				A962AEDC140067E8007DA495 /* UIKit.framework */,
+				A962AEDE140067E8007DA495 /* Foundation.framework */,
+				A962AEE0140067E8007DA495 /* CoreGraphics.framework */,
+				A962AF02140067E9007DA495 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB1A0C6E134F97BB00D77B8C /* Educentives */ = {
+		A962AEE2140067E8007DA495 /* Educentives */ = {
 			isa = PBXGroup;
 			children = (
-				FB1A0C77134F97BB00D77B8C /* EducentivesAppDelegate.h */,
-				FB1A0C78134F97BB00D77B8C /* EducentivesAppDelegate.m */,
-				FB1A0C7A134F97BB00D77B8C /* MainWindow.xib */,
-				FB1A0C7D134F97BB00D77B8C /* FirstViewController.h */,
-				FB1A0C7E134F97BB00D77B8C /* FirstViewController.m */,
-				FB1A0C80134F97BB00D77B8C /* SecondViewController.h */,
-				FB1A0C81134F97BB00D77B8C /* SecondViewController.m */,
-				FB1A0C83134F97BB00D77B8C /* FirstView.xib */,
-				FB1A0C86134F97BB00D77B8C /* SecondView.xib */,
-				FB1A0C6F134F97BB00D77B8C /* Supporting Files */,
+				A962AF1B14006804007DA495 /* Classes */,
+				A962AEEB140067E8007DA495 /* EducentivesAppDelegate.h */,
+				A962AEEC140067E8007DA495 /* EducentivesAppDelegate.m */,
+				A962AEEE140067E8007DA495 /* iPhone */,
+				A962AEF5140067E8007DA495 /* iPad */,
+				A962AEE3140067E8007DA495 /* Supporting Files */,
 			);
 			path = Educentives;
 			sourceTree = "<group>";
 		};
-		FB1A0C6F134F97BB00D77B8C /* Supporting Files */ = {
+		A962AEE3140067E8007DA495 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FB1A0C70134F97BB00D77B8C /* Educentives-Info.plist */,
-				FB1A0C71134F97BB00D77B8C /* InfoPlist.strings */,
-				FB1A0C74134F97BB00D77B8C /* Educentives-Prefix.pch */,
-				FB1A0C75134F97BB00D77B8C /* main.m */,
+				A962AEE4140067E8007DA495 /* Educentives-Info.plist */,
+				A962AEE5140067E8007DA495 /* InfoPlist.strings */,
+				A962AEE8140067E8007DA495 /* main.m */,
+				A962AEEA140067E8007DA495 /* Educentives-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FB1A0C94134F97BB00D77B8C /* EducentivesTests */ = {
+		A962AEEE140067E8007DA495 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				FB1A0C9B134F97BB00D77B8C /* EducentivesTests.h */,
-				FB1A0C9D134F97BB00D77B8C /* EducentivesTests.m */,
-				FB1A0C95134F97BB00D77B8C /* Supporting Files */,
+				A962AEEF140067E8007DA495 /* EducentivesAppDelegate_iPhone.h */,
+				A962AEF0140067E8007DA495 /* EducentivesAppDelegate_iPhone.m */,
+				A962AEF2140067E8007DA495 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		A962AEF5140067E8007DA495 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A962AEF6140067E8007DA495 /* EducentivesAppDelegate_iPad.h */,
+				A962AEF7140067E8007DA495 /* EducentivesAppDelegate_iPad.m */,
+				A962AEF9140067E9007DA495 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		A962AF09140067E9007DA495 /* EducentivesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A962AF0F140067E9007DA495 /* EducentivesTests.h */,
+				A962AF11140067E9007DA495 /* EducentivesTests.m */,
+				A962AF0A140067E9007DA495 /* Supporting Files */,
 			);
 			path = EducentivesTests;
 			sourceTree = "<group>";
 		};
-		FB1A0C95134F97BB00D77B8C /* Supporting Files */ = {
+		A962AF0A140067E9007DA495 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FB1A0C96134F97BB00D77B8C /* EducentivesTests-Info.plist */,
-				FB1A0C97134F97BB00D77B8C /* InfoPlist.strings */,
-				FB1A0C9A134F97BB00D77B8C /* EducentivesTests-Prefix.pch */,
+				A962AF0B140067E9007DA495 /* EducentivesTests-Info.plist */,
+				A962AF0C140067E9007DA495 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A962AF1B14006804007DA495 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A962AF3D14006DE2007DA495 /* ViewControllers */,
+				A962AF1C14006819007DA495 /* Model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A962AF1C14006819007DA495 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A962AF1D1400684D007DA495 /* Educentives.xcdatamodeld */,
+				A962AF3914006DD7007DA495 /* AchievementPlan.h */,
+				A962AF3A14006DD7007DA495 /* AchievementPlan.m */,
+				A962AF3514006DD7007DA495 /* StudentGroup.h */,
+				A962AF3614006DD7007DA495 /* StudentGroup.m */,
+				A962AF3114006DD7007DA495 /* Student.h */,
+				A962AF3214006DD7007DA495 /* Student.m */,
+				A962AF2D14006DD7007DA495 /* Teacher.h */,
+				A962AF2E14006DD7007DA495 /* Teacher.m */,
+				A962AF2914006DD7007DA495 /* Milestone.h */,
+				A962AF2A14006DD7007DA495 /* Milestone.m */,
+				A962AF2514006DD7007DA495 /* Goal.h */,
+				A962AF2614006DD7007DA495 /* Goal.m */,
+				A962AF2114006DD6007DA495 /* Patron.h */,
+				A962AF2214006DD6007DA495 /* Patron.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A962AF3D14006DE2007DA495 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB1A0C63134F97BB00D77B8C /* Educentives */ = {
+		A962AED7140067E8007DA495 /* Educentives */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB1A0CA1134F97BB00D77B8C /* Build configuration list for PBXNativeTarget "Educentives" */;
+			buildConfigurationList = A962AF15140067E9007DA495 /* Build configuration list for PBXNativeTarget "Educentives" */;
 			buildPhases = (
-				FB1A0C60134F97BB00D77B8C /* Sources */,
-				FB1A0C61134F97BB00D77B8C /* Frameworks */,
-				FB1A0C62134F97BB00D77B8C /* Resources */,
+				A962AED4140067E8007DA495 /* Sources */,
+				A962AED5140067E8007DA495 /* Frameworks */,
+				A962AED6140067E8007DA495 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -180,79 +265,78 @@
 			);
 			name = Educentives;
 			productName = Educentives;
-			productReference = FB1A0C64134F97BB00D77B8C /* Educentives.app */;
+			productReference = A962AED8140067E8007DA495 /* Educentives.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FB1A0C8D134F97BB00D77B8C /* EducentivesTests */ = {
+		A962AF00140067E9007DA495 /* EducentivesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB1A0CA4134F97BB00D77B8C /* Build configuration list for PBXNativeTarget "EducentivesTests" */;
+			buildConfigurationList = A962AF18140067E9007DA495 /* Build configuration list for PBXNativeTarget "EducentivesTests" */;
 			buildPhases = (
-				FB1A0C89134F97BB00D77B8C /* Sources */,
-				FB1A0C8A134F97BB00D77B8C /* Frameworks */,
-				FB1A0C8B134F97BB00D77B8C /* Resources */,
-				FB1A0C8C134F97BB00D77B8C /* ShellScript */,
+				A962AEFC140067E9007DA495 /* Sources */,
+				A962AEFD140067E9007DA495 /* Frameworks */,
+				A962AEFE140067E9007DA495 /* Resources */,
+				A962AEFF140067E9007DA495 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FB1A0C93134F97BB00D77B8C /* PBXTargetDependency */,
+				A962AF08140067E9007DA495 /* PBXTargetDependency */,
 			);
 			name = EducentivesTests;
 			productName = EducentivesTests;
-			productReference = FB1A0C8E134F97BB00D77B8C /* EducentivesTests.octest */;
+			productReference = A962AF01140067E9007DA495 /* EducentivesTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FB1A0C5B134F97BB00D77B8C /* Project object */ = {
+		A962AECF140067E8007DA495 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "LeVous, LLC";
 			};
-			buildConfigurationList = FB1A0C5E134F97BB00D77B8C /* Build configuration list for PBXProject "Educentives" */;
+			buildConfigurationList = A962AED2140067E8007DA495 /* Build configuration list for PBXProject "Educentives" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FB1A0C59134F97BB00D77B8C;
-			productRefGroup = FB1A0C65134F97BB00D77B8C /* Products */;
+			mainGroup = A962AECD140067E8007DA495;
+			productRefGroup = A962AED9140067E8007DA495 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB1A0C63134F97BB00D77B8C /* Educentives */,
-				FB1A0C8D134F97BB00D77B8C /* EducentivesTests */,
+				A962AED7140067E8007DA495 /* Educentives */,
+				A962AF00140067E9007DA495 /* EducentivesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FB1A0C62134F97BB00D77B8C /* Resources */ = {
+		A962AED6140067E8007DA495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1A0C73134F97BB00D77B8C /* InfoPlist.strings in Resources */,
-				FB1A0C7C134F97BB00D77B8C /* MainWindow.xib in Resources */,
-				FB1A0C85134F97BB00D77B8C /* FirstView.xib in Resources */,
-				FB1A0C88134F97BB00D77B8C /* SecondView.xib in Resources */,
+				A962AEE7140067E8007DA495 /* InfoPlist.strings in Resources */,
+				A962AEF4140067E8007DA495 /* MainWindow_iPhone.xib in Resources */,
+				A962AEFB140067E9007DA495 /* MainWindow_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB1A0C8B134F97BB00D77B8C /* Resources */ = {
+		A962AEFE140067E9007DA495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1A0C99134F97BB00D77B8C /* InfoPlist.strings in Resources */,
-				FB1A0C9C134F97BB00D77B8C /* EducentivesTests.h in Resources */,
+				A962AF0E140067E9007DA495 /* InfoPlist.strings in Resources */,
+				A962AF10140067E9007DA495 /* EducentivesTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FB1A0C8C134F97BB00D77B8C /* ShellScript */ = {
+		A962AEFF140067E9007DA495 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,72 +352,80 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FB1A0C60134F97BB00D77B8C /* Sources */ = {
+		A962AED4140067E8007DA495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1A0C76134F97BB00D77B8C /* main.m in Sources */,
-				FB1A0C79134F97BB00D77B8C /* EducentivesAppDelegate.m in Sources */,
-				FB1A0C7F134F97BB00D77B8C /* FirstViewController.m in Sources */,
-				FB1A0C82134F97BB00D77B8C /* SecondViewController.m in Sources */,
+				A962AEE9140067E8007DA495 /* main.m in Sources */,
+				A962AEED140067E8007DA495 /* EducentivesAppDelegate.m in Sources */,
+				A962AEF1140067E8007DA495 /* EducentivesAppDelegate_iPhone.m in Sources */,
+				A962AEF8140067E8007DA495 /* EducentivesAppDelegate_iPad.m in Sources */,
+				A962AF1F1400684D007DA495 /* Educentives.xcdatamodeld in Sources */,
+				A962AF2314006DD6007DA495 /* Patron.m in Sources */,
+				A962AF2714006DD7007DA495 /* Goal.m in Sources */,
+				A962AF2B14006DD7007DA495 /* Milestone.m in Sources */,
+				A962AF2F14006DD7007DA495 /* Teacher.m in Sources */,
+				A962AF3314006DD7007DA495 /* Student.m in Sources */,
+				A962AF3714006DD7007DA495 /* StudentGroup.m in Sources */,
+				A962AF3B14006DD7007DA495 /* AchievementPlan.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB1A0C89134F97BB00D77B8C /* Sources */ = {
+		A962AEFC140067E9007DA495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1A0C9E134F97BB00D77B8C /* EducentivesTests.m in Sources */,
+				A962AF12140067E9007DA495 /* EducentivesTests.m in Sources */,
+				A962AF201400684D007DA495 /* Educentives.xcdatamodeld in Sources */,
+				A962AF2414006DD6007DA495 /* Patron.m in Sources */,
+				A962AF2814006DD7007DA495 /* Goal.m in Sources */,
+				A962AF2C14006DD7007DA495 /* Milestone.m in Sources */,
+				A962AF3014006DD7007DA495 /* Teacher.m in Sources */,
+				A962AF3414006DD7007DA495 /* Student.m in Sources */,
+				A962AF3814006DD7007DA495 /* StudentGroup.m in Sources */,
+				A962AF3C14006DD7007DA495 /* AchievementPlan.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FB1A0C93134F97BB00D77B8C /* PBXTargetDependency */ = {
+		A962AF08140067E9007DA495 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB1A0C63134F97BB00D77B8C /* Educentives */;
-			targetProxy = FB1A0C92134F97BB00D77B8C /* PBXContainerItemProxy */;
+			target = A962AED7140067E8007DA495 /* Educentives */;
+			targetProxy = A962AF07140067E9007DA495 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB1A0C71134F97BB00D77B8C /* InfoPlist.strings */ = {
+		A962AEE5140067E8007DA495 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB1A0C72134F97BB00D77B8C /* en */,
+				A962AEE6140067E8007DA495 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FB1A0C7A134F97BB00D77B8C /* MainWindow.xib */ = {
+		A962AEF2140067E8007DA495 /* MainWindow_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB1A0C7B134F97BB00D77B8C /* en */,
+				A962AEF3140067E8007DA495 /* en */,
 			);
-			name = MainWindow.xib;
+			name = MainWindow_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		FB1A0C83134F97BB00D77B8C /* FirstView.xib */ = {
+		A962AEF9140067E9007DA495 /* MainWindow_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB1A0C84134F97BB00D77B8C /* en */,
+				A962AEFA140067E9007DA495 /* en */,
 			);
-			name = FirstView.xib;
+			name = MainWindow_iPad.xib;
 			sourceTree = "<group>";
 		};
-		FB1A0C86134F97BB00D77B8C /* SecondView.xib */ = {
+		A962AF0C140067E9007DA495 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB1A0C87134F97BB00D77B8C /* en */,
-			);
-			name = SecondView.xib;
-			sourceTree = "<group>";
-		};
-		FB1A0C97134F97BB00D77B8C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB1A0C98134F97BB00D77B8C /* en */,
+				A962AF0D140067E9007DA495 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -341,44 +433,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FB1A0C9F134F97BB00D77B8C /* Debug */ = {
+		A962AF13140067E9007DA495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FB1A0CA0134F97BB00D77B8C /* Release */ = {
+		A962AF14140067E9007DA495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FB1A0CA2134F97BB00D77B8C /* Debug */ = {
+		A962AF16140067E9007DA495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Educentives/Educentives-Prefix.pch";
 				INFOPLIST_FILE = "Educentives/Educentives-Info.plist";
@@ -387,58 +489,45 @@
 			};
 			name = Debug;
 		};
-		FB1A0CA3134F97BB00D77B8C /* Release */ = {
+		A962AF17140067E9007DA495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Educentives/Educentives-Prefix.pch";
 				INFOPLIST_FILE = "Educentives/Educentives-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		FB1A0CA5134F97BB00D77B8C /* Debug */ = {
+		A962AF19140067E9007DA495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Educentives.app/Educentives";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EducentivesTests/EducentivesTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Educentives/Educentives-Prefix.pch";
 				INFOPLIST_FILE = "EducentivesTests/EducentivesTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		FB1A0CA6134F97BB00D77B8C /* Release */ = {
+		A962AF1A140067E9007DA495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Educentives.app/Educentives";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EducentivesTests/EducentivesTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Educentives/Educentives-Prefix.pch";
 				INFOPLIST_FILE = "EducentivesTests/EducentivesTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -448,32 +537,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB1A0C5E134F97BB00D77B8C /* Build configuration list for PBXProject "Educentives" */ = {
+		A962AED2140067E8007DA495 /* Build configuration list for PBXProject "Educentives" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB1A0C9F134F97BB00D77B8C /* Debug */,
-				FB1A0CA0134F97BB00D77B8C /* Release */,
+				A962AF13140067E9007DA495 /* Debug */,
+				A962AF14140067E9007DA495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB1A0CA1134F97BB00D77B8C /* Build configuration list for PBXNativeTarget "Educentives" */ = {
+		A962AF15140067E9007DA495 /* Build configuration list for PBXNativeTarget "Educentives" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB1A0CA2134F97BB00D77B8C /* Debug */,
-				FB1A0CA3134F97BB00D77B8C /* Release */,
+				A962AF16140067E9007DA495 /* Debug */,
+				A962AF17140067E9007DA495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		FB1A0CA4134F97BB00D77B8C /* Build configuration list for PBXNativeTarget "EducentivesTests" */ = {
+		A962AF18140067E9007DA495 /* Build configuration list for PBXNativeTarget "EducentivesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB1A0CA5134F97BB00D77B8C /* Debug */,
-				FB1A0CA6134F97BB00D77B8C /* Release */,
+				A962AF19140067E9007DA495 /* Debug */,
+				A962AF1A140067E9007DA495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A962AF1D1400684D007DA495 /* Educentives.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A962AF1E1400684D007DA495 /* Educentives.xcdatamodel */,
+			);
+			currentVersion = A962AF1E1400684D007DA495 /* Educentives.xcdatamodel */;
+			path = Educentives.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = FB1A0C5B134F97BB00D77B8C /* Project object */;
+	rootObject = A962AECF140067E8007DA495 /* Project object */;
 }
