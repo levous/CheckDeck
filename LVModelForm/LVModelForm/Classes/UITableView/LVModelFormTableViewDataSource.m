@@ -17,7 +17,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     LVModelFormConfigSection *sectionConfig = [[self modelFormConfig] configSectionForSectionIdx:section];
-    if (section) {
+    if (sectionConfig) {
         return [[sectionConfig configRows] count];
     }
     return 0;
