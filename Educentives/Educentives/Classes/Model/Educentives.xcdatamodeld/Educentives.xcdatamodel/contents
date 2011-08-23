@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Educentives" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AchievementPlan" representedClassName="AchievementPlan">
+        <relationship name="goals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Goal" inverseName="achievementPlan" inverseEntity="Goal"/>
+        <relationship name="studentGroup" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="StudentGroup" inverseName="plans" inverseEntity="StudentGroup"/>
+    </entity>
+    <entity name="Goal" representedClassName="Goal">
+        <relationship name="achievementPlan" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AchievementPlan" inverseName="goals" inverseEntity="AchievementPlan"/>
+        <relationship name="milestones" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Milestone" inverseName="goal" inverseEntity="Milestone"/>
+    </entity>
+    <entity name="Milestone" representedClassName="Milestone">
+        <attribute name="fullDescription" optional="YES" attributeType="String"/>
+        <attribute name="pointValue" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="priorityOrder" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="targetDate" optional="YES" attributeType="Date"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="goal" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Goal" inverseName="milestones" inverseEntity="Goal"/>
+    </entity>
+    <entity name="Patron" representedClassName="Patron">
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="patrons" inverseEntity="Student"/>
+    </entity>
+    <entity name="Student" representedClassName="Student">
+        <relationship name="patrons" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Patron" inverseName="students" inverseEntity="Patron"/>
+        <relationship name="studentGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StudentGroup" inverseName="students" inverseEntity="StudentGroup"/>
+    </entity>
+    <entity name="StudentGroup" representedClassName="StudentGroup">
+        <attribute name="title" optional="YES"/>
+        <relationship name="plans" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AchievementPlan" inverseName="studentGroup" inverseEntity="AchievementPlan"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="studentGroups" inverseEntity="Student"/>
+        <relationship name="teacher" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="studentGroups" inverseEntity="Teacher"/>
+    </entity>
+    <entity name="Teacher" representedClassName="Teacher">
+        <relationship name="studentGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StudentGroup" inverseName="teacher" inverseEntity="StudentGroup"/>
+    </entity>
+    <elements>
+        <element name="Goal" positionX="90" positionY="-225" width="128" height="75"/>
+        <element name="Milestone" positionX="342" positionY="-213" width="128" height="135"/>
+        <element name="Student" positionX="97" positionY="393" width="128" height="75"/>
+        <element name="StudentGroup" positionX="99" positionY="243" width="128" height="105"/>
+        <element name="Teacher" positionX="-83" positionY="309" width="128" height="60"/>
+        <element name="Patron" positionX="-81" positionY="408" width="128" height="60"/>
+        <element name="AchievementPlan" positionX="-90" positionY="-18" width="128" height="75"/>
+    </elements>
 </model>
