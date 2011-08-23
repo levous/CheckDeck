@@ -40,6 +40,11 @@
 		A962AF3814006DD7007DA495 /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3614006DD7007DA495 /* StudentGroup.m */; };
 		A962AF3B14006DD7007DA495 /* AchievementPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3A14006DD7007DA495 /* AchievementPlan.m */; };
 		A962AF3C14006DD7007DA495 /* AchievementPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3A14006DD7007DA495 /* AchievementPlan.m */; };
+		FB9200621403675F0023B107 /* SampleDataInserter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9200611403675F0023B107 /* SampleDataInserter.m */; };
+		FB9200631403675F0023B107 /* SampleDataInserter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9200611403675F0023B107 /* SampleDataInserter.m */; };
+		FB920067140367960023B107 /* EducentiveRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = FB920066140367960023B107 /* EducentiveRepository.m */; };
+		FB920068140367960023B107 /* EducentiveRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = FB920066140367960023B107 /* EducentiveRepository.m */; };
+		FBFD8DBA14036C880088CCD0 /* libLevousCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFD8DB414036C5F0088CCD0 /* libLevousCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = A962AED7140067E8007DA495;
 			remoteInfo = Educentives;
+		};
+		FBFD8DB314036C5F0088CCD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFD8DAA14036C5F0088CCD0 /* LevousCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = LevousCore;
+		};
+		FBFD8DB514036C5F0088CCD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFD8DAA14036C5F0088CCD0 /* LevousCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9DC653A13666FE100DA53E5;
+			remoteInfo = LevousCoreTests;
+		};
+		FBFD8DB814036C810088CCD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFD8DAA14036C5F0088CCD0 /* LevousCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = LevousCore;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -90,6 +116,11 @@
 		A962AF3614006DD7007DA495 /* StudentGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentGroup.m; sourceTree = "<group>"; };
 		A962AF3914006DD7007DA495 /* AchievementPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementPlan.h; sourceTree = "<group>"; };
 		A962AF3A14006DD7007DA495 /* AchievementPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementPlan.m; sourceTree = "<group>"; };
+		FB9200601403675F0023B107 /* SampleDataInserter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleDataInserter.h; sourceTree = "<group>"; };
+		FB9200611403675F0023B107 /* SampleDataInserter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleDataInserter.m; sourceTree = "<group>"; };
+		FB920065140367960023B107 /* EducentiveRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducentiveRepository.h; sourceTree = "<group>"; };
+		FB920066140367960023B107 /* EducentiveRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducentiveRepository.m; sourceTree = "<group>"; };
+		FBFD8DAA14036C5F0088CCD0 /* LevousCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LevousCore.xcodeproj; path = "../Libraries/Levous-iOS-Core/source/LevousCore.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFD8DBA14036C880088CCD0 /* libLevousCore.a in Frameworks */,
 				A962AEDD140067E8007DA495 /* UIKit.framework in Frameworks */,
 				A962AEDF140067E8007DA495 /* Foundation.framework in Frameworks */,
 				A962AEE1140067E8007DA495 /* CoreGraphics.framework in Frameworks */,
@@ -139,6 +171,7 @@
 		A962AEDB140067E8007DA495 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBFD8DAA14036C5F0088CCD0 /* LevousCore.xcodeproj */,
 				A962AEDC140067E8007DA495 /* UIKit.framework */,
 				A962AEDE140067E8007DA495 /* Foundation.framework */,
 				A962AEE0140067E8007DA495 /* CoreGraphics.framework */,
@@ -213,6 +246,8 @@
 		A962AF1B14006804007DA495 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FB920064140367660023B107 /* Repository */,
+				FB92005E140367190023B107 /* SampleData */,
 				A962AF3D14006DE2007DA495 /* ViewControllers */,
 				A962AF1C14006819007DA495 /* Model */,
 			);
@@ -248,6 +283,33 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		FB92005E140367190023B107 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				FB9200601403675F0023B107 /* SampleDataInserter.h */,
+				FB9200611403675F0023B107 /* SampleDataInserter.m */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		FB920064140367660023B107 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FB920065140367960023B107 /* EducentiveRepository.h */,
+				FB920066140367960023B107 /* EducentiveRepository.m */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FBFD8DAB14036C5F0088CCD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD8DB414036C5F0088CCD0 /* libLevousCore.a */,
+				FBFD8DB614036C5F0088CCD0 /* LevousCoreTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +324,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FBFD8DB914036C810088CCD0 /* PBXTargetDependency */,
 			);
 			name = Educentives;
 			productName = Educentives;
@@ -305,6 +368,12 @@
 			mainGroup = A962AECD140067E8007DA495;
 			productRefGroup = A962AED9140067E8007DA495 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FBFD8DAB14036C5F0088CCD0 /* Products */;
+					ProjectRef = FBFD8DAA14036C5F0088CCD0 /* LevousCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A962AED7140067E8007DA495 /* Educentives */,
@@ -312,6 +381,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FBFD8DB414036C5F0088CCD0 /* libLevousCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLevousCore.a;
+			remoteRef = FBFD8DB314036C5F0088CCD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FBFD8DB614036C5F0088CCD0 /* LevousCoreTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = LevousCoreTests.app;
+			remoteRef = FBFD8DB514036C5F0088CCD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A962AED6140067E8007DA495 /* Resources */ = {
@@ -368,6 +454,8 @@
 				A962AF3314006DD7007DA495 /* Student.m in Sources */,
 				A962AF3714006DD7007DA495 /* StudentGroup.m in Sources */,
 				A962AF3B14006DD7007DA495 /* AchievementPlan.m in Sources */,
+				FB9200621403675F0023B107 /* SampleDataInserter.m in Sources */,
+				FB920067140367960023B107 /* EducentiveRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +472,8 @@
 				A962AF3414006DD7007DA495 /* Student.m in Sources */,
 				A962AF3814006DD7007DA495 /* StudentGroup.m in Sources */,
 				A962AF3C14006DD7007DA495 /* AchievementPlan.m in Sources */,
+				FB9200631403675F0023B107 /* SampleDataInserter.m in Sources */,
+				FB920068140367960023B107 /* EducentiveRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +484,11 @@
 			isa = PBXTargetDependency;
 			target = A962AED7140067E8007DA495 /* Educentives */;
 			targetProxy = A962AF07140067E9007DA495 /* PBXContainerItemProxy */;
+		};
+		FBFD8DB914036C810088CCD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LevousCore;
+			targetProxy = FBFD8DB814036C810088CCD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -553,6 +648,7 @@
 				A962AF17140067E9007DA495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A962AF18140067E9007DA495 /* Build configuration list for PBXNativeTarget "EducentivesTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +657,7 @@
 				A962AF1A140067E9007DA495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

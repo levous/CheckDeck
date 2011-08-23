@@ -1,0 +1,3 @@
+[submodule "Libraries/Levous-iOS-Core"]
+	path = Libraries/Levous-iOS-Core
+	url = git@github.com:levous/Levous-iOS-Core.git
