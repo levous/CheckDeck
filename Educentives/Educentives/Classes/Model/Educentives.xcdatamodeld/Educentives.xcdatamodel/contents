@@ -24,7 +24,7 @@
         <relationship name="studentGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StudentGroup" inverseName="students" inverseEntity="StudentGroup"/>
     </entity>
     <entity name="StudentGroup" representedClassName="StudentGroup">
-        <attribute name="title" optional="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="plans" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AchievementPlan" inverseName="studentGroup" inverseEntity="AchievementPlan"/>
         <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="studentGroups" inverseEntity="Student"/>
         <relationship name="teacher" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="studentGroups" inverseEntity="Teacher"/>
@@ -33,12 +33,12 @@
         <relationship name="studentGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StudentGroup" inverseName="teacher" inverseEntity="StudentGroup"/>
     </entity>
     <elements>
+        <element name="AchievementPlan" positionX="-90" positionY="-18" width="128" height="75"/>
         <element name="Goal" positionX="90" positionY="-225" width="128" height="75"/>
         <element name="Milestone" positionX="342" positionY="-213" width="128" height="135"/>
+        <element name="Patron" positionX="-81" positionY="408" width="128" height="60"/>
         <element name="Student" positionX="97" positionY="393" width="128" height="75"/>
         <element name="StudentGroup" positionX="99" positionY="243" width="128" height="105"/>
         <element name="Teacher" positionX="-83" positionY="309" width="128" height="60"/>
-        <element name="Patron" positionX="-81" positionY="408" width="128" height="60"/>
-        <element name="AchievementPlan" positionX="-90" positionY="-18" width="128" height="75"/>
     </elements>
 </model>

@@ -2,7 +2,7 @@
 //  Milestone.m
 //  Educentives
 //
-//  Created by Rusty Zarse on 8/20/11.
+//  Created by Rusty Zarse on 8/23/11.
 //  Copyright (c) 2011 LeVous, LLC. All rights reserved.
 //
 
@@ -11,11 +11,11 @@
 
 
 @implementation Milestone
-@dynamic title;
-@dynamic targetDate;
 @dynamic fullDescription;
-@dynamic priorityOrder;
 @dynamic pointValue;
+@dynamic priorityOrder;
+@dynamic targetDate;
+@dynamic title;
 @dynamic goal;
 
 @end

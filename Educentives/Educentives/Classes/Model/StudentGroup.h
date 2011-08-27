@@ -2,21 +2,21 @@
 //  StudentGroup.h
 //  Educentives
 //
-//  Created by Rusty Zarse on 8/20/11.
+//  Created by Rusty Zarse on 8/23/11.
 //  Copyright (c) 2011 LeVous, LLC. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Student, Teacher;
+@class AchievementPlan, Student, Teacher;
 
 @interface StudentGroup : NSManagedObject {
 @private
 }
-@property (nonatomic, retain) UNKNOWN_TYPE title;
+@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) AchievementPlan *plans;
 @property (nonatomic, retain) NSSet *students;
-@property (nonatomic, retain) NSManagedObject *plans;
 @property (nonatomic, retain) Teacher *teacher;
 @end
 
