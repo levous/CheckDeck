@@ -26,7 +26,7 @@
     // Configure the view for the selected state
 }
 
-- (void)configureWithEntity:(NSManagedObject *)aMilestone{
+- (void)configureWithEntity:(N                                                                                                                                                                                             SManagedObject *)aMilestone{
     [[self textLabel] setText:[aMilestone title]];
     //TODO:make this beautiful image
     [[self imageView] setImage:[UIImage imageNamed:@"workComplete-icon.png"]]; 
