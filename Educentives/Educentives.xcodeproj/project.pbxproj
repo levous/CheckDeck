@@ -27,20 +27,26 @@
 		A962AF12140067E9007DA495 /* EducentivesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF11140067E9007DA495 /* EducentivesTests.m */; };
 		A962AF1F1400684D007DA495 /* Educentives.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A962AF1D1400684D007DA495 /* Educentives.xcdatamodeld */; };
 		A962AF201400684D007DA495 /* Educentives.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A962AF1D1400684D007DA495 /* Educentives.xcdatamodeld */; };
-		A962AF2314006DD6007DA495 /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2214006DD6007DA495 /* Patron.m */; };
-		A962AF2414006DD6007DA495 /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2214006DD6007DA495 /* Patron.m */; };
-		A962AF2714006DD7007DA495 /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2614006DD7007DA495 /* Goal.m */; };
-		A962AF2814006DD7007DA495 /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2614006DD7007DA495 /* Goal.m */; };
-		A962AF2B14006DD7007DA495 /* Milestone.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2A14006DD7007DA495 /* Milestone.m */; };
-		A962AF2C14006DD7007DA495 /* Milestone.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2A14006DD7007DA495 /* Milestone.m */; };
-		A962AF2F14006DD7007DA495 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2E14006DD7007DA495 /* Teacher.m */; };
-		A962AF3014006DD7007DA495 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF2E14006DD7007DA495 /* Teacher.m */; };
-		A962AF3314006DD7007DA495 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3214006DD7007DA495 /* Student.m */; };
-		A962AF3414006DD7007DA495 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3214006DD7007DA495 /* Student.m */; };
-		A962AF3714006DD7007DA495 /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3614006DD7007DA495 /* StudentGroup.m */; };
-		A962AF3814006DD7007DA495 /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3614006DD7007DA495 /* StudentGroup.m */; };
-		A962AF3B14006DD7007DA495 /* AchievementPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3A14006DD7007DA495 /* AchievementPlan.m */; };
-		A962AF3C14006DD7007DA495 /* AchievementPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = A962AF3A14006DD7007DA495 /* AchievementPlan.m */; };
+		FB0B14C11403DBB100A7628B /* Milestone.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14C01403DBB100A7628B /* Milestone.m */; };
+		FB0B14C21403DBB100A7628B /* Milestone.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14C01403DBB100A7628B /* Milestone.m */; };
+		FB0B14C51403DBB100A7628B /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14C41403DBB100A7628B /* StudentGroup.m */; };
+		FB0B14C61403DBB100A7628B /* StudentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14C41403DBB100A7628B /* StudentGroup.m */; };
+		FB0B14C91403DBB100A7628B /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14C81403DBB100A7628B /* Goal.m */; };
+		FB0B14CA1403DBB100A7628B /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14C81403DBB100A7628B /* Goal.m */; };
+		FB0B14CD1403DBB100A7628B /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14CC1403DBB100A7628B /* Patron.m */; };
+		FB0B14CE1403DBB100A7628B /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14CC1403DBB100A7628B /* Patron.m */; };
+		FB0B14D11403DBB100A7628B /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14D01403DBB100A7628B /* Teacher.m */; };
+		FB0B14D21403DBB100A7628B /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14D01403DBB100A7628B /* Teacher.m */; };
+		FB0B14D51403DBB200A7628B /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14D41403DBB200A7628B /* Student.m */; };
+		FB0B14D61403DBB200A7628B /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14D41403DBB200A7628B /* Student.m */; };
+		FB0B14D91403DBB200A7628B /* AchievementPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14D81403DBB200A7628B /* AchievementPlan.m */; };
+		FB0B14DA1403DBB200A7628B /* AchievementPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B14D81403DBB200A7628B /* AchievementPlan.m */; };
+		FB0B14DC1403DBE800A7628B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0B14DB1403DBE800A7628B /* CoreData.framework */; };
+		FB0B14DD1403DBF700A7628B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0B14DB1403DBE800A7628B /* CoreData.framework */; };
+		FB80477214092D7D00EE150C /* MilestoneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB80477114092D7D00EE150C /* MilestoneTableViewCell.m */; };
+		FB80477314092D7D00EE150C /* MilestoneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB80477114092D7D00EE150C /* MilestoneTableViewCell.m */; };
+		FB80478F140930BD00EE150C /* workCompleted-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB80478E140930BD00EE150C /* workCompleted-icon.png */; };
+		FB804790140930BD00EE150C /* workCompleted-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB80478E140930BD00EE150C /* workCompleted-icon.png */; };
 		FB9200621403675F0023B107 /* SampleDataInserter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9200611403675F0023B107 /* SampleDataInserter.m */; };
 		FB9200631403675F0023B107 /* SampleDataInserter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9200611403675F0023B107 /* SampleDataInserter.m */; };
 		FB920067140367960023B107 /* EducentiveRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = FB920066140367960023B107 /* EducentiveRepository.m */; };
@@ -104,20 +110,24 @@
 		A962AF0F140067E9007DA495 /* EducentivesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducentivesTests.h; sourceTree = "<group>"; };
 		A962AF11140067E9007DA495 /* EducentivesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducentivesTests.m; sourceTree = "<group>"; };
 		A962AF1E1400684D007DA495 /* Educentives.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Educentives.xcdatamodel; sourceTree = "<group>"; };
-		A962AF2114006DD6007DA495 /* Patron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patron.h; sourceTree = "<group>"; };
-		A962AF2214006DD6007DA495 /* Patron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patron.m; sourceTree = "<group>"; };
-		A962AF2514006DD7007DA495 /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
-		A962AF2614006DD7007DA495 /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
-		A962AF2914006DD7007DA495 /* Milestone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milestone.h; sourceTree = "<group>"; };
-		A962AF2A14006DD7007DA495 /* Milestone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milestone.m; sourceTree = "<group>"; };
-		A962AF2D14006DD7007DA495 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
-		A962AF2E14006DD7007DA495 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
-		A962AF3114006DD7007DA495 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		A962AF3214006DD7007DA495 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
-		A962AF3514006DD7007DA495 /* StudentGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentGroup.h; sourceTree = "<group>"; };
-		A962AF3614006DD7007DA495 /* StudentGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentGroup.m; sourceTree = "<group>"; };
-		A962AF3914006DD7007DA495 /* AchievementPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementPlan.h; sourceTree = "<group>"; };
-		A962AF3A14006DD7007DA495 /* AchievementPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementPlan.m; sourceTree = "<group>"; };
+		FB0B14BF1403DBB100A7628B /* Milestone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milestone.h; sourceTree = "<group>"; };
+		FB0B14C01403DBB100A7628B /* Milestone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milestone.m; sourceTree = "<group>"; };
+		FB0B14C31403DBB100A7628B /* StudentGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentGroup.h; sourceTree = "<group>"; };
+		FB0B14C41403DBB100A7628B /* StudentGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentGroup.m; sourceTree = "<group>"; };
+		FB0B14C71403DBB100A7628B /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
+		FB0B14C81403DBB100A7628B /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
+		FB0B14CB1403DBB100A7628B /* Patron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patron.h; sourceTree = "<group>"; };
+		FB0B14CC1403DBB100A7628B /* Patron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patron.m; sourceTree = "<group>"; };
+		FB0B14CF1403DBB100A7628B /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		FB0B14D01403DBB100A7628B /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		FB0B14D31403DBB200A7628B /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		FB0B14D41403DBB200A7628B /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		FB0B14D71403DBB200A7628B /* AchievementPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementPlan.h; sourceTree = "<group>"; };
+		FB0B14D81403DBB200A7628B /* AchievementPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementPlan.m; sourceTree = "<group>"; };
+		FB0B14DB1403DBE800A7628B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FB80477014092D7D00EE150C /* MilestoneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilestoneTableViewCell.h; sourceTree = "<group>"; };
+		FB80477114092D7D00EE150C /* MilestoneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilestoneTableViewCell.m; sourceTree = "<group>"; };
+		FB80478E140930BD00EE150C /* workCompleted-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workCompleted-icon.png"; sourceTree = "<group>"; };
 		FB9200601403675F0023B107 /* SampleDataInserter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleDataInserter.h; sourceTree = "<group>"; };
 		FB9200611403675F0023B107 /* SampleDataInserter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleDataInserter.m; sourceTree = "<group>"; };
 		FB920065140367960023B107 /* EducentiveRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducentiveRepository.h; sourceTree = "<group>"; };
@@ -130,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9265164140740D800AE321F /* CoreData.framework in Frameworks */,
+				FB0B14DC1403DBE800A7628B /* CoreData.framework in Frameworks */,
 				FBFD8DBA14036C880088CCD0 /* libLevousCore.a in Frameworks */,
 				A962AEDD140067E8007DA495 /* UIKit.framework in Frameworks */,
 				A962AEDF140067E8007DA495 /* Foundation.framework in Frameworks */,
@@ -146,6 +156,7 @@
 				A962AF04140067E9007DA495 /* UIKit.framework in Frameworks */,
 				A962AF05140067E9007DA495 /* Foundation.framework in Frameworks */,
 				A962AF06140067E9007DA495 /* CoreGraphics.framework in Frameworks */,
+				FB0B14DD1403DBF700A7628B /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFD8DAA14036C5F0088CCD0 /* LevousCore.xcodeproj */,
-				A9265163140740D800AE321F /* CoreData.framework */,
+				FB0B14DB1403DBE800A7628B /* CoreData.framework */,
 				A962AEDC140067E8007DA495 /* UIKit.framework */,
 				A962AEDE140067E8007DA495 /* Foundation.framework */,
 				A962AEE0140067E8007DA495 /* CoreGraphics.framework */,
@@ -192,6 +203,7 @@
 				A962AEEC140067E8007DA495 /* EducentivesAppDelegate.m */,
 				A962AEEE140067E8007DA495 /* iPhone */,
 				A962AEF5140067E8007DA495 /* iPad */,
+				FB8047771409306000EE150C /* Resources */,
 				A962AEE3140067E8007DA495 /* Supporting Files */,
 			);
 			path = Educentives;
@@ -250,10 +262,11 @@
 		A962AF1B14006804007DA495 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A962AF1C14006819007DA495 /* Model */,
 				FB920064140367660023B107 /* Repository */,
 				FB92005E140367190023B107 /* SampleData */,
 				A962AF3D14006DE2007DA495 /* ViewControllers */,
-				A962AF1C14006819007DA495 /* Model */,
+				FB80476E14092D1300EE150C /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -262,20 +275,20 @@
 			isa = PBXGroup;
 			children = (
 				A962AF1D1400684D007DA495 /* Educentives.xcdatamodeld */,
-				A962AF3914006DD7007DA495 /* AchievementPlan.h */,
-				A962AF3A14006DD7007DA495 /* AchievementPlan.m */,
-				A962AF3514006DD7007DA495 /* StudentGroup.h */,
-				A962AF3614006DD7007DA495 /* StudentGroup.m */,
-				A962AF3114006DD7007DA495 /* Student.h */,
-				A962AF3214006DD7007DA495 /* Student.m */,
-				A962AF2D14006DD7007DA495 /* Teacher.h */,
-				A962AF2E14006DD7007DA495 /* Teacher.m */,
-				A962AF2914006DD7007DA495 /* Milestone.h */,
-				A962AF2A14006DD7007DA495 /* Milestone.m */,
-				A962AF2514006DD7007DA495 /* Goal.h */,
-				A962AF2614006DD7007DA495 /* Goal.m */,
-				A962AF2114006DD6007DA495 /* Patron.h */,
-				A962AF2214006DD6007DA495 /* Patron.m */,
+				FB0B14D71403DBB200A7628B /* AchievementPlan.h */,
+				FB0B14D81403DBB200A7628B /* AchievementPlan.m */,
+				FB0B14D31403DBB200A7628B /* Student.h */,
+				FB0B14D41403DBB200A7628B /* Student.m */,
+				FB0B14CF1403DBB100A7628B /* Teacher.h */,
+				FB0B14D01403DBB100A7628B /* Teacher.m */,
+				FB0B14CB1403DBB100A7628B /* Patron.h */,
+				FB0B14CC1403DBB100A7628B /* Patron.m */,
+				FB0B14C71403DBB100A7628B /* Goal.h */,
+				FB0B14C81403DBB100A7628B /* Goal.m */,
+				FB0B14C31403DBB100A7628B /* StudentGroup.h */,
+				FB0B14C41403DBB100A7628B /* StudentGroup.m */,
+				FB0B14BF1403DBB100A7628B /* Milestone.h */,
+				FB0B14C01403DBB100A7628B /* Milestone.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +298,47 @@
 			children = (
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB80476E14092D1300EE150C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB80476F14092D5300EE150C /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB80476F14092D5300EE150C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FB80477014092D7D00EE150C /* MilestoneTableViewCell.h */,
+				FB80477114092D7D00EE150C /* MilestoneTableViewCell.m */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		FB8047771409306000EE150C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB8047831409309300EE150C /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB8047831409309300EE150C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FB8047841409309300EE150C /* Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FB8047841409309300EE150C /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FB80478E140930BD00EE150C /* workCompleted-icon.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		FB92005E140367190023B107 /* SampleData */ = {
@@ -411,6 +465,7 @@
 				A962AEE7140067E8007DA495 /* InfoPlist.strings in Resources */,
 				A962AEF4140067E8007DA495 /* MainWindow_iPhone.xib in Resources */,
 				A962AEFB140067E9007DA495 /* MainWindow_iPad.xib in Resources */,
+				FB80478F140930BD00EE150C /* workCompleted-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +475,7 @@
 			files = (
 				A962AF0E140067E9007DA495 /* InfoPlist.strings in Resources */,
 				A962AF10140067E9007DA495 /* EducentivesTests.h in Resources */,
+				FB804790140930BD00EE150C /* workCompleted-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,15 +507,16 @@
 				A962AEF1140067E8007DA495 /* EducentivesAppDelegate_iPhone.m in Sources */,
 				A962AEF8140067E8007DA495 /* EducentivesAppDelegate_iPad.m in Sources */,
 				A962AF1F1400684D007DA495 /* Educentives.xcdatamodeld in Sources */,
-				A962AF2314006DD6007DA495 /* Patron.m in Sources */,
-				A962AF2714006DD7007DA495 /* Goal.m in Sources */,
-				A962AF2B14006DD7007DA495 /* Milestone.m in Sources */,
-				A962AF2F14006DD7007DA495 /* Teacher.m in Sources */,
-				A962AF3314006DD7007DA495 /* Student.m in Sources */,
-				A962AF3714006DD7007DA495 /* StudentGroup.m in Sources */,
-				A962AF3B14006DD7007DA495 /* AchievementPlan.m in Sources */,
 				FB9200621403675F0023B107 /* SampleDataInserter.m in Sources */,
 				FB920067140367960023B107 /* EducentiveRepository.m in Sources */,
+				FB0B14C11403DBB100A7628B /* Milestone.m in Sources */,
+				FB0B14C51403DBB100A7628B /* StudentGroup.m in Sources */,
+				FB0B14C91403DBB100A7628B /* Goal.m in Sources */,
+				FB0B14CD1403DBB100A7628B /* Patron.m in Sources */,
+				FB0B14D11403DBB100A7628B /* Teacher.m in Sources */,
+				FB0B14D51403DBB200A7628B /* Student.m in Sources */,
+				FB0B14D91403DBB200A7628B /* AchievementPlan.m in Sources */,
+				FB80477214092D7D00EE150C /* MilestoneTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,15 +526,16 @@
 			files = (
 				A962AF12140067E9007DA495 /* EducentivesTests.m in Sources */,
 				A962AF201400684D007DA495 /* Educentives.xcdatamodeld in Sources */,
-				A962AF2414006DD6007DA495 /* Patron.m in Sources */,
-				A962AF2814006DD7007DA495 /* Goal.m in Sources */,
-				A962AF2C14006DD7007DA495 /* Milestone.m in Sources */,
-				A962AF3014006DD7007DA495 /* Teacher.m in Sources */,
-				A962AF3414006DD7007DA495 /* Student.m in Sources */,
-				A962AF3814006DD7007DA495 /* StudentGroup.m in Sources */,
-				A962AF3C14006DD7007DA495 /* AchievementPlan.m in Sources */,
 				FB9200631403675F0023B107 /* SampleDataInserter.m in Sources */,
 				FB920068140367960023B107 /* EducentiveRepository.m in Sources */,
+				FB0B14C21403DBB100A7628B /* Milestone.m in Sources */,
+				FB0B14C61403DBB100A7628B /* StudentGroup.m in Sources */,
+				FB0B14CA1403DBB100A7628B /* Goal.m in Sources */,
+				FB0B14CE1403DBB100A7628B /* Patron.m in Sources */,
+				FB0B14D21403DBB100A7628B /* Teacher.m in Sources */,
+				FB0B14D61403DBB200A7628B /* Student.m in Sources */,
+				FB0B14DA1403DBB200A7628B /* AchievementPlan.m in Sources */,
+				FB80477314092D7D00EE150C /* MilestoneTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
