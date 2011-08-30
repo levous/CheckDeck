@@ -14,7 +14,7 @@
 @interface StudentGroup : NSManagedObject {
 @private
 }
-@property (nonatomic, retain) UNKNOWN_TYPE title;
+@property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSSet *students;
 @property (nonatomic, retain) NSManagedObject *plans;
 @property (nonatomic, retain) Teacher *teacher;

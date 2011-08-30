@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LVCoreDataManager.h"
+
 #import "AchievementPlan.h"
 #import "Student.h"
 #import "StudentGroup.h"
@@ -15,6 +17,6 @@
 #import "Goal.h"
 #import "Patron.h"
 
-@interface EducentiveRepository : NSObject
+@interface EducentiveRepository : LVCoreDataManager
 
 @end
